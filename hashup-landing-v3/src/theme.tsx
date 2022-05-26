@@ -1,40 +1,44 @@
-import { extendTheme } from '@chakra-ui/react'
-import { createBreakpoints } from '@chakra-ui/theme-tools'
+import { extendTheme } from "@chakra-ui/react";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
+import { Colors } from "./colors";
 
-const fonts = { mono: `'Menlo', monospace` }
+const fonts = { mono: `'Sora', normal` };
 
 const breakpoints = createBreakpoints({
-  sm: '40em',
-  md: '52em',
-  lg: '64em',
-  xl: '80em',
-})
+  sm: "40em",
+  md: "52em",
+  lg: "64em",
+  xl: "80em",
+});
 
 const theme = extendTheme({
-  semanticTokens: {
-    colors: {
-      text: {
-        default: '#16161D',
-        _dark: '#ade3b8',
+  styles: {
+    global: {
+      "html, body": {
+        margin: 0,
+        padding: 0,
+        fontFamily: "Sora",
+        backgroundColor: "black",
+        overflowX: "hidden",
       },
-      heroGradientStart: {
-        default: '#7928CA',
-        _dark: '#e3a7f9',
+      a: {
+        textDecoration: "none",
+        color: "white",
       },
-      heroGradientEnd: {
-        default: '#FF0080',
-        _dark: '#fbec8f',
+      button: {
+        border: 0,
+      },
+      "h1, h2, h3, h4, h5, h6": {
+        margin: 0,
+      },
+      ul: {
+        padding: 0,
+      },
+      strong: {
+        color: Colors.brandMain,
       },
     },
-    radii: {
-      button: '12px',
-    },
   },
-  colors: {
-    black: '#16161D',
-  },
-  fonts,
-  breakpoints,
-})
+});
 
-export default theme
+export default theme;
