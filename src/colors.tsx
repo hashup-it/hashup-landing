@@ -1,5 +1,6 @@
 export const Colors = {
   brandMain: "#FF3F3F",
+  subGrey: "#6C6C6C",
   greyText: "#9A9A9A",
   darkGrey: "#222222",
   cartridges: {
