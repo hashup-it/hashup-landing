@@ -1,14 +1,15 @@
 import { Icon } from "@chakra-ui/react";
 import React from "react";
 
-export const HashupSingleLogo = () => {
+export const HashupSingleLogo = ({ h, ...props }) => {
   return (
     <Icon
-      width="19px"
-      height="19px"
+      width={h ? h : "19px"}
+      height={h ? h : "19px"}
       viewBox="0 0 19 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M5.13044 15.1837L2.52489 14.4856L7.2431 3.06473C7.38553 2.71997 7.70801 2.48314 8.07959 2.45041L10.0951 2.27288C10.2443 2.25974 10.3545 2.4092 10.2978 2.54782L5.13044 15.1837Z"

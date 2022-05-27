@@ -9,10 +9,10 @@ export const HeaderLinks = () => {
     <Flex gridGap="24px" alignItems="center">
       <Whitepaper />
       <Flex fontSize="14px" fontWeight="600" color="white">
-        Media<Text color={Colors.brandMain}>.</Text>
+        Media<strong>.</strong>
       </Flex>
       <Flex fontSize="14px" fontWeight="600" color="white">
-        Docs<Text color={Colors.brandMain}>.</Text>
+        Docs<strong>.</strong>
       </Flex>
       <PlayVideo />
     </Flex>

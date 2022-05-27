@@ -1,5 +1,6 @@
 import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
 import "@fontsource/sora";
+import { Fonts } from "../fonts";
 
 import theme from "../theme";
 import { AppProps } from "next/app";
@@ -9,9 +10,10 @@ import NavBar from "../components/NavBar/navbar";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
+      <Fonts />
       <GlobalContainer>
         <NavBar />
-        <Component {...pageProps} fontFamily="Sora" />
+        <Component {...pageProps} />
       </GlobalContainer>
     </ChakraProvider>
   );

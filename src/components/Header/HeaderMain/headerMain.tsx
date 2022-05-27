@@ -13,11 +13,11 @@ export const HeaderMain = () => {
       zIndex="10"
       justifyContent="center"
       gridGap="32px"
-      mt="35px"
+      mt="50px"
     >
       <Flex fontSize="15px" fontWeight="600" color="white" gridGap="4px">
         <RedTriangleIcon mt="-5px" />
-        Solving the<Text color={Colors.brandMain}>Gaming Industries'</Text>
+        Solving the<strong>Gaming Industries'</strong>
         biggest problems
         <RedTriangleIcon transform="rotate(3deg)" mt="15px" />
       </Flex>
@@ -34,7 +34,7 @@ export const HeaderMain = () => {
         <Flex>Marketplace and</Flex>
         <Flex>
           Publishing Platform
-          <Text color={Colors.brandMain}>.</Text>
+          <strong>.</strong>
         </Flex>
       </Flex>
       <HeaderMainButtons />

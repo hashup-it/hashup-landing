@@ -1,24 +1,25 @@
 import { Icon } from "@chakra-ui/react";
 import React from "react";
 
-export const ArrowRightIcon = () => {
+export const ArrowRightIcon = ({ color, h, ...props }) => {
   return (
     <Icon
-      width="14px"
-      height="14px"
+      width={h ? h : "14px"}
+      height={h ? h : "14px"}
       viewBox="0 0 14 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M2.91675 7H11.0834"
-        stroke="#FF3F3F"
+        stroke={color ? color : "#FF3F3F"}
         strokeWidth="1.4"
         strokeLinejoin="round"
       />
       <path
         d="M7 2.91675L11.0833 7.00008L7 11.0834"
-        stroke="#FF3F3F"
+        stroke={color ? color : "#FF3F3F"}
         strokeWidth="1.4"
         strokeLinejoin="round"
       />
