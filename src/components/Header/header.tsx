@@ -5,7 +5,14 @@ import HeaderMain from "./HeaderMain/headerMain";
 
 export const Header = () => {
   return (
-    <Flex flexDirection="column" alignItems="center" w="100%" h="100vh">
+    <Flex
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="space-between"
+      w="100%"
+      h="85vh"
+      pb="5px"
+    >
       <Image
         position="absolute"
         h="100vh"
