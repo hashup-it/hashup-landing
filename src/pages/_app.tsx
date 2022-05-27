@@ -5,6 +5,7 @@ import theme from "../theme";
 import { AppProps } from "next/app";
 import GlobalContainer from "../components/GlobalContainter/globalContainer";
 import NavBar from "../components/NavBar/navbar";
+import ChoosePath from "../components/ChoosePath/choosePath";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalContainer>
         <NavBar />
         <Component {...pageProps} fontFamily="Sora" />
+        <ChoosePath />
       </GlobalContainer>
     </ChakraProvider>
   );
