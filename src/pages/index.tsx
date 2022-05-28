@@ -5,6 +5,7 @@ import ChoosePath from "../components/ChoosePath/choosePath";
 import GlobalContainer from "../components/GlobalContainter/globalContainer";
 import Community from "../components/Community/community";
 import { Flex } from "@chakra-ui/react";
+import StickySocials from "../components/StickySocials/stickySocials";
 
 const Index = () => (
   <Flex>
