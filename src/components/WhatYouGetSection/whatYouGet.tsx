@@ -66,7 +66,7 @@ export const WhatYouGet = () => {
         />
         <Flex
           flexDirection="column"
-          gridGap="30px"
+          gridGap="7px"
           zIndex="1"
           alignItems="center"
           w="70%"
