@@ -11,6 +11,7 @@ export const PlayVideo = () => {
       fontSize="14px"
       fontWeight="600"
       color="white"
+      cursor="pointer"
     >
       <PlayVideoIcon /> Play Video<Text color={Colors.brandMain}></Text>
     </Flex>

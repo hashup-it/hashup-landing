@@ -1,5 +1,5 @@
-import { Icon } from '@chakra-ui/react';
-import React from 'react'
+import { Icon } from "@chakra-ui/react";
+import React from "react";
 
 export const PolygonLogo = () => {
   return (
@@ -9,6 +9,7 @@ export const PolygonLogo = () => {
       viewBox="0 0 213 47"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      mr="100px"
     >
       <g clip-path="url(#clip0_1755_4372)">
         <path
@@ -51,6 +52,6 @@ export const PolygonLogo = () => {
       </defs>
     </Icon>
   );
-}
+};
 
-export default PolygonLogo
+export default PolygonLogo;

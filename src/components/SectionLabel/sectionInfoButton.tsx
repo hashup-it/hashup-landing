@@ -2,7 +2,7 @@ import { Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { Colors } from "../../colors";
 
-export const SectionInfoButton = () => {
+export const SectionInfoButton = ({ label, ...props }: { label: string }) => {
   return (
     <Flex
       position="relative"
@@ -20,6 +20,7 @@ export const SectionInfoButton = () => {
         left: "50%",
         filter: "blur(3px)",
       }}
+      {...props}
     >
       <Flex
         bgColor="black"
@@ -27,6 +28,7 @@ export const SectionInfoButton = () => {
         h="100%"
         p="14px 82px 14px 82px"
         borderRadius="0px 15px 0px 15px"
+        justifyContent="center"
       >
         <Text
           color="white"
@@ -35,7 +37,7 @@ export const SectionInfoButton = () => {
           lineHeight="160%"
           letterSpacing="0.4em"
         >
-          WHO YOU ARE?
+          {label}
         </Text>
       </Flex>
     </Flex>

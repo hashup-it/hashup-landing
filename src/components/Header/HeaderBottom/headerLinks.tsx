@@ -8,10 +8,10 @@ export const HeaderLinks = () => {
   return (
     <Flex gridGap="24px" alignItems="center">
       <Whitepaper />
-      <Flex fontSize="14px" fontWeight="600" color="white">
+      <Flex fontSize="14px" fontWeight="600" color="white" cursor="pointer">
         Media<strong>.</strong>
       </Flex>
-      <Flex fontSize="14px" fontWeight="600" color="white">
+      <Flex fontSize="14px" fontWeight="600" color="white" cursor="pointer">
         Docs<strong>.</strong>
       </Flex>
       <PlayVideo />

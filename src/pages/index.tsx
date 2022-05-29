@@ -6,6 +6,7 @@ import GlobalContainer from "../components/GlobalContainter/globalContainer";
 import Community from "../components/Community/community";
 import { Flex } from "@chakra-ui/react";
 import StickySocials from "../components/StickySocials/stickySocials";
+import WhatYouGet from "../components/WhatYouGetSection/whatYouGet";
 
 const Index = () => (
   <Flex>
@@ -14,6 +15,7 @@ const Index = () => (
       <SectionOne />
       <Advantages />
       <ChoosePath />
+      <WhatYouGet />
       <Community />
     </GlobalContainer>
   </Flex>

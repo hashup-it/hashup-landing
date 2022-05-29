@@ -13,7 +13,7 @@ export const NavBar = () => {
       justifyContent="space-between"
       zIndex="10"
     >
-      <HashupLogo />
+      <HashupLogo cursor="pointer" />
       <NavBarItems />
       <Flex alignItems="center" gridGap="36px" ml="-80px">
         <LanguageSelect />

@@ -9,6 +9,7 @@ export const PatchkitLogo = () => {
       viewBox="0 0 224 51"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      mr="100px"
     >
       <g clip-path="url(#clip0_1755_4382)">
         <path
