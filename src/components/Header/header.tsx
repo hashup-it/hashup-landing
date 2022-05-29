@@ -22,7 +22,7 @@ export const Header = () => {
         zIndex="0"
         src="/assets/headerBg.png"
         bgGradient="linear(180deg, rgba(0, 0, 0, 0) 77.54%, #000000 92.75%)"
-        opacity="0.3"
+        //opacity="0.3"
       />
       <HeaderMain />
       <HeaderBottom />
