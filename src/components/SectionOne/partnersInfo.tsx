@@ -1,3 +1,4 @@
+import { Image } from "@chakra-ui/react";
 import BlockchainAllianceLogo from "../../Icons/blockchainAllianceLogo";
 import PatchkitLogo from "../../Icons/patchkitLogo";
 import PolygonLogo from "../../Icons/polygonLogo";
@@ -5,7 +6,7 @@ import PolygonLogo from "../../Icons/polygonLogo";
 export const PartnersInfo = [
   {
     name: "Blockchain Alliance",
-    logo: <BlockchainAllianceLogo />,
+    logo: <Image src="assets/blockchainAllianceLogo.png" mr="100px" />,
   },
   {
     name: "Patchkit",
@@ -13,7 +14,7 @@ export const PartnersInfo = [
   },
   {
     name: "Gravity",
-    logo: <PatchkitLogo />,
+    logo: <Image src="assets/gravityTeamLogo.png" mr="100px" />,
   },
   {
     name: "Polygon",
@@ -21,14 +22,10 @@ export const PartnersInfo = [
   },
   {
     name: "Synapse",
-    logo: <PatchkitLogo />,
+    logo: <Image src="assets/synapseLogo.png" mr="100px" />,
   },
   {
-    name: "Synapse",
-    logo: <PatchkitLogo />,
-  },
-  {
-    name: "Synapse",
-    logo: <PatchkitLogo />,
+    name: "AdShares",
+    logo: <Image src="assets/adsharesLogo.png" mr="100px" />,
   },
 ];

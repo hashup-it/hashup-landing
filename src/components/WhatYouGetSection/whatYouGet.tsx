@@ -43,6 +43,7 @@ export const WhatYouGet = () => {
       flexDirection="column"
       p="90px 90px 0 90px"
       alignItems="center"
+      bgColor="#0A0A0A"
     >
       <SectionInfoButton label="WHAT DO YOU GET?" zIndex="1" />
       <Flex
@@ -54,7 +55,7 @@ export const WhatYouGet = () => {
         alignItems="center"
       >
         <Image
-          src="https://www.ecbs.org/assets/base/img/content/backgrounds/bg-18.jpg"
+          src="/assets/whatGivesYouBg.png"
           position="absolute"
           w="100vw"
           h="100vh"

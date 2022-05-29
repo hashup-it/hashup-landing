@@ -5,12 +5,12 @@ import ArrowRightIcon from "../../Icons/arrowRightIcon";
 import FirstDistributionModel from "../../Icons/firstDistributionModel";
 import HashupLogoBg from "../../Icons/hashupLogoBg";
 import SecondDistributionModel from "../../Icons/secondDistributionModel";
+import SectionInfoButton from "../SectionLabel/sectionInfoButton";
 import PhaseCard from "./phaseCard";
 
 export const Advantages = () => {
   return (
     <Flex
-      h="110vh"
       zIndex="0"
       flexDirection="column"
       bgColor="#0A0A0A"
@@ -19,12 +19,14 @@ export const Advantages = () => {
       alignItems="center"
       justifyContent="space-between"
     >
+      <SectionInfoButton label="HOW DOES IT WORK" />
       <HashupLogoBg position="absolute" top="100vh" right="0" zIndex="1" />
       <Flex
         maxW="60vw"
         textAlign="center"
         flexDirection="column"
         gridGap="20px"
+        mt="40px"
       >
         <Text fontSize="70px" fontWeight="700" lineHeight="130%">
           Advantages of the new distribution model<strong>!</strong>
@@ -39,7 +41,7 @@ export const Advantages = () => {
         gridGap="0px"
         w="80%"
         justifyContent="space-between"
-        mt="50px"
+        mt="100px"
         alignItems="center"
         mb="90px"
       >
@@ -49,9 +51,6 @@ export const Advantages = () => {
         <ArrowRightIcon color="white" mt="-130px" h="25px" />
         <PhaseCard isActive={true} image={<FirstDistributionModel />} />
       </Flex>
-      <Box h="1px" w="100vw" bgColor="white" opacity="0.1">
-        <Text opacity="0">.</Text>
-      </Box>
     </Flex>
   );
 };

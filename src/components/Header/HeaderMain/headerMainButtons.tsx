@@ -16,10 +16,6 @@ export const HeaderMainButtons = () => {
         justifyContent="space-between"
         cursor="pointer"
         transition="ease 0.2s"
-        _hover={{
-          w: "210px",
-          h: "73px",
-        }}
       >
         <Flex flexDirection="column">
           <Text fontSize="15px" fontWeight="500" color="black">
@@ -42,10 +38,6 @@ export const HeaderMainButtons = () => {
         justifyContent="space-between"
         cursor="pointer"
         transition="ease 0.2s"
-        _hover={{
-          w: "210px",
-          h: "73px",
-        }}
       >
         <Flex flexDirection="column">
           <Text fontSize="15px" fontWeight="500" color="white">
