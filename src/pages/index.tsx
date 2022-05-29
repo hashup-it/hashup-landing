@@ -9,6 +9,7 @@ import StickySocials from "../components/StickySocials/stickySocials";
 import WhatYouGet from "../components/WhatYouGetSection/whatYouGet";
 import Premiere from "../components/Premiere/premiere";
 import Recommendations from "../components/Recommendations/recommendations";
+import Ecosystem from "../components/Ecosystem/ecosystem";
 
 const Index = () => (
   <Flex>
@@ -19,6 +20,7 @@ const Index = () => (
       <ChoosePath />
       <WhatYouGet />
       <Recommendations />
+      <Ecosystem />
       <Premiere />
       <Community />
     </GlobalContainer>
