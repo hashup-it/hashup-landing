@@ -26,7 +26,15 @@ export const ChoosePath = () => {
     },
   ];
   return (
-    <Flex direction="column" alignItems="center" mt="70px">
+    <Flex direction="column" alignItems="center" position="relative" pt="70px">
+      <Box
+        w="100vw"
+        h="1px"
+        position="absolute"
+        top="0"
+        bgColor="white"
+        opacity="0.1"
+      />
       <SectionInfoButton label="WHO YOU ARE?" />
       <Flex p="20px" fontSize="60px" color="#ffffff" fontWeight="700">
         <Text> Choose a Path</Text>

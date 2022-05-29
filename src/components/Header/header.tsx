@@ -20,7 +20,7 @@ export const Header = () => {
         left="0"
         top="0"
         zIndex="0"
-        src="https://www.ecbs.org/assets/base/img/content/backgrounds/bg-18.jpg"
+        src="/assets/headerBg.png"
         bgGradient="linear(180deg, rgba(0, 0, 0, 0) 77.54%, #000000 92.75%)"
         opacity="0.3"
       />
