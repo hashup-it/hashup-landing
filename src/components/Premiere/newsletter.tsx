@@ -25,6 +25,7 @@ export const Newsletter = () => {
           fontWeight="600"
           alignItems="center"
           justifyContent="center"
+          cursor="pointer"
         >
           Subscribe
         </Flex>

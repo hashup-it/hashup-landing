@@ -8,6 +8,7 @@ import { Flex } from "@chakra-ui/react";
 import StickySocials from "../components/StickySocials/stickySocials";
 import WhatYouGet from "../components/WhatYouGetSection/whatYouGet";
 import Premiere from "../components/Premiere/premiere";
+import Recommendations from "../components/Recommendations/recommendations";
 
 const Index = () => (
   <Flex>
@@ -17,6 +18,7 @@ const Index = () => (
       <Advantages />
       <ChoosePath />
       <WhatYouGet />
+      <Recommendations />
       <Premiere />
       <Community />
     </GlobalContainer>
