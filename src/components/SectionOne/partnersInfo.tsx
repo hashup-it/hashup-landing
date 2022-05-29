@@ -23,4 +23,12 @@ export const PartnersInfo = [
     name: "Synapse",
     logo: <PatchkitLogo />,
   },
+  {
+    name: "Synapse",
+    logo: <PatchkitLogo />,
+  },
+  {
+    name: "Synapse",
+    logo: <PatchkitLogo />,
+  },
 ];

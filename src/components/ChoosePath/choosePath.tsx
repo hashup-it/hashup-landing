@@ -1,7 +1,7 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
-import SectionInfoButton from "./sectionInfoButton";
 import { Colors } from "../../colors";
+import SectionInfoButton from "../SectionLabel/sectionInfoButton";
 import PathComponent, { IPathComponents } from "./pathComponent";
 
 export const ChoosePath = () => {
@@ -27,7 +27,7 @@ export const ChoosePath = () => {
   ];
   return (
     <Flex direction="column" alignItems="center" mt="70px">
-      <SectionInfoButton />
+      <SectionInfoButton label="WHO YOU ARE?" />
       <Flex p="20px" fontSize="60px" color="#ffffff" fontWeight="700">
         <Text> Choose a Path</Text>
         <strong>.</strong>

@@ -1,5 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
+import Marquee from "react-fast-marquee";
 import { PartnersInfo } from "./partnersInfo";
 
 export const Partners = () => {
@@ -9,11 +10,12 @@ export const Partners = () => {
       position="absolute"
       left="-80px"
       bottom="100px"
-      gridGap="100px"
       alignItems="center"
       zIndex="10"
     >
-      {PartnersInfo.map((partner) => partner.logo)}
+      <Marquee gradient={false}>
+        {PartnersInfo.map((partner) => partner.logo)}
+      </Marquee>
     </Flex>
   );
 };

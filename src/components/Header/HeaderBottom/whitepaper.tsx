@@ -13,6 +13,7 @@ export const Whitepaper = () => {
       gridGap="5px"
       position="relative"
       p="10px"
+      cursor="pointer"
     >
       Whitepaper
       <ArrowRightIcon />

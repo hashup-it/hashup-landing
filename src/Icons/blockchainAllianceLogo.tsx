@@ -10,6 +10,8 @@ export const BlockchainAllianceLogo = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      mr="100px"
+      ml="-100px"
     >
       <rect width="259.556" height="64" fill="url(#pattern0)" />
       <defs>

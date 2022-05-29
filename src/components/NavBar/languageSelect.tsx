@@ -5,7 +5,13 @@ import GlobeIcon from "../../Icons/globeIcon";
 
 export const LanguageSelect = () => {
   return (
-    <Flex alignItems="center" gridGap="10px" color="white" fontWeight="700">
+    <Flex
+      alignItems="center"
+      gridGap="10px"
+      color="white"
+      fontWeight="700"
+      cursor="pointer"
+    >
       <GlobeIcon />
       <Text>PL</Text>
       <ChevronDownIcon />

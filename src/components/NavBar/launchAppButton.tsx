@@ -15,6 +15,9 @@ export const LaunchAppButton = () => {
       borderRadius="5px"
       alignItems="center"
       justifyContent="center"
+      transition="ease 0.2s"
+      cursor="pointer"
+      _hover={{ bgColor: `${Colors.brandMain}` }}
     >
       Launch App <ChevronDownIcon />
     </Flex>

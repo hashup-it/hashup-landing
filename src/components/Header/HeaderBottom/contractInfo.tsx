@@ -17,7 +17,7 @@ export const ContractInfo = () => {
       Contract:
       <HashupSingleLogo />
       <Text fontWeight="400">0x2ce.....BA9f</Text>
-      <CopyIcon color={Colors.brandMain} />
+      <CopyIcon color={Colors.brandMain} cursor="pointer" />
       <MetamaskButton />
     </Flex>
   );

@@ -15,6 +15,7 @@ export const MetamaskButton = () => {
       alignItems="center"
       justifyContent="center"
       gridGap="6px"
+      cursor="pointer"
     >
       <MetamaskIcon />
       <Text>ADD TO METAMASK</Text>

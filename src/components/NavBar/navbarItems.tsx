@@ -4,8 +4,10 @@ import React from "react";
 export const NavBarItems = () => {
   return (
     <Flex fontWeight="600" fontSize="14px" color="white" gridGap="24px">
-      <Text>Gamers</Text>.<Text>Creators</Text>.<Text>Investors</Text>.
-      <Text>Token</Text>.<Text>Cartridge</Text>
+      <Text cursor="pointer">Gamers</Text>.
+      <Text cursor="pointer">Creators</Text>.
+      <Text cursor="pointer">Investors</Text>.<Text>Token</Text>.
+      <Text cursor="pointer">Cartridge</Text>
     </Flex>
   );
 };
