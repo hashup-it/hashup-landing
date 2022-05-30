@@ -8,34 +8,10 @@ import TelegramIcon from "../../Icons/telegramIcon";
 import TwitterIcon from "../../Icons/twitterIcon";
 import CommunityButtons from "./communityButtons";
 import { ICommunityButtons } from "./communityButtons";
+import CommunityInfo from "./CommunityInfo";
 
 export const Community = () => {
-  const data: ICommunityButtons[] = [
-    {
-      icon: <TelegramIcon />,
-      name: "Telegram",
-      description:
-        "Join our channel and get in touch with team members and supporters!",
-    },
-    {
-      icon: <DiscordIcon />,
-      name: "Discord",
-      description:
-        "Join the server and connect with game devs and gamers around the world!",
-    },
-    {
-      icon: <TwitterIcon />,
-      name: "Twitter",
-      description:
-        "Get the most insightful tweets about our project and community",
-    },
-    {
-      icon: <LinkedinIcon />,
-      name: "LinkedIn",
-      description: "Connect with us and expand your network",
-    },
-  ];
-
+  
   return (
     <Flex
       flexDirection="column"
@@ -68,7 +44,7 @@ export const Community = () => {
         </Text>
       </Flex>
       <Flex justifyContent="center" gridGap="20px" mt="70px" mb="100px">
-        {data.map((element) => (
+        {CommunityInfo.map((element) => (
           <CommunityButtons {...element} />
         ))}
       </Flex>

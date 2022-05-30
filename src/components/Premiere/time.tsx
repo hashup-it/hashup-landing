@@ -19,11 +19,11 @@ export const Time = () => {
     const distance = countDownDate - now;
 
     // Time calculations for days, hours, minutes and seconds
-    setDays(Math.floor(distance / (1000 * 60 * 60 * 24)).toString());
+    setDays(
+      Math.floor(distance / (1000 * 60 * 60 * 24)).toString());
     setHours(
       Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      ).toString()
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString()
     );
     setMinutes(
       Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString()
