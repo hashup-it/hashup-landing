@@ -15,6 +15,7 @@ import Roadmap from "../components/Roadmap/roadmap";
 const Index = () => (
   <Flex>
     <GlobalContainer>
+      <StickySocials />
       <Header />
       <SectionOne />
       <Advantages />
