@@ -1304,6 +1304,13 @@ prop-types@^15.6.2:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+react-alice-carousel@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/react-alice-carousel/-/react-alice-carousel-2.6.1.tgz#ca50b2c0098714ce66c2c0f69fb6abddce74eea9"
+  integrity sha512-U1EJ7zVVgXDp28hus/Tt9WPAlj9KovFkP2Rd8zpo1rxspDpSQpAxSSyL+w0luMf/8m0KTuDCOcf1M0QLm7X+qQ==
+  dependencies:
+    vanilla-swipe "^2.2.0"
+
 react-clientside-effect@^1.2.6:
   version "1.2.6"
   resolved "https://registry.yarnpkg.com/react-clientside-effect/-/react-clientside-effect-1.2.6.tgz#29f9b14e944a376b03fb650eed2a754dd128ea3a"
@@ -1506,6 +1513,11 @@ use-sidecar@^1.1.2:
   dependencies:
     detect-node-es "^1.1.0"
     tslib "^2.0.0"
+
+vanilla-swipe@^2.2.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/vanilla-swipe/-/vanilla-swipe-2.4.0.tgz#fb26199d26e0a5b26e240b3b19fc4a60110b1dce"
+  integrity sha512-EdZdBWhPQvKz8DWHRXEHxsbJnU5wWKXrXblOV9ENElDnEK3tPkrBlAYK1pgPeuUb8k2DPQEK3tFi6W4cMZgUAg==
 
 yaml@^1.7.2:
   version "1.10.2"

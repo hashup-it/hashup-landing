@@ -10,6 +10,7 @@ import WhatYouGet from "../components/WhatYouGetSection/whatYouGet";
 import Premiere from "../components/Premiere/premiere";
 import Recommendations from "../components/Recommendations/recommendations";
 import Ecosystem from "../components/Ecosystem/ecosystem";
+import Roadmap from "../components/Roadmap/roadmap";
 
 const Index = () => (
   <Flex>
@@ -21,6 +22,7 @@ const Index = () => (
       <WhatYouGet />
       <Recommendations />
       <Ecosystem />
+      <Roadmap />
       <Premiere />
       <Community />
     </GlobalContainer>

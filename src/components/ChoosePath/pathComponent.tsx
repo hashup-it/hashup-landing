@@ -14,11 +14,11 @@ export const PathComponent = ({ topText, name, description }) => {
   return (
     <Flex
       w="33%"
-      p="80px"
+      p="60px"
       direction="column"
       borderRadius="10px"
       backdropFilter="blur(20px)"
-      bgGradient="linear(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 70%)"
+      bgGradient="linear(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)"
     >
       <Flex gridGap="3px" direction="column">
         <Text fontSize="16px" color="white">

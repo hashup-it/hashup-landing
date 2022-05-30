@@ -12,7 +12,6 @@ export interface ICommunityButtons {
 
 export const CommunityButtons: FC<ICommunityButtons> = ({
   name,
-  size,
   description,
   icon,
 }) => {
