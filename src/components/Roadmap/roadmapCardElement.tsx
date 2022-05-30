@@ -15,7 +15,7 @@ enum Type {
 }
 
 export const RoadmapCardElement = ({isDone = false, data}: IRoadmapCardElement) => {
-const typeOptions: { [p: number ]: () => React.ReactNode } = {
+const typeOptions: { [param: number ]: () => React.ReactNode } = {
     [Type.DONE]: () => (
         <Flex gridGap='16px' fontSize='13px' fontWeight='600'>
             <RoadmapTaskDone />

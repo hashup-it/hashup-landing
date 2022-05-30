@@ -6,8 +6,9 @@ export const StickySocials = () => {
   return (
     <Flex
       flexDirection="column"
+      transform='translateY(-50%)'
       gridGap="40px"
-      position="sticky"
+      position="fixed"
       top="50%"
       right="0"
       zIndex="100000"
