@@ -11,7 +11,6 @@ import { ICommunityButtons } from "./communityButtons";
 import CommunityInfo from "./CommunityInfo";
 
 export const Community = () => {
-  
   return (
     <Flex
       flexDirection="column"
@@ -19,6 +18,7 @@ export const Community = () => {
       bgColor="#0A0A0A"
       justifyContent="space-between"
     >
+      <Box h="1px" w="100vw" bgColor="white" opacity="0.1" />
       <Flex
         p="20px"
         fontSize="60px"

@@ -22,9 +22,9 @@ const Index = () => (
       <WhatYouGet />
       <Recommendations />
       <Ecosystem />
+      <Roadmap />
       <Premiere />
       <Community />
-      <Roadmap />
     </GlobalContainer>
   </Flex>
 );
