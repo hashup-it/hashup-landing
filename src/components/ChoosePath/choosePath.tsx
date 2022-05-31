@@ -8,18 +8,21 @@ export const ChoosePath = () => {
   const data: IPathComponents[] = [
     {
       topText: "New economy for",
+      path: '/animations/pad_data.json',
       name: "Creator",
       description:
         "Get familiar with the new model of the creator economy. Publish games without intermediaries and decide how you want to earn. ",
     },
     {
       topText: "Freedom for",
+      path: '/animations/wykres_data.json',
       name: "Gamer",
       description:
         "Share your experiences with other gamers. Take pride in your collection, follow your friends, and dive into the new wave of gaming!",
     },
     {
       topText: "New place for",
+      path: '/animations/pad_data.json',
       name: "Investor",
       description:
         "A new distribution model means new and better opportunities. Discover the new world of investment!",
@@ -58,6 +61,14 @@ export const ChoosePath = () => {
         ))}
       </Flex>
       <Box h="1px" w="100vw" bgColor="white" opacity="0.1" />
+      <Flex 
+        bgColor={Colors.brandMain}
+        borderRadius='full'
+        zIndex='0'
+        filter='blur(100px)'
+        opacity='0.4' w='275px' h='275px' position='absolute' bottom='0' right='32.5%' transform="translate(15%, 15%)"
+        >
+        </Flex>
     </Flex>
   );
 };
