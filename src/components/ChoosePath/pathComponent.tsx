@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import Lottie from "lottie-web";
+import React, {useEffect, useRef} from "react";
 import { Colors } from "../../colors";
 import ArrowRightIcon from "../../Icons/arrowRightIcon";
 import ChevronRightIcon from "../../Icons/chevronRightIcon";
@@ -8,23 +9,49 @@ export interface IPathComponents {
   topText: string;
   name: string;
   description: string;
+  path: string;
 }
 
-export const PathComponent = ({ topText, name, description }) => {
+export const PathComponent = ({ topText, name, description, path }) => {
+
+  const element = useRef<HTMLDivElement>(null); 
+
+  useEffect(() => {
+    if(element.current)
+    Lottie.loadAnimation({
+      path: path,
+      renderer: 'svg',
+      autoplay: true,
+      container: element.current,
+      loop: true,
+    })
+  },[element]);
+
   return (
     <Flex
       w="33%"
+      marginTop='90px'
       p="60px"
+      zIndex='10'
       direction="column"
+      position='relative'
       borderRadius="10px"
       backdropFilter="blur(20px)"
-      bgGradient="linear(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)"
+      bg="linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)"
     >
       <Flex gridGap="3px" direction="column">
+        <Flex ref={element} 
+        position='absolute' 
+        top='0' left='60%' 
+        transform='translate(-50%, -35%)' 
+        w='265px' 
+        h='265px' 
+        zIndex='0'
+        />
         <Text fontSize="16px" color="white">
           {topText}
         </Text>
-        <Text fontSize="56px" color="white" fontWeight="700">
+        <Text fontSize="56px" color="white" fontWeight="700" zIndex='2'>
           {name}
         </Text>
       </Flex>

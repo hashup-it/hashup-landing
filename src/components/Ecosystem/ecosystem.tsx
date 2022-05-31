@@ -65,7 +65,10 @@ export const Ecosystem = () => {
             transform={90}
             onClick={() => setActivePlatform(2)}
           />
-          <PlatformTile first="Game" second="Cap" active={false} />
+          <PlatformTile 
+          first="Game" 
+          second="Cap" 
+          active={false} />
         </Flex>
       </Flex>
       <Flex
