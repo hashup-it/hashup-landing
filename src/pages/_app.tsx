@@ -7,6 +7,7 @@ import GlobalContainer from "../components/GlobalContainter/globalContainer";
 import NavBar from "../components/NavBar/navbar";
 import StickySocials from "../components/StickySocials/stickySocials";
 import { ChakraProvider } from "@chakra-ui/react";
+import Footer from "../components/Footer/footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalContainer>
         <NavBar />
         <Component {...pageProps} />
+        <Footer />
       </GlobalContainer>
     </ChakraProvider>
   );
