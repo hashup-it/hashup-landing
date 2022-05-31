@@ -50,6 +50,7 @@ export const Ecosystem = () => {
             active
             transform={90}
             onClick={() => setActivePlatform(0)}
+            bgColor={activePlatform === 0 ? Colors.brandMain : ""}
           />
           <PlatformTile
             first="Game"
@@ -57,6 +58,7 @@ export const Ecosystem = () => {
             active
             transform={-50}
             onClick={() => setActivePlatform(1)}
+            bgColor={activePlatform === 1 ? Colors.brandMain : ""}
           />
           <PlatformTile
             first="PC"
@@ -64,11 +66,9 @@ export const Ecosystem = () => {
             active
             transform={90}
             onClick={() => setActivePlatform(2)}
+            bgColor={activePlatform === 2 ? Colors.brandMain : ""}
           />
-          <PlatformTile 
-          first="Game" 
-          second="Cap" 
-          active={false} />
+          <PlatformTile first="Game" second="Cap" active={false} />
         </Flex>
       </Flex>
       <Flex

@@ -6,11 +6,19 @@ interface IPlatformTile {
   first: string;
   second: string;
   active: boolean;
+  bgColor?: boolean;
   transform?: number;
   onClick?: () => void;
 }
 
-export const PlatformTile = ({ first, second, active, transform, onClick }) => {
+export const PlatformTile = ({
+  first,
+  second,
+  active,
+  transform,
+  onClick,
+  bgColor,
+}) => {
   return (
     <Flex
       onClick={onClick}
@@ -23,6 +31,7 @@ export const PlatformTile = ({ first, second, active, transform, onClick }) => {
       transition="ease 0.3s"
       position="relative"
       zIndex="100"
+      bgColor={bgColor}
       bgGradient={
         active
           ? `linear(${(
