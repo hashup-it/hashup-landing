@@ -13,13 +13,22 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image }) => {
     <Flex>
       {isActive ? (
         <Flex
-          border={`1px solid ${Colors.brandMain}`}
           borderRadius="0 50px 0 0"
           p="10px"
           position="relative"
-          bgColor="black"
-          boxShadow={`0 4px 10px ${Colors.brandMain}`}
+          bgGradient="linear(180deg, rgba(255, 63, 63, 1), rgba(255, 63, 63, 0))"
+          boxShadow={`0px -15px 34px ${Colors.brandMain}`}
+          backdropFilter="blur(75px)"
         >
+          <Flex
+            bgColor="black"
+            borderRadius="0 50px 0 0"
+            w="calc(100% - 2px)"
+            h="calc(100% - 2px)"
+            position="absolute"
+            top="1px"
+            left="1px"
+          />
           <Flex
             bgColor={Colors.brandMain}
             borderRadius="50%"
@@ -35,8 +44,6 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image }) => {
             zIndex="0"
           />
           <Flex
-            border={`1px solid ${Colors.brandMain}`}
-            bgColor="#0b0b0b"
             borderRadius="0 50px 0 0"
             flexDirection="column"
             color="white"
@@ -45,10 +52,21 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image }) => {
             p="20px 0"
             gridGap="10px"
             zIndex="1"
-            bgGradient="linear(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.0018) 100%)"
-            backdropBlur="75px"
+            bgGradient="linear(180deg, rgba(255, 63, 63, 1), rgba(255, 63, 63, 0))"
+            backdropFilter="blur(75px)"
             position="relative"
           >
+            <Flex
+              bgColor="#0b0b0b"
+              bgGradient="linear(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.0018) 100%)"
+              borderRadius="0 50px 0 0"
+              w="calc(100% - 2px)"
+              h="calc(100% - 2px)"
+              position="absolute"
+              top="1px"
+              left="1px"
+              zIndex="-1"
+            />
             <HashupSingleLogo
               zIndex="10"
               h="50px"
