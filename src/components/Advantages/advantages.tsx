@@ -51,6 +51,7 @@ export const Advantages = () => {
         <ArrowRightIcon color="white" mt="-130px" h="25px" />
         <PhaseCard isActive={true} image={<FirstDistributionModel />} />
       </Flex>
+      <Text color="#0B0B0B">2115</Text>
     </Flex>
   );
 };
