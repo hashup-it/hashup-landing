@@ -11,6 +11,7 @@ import Premiere from "../components/Premiere/premiere";
 import Recommendations from "../components/Recommendations/recommendations";
 import Ecosystem from "../components/Ecosystem/ecosystem";
 import Roadmap from "../components/Roadmap/roadmap";
+import Footer from "../components/Footer/footer";
 
 const Index = () => (
   <Flex>
@@ -26,6 +27,7 @@ const Index = () => (
       <Roadmap />
       <Premiere />
       <Community />
+      <Footer />
     </GlobalContainer>
   </Flex>
 );

@@ -8,7 +8,7 @@ import TelegramIcon from "../../Icons/telegramIcon";
 import TwitterIcon from "../../Icons/twitterIcon";
 import CommunityButtons from "./communityButtons";
 import { ICommunityButtons } from "./communityButtons";
-import CommunityInfo from "./CommunityInfo";
+import CommunityInfo from "./communityInfo";
 
 export const Community = () => {
   return (
