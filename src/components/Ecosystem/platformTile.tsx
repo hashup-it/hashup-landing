@@ -1,17 +1,17 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { Colors } from "../../colors";
 
 interface IPlatformTile {
   first: string;
   second: string;
   active: boolean;
-  bgColor?: boolean;
+  bgColor?: string;
   transform?: number;
   onClick?: () => void;
 }
 
-export const PlatformTile = ({
+export const PlatformTile: FC<IPlatformTile> = ({
   first,
   second,
   active,

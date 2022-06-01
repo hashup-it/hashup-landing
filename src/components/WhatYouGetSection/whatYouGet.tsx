@@ -11,21 +11,21 @@ const CardsInfo = [
     label: "No intermediaries",
     description:
       "Take the fruit of your labor and enjoy the freedom of distribution!",
-    src: "/videos/HashCoinWeb.mp4"
+    src: "assets/videos/HashCoinWeb.mp4",
   },
   {
     number: "02",
     label: "True ownership",
     description:
       "Build your collection. Buy, sell and trade your games permisionless.",
-    src: "/videos/CartridgeWeb.mp4"
+    src: "assets/videos/CartridgeWeb.mp4",
   },
   {
     number: "03",
     label: "Gamers and Creators run the market",
     description:
       "Take the fruit of your labor and enjoy the freedom of distribution!",
-      src: "/videos/LaptopWeb.mp4"
+    src: "assets//videos/LaptopWeb.mp4",
   },
 ];
 
@@ -47,8 +47,9 @@ export const WhatYouGet = () => {
       p="90px 90px 0 90px"
       alignItems="center"
       bgColor="#0A0A0A"
+      mb="100px"
     >
-      <SectionInfoButton label="WHAT DO YOU GET?" zIndex="1"/>
+      <SectionInfoButton label="WHAT DO YOU GET?" zIndex="1" />
       <Flex
         position="relative"
         w="100vw"
@@ -57,7 +58,7 @@ export const WhatYouGet = () => {
         flexDirection="column"
         alignItems="center"
       >
-        <Flex 
+        <Flex
           flexDirection="column"
           gridGap="7px"
           zIndex="10"
