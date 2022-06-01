@@ -4,7 +4,7 @@ import React, { FC } from "react";
 interface Props {
   h?: string;
   zIndex?: string;
-  position?: string;
+  position?: any;
   top?: string;
   right?: string;
   mr?: string;
@@ -28,6 +28,11 @@ export const HashupSingleLogo: FC<Props> = ({
       viewBox="0 0 19 19"
       fill="none"
       zIndex={zIndex}
+      position={position}
+      top={top}
+      right={right}
+      mr={mr}
+      mt={mt}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
