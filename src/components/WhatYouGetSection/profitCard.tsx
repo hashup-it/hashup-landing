@@ -8,10 +8,12 @@ interface IProfitCard {
   number: string;
   label: string;
   description: string;
+  src: string;
 }
 
 export const ProfitCard: FC<IProfitCard> = ({
   number,
+  src,
   label,
   description,
   ...props
@@ -19,6 +21,18 @@ export const ProfitCard: FC<IProfitCard> = ({
   return (
     <Flex flexDirection="column" gridGap="30px" maxW="40vw" {...props}>
       <Flex gridGap="30px" alignItems="center">
+      <Box as= 'video'
+          src={src}
+          autoPlay
+          playsInline
+          preload="none"
+          muted
+          loop
+          position="absolute"
+          w="100vw"
+          left="0"
+          top="0"
+          zIndex="-1"/>
         <Text fontSize="50px" fontWeight="200">
           {number}
         </Text>

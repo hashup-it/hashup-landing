@@ -1,4 +1,5 @@
 import { Flex, Image } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import HashupLogo from "../../Icons/hashupLogo";
 import LanguageSelect from "./languageSelect";
@@ -13,7 +14,7 @@ export const NavBar = () => {
       justifyContent="space-between"
       zIndex="10"
     >
-      <HashupLogo cursor="pointer" />
+      <Link href='/'><HashupLogo cursor="pointer" /></Link>
       <NavBarItems />
       <Flex alignItems="center" gridGap="36px" ml="-80px">
         <LanguageSelect />

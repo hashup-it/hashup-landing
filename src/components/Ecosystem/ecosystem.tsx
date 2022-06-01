@@ -3,7 +3,9 @@ import React, { useState } from "react";
 import { Colors } from "../../colors";
 import SectionInfoButton from "../SectionLabel/sectionInfoButton";
 import GameContractCard from "./gameContractCard";
+import GameXplorerCard from "./gameXplorerCard";
 import PlatformTile from "./platformTile";
+import PCLauncherCard from "./pcLauncherCard";
 
 export const Ecosystem = () => {
   const [activePlatform, setActivePlatform] = useState<number>(0);
@@ -13,10 +15,10 @@ export const Ecosystem = () => {
       element: <GameContractCard />,
     },
     {
-      element: <>1</>,
+      element: <GameXplorerCard />,
     },
     {
-      element: <>2</>,
+      element: <PCLauncherCard />,
     },
   ];
 

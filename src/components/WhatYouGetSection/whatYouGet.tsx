@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Colors } from "../../colors";
 import ChevronRightIcon from "../../Icons/chevronRightIcon";
@@ -11,18 +11,21 @@ const CardsInfo = [
     label: "No intermediaries",
     description:
       "Take the fruit of your labor and enjoy the freedom of distribution!",
+    src: "/videos/HashCoinWeb.mp4"
   },
   {
     number: "02",
     label: "True ownership",
     description:
       "Build your collection. Buy, sell and trade your games permisionless.",
+    src: "/videos/CartridgeWeb.mp4"
   },
   {
     number: "03",
     label: "Gamers and Creators run the market",
     description:
       "Take the fruit of your labor and enjoy the freedom of distribution!",
+      src: "/videos/LaptopWeb.mp4"
   },
 ];
 
@@ -45,7 +48,7 @@ export const WhatYouGet = () => {
       alignItems="center"
       bgColor="#0A0A0A"
     >
-      <SectionInfoButton label="WHAT DO YOU GET?" zIndex="1" />
+      <SectionInfoButton label="WHAT DO YOU GET?" zIndex="1"/>
       <Flex
         position="relative"
         w="100vw"
@@ -54,20 +57,10 @@ export const WhatYouGet = () => {
         flexDirection="column"
         alignItems="center"
       >
-        <Image
-          src="/assets/whatGivesYouBg.png"
-          position="absolute"
-          w="100vw"
-          h="100vh"
-          left="0"
-          top="0"
-          zIndex="0"
-          opacity={card === 0 ? "1" : "0"}
-        />
-        <Flex
+        <Flex 
           flexDirection="column"
           gridGap="7px"
-          zIndex="1"
+          zIndex="10"
           alignItems="center"
           w="70%"
           mt="30px"
@@ -98,6 +91,7 @@ export const WhatYouGet = () => {
             number={CardsInfo[card].number}
             label={CardsInfo[card].label}
             description={CardsInfo[card].description}
+            src={CardsInfo[card].src}
           />
           <Flex gridGap="10px">
             <Flex
