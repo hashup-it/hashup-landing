@@ -20,7 +20,7 @@ export const Advantages = () => {
       justifyContent="space-between"
     >
       <SectionInfoButton label="HOW DOES IT WORK" />
-      <HashupLogoBg position="absolute" top="100vh" right="0" zIndex="1" />
+      <HashupLogoBg position="absolute" top="110vh" right="0" zIndex="1" />
       <Flex
         maxW="60vw"
         textAlign="center"

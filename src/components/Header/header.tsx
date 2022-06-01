@@ -11,18 +11,24 @@ export const Header = () => {
       justifyContent="space-between"
       w="100%"
       h="85vh"
-      pb="5px"
+      pb="10px"
+      mb="50px"
     >
-      <Image
+      <Box
+        as="video"
+        src="assets/videos/HashCoinWeb.mp4"
+        autoPlay
+        playsInline
+        preload="none"
+        muted
+        loop
         position="absolute"
-        h="100vh"
         w="100vw"
         left="0"
         top="0"
         zIndex="0"
-        src="/assets/headerBg.png"
+        opacity="0.3"
         bgGradient="linear(180deg, rgba(0, 0, 0, 0) 77.54%, #000000 92.75%)"
-        //opacity="0.3"
       />
       <HeaderMain />
       <HeaderBottom />

@@ -1,13 +1,33 @@
 import { Icon } from "@chakra-ui/react";
-import React from "react";
+import React, { FC } from "react";
 
-export const HashupSingleLogo = ({ h, ...props }) => {
+interface Props {
+  h?: string;
+  zIndex?: string;
+  position?: string;
+  top?: string;
+  right?: string;
+  mr?: string;
+  mt?: string;
+}
+
+export const HashupSingleLogo: FC<Props> = ({
+  h,
+  zIndex,
+  position,
+  top,
+  right,
+  mr,
+  mt,
+  ...props
+}) => {
   return (
     <Icon
       width={h ? h : "19px"}
       height={h ? h : "19px"}
       viewBox="0 0 19 19"
       fill="none"
+      zIndex={zIndex}
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

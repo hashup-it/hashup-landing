@@ -21,7 +21,8 @@ export const ProfitCard: FC<IProfitCard> = ({
   return (
     <Flex flexDirection="column" gridGap="30px" maxW="40vw" {...props}>
       <Flex gridGap="30px" alignItems="center">
-      <Box as= 'video'
+        <Box
+          as="video"
           src={src}
           autoPlay
           playsInline
@@ -32,7 +33,8 @@ export const ProfitCard: FC<IProfitCard> = ({
           w="100vw"
           left="0"
           top="0"
-          zIndex="-1"/>
+          zIndex="-1"
+        />
         <Text fontSize="50px" fontWeight="200">
           {number}
         </Text>

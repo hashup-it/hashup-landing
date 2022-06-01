@@ -8,21 +8,21 @@ export const ChoosePath = () => {
   const data: IPathComponents[] = [
     {
       topText: "New economy for",
-      path: "/animations/pc_v2.json",
+      path: "/assets/animations/pc_v2.json",
       name: "Creator",
       description:
         "Get familiar with the new model of the creator economy. Publish games without intermediaries and decide how you want to earn. ",
     },
     {
       topText: "Freedom for",
-      path: "/animations/wykres_v2.json",
+      path: "/assets/animations/wykres_v2.json",
       name: "Gamer",
       description:
         "Share your experiences with other gamers. Take pride in your collection, follow your friends, and dive into the new wave of gaming!",
     },
     {
       topText: "New place for",
-      path: "/animations/pad_v2.json",
+      path: "/assets/animations/pad_v2.json",
       name: "Investor",
       description:
         "A new distribution model means new and better opportunities. Discover the new world of investment!",
