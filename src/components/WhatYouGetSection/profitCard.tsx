@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { Colors } from "../../colors";
 import ArrowRightIcon from "../../Icons/arrowRightIcon";
 import ChevronRightIcon from "../../Icons/chevronRightIcon";
+import VideoBackground from "./videoBackground";
 
 interface IProfitCard {
   number: string;
