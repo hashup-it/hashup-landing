@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import React, {useRef} from "react";
 import { Colors } from "../../colors";
 import ArrowRightIcon from "../../Icons/arrowRightIcon";
 import FirstDistributionModel from "../../Icons/firstDistributionModel";
@@ -7,11 +7,16 @@ import HashupLogoBg from "../../Icons/hashupLogoBg";
 import SecondDistributionModel from "../../Icons/secondDistributionModel";
 import SectionInfoButton from "../SectionLabel/sectionInfoButton";
 import PhaseCard from "./phaseCard";
+import { ScrollImages } from "./scrollImages";
 
 export const Advantages = () => {
+
+  const refferencePoint = useRef(null!)
+
   return (
     <Flex
-      zIndex="0"
+      ref={refferencePoint}
+      zIndex="1"
       flexDirection="column"
       bgColor="#0A0A0A"
       w="100vw"
@@ -20,7 +25,7 @@ export const Advantages = () => {
       justifyContent="space-between"
     >
       <SectionInfoButton label="HOW DOES IT WORK" />
-      <HashupLogoBg position="absolute" top="110vh" right="0" zIndex="1" />
+      <ScrollImages animationHookReference={refferencePoint} />
       <Flex
         maxW="60vw"
         textAlign="center"
