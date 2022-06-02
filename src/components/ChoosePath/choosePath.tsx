@@ -1,5 +1,6 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import React, { useEffect } from "react";
+import { Box, Flex, SlideFade, Text } from "@chakra-ui/react";
+import React, { useRef, useEffect } from "react";
+import { useInViewport } from "react-in-viewport";
 import { Colors } from "../../colors";
 import SectionInfoButton from "../SectionLabel/sectionInfoButton";
 import PathComponent, { IPathComponents } from "./pathComponent";
@@ -29,6 +30,14 @@ export const ChoosePath = () => {
     },
   ];
 
+  const ref = useRef(null);
+  const { enterCount } = useInViewport(
+    ref,
+    {},
+    { disconnectOnLeave: false },
+    {}
+  );
+
   return (
     <Flex
       direction="column"
@@ -46,7 +55,14 @@ export const ChoosePath = () => {
         opacity="0.1"
       />
       <SectionInfoButton label="WHO YOU ARE?" />
-      <Flex p="20px" fontSize="60px" color="#ffffff" fontWeight="700">
+      <Flex
+        p="20px"
+        fontSize="60px"
+        color="#ffffff"
+        fontWeight="700"
+        ref={ref}
+        justifyContent="center"
+      >
         <Text> Choose a Path</Text>
         <strong>.</strong>
       </Flex>

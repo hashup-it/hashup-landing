@@ -1,10 +1,19 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, Flex, SlideFade, Text } from "@chakra-ui/react";
+import React, { useRef } from "react";
+import { useInViewport } from "react-in-viewport";
 import { Colors } from "../../colors";
 import Newsletter from "./newsletter";
 import Time from "./time";
 
 export const Premiere = () => {
+  const ref = useRef(null);
+  const { enterCount } = useInViewport(
+    ref,
+    {},
+    { disconnectOnLeave: false },
+    {}
+  );
+
   return (
     <Flex
       h="100vh"
@@ -23,35 +32,38 @@ export const Premiere = () => {
         bgColor="white"
         opacity="0.1"
       />
-      <Flex
-        position="absolute"
-        borderRadius="50%"
-        w="600px"
-        h="600px"
-        bgGradient="radial(rgba(255,63,63,0.4) 0%, rgba(0,0,0,0.2) 60%)"
-      />
-      <Flex
-        flexDirection="column"
-        justifyContent="space-between"
-        alignItems="center"
-        gridGap="70px"
-      >
-        <Flex flexDirection="column" zIndex="1" alignItems="center">
-          <Text fontSize="110px" fontWeight="700" lineHeight="100%">
-            Premiere
-          </Text>
-          <Text
-            fontSize="50px"
-            fontWeight="800"
-            lineHeight="100%"
-            letterSpacing="0.3em"
-          >
-            <strong>21</strong>th June
-          </Text>
+      <SlideFade in={enterCount > 0} offsetY="25vh">
+        <Flex
+          ref={ref}
+          position="absolute"
+          borderRadius="50%"
+          w="600px"
+          h="600px"
+          bgGradient="radial(rgba(255,63,63,0.4) 0%, rgba(0,0,0,0.2) 60%)"
+        />
+        <Flex
+          flexDirection="column"
+          justifyContent="space-between"
+          alignItems="center"
+          gridGap="70px"
+        >
+          <Flex flexDirection="column" zIndex="1" alignItems="center">
+            <Text fontSize="110px" fontWeight="700" lineHeight="100%">
+              Premiere
+            </Text>
+            <Text
+              fontSize="50px"
+              fontWeight="800"
+              lineHeight="100%"
+              letterSpacing="0.3em"
+            >
+              <strong>21</strong>th June
+            </Text>
+          </Flex>
+          <Time />
+          <Newsletter />
         </Flex>
-        <Time />
-        <Newsletter />
-      </Flex>
+      </SlideFade>
       <Box
         w="100vw"
         h="1px"

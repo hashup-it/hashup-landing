@@ -1,5 +1,6 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import React, {useRef} from "react";
+import { Box, Flex, SlideFade, Text } from "@chakra-ui/react";
+import React, { useEffect, useRef, useState } from "react";
+import { useInViewport } from "react-in-viewport";
 import { Colors } from "../../colors";
 import ArrowRightIcon from "../../Icons/arrowRightIcon";
 import FirstDistributionModel from "../../Icons/firstDistributionModel";
@@ -10,13 +11,44 @@ import PhaseCard from "./phaseCard";
 import { ScrollImages } from "./scrollImages";
 
 export const Advantages = () => {
+  const [activeCard, setActiveCard] = useState<number>(0);
 
-  const refferencePoint = useRef(null!)
+  const ref = useRef(null);
+  const { enterCount } = useInViewport(
+    ref,
+    {},
+    { disconnectOnLeave: false },
+    {}
+  );
+
+  const inputRef = useRef(null);
+  const scrollHandler = (_) => {
+    if (inputRef.current.getBoundingClientRect().top > 0) setActiveCard(0);
+    else if (
+      inputRef.current.getBoundingClientRect().top < 0 &&
+      inputRef.current.getBoundingClientRect().top >
+        -0.3 * inputRef.current.getBoundingClientRect().height
+    )
+      setActiveCard(1);
+    else if (
+      inputRef.current.getBoundingClientRect().top <
+      -0.3 * inputRef.current.getBoundingClientRect().height
+    )
+      setActiveCard(2);
+    console.log(inputRef.current.getBoundingClientRect());
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler, true);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler, true);
+    };
+  }, []);
 
   return (
     <Flex
-      ref={refferencePoint}
-      zIndex="1"
+      ref={inputRef}
+      zIndex="0"
       flexDirection="column"
       bgColor="#0A0A0A"
       w="100vw"
@@ -26,6 +58,7 @@ export const Advantages = () => {
     >
       <SectionInfoButton label="HOW DOES IT WORK" />
       <ScrollImages animationHookReference={refferencePoint} />
+      <SlideFade in={enterCount > 0} offsetY="300px">
       <Flex
         maxW="60vw"
         textAlign="center"
@@ -56,7 +89,7 @@ export const Advantages = () => {
         <ArrowRightIcon color="white" mt="-130px" h="25px" />
         <PhaseCard isActive={true} image={<FirstDistributionModel />} />
       </Flex>
-      <Text color="#0B0B0B">2115</Text>
+      </SlideFade>
     </Flex>
   );
 };
