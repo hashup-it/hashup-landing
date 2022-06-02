@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { Colors } from "../../colors";
 import SectionInfoButton from "../SectionLabel/sectionInfoButton";
 import PathComponent, { IPathComponents } from "./pathComponent";
@@ -28,6 +28,7 @@ export const ChoosePath = () => {
         "A new distribution model means new and better opportunities. Discover the new world of investment!",
     },
   ];
+
   return (
     <Flex
       direction="column"

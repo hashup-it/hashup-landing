@@ -11,6 +11,7 @@ import Premiere from "../components/Premiere/premiere";
 import Recommendations from "../components/Recommendations/recommendations";
 import Ecosystem from "../components/Ecosystem/ecosystem";
 import Roadmap from "../components/Roadmap/roadmap";
+import React, { Suspense } from "react";
 
 const Index = () => (
   <Flex>
@@ -18,7 +19,7 @@ const Index = () => (
       <StickySocials />
       <Header />
       <SectionOne />
-      <Advantages />
+      <Advantages />        
       <ChoosePath />
       <WhatYouGet />
       <Recommendations />

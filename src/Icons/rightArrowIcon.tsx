@@ -14,7 +14,7 @@ export const RightArrowIcon = () => {
         stroke="#CDCDCD" 
         stroke-width="1.5" 
         stroke-linecap="round" 
-        stroke-linejoin="round"/>
+        strokeLinejoin="round"/>
     </Icon>
   )
 }

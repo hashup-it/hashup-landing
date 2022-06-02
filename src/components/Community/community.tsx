@@ -45,7 +45,7 @@ export const Community = () => {
       </Flex>
       <Flex justifyContent="center" gridGap="20px" mt="70px" mb="100px">
         {CommunityInfo.map((element) => (
-          <CommunityButtons {...element} />
+          <CommunityButtons key={element.name} {...element} />
         ))}
       </Flex>
       <Box h="1px" w="100vw" bgColor="white" opacity="0.1" />

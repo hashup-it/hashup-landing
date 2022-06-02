@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Lottie from "lottie-web";
-import React, { useEffect, useRef } from "react";
+import React, { Suspense, useEffect, useRef } from "react";
 import { Colors } from "../../colors";
 import ArrowRightIcon from "../../Icons/arrowRightIcon";
 import ChevronRightIcon from "../../Icons/chevronRightIcon";
@@ -13,18 +13,22 @@ export interface IPathComponents {
 }
 
 export const PathComponent = ({ topText, name, description, path }) => {
+
   const element = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (element.current)
+      console.log("firing")
       Lottie.loadAnimation({
         path: path,
         renderer: "svg",
         autoplay: true,
         container: element.current,
         loop: true,
+        rendererSettings: {progressiveLoad: false }
       });
-  }, [element]);
+      
+  }, [element.current]);
 
   return (
     <Flex
