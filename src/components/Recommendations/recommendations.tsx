@@ -27,10 +27,6 @@ export const Recommendations = () => {
     {}
   );
 
-  // const parallax = useParallax({
-  //   speed: -10,
-  // });
-
   return (
     <>
       <SlideFade in={enterCount > 0} offsetY="25vh">
@@ -44,24 +40,27 @@ export const Recommendations = () => {
           gridGap="15vw"
         >
           <Flex position="relative" w="60%" h="60%">
-            <Box
-              bgColor={Colors.brandMain}
-              w="116px"
-              h="116px"
-              position="absolute"
-              top="10%"
-              left="5px"
-            />
-            <Box
-              w="319px"
-              h="319px"
-              borderRadius="50%"
-              position="absolute"
-              top="8%"
-              left="-15%"
-              bgGradient="linear(9deg, #050505 40%, rgba(255,63,63,0.5) 100%)"
-              backdropFilter="blur(71px)"
-            />
+            <Parallax speed={4}>
+              <Box
+                bgColor={Colors.brandMain}
+                w="116px"
+                h="116px"
+                position="absolute"
+                top="10%"
+                left="5px"
+              />
+            </Parallax>
+            <Box position="absolute" top="8%" left="-15%">
+              <Parallax speed={4}>
+                <Box
+                  w="319px"
+                  h="319px"
+                  borderRadius="50%"
+                  bgGradient="linear(9deg, #050505 40%, rgba(255,63,63,0.5) 100%)"
+                  backdropFilter="blur(71px)"
+                />
+              </Parallax>
+            </Box>
             <Image
               src={Opinions[opinion].photo}
               w="300px"
@@ -69,10 +68,11 @@ export const Recommendations = () => {
               position="absolute"
             />
             <Box position="absolute" bottom="30px" right="0">
-              <Parallax speed={-3}>
+              <Parallax speed={-4}>
                 <AvatarDots />
               </Parallax>
             </Box>
+
             <Box
               w="280px"
               h="280px"

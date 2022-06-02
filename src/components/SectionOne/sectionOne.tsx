@@ -2,10 +2,11 @@ import { Box, Flex, Slide, SlideFade, Text } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
 import HashupLogoBg from "../../Icons/hashupLogoBg";
+import { ScrollImages } from "../Advantages/scrollImages";
 import Partners from "./partners";
 
 export const SectionOne = () => {
-  const ref = useRef(null);
+  const ref = useRef(null!);
   const { enterCount } = useInViewport(
     ref,
     {},
@@ -22,40 +23,46 @@ export const SectionOne = () => {
       w="100%"
       zIndex="0"
       position="relative"
+      ref={ref}
     >
-      <SlideFade in={enterCount > 0} offsetY="300px">
-        {/* <HashupLogoBg zIndex="1" position="absolute" right="0" top="100vh" /> */}
-        <Flex
-          ref={ref}
-          flexDirection="column"
-          maxW="42vw"
-          ml="18vw"
-          gridGap="30px"
-          zIndex="10"
-          mb="250px"
-        >
+      <Flex position="absolute" top="-15vh" right="-20vw" w="80vw">
+        <ScrollImages animationHookReference={ref} />
+      </Flex>
+      <Flex flexDirection="column" gridGap="30px" zIndex="10" mb="250px">
+        <SlideFade in={enterCount > 0} offsetY="300px">
+          {/* <HashupLogoBg zIndex="1" position="absolute" right="0" top="100vh" /> */}
           <Flex
+            ref={ref}
             flexDirection="column"
-            fontSize="60px"
-            fontWeight="800"
-            lineHeight="120%"
+            maxW="42vw"
+            ml="18vw"
+            gridGap="30px"
+            zIndex="10"
+            mb="100px"
           >
-            <Text>HashUp is a</Text>
-            <Text>brand-new and</Text>
-            <Text>innovative platform</Text>
+            <Flex
+              flexDirection="column"
+              fontSize="60px"
+              fontWeight="800"
+              lineHeight="120%"
+            >
+              <Text>HashUp is a</Text>
+              <Text>brand-new and</Text>
+              <Text>innovative platform</Text>
+            </Flex>
+            <Text fontSize="25px" fontWeight="600">
+              that combines the advantages of physical and digital game
+              distribution, giving gamers freedom and developers new earning
+              opportunities<strong>.</strong>
+            </Text>
+            <Text fontSize="25px" fontWeight="600">
+              We want to make the software distribution market transparent and
+              fair following the will of gamers and developers<strong>.</strong>
+            </Text>
           </Flex>
-          <Text fontSize="25px" fontWeight="600">
-            that combines the advantages of physical and digital game
-            distribution, giving gamers freedom and developers new earning
-            opportunities<strong>.</strong>
-          </Text>
-          <Text fontSize="25px" fontWeight="600">
-            We want to make the software distribution market transparent and
-            fair following the will of gamers and developers<strong>.</strong>
-          </Text>
-        </Flex>
-        <Partners />
-      </SlideFade>
+          <Partners />
+        </SlideFade>
+      </Flex>
       <Box h="1px" w="100vw" ml="-100px" bgColor="white" opacity="0.1" />
     </Flex>
   );

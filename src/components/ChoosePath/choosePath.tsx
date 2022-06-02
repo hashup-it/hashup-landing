@@ -30,13 +30,13 @@ export const ChoosePath = () => {
     },
   ];
 
-  const ref = useRef(null);
-  const { enterCount } = useInViewport(
-    ref,
-    {},
-    { disconnectOnLeave: false },
-    {}
-  );
+  // const ref = useRef(null!);
+  // const { enterCount } = useInViewport(
+  //   ref,
+  //   {},
+  //   { disconnectOnLeave: false },
+  //   {}
+  // );
 
   return (
     <Flex
@@ -60,7 +60,7 @@ export const ChoosePath = () => {
         fontSize="60px"
         color="#ffffff"
         fontWeight="700"
-        ref={ref}
+        //ref={ref}
         justifyContent="center"
       >
         <Text> Choose a Path</Text>
