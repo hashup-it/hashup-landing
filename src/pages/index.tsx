@@ -11,21 +11,24 @@ import Premiere from "../components/Premiere/premiere";
 import Recommendations from "../components/Recommendations/recommendations";
 import Ecosystem from "../components/Ecosystem/ecosystem";
 import Roadmap from "../components/Roadmap/roadmap";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const Index = () => (
   <Flex>
     <GlobalContainer>
-      <StickySocials />
-      <Header />
-      <SectionOne />
-      <Advantages />
-      <ChoosePath />
-      <WhatYouGet />
-      <Recommendations />
-      <Ecosystem />
-      <Roadmap />
-      <Premiere />
-      <Community />
+      <ParallaxProvider>
+        <StickySocials />
+        <Header />
+        <SectionOne />
+        <Advantages />
+        <ChoosePath />
+        <WhatYouGet />
+        <Recommendations />
+        <Ecosystem />
+        <Roadmap />
+        <Premiere />
+        <Community />
+      </ParallaxProvider>
     </GlobalContainer>
   </Flex>
 );
