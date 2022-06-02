@@ -16,14 +16,14 @@ export const CopyIcon = ({ ...props }) => {
         stroke="#FF3F3F"
         stroke-width="1.6"
         stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
       <path
         d="M3.76016 10.758H3.06016C2.68886 10.758 2.33276 10.6105 2.07021 10.3479C1.80766 10.0854 1.66016 9.72928 1.66016 9.35798V3.05796C1.66016 2.68666 1.80766 2.33056 2.07021 2.06801C2.33276 1.80546 2.68886 1.65796 3.06016 1.65796H9.36017C9.73148 1.65796 10.0876 1.80546 10.3501 2.06801C10.6127 2.33056 10.7602 2.68666 10.7602 3.05796V3.75796"
         stroke="#FF3F3F"
         stroke-width="1.6"
         stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinejoin="round"
       />
     </Icon>
   );

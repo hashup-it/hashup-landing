@@ -11,6 +11,7 @@ import Premiere from "../components/Premiere/premiere";
 import Recommendations from "../components/Recommendations/recommendations";
 import Ecosystem from "../components/Ecosystem/ecosystem";
 import Roadmap from "../components/Roadmap/roadmap";
+import React, { Suspense } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 const Index = () => (

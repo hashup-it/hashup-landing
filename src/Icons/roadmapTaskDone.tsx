@@ -19,7 +19,7 @@ export const RoadmapTaskDone = () => {
         stroke="#FF3F3F" 
         stroke-width="1.5" 
         stroke-linecap="round" 
-        stroke-linejoin="round"/>
+        strokeLinejoin="round"/>
     </Icon>
   )
 }

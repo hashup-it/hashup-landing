@@ -16,7 +16,7 @@ export const Header = () => {
     >
       <Box
         as="video"
-        src="assets/videos/HashCoinWeb.mp4"
+        src="assets/videos/HashUpHeader.mp4"
         autoPlay
         playsInline
         preload="none"
@@ -27,7 +27,7 @@ export const Header = () => {
         left="0"
         top="0"
         zIndex="0"
-        opacity="0.3"
+        opacity="0.7"
         bgGradient="linear(180deg, rgba(0, 0, 0, 0) 77.54%, #000000 92.75%)"
       />
       <HeaderMain />
