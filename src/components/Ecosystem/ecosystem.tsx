@@ -1,11 +1,12 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { Box, Flex, SlideFade, Text } from "@chakra-ui/react";
+import React, { useRef, useState } from "react";
 import { Colors } from "../../colors";
 import SectionInfoButton from "../SectionLabel/sectionInfoButton";
 import GameContractCard from "./gameContractCard";
 import GameXplorerCard from "./gameXplorerCard";
 import PlatformTile from "./platformTile";
 import PCLauncherCard from "./pcLauncherCard";
+import { useInViewport } from "react-in-viewport";
 
 export const Ecosystem = () => {
   const [activePlatform, setActivePlatform] = useState<number>(0);
@@ -22,6 +23,14 @@ export const Ecosystem = () => {
     },
   ];
 
+  const ref = useRef(null);
+  const { enterCount } = useInViewport(
+    ref,
+    {},
+    { disconnectOnLeave: false },
+    {}
+  );
+
   return (
     <Flex
       flexDirection="column"
@@ -31,48 +40,50 @@ export const Ecosystem = () => {
       position="relative"
     >
       <SectionInfoButton label="TEKST DO ZMIANY" />
-      <Flex flexDirection="column" alignItems="center" maxW="43vw">
-        <Text fontSize="70px" fontWeight="700">
-          Our Ecosystem<strong>.</strong>
-        </Text>
-        <Text
-          fontSize="17px"
-          fontWeight="300"
-          lineHeight="170%"
-          color={Colors.greyText}
-          textAlign="center"
-        >
-          We designed our ecosystem as a consistent and complementary platform
-          to ensure the best possible experience
-        </Text>
-        <Flex gridGap="30px" mt="50px" mb="100px">
-          <PlatformTile
-            first="Game"
-            second="Contract"
-            active
-            transform={90}
-            onClick={() => setActivePlatform(0)}
-            bgColor={activePlatform === 0 ? Colors.brandMain : ""}
-          />
-          <PlatformTile
-            first="Game"
-            second="Xplorer"
-            active
-            transform={-50}
-            onClick={() => setActivePlatform(1)}
-            bgColor={activePlatform === 1 ? Colors.brandMain : ""}
-          />
-          <PlatformTile
-            first="PC"
-            second="Launcher"
-            active
-            transform={90}
-            onClick={() => setActivePlatform(2)}
-            bgColor={activePlatform === 2 ? Colors.brandMain : ""}
-          />
-          <PlatformTile first="Game" second="Cap" active={false} />
+      <SlideFade in={enterCount > 0} offsetY="300px">
+        <Flex flexDirection="column" alignItems="center" maxW="43vw" ref={ref}>
+          <Text fontSize="70px" fontWeight="700">
+            Our Ecosystem<strong>.</strong>
+          </Text>
+          <Text
+            fontSize="17px"
+            fontWeight="300"
+            lineHeight="170%"
+            color={Colors.greyText}
+            textAlign="center"
+          >
+            We designed our ecosystem as a consistent and complementary platform
+            to ensure the best possible experience
+          </Text>
+          <Flex gridGap="30px" mt="50px" mb="100px">
+            <PlatformTile
+              first="Game"
+              second="Contract"
+              active
+              transform={90}
+              onClick={() => setActivePlatform(0)}
+              bgColor={activePlatform === 0 ? Colors.brandMain : ""}
+            />
+            <PlatformTile
+              first="Game"
+              second="Xplorer"
+              active
+              transform={-50}
+              onClick={() => setActivePlatform(1)}
+              bgColor={activePlatform === 1 ? Colors.brandMain : ""}
+            />
+            <PlatformTile
+              first="PC"
+              second="Launcher"
+              active
+              transform={90}
+              onClick={() => setActivePlatform(2)}
+              bgColor={activePlatform === 2 ? Colors.brandMain : ""}
+            />
+            <PlatformTile first="Game" second="Cap" active={false} />
+          </Flex>
         </Flex>
-      </Flex>
+      </SlideFade>
       <Flex
         position="absolute"
         borderRadius="50%"
