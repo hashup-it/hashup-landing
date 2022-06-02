@@ -1,5 +1,5 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import { Colors } from "../../colors";
 import ArrowRightIcon from "../../Icons/arrowRightIcon";
 import FirstDistributionModel from "../../Icons/firstDistributionModel";
@@ -10,8 +10,7 @@ import PhaseCard from "./phaseCard";
 import { ScrollImages } from "./scrollImages";
 
 export const Advantages = () => {
-
-  const refferencePoint = useRef(null!)
+  const refferencePoint = useRef(null!);
 
   return (
     <Flex
@@ -25,7 +24,6 @@ export const Advantages = () => {
       justifyContent="space-between"
     >
       <SectionInfoButton label="HOW DOES IT WORK" />
-      <ScrollImages animationHookReference={refferencePoint} />
       <Flex
         maxW="60vw"
         textAlign="center"

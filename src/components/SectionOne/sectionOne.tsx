@@ -1,9 +1,12 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useRef } from "react";
 import HashupLogoBg from "../../Icons/hashupLogoBg";
+import { ScrollImages } from "../Advantages/scrollImages";
 import Partners from "./partners";
 
 export const SectionOne = () => {
+  const refferencePoint = useRef();
+
   return (
     <Flex
       flexDirection="column"
@@ -13,8 +16,11 @@ export const SectionOne = () => {
       w="100%"
       zIndex="0"
       position="relative"
+      ref={refferencePoint}
     >
-      {/* <HashupLogoBg zIndex="1" position="absolute" right="0" top="100vh" /> */}
+      <Flex position="absolute" top="-15vh" right="-20vw" w="80vw">
+        <ScrollImages animationHookReference={refferencePoint} />
+      </Flex>
       <Flex
         flexDirection="column"
         maxW="42vw"
