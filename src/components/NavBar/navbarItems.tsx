@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const NavBarItems = () => {
   return (
-    <Flex fontWeight="600" fontSize="14px" color="white" gridGap="24px">
+    <Flex fontWeight="500" fontSize="14px" color="white" gridGap="24px">
       <Link href="/gamers">
         <Flex wrap="nowrap" gridGap="24px" _hover={{ opacity: "0.5" }}>
           <Text cursor="pointer">Gamers</Text>
