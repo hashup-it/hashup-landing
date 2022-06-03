@@ -6,9 +6,18 @@ import HashupSingleLogo from "../../Icons/hashupSingleLogo";
 interface IPhaseCard {
   isActive: boolean;
   image?: any;
+  num: number;
+  labelFirst: string;
+  labelSecond: string;
 }
 
-export const PhaseCard: FC<IPhaseCard> = ({ isActive, image }) => {
+export const PhaseCard: FC<IPhaseCard> = ({
+  isActive,
+  image,
+  num,
+  labelFirst,
+  labelSecond,
+}) => {
   return (
     <Flex>
       {isActive ? (
@@ -48,7 +57,7 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image }) => {
             flexDirection="column"
             color="white"
             alignItems="center"
-            justifyContent="space-between"
+            justifyContent="center"
             p="20px 0"
             gridGap="10px"
             zIndex="1"
@@ -66,6 +75,10 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image }) => {
               top="1px"
               left="1px"
               zIndex="-1"
+              flexDirection="column"
+              alignItems="center"
+              justifyContent="center"
+              gridGap="10px"
             />
             <HashupSingleLogo
               zIndex="10"
@@ -76,11 +89,18 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image }) => {
               mt="-20px"
               mr="-10px"
             />
+            <Text fontSize="26px" fontWeight="700">
+              <strong>#</strong>
+              {num}
+            </Text>
+            <Text>{labelFirst}</Text>
+            <strong>{labelSecond}</strong>
             {image}
           </Flex>
         </Flex>
       ) : (
         <Flex
+          opacity="0.3"
           flexDirection="column"
           color="#9D9D9D"
           alignItems="center"
@@ -88,6 +108,11 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image }) => {
           p="0px"
           gridGap="10px"
         >
+          <Text fontSize="26px" fontWeight="700">
+            #{num}
+          </Text>
+          <Text>{labelFirst}</Text>
+          {labelSecond}
           {image}
         </Flex>
       )}
