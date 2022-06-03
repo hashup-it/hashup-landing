@@ -88,16 +88,25 @@ export const Advantages = () => {
           <PhaseCard
             isActive={activeCard === 0 ? true : false}
             image={<FirstDistributionModel />}
+            num={1}
+            labelFirst="Physical"
+            labelSecond="Distribution"
           />
           <ArrowRightIcon color="white" mt="-130px" h="25px" />
           <PhaseCard
             isActive={activeCard === 1 ? true : false}
             image={<SecondDistributionModel />}
+            num={2}
+            labelFirst="Digital"
+            labelSecond="Distribution"
           />
           <ArrowRightIcon color="white" mt="-130px" h="25px" />
           <PhaseCard
             isActive={activeCard === 2 ? true : false}
-            image={<SecondDistributionModel />}
+            image={<ThirdDistributionModel />}
+            num={3}
+            labelFirst="Decentralized"
+            labelSecond="Web 3.0."
           />
         </Flex>
       </SlideFade>
