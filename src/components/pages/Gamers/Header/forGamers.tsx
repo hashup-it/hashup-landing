@@ -1,7 +1,7 @@
 import { Flex, Text, Box } from "@chakra-ui/react";
 import React from "react";
-import RedTriangleIcon from "../../../Icons/redTriangleIcon";
-import { Colors } from "../../../colors";
+import RedTriangleIcon from "../../../../Icons/redTriangleIcon";
+import { Colors } from "../../../../colors";
 
 export const ForGamers = () => {
   return (
@@ -34,9 +34,8 @@ export const ForGamers = () => {
         alignItems="center"
         lineHeight="100%"
       >
-        <Flex>Decentralized Games</Flex>
-        <Flex>
-          Marketplace<strong>.</strong>
+        <Flex alignItems='center' maxW='70%' textAlign='center'>
+          <Text> Decentralized Games Marketplace<strong>.</strong></Text>
         </Flex>
       </Flex>
       <Text fontSize='28px' fontWeight='300' pt='32px'>based on blockchain technology</Text>
