@@ -1,11 +1,10 @@
 import { Flex, Text } from '@chakra-ui/react'
 import React from 'react'
+import HeaderGamers from '../components/pages/Gamers/headerGamers'
 
 export const Gamers = () => {
   return (
-    <Flex>
-        <Text>Gamers expectations!</Text>
-    </Flex>
+    <HeaderGamers />
   )
 }
 

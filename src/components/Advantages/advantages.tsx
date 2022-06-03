@@ -6,6 +6,7 @@ import ArrowRightIcon from "../../Icons/arrowRightIcon";
 import FirstDistributionModel from "../../Icons/firstDistributionModel";
 import HashupLogoBg from "../../Icons/hashupLogoBg";
 import SecondDistributionModel from "../../Icons/secondDistributionModel";
+import ThirdDistributionModel from "../../Icons/thirdDistributionModel";
 import SectionInfoButton from "../SectionLabel/sectionInfoButton";
 import PhaseCard from "./phaseCard";
 import { ScrollImages } from "./scrollImages";
@@ -96,7 +97,7 @@ export const Advantages = () => {
           <ArrowRightIcon color="white" mt="-130px" h="25px" />
           <PhaseCard
             isActive={activeCard === 2 ? true : false}
-            image={<FirstDistributionModel />}
+            image={<SecondDistributionModel />}
           />
         </Flex>
       </SlideFade>
