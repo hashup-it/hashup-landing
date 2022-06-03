@@ -26,6 +26,7 @@ export const PathComponent = ({ topText, name, description, path }) => {
       loop: true,
       rendererSettings: { progressiveLoad: false },
     });
+    Lottie.setQuality(20);
   }, [element.current]);
 
   return (
