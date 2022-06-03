@@ -18,7 +18,7 @@ const handleOnScroll = (
   animationHookReference: any,
   setCurrentAssetIndex: React.Dispatch<React.SetStateAction<number>>
 ) => {
-  if (!animationHookReference) {
+  if (!animationHookReference.current) {
     return;
   }
 

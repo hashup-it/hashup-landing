@@ -51,3 +51,4 @@ export const ThirdDistributionModel = () => {
 };
 
 export default ThirdDistributionModel;
+
