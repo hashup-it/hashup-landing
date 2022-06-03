@@ -1224,7 +1224,7 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-lottie-web@^5.9.4:
+lottie-web@^5.7.6, lottie-web@^5.9.4:
   version "5.9.4"
   resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.4.tgz#c01478ee5dd47f916cb4bb79040c11d427872d57"
   integrity sha512-bSs1ZTPifnBVejO1MnQHdfrKfcn02YTCmgOh2wcAEICqRA0V7GzDh8FnwXY6+EzT+i8XOunaIloo/5xC5YNbsA==
@@ -1414,6 +1414,13 @@ react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-lottie-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-lottie-loader/-/react-lottie-loader-1.0.0.tgz#ef101c019e0082344ac4fa013bb0b0f71b611beb"
+  integrity sha512-CD/pAbUw4355+tbFDW7Vx/MMhcYwHfA/sG9GjxwAz6QncysrkuhNIWnrwGI6cdftB/ZkuCMcjpAV2y4eDRdGHw==
+  dependencies:
+    lottie-web "^5.7.6"
 
 react-remove-scroll-bar@^2.3.1:
   version "2.3.1"
