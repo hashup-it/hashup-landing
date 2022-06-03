@@ -86,23 +86,25 @@ export const Advantages = () => {
           mb="90px"
         >
           <PhaseCard
-            isActive={activeCard === 0 ? true : false}
+            isActive={false}
             image={<FirstDistributionModel />}
             num={1}
             labelFirst="Physical"
             labelSecond="Distribution"
+            visible={activeCard === 0 ? true : false}
           />
           <ArrowRightIcon color="white" mt="-130px" h="25px" />
           <PhaseCard
-            isActive={activeCard === 1 ? true : false}
+            isActive={false}
             image={<SecondDistributionModel />}
             num={2}
             labelFirst="Digital"
             labelSecond="Distribution"
+            visible={activeCard === 1 ? true : false}
           />
           <ArrowRightIcon color="white" mt="-130px" h="25px" />
           <PhaseCard
-            isActive={activeCard === 2 ? true : false}
+            isActive={true}
             image={<ThirdDistributionModel />}
             num={3}
             labelFirst="Decentralized"

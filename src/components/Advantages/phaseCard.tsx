@@ -9,6 +9,7 @@ interface IPhaseCard {
   num: number;
   labelFirst: string;
   labelSecond: string;
+  visible?: boolean;
 }
 
 export const PhaseCard: FC<IPhaseCard> = ({
@@ -17,6 +18,7 @@ export const PhaseCard: FC<IPhaseCard> = ({
   num,
   labelFirst,
   labelSecond,
+  visible,
 }) => {
   return (
     <Flex>
@@ -100,9 +102,9 @@ export const PhaseCard: FC<IPhaseCard> = ({
         </Flex>
       ) : (
         <Flex
-          opacity="0.3"
+          opacity={visible ? "1" : "0.3"}
           flexDirection="column"
-          color="#9D9D9D"
+          color="white"
           alignItems="center"
           justifyContent="space-between"
           p="0px"
