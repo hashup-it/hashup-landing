@@ -3,6 +3,7 @@ export const Colors = {
   subGrey: "#6C6C6C",
   greyText: "#9A9A9A",
   darkGrey: "#222222",
+  additional: "#A1A1A6", 
   cartridges: {
     green: "#6AAD38",
     gold: "#BEA379",

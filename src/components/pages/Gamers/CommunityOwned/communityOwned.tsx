@@ -19,15 +19,11 @@ enum ActiveText {
 	SECOND,
 }
 
-export interface ICommunityOwned {
-	selectedComp: number
-}
 
-
-export const CommunityOwned = ({selectedComp}) => {
+export const CommunityOwned = () => {
 	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
   	const [isActiveComponent, setIsActiveComponent] = useState<number>(0)
-	console.log(activeText)
+	
 	const ref = useRef(null);
 	const inputRef = useRef(null!);
 
@@ -115,7 +111,7 @@ export const CommunityOwned = ({selectedComp}) => {
 	};
 
 	return (
-		<Flex direction="column" alignItems="center" ref={inputRef} pb="1500px">
+		<Flex direction="column" alignItems="center" ref={inputRef} pb='320px'>
 			<Flex gridGap="6px">
 				<Text fontSize="12px" color={Colors.brandMain}>
 					COMMUNITY-OWNED

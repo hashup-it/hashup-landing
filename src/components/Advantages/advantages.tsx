@@ -38,6 +38,7 @@ export const Advantages = () => {
       setActiveCard(2);
     console.log(inputRef.current.getBoundingClientRect());
   };
+    
 
   useEffect(() => {
     window.addEventListener("scroll", scrollHandler, true);
