@@ -20,11 +20,11 @@ export const Advantages = () => {
 	const inputRef = useRef(null);
 	const scrollHandler = (_) => {
 		if (inputRef.current.getBoundingClientRect().top > 0) setActiveCard(2);
-		// else if (
-		// 	inputRef.current.getBoundingClientRect().top < 0 &&
-		// 	inputRef.current.getBoundingClientRect().top > -0.3 * inputRef.current.getBoundingClientRect().height
-		// )
-		setActiveCard(2);
+		if (
+			inputRef.current.getBoundingClientRect().top < 0 &&
+			inputRef.current.getBoundingClientRect().top > -0.2 * inputRef.current.getBoundingClientRect().height
+		)
+			setActiveCard(2);
 		if (inputRef.current.getBoundingClientRect().top < -0.3 * inputRef.current.getBoundingClientRect().height) {
 			setActiveCard(1);
 		}
