@@ -3,6 +3,13 @@ import { Flex, Text, SlideFade } from '@chakra-ui/react';
 import { Colors } from '../../../../colors';
 import { useInViewport } from 'react-in-viewport';
 import { access } from 'fs';
+import ComponentAnimated from './componentAnimatedOne';
+import ComponentAnimatedOne from './componentAnimatedOne';
+import ComponentAnimatedSecond from './componentAnimatedSecond';
+import ComponentAnimatedThird from './componentAnimatedThird';
+import ComponentAnimatedForth from './componentAnimatedForth';
+
+import ElementCompOne from './elementCompOne';
 
 export const convertVhToPx = (vh: string) => Number(vh) * (document.documentElement.clientHeight / 100);
 export const convertPxToVw = (px: string) => Number(px) * (100 / document.documentElement.clientWidth);
@@ -12,18 +19,22 @@ enum ActiveText {
 	SECOND,
 }
 
-export const CommunityOwned = () => {
-	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
-  const [isActive, setIsActive] = useState<number>(0)
+export interface ICommunityOwned {
+	selectedComp: number
+}
 
-  
+
+export const CommunityOwned = ({selectedComp}) => {
+	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
+  	const [isActiveComponent, setIsActiveComponent] = useState<number>(0)
+	console.log(activeText)
 	const ref = useRef(null);
 	const inputRef = useRef(null!);
 
 	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
 	const scrollHandler = (any) => {
-		console.log(inputRef.current ? convertPxToVw(inputRef.current.getBoundingClientRect().top) : null);
+		// console.log(inputRef.current ? convertPxToVw(inputRef.current.getBoundingClientRect().top) : null);
 
 		if (!inputRef.current) {
 			return;
@@ -73,53 +84,29 @@ export const CommunityOwned = () => {
 					</Flex>
 				</SlideFade>
 				<SlideFade in={enterCount > 0} offsetY="40px">
-					<Flex direction="column" justifyContent="space-between" >
+					<Flex direction="column" justifyContent="flex-start" >
 						<Flex direction="column" pt="100px" justifyContent="flex-start" textAlign="start">
 							<Text fontSize="60px" maxW='50%' lineHeight="110%">Well, it is, here’s <strong>how</strong>:</Text>
 						</Flex>
-						<Flex>
-							<Flex direction='column'>
-                <Flex ml={isActive === 0 ? '25px' : '0px'} justifyContent='flex-start' alignItems='center' gridGap='20px' textAlign='start' >
-								<Text color={isActive === 0 ? 'white' : '#9a9a9a'} onClick={() => setIsActive(0)} fontSize="26px" fontWeight='500' cursor='pointer' maxW='50%'>
-                Can you sell or trade your game on the secondary market?
-								</Text>
-                {isActive === 0 ? (
-                <Flex fontSize='90px' alignItems='center'>
-                  <Text color={Colors.brandMain}>No</Text>
-                  <Text>.</Text>
-                </Flex> ) : null}
-                </Flex>
-                <Flex ml={isActive === 1 ? '25px' : '0px'} justifyContent='flex-start' alignItems='center' gridGap='20px' textAlign='start' >
-								<Text color={isActive === 1 ? 'white' : '#9a9a9a'} onClick={() => setIsActive(1)} fontSize="26px" fontWeight='500' cursor='pointer' maxW='50%'>
-                Can you sell or trade your game on kurwa kurwa kurwa ket?
-								</Text>
-                {isActive === 1 ? (
-                <Flex fontSize='90px' alignItems='center'>
-                  <Text color={Colors.brandMain}>No</Text>
-                  <Text>.</Text>
-                </Flex> ) : null}
-                </Flex>
-                <Flex ml={isActive === 2 ? '25px' : '0px'} justifyContent='flex-start' alignItems='center' gridGap='20px' textAlign='start' >
-								<Text color={isActive === 2 ? 'white' : '#9a9a9a'} onClick={() => setIsActive(2)} fontSize="26px" fontWeight='500' cursor='pointer' maxW='50%'>
-                Can you sell or trade your game on the secondary market?
-								</Text>
-                {isActive === 2 ? (
-                <Flex fontSize='90px' alignItems='center'>
-                  <Text color={Colors.brandMain}>No</Text>
-                  <Text>.</Text>
-                </Flex> ) : null}
-                </Flex>
-                <Flex ml={isActive === 3 ? '25px' : '0px'} justifyContent='flex-start' alignItems='center' gridGap='20px' textAlign='start' >
-								<Text color={isActive === 3 ? 'white' : '#9a9a9a'} onClick={() => setIsActive(3)} fontSize="26px" fontWeight='500' cursor='pointer' maxW='50%'>
-                Can you sell or trade your game on the secondary market?
-								</Text>
-                {isActive === 3 ? (
-                <Flex fontSize='90px' alignItems='center'>
-                  <Text color={Colors.brandMain}>No</Text>
-                  <Text>.</Text>
-                </Flex> ) : null}
-                </Flex>
-							</Flex>
+						<Flex> 
+							<Flex direction='column' maxW='100%' justifyContent="flex-start" >
+								<Flex justifyContent="flex-start" alignItems='center'>
+								<ComponentAnimatedOne isActive={isActiveComponent} text='Can you trade games with friends like you used to?'  onClick={() => setIsActiveComponent(0)}/>
+							{isActiveComponent === 0 ? <ElementCompOne text='No.'/> : null}
+								</Flex>
+								<Flex justifyContent="flex-start">
+							<ComponentAnimatedSecond text='Can you sell or trade your game on the secondary market?' isActive={isActiveComponent} onClick={() => setIsActiveComponent(1)} />
+							{isActiveComponent === 1 ? <ElementCompOne text='No.'/> : null}
+								</Flex>
+								<Flex justifyContent="flex-start">
+							<ComponentAnimatedThird text='Can you sell or trade your game on the secondary market?' isActive={isActiveComponent} onClick={() => setIsActiveComponent(2)} />
+							{isActiveComponent === 2 ? <ElementCompOne text='Also.'/> : null}
+								</Flex>
+								<Flex justifyContent="flex-start">
+							<ComponentAnimatedForth text='And if you own a cryptocurrency - can you store your games in it?' isActive={isActiveComponent} onClick={() => setIsActiveComponent(3)} />
+							{isActiveComponent === 3 ? <ElementCompOne text='No.'/> : null}
+								</Flex>
+               		</Flex>
 						</Flex>
 					</Flex>
 				</SlideFade>
