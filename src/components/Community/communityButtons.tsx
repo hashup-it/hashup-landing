@@ -31,18 +31,20 @@ export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, ico
 				borderBottomRightRadius: '34px',
 			}}
 		>
-			<Link href={link} target="_blank">
-				<Flex direction="column" cursor="pointer">
-					<Flex justifyContent="space-between" alignItems="center" gridGap="56px">
-						<Flex gridGap="12px" alignItems="center">
-							{icon}
-							<Text color="white" fontSize="32px" fontWeight="400" lineHeight="160%">
-								{name}
-							</Text>
+			<Link href={link}>
+				<a target="_blank">
+					<Flex direction="column" cursor="pointer">
+						<Flex justifyContent="space-between" alignItems="center" gridGap="56px">
+							<Flex gridGap="12px" alignItems="center">
+								{icon}
+								<Text color="white" fontSize="32px" fontWeight="400" lineHeight="160%">
+									{name}
+								</Text>
+							</Flex>
+							<RightArrowIcon />
 						</Flex>
-						<RightArrowIcon />
 					</Flex>
-				</Flex>
+				</a>
 			</Link>
 			<Text color={Colors.subGrey} fontSize="12px" fontWeight="400" lineHeight="140%">
 				{description}
