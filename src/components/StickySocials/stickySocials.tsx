@@ -18,10 +18,12 @@ export const StickySocials = () => {
 			p="10px"
 		>
 			{Socials.map((social) => (
-				<Link href={social.link} target="_blank">
-					<Flex gridGap="0" _hover={{ opacity: '0.7' }}>
-						{social.logo}
-					</Flex>
+				<Link href={social.link}>
+					<a target="_blank">
+						<Flex gridGap="0" _hover={{ opacity: '0.7' }}>
+							{social.logo}
+						</Flex>
+					</a>
 				</Link>
 			))}
 		</Flex>
