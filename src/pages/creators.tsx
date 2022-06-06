@@ -1,11 +1,10 @@
 import { Flex, Text } from '@chakra-ui/react'
 import React from 'react'
+import IndexCreators from '../components/pages/Creators/indexCreators'
 
 export const Creators = () => {
   return (
-    <Flex>
-        <Text> It's for you!</Text>
-    </Flex>
+    <IndexCreators />
   )
 }
 

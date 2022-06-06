@@ -39,6 +39,12 @@ const theme = extendTheme({
       ul: {
         padding: 0,
       },
+      medium: {
+        color: Colors.additional,
+      },
+      regular: {
+        color: Colors.brandMain,
+      },
       strong: {
         color: Colors.brandMain,
       },

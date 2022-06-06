@@ -3,6 +3,13 @@ import { Flex, Text, SlideFade } from '@chakra-ui/react';
 import { Colors } from '../../../../colors';
 import { useInViewport } from 'react-in-viewport';
 import { access } from 'fs';
+import ComponentAnimated from './componentAnimatedOne';
+import ComponentAnimatedOne from './componentAnimatedOne';
+import ComponentAnimatedSecond from './componentAnimatedSecond';
+import ComponentAnimatedThird from './componentAnimatedThird';
+import ComponentAnimatedForth from './componentAnimatedForth';
+import { ElementCompOne } from './elementCompOne';
+
 
 export const convertVhToPx = (vh: string) => Number(vh) * (document.documentElement.clientHeight / 100);
 export const convertPxToVw = (px: string) => Number(px) * (100 / document.documentElement.clientWidth);
@@ -12,18 +19,22 @@ enum ActiveText {
 	SECOND,
 }
 
-export const CommunityOwned = () => {
-	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
-  const [isActive, setIsActive] = useState<number>(0)
 
-  
+export const CommunityOwned = () => {
+
+	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
+  	const [isActiveComponent, setIsActiveComponent] = useState<number>(0)
+
+	console.log(isActiveComponent)
+
+	
 	const ref = useRef(null);
 	const inputRef = useRef(null!);
 
 	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
 	const scrollHandler = (any) => {
-		console.log(inputRef.current ? convertPxToVw(inputRef.current.getBoundingClientRect().top) : null);
+		// console.log(inputRef.current ? convertPxToVw(inputRef.current.getBoundingClientRect().top) : null);
 
 		if (!inputRef.current) {
 			return;
@@ -43,7 +54,28 @@ export const CommunityOwned = () => {
 		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('0')) {
 			// ActiveText.THIRD
 		}
+
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-20')) {
+			setIsActiveComponent(0)
+
+		}
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-40')) {
+			setIsActiveComponent(1)
+
+		}
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-60')) {
+			setIsActiveComponent(2)
+
+		}
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-75' )) {
+			setIsActiveComponent(3)
+		}
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-90')) {
+			setIsActiveComponent(4)
+		}
+		
 	};
+
 
 	useEffect(() => {
 		window.addEventListener('scroll', scrollHandler, true);
@@ -73,53 +105,32 @@ export const CommunityOwned = () => {
 					</Flex>
 				</SlideFade>
 				<SlideFade in={enterCount > 0} offsetY="40px">
-					<Flex direction="column" justifyContent="space-between" >
+					<Flex direction="column" justifyContent="flex-start" >
 						<Flex direction="column" pt="100px" justifyContent="flex-start" textAlign="start">
 							<Text fontSize="60px" maxW='50%' lineHeight="110%">Well, it is, here’s <strong>how</strong>:</Text>
 						</Flex>
-						<Flex>
-							<Flex direction='column'>
-                <Flex ml={isActive === 0 ? '25px' : '0px'} justifyContent='flex-start' alignItems='center' gridGap='20px' textAlign='start' >
-								<Text color={isActive === 0 ? 'white' : '#9a9a9a'} onClick={() => setIsActive(0)} fontSize="26px" fontWeight='500' cursor='pointer' maxW='50%'>
-                Can you sell or trade your game on the secondary market?
-								</Text>
-                {isActive === 0 ? (
-                <Flex fontSize='90px' alignItems='center'>
-                  <Text color={Colors.brandMain}>No</Text>
-                  <Text>.</Text>
-                </Flex> ) : null}
-                </Flex>
-                <Flex ml={isActive === 1 ? '25px' : '0px'} justifyContent='flex-start' alignItems='center' gridGap='20px' textAlign='start' >
-								<Text color={isActive === 1 ? 'white' : '#9a9a9a'} onClick={() => setIsActive(1)} fontSize="26px" fontWeight='500' cursor='pointer' maxW='50%'>
-                Can you sell or trade your game on kurwa kurwa kurwa ket?
-								</Text>
-                {isActive === 1 ? (
-                <Flex fontSize='90px' alignItems='center'>
-                  <Text color={Colors.brandMain}>No</Text>
-                  <Text>.</Text>
-                </Flex> ) : null}
-                </Flex>
-                <Flex ml={isActive === 2 ? '25px' : '0px'} justifyContent='flex-start' alignItems='center' gridGap='20px' textAlign='start' >
-								<Text color={isActive === 2 ? 'white' : '#9a9a9a'} onClick={() => setIsActive(2)} fontSize="26px" fontWeight='500' cursor='pointer' maxW='50%'>
-                Can you sell or trade your game on the secondary market?
-								</Text>
-                {isActive === 2 ? (
-                <Flex fontSize='90px' alignItems='center'>
-                  <Text color={Colors.brandMain}>No</Text>
-                  <Text>.</Text>
-                </Flex> ) : null}
-                </Flex>
-                <Flex ml={isActive === 3 ? '25px' : '0px'} justifyContent='flex-start' alignItems='center' gridGap='20px' textAlign='start' >
-								<Text color={isActive === 3 ? 'white' : '#9a9a9a'} onClick={() => setIsActive(3)} fontSize="26px" fontWeight='500' cursor='pointer' maxW='50%'>
-                Can you sell or trade your game on the secondary market?
-								</Text>
-                {isActive === 3 ? (
-                <Flex fontSize='90px' alignItems='center'>
-                  <Text color={Colors.brandMain}>No</Text>
-                  <Text>.</Text>
-                </Flex> ) : null}
-                </Flex>
-							</Flex>
+						<Flex> 
+							<Flex direction='column' maxW='100%' justifyContent="flex-start" >
+								<Flex justifyContent="flex-start" alignItems='center'>
+								<ComponentAnimatedOne isActive={isActiveComponent} text='Can you trade games with friends like you used to?'/>
+							{isActiveComponent === 0 ? <SlideFade in={enterCount > 0} offsetY="40px">
+
+							<Flex fontSize='90px'> <Text><strong>No</strong>.</Text></Flex> </SlideFade>: null}
+								</Flex>
+								<Flex justifyContent="flex-start">
+							<ComponentAnimatedSecond text='Can you sell or trade your game on the secondary market?' isActive={isActiveComponent} />
+							{isActiveComponent === 1 ? <SlideFade in={enterCount > 0} offsetY="40px"> <Flex fontSize='90px'> <Text><strong>No</strong>.</Text></Flex></SlideFade>  : null}
+								</Flex>
+								<Flex justifyContent="flex-start">
+							<ComponentAnimatedThird text='Can you sell or trade your game on the secondary market?' isActive={isActiveComponent}/>
+							{isActiveComponent === 2 ? <SlideFade in={enterCount > 0} offsetY="40px"> <Flex direction='column' justifyContent='flex-start' fontSize='90px' gridGap='-40px' lineHeight='90%'> <Flex><Text>Also</Text></Flex> <Flex><Text><strong>no</strong>.</Text></Flex></Flex></SlideFade>   : null}
+								</Flex>
+								<Flex justifyContent="flex-start">
+							<ComponentAnimatedForth text='And if you own a cryptocurrency - can you store your games in it?' isActive={isActiveComponent} />
+							{isActiveComponent === 3 ? <SlideFade in={enterCount > 0} offsetY="40px"> <ElementCompOne activeComp={false}/> </SlideFade> : null}
+							{isActiveComponent === 4 ? <SlideFade in={enterCount > 0} offsetY="60px"> <ElementCompOne activeComp={true}/></SlideFade> : null}
+								</Flex>
+               		</Flex>
 						</Flex>
 					</Flex>
 				</SlideFade>
@@ -128,7 +139,7 @@ export const CommunityOwned = () => {
 	};
 
 	return (
-		<Flex direction="column" alignItems="center" ref={inputRef} pb="1500px">
+		<Flex direction="column" alignItems="center" ref={inputRef} pb='320px'>
 			<Flex gridGap="6px">
 				<Text fontSize="12px" color={Colors.brandMain}>
 					COMMUNITY-OWNED

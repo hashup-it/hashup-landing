@@ -1,11 +1,17 @@
 import { Icon } from "@chakra-ui/react";
 import React from "react";
 
-export const PlayVideoIcon = () => {
+
+export interface IPlayVideoIcon {
+  width: number, 
+  height: number,
+}
+
+export const PlayVideoIcon = ({width, height}) => {
   return (
     <Icon
-      width="31px"
-      height="31px"
+      width={width}
+      height={height}
       viewBox="0 0 31 31"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
