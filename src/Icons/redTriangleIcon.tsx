@@ -4,7 +4,7 @@ import React from "react";
 export const RedTriangleIcon = ({ ...props }) => {
   return (
     <Icon
-      width="7px"
+      width="7"
       height="10px"
       viewBox="0 0 7 10"
       fill="none"

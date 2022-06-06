@@ -4,15 +4,14 @@ import { Colors } from '../../../../colors';
 
 
 export interface IComponentAnimatedForth {
-  text: string;
-  onClick?: () => void;
+  text?: string;
   isActive: number;
 }
 
-export const ComponentAnimatedForth = ({text, isActive, onClick}) => {
+export const ComponentAnimatedForth = ({text, isActive,}) => {
 	return (
 		<Flex justifyContent="flex-start" textAlign="start">
-			{isActive === 3 ? (
+			{isActive === 3 || isActive === 4 ? (
 			<Flex justifyContent='flex-start' gridGap='26px' alignItems='center' > 
 			<Box bgColor={Colors.brandMain} w='88px' h='1px'/>
 			<Text
@@ -21,7 +20,6 @@ export const ComponentAnimatedForth = ({text, isActive, onClick}) => {
 				fontWeight="500"
 				cursor="pointer"
 				maxW="50%"
-				onClick={onClick}
 			>
 				{text}
 			</Text>
@@ -29,7 +27,6 @@ export const ComponentAnimatedForth = ({text, isActive, onClick}) => {
 			<Flex justifyContent='flex-start' alignItems='center'> 
 			<Text
 				color='#9a9a9a'
-				onClick={onClick}
 				fontSize="26px"
 				fontWeight="500"
 				cursor="pointer"

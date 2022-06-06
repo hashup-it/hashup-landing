@@ -8,8 +8,8 @@ import ComponentAnimatedOne from './componentAnimatedOne';
 import ComponentAnimatedSecond from './componentAnimatedSecond';
 import ComponentAnimatedThird from './componentAnimatedThird';
 import ComponentAnimatedForth from './componentAnimatedForth';
+import { ElementCompOne } from './elementCompOne';
 
-import ElementCompOne from './elementCompOne';
 
 export const convertVhToPx = (vh: string) => Number(vh) * (document.documentElement.clientHeight / 100);
 export const convertPxToVw = (px: string) => Number(px) * (100 / document.documentElement.clientWidth);
@@ -21,8 +21,12 @@ enum ActiveText {
 
 
 export const CommunityOwned = () => {
+
 	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
   	const [isActiveComponent, setIsActiveComponent] = useState<number>(0)
+
+	console.log(isActiveComponent)
+
 	
 	const ref = useRef(null);
 	const inputRef = useRef(null!);
@@ -50,7 +54,28 @@ export const CommunityOwned = () => {
 		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('0')) {
 			// ActiveText.THIRD
 		}
+
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-20')) {
+			setIsActiveComponent(0)
+
+		}
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-40')) {
+			setIsActiveComponent(1)
+
+		}
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-60')) {
+			setIsActiveComponent(2)
+
+		}
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-75' )) {
+			setIsActiveComponent(3)
+		}
+		if(inputRef.current.getBoundingClientRect().top <= convertVhToPx('-90')) {
+			setIsActiveComponent(4)
+		}
+		
 	};
+
 
 	useEffect(() => {
 		window.addEventListener('scroll', scrollHandler, true);
@@ -87,20 +112,23 @@ export const CommunityOwned = () => {
 						<Flex> 
 							<Flex direction='column' maxW='100%' justifyContent="flex-start" >
 								<Flex justifyContent="flex-start" alignItems='center'>
-								<ComponentAnimatedOne isActive={isActiveComponent} text='Can you trade games with friends like you used to?'  onClick={() => setIsActiveComponent(0)}/>
-							{isActiveComponent === 0 ? <ElementCompOne text='No.'/> : null}
+								<ComponentAnimatedOne isActive={isActiveComponent} text='Can you trade games with friends like you used to?'/>
+							{isActiveComponent === 0 ? <SlideFade in={enterCount > 0} offsetY="40px">
+
+							<Flex fontSize='90px'> <Text><strong>No</strong>.</Text></Flex> </SlideFade>: null}
 								</Flex>
 								<Flex justifyContent="flex-start">
-							<ComponentAnimatedSecond text='Can you sell or trade your game on the secondary market?' isActive={isActiveComponent} onClick={() => setIsActiveComponent(1)} />
-							{isActiveComponent === 1 ? <ElementCompOne text='No.'/> : null}
+							<ComponentAnimatedSecond text='Can you sell or trade your game on the secondary market?' isActive={isActiveComponent} />
+							{isActiveComponent === 1 ? <SlideFade in={enterCount > 0} offsetY="40px"> <Flex fontSize='90px'> <Text><strong>No</strong>.</Text></Flex></SlideFade>  : null}
 								</Flex>
 								<Flex justifyContent="flex-start">
-							<ComponentAnimatedThird text='Can you sell or trade your game on the secondary market?' isActive={isActiveComponent} onClick={() => setIsActiveComponent(2)} />
-							{isActiveComponent === 2 ? <ElementCompOne text='Also.'/> : null}
+							<ComponentAnimatedThird text='Can you sell or trade your game on the secondary market?' isActive={isActiveComponent}/>
+							{isActiveComponent === 2 ? <SlideFade in={enterCount > 0} offsetY="40px"> <Flex direction='column' justifyContent='flex-start' fontSize='90px' gridGap='-40px' lineHeight='90%'> <Flex><Text>Also</Text></Flex> <Flex><Text><strong>no</strong>.</Text></Flex></Flex></SlideFade>   : null}
 								</Flex>
 								<Flex justifyContent="flex-start">
-							<ComponentAnimatedForth text='And if you own a cryptocurrency - can you store your games in it?' isActive={isActiveComponent} onClick={() => setIsActiveComponent(3)} />
-							{isActiveComponent === 3 ? <ElementCompOne text='No.'/> : null}
+							<ComponentAnimatedForth text='And if you own a cryptocurrency - can you store your games in it?' isActive={isActiveComponent} />
+							{isActiveComponent === 3 ? <SlideFade in={enterCount > 0} offsetY="40px"> <ElementCompOne activeComp={false}/> </SlideFade> : null}
+							{isActiveComponent === 4 ? <SlideFade in={enterCount > 0} offsetY="60px"> <ElementCompOne activeComp={true}/></SlideFade> : null}
 								</Flex>
                		</Flex>
 						</Flex>

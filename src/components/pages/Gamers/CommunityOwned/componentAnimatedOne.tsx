@@ -9,7 +9,7 @@ export interface ComponentAnimatedOne {
   isActive: number;
 }
 
-export const ComponentAnimatedOne = ({text, isActive, onClick}) => {
+export const ComponentAnimatedOne = ({text, isActive}) => {
 	return (
 		<Flex justifyContent="flex-start" textAlign="start">
 			{isActive === 0 ? (
@@ -21,7 +21,6 @@ export const ComponentAnimatedOne = ({text, isActive, onClick}) => {
 				fontWeight="500"
 				cursor="pointer"
 				maxW="50%"
-				onClick={onClick}
 			>
 				{text}
 			</Text>
@@ -29,7 +28,6 @@ export const ComponentAnimatedOne = ({text, isActive, onClick}) => {
 			<Flex justifyContent='flex-start' alignItems='center'> 
 			<Text
 				color='#9a9a9a'
-				onClick={onClick}
 				fontSize="26px"
 				fontWeight="500"
 				cursor="pointer"

@@ -5,11 +5,10 @@ import { Colors } from '../../../../colors';
 
 export interface IComponentAnimatedThird {
   text: string;
-  onClick?: () => void;
   isActive: number;
 }
 
-export const ComponentAnimatedThird = ({text, isActive, onClick}) => {
+export const ComponentAnimatedThird = ({text, isActive}) => {
 	return (
 		<Flex justifyContent="flex-start" textAlign="start">
 			{isActive === 2 ? (
@@ -21,7 +20,7 @@ export const ComponentAnimatedThird = ({text, isActive, onClick}) => {
 				fontWeight="500"
 				cursor="pointer"
 				maxW="50%"
-				onClick={onClick}
+				
 			>
 				{text}
 			</Text>
@@ -29,7 +28,6 @@ export const ComponentAnimatedThird = ({text, isActive, onClick}) => {
 			<Flex justifyContent='flex-start' alignItems='center'> 
 			<Text
 				color='#9a9a9a'
-				onClick={onClick}
 				fontSize="26px"
 				fontWeight="500"
 				cursor="pointer"

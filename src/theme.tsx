@@ -42,6 +42,9 @@ const theme = extendTheme({
       medium: {
         color: Colors.additional,
       },
+      regular: {
+        color: Colors.brandMain,
+      },
       strong: {
         color: Colors.brandMain,
       },

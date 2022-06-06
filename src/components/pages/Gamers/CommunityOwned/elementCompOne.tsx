@@ -1,19 +1,21 @@
-import { Flex, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { FC } from 'react';
+import { Flex, Text, Box, SlideFade } from '@chakra-ui/react';
 import { Colors } from '../../../../colors';
 
-export interface IElementCompOne {
-    text: string;
+
+export interface IComponentAnimatedSecond {
+  activeComp: boolean,
 }
 
-export const ElementCompOne = ({text}) => {
-  return (
-    <Flex>
-        <Text color={Colors.brandMain} fontSize='90px'>
-            {text}
-        </Text>
-    </Flex>
-  )
-}
+export const ElementCompOne = ({activeComp}) => {
+	return (
+		<Flex lineHeight='90%' justifyContent='flex-start' textAlign='start' pt='40px'>
+			{activeComp ? (
+        <Text fontSize='310px'><strong>No.</strong></Text>
+      ) :
+        <Text fontSize='90px'>And the answer is</Text>
+			}
+		</Flex>
 
-export default ElementCompOne
+	);
+};
