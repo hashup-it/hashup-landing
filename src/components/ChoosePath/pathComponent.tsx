@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
 import Lottie from 'lottie-web';
+import Link from 'next/link';
 import React, { Suspense, useEffect, useRef } from 'react';
 import LottieLoader from 'react-lottie-loader';
 import { Colors } from '../../colors';
@@ -7,13 +8,14 @@ import ArrowRightIcon from '../../Icons/arrowRightIcon';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
 
 export interface IPathComponents {
+	link: string;
 	topText: string;
 	name: string;
 	description: string;
 	path: string;
 }
 
-export const PathComponent = ({ topText, name, description, path }) => {
+export const PathComponent = ({ link, topText, name, description, path }) => {
 	const element = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -73,20 +75,25 @@ export const PathComponent = ({ topText, name, description, path }) => {
 				</Text>
 			</Flex>
 			<Flex gridGap="6px" paddingTop="30px">
-				<Flex
-					bgColor={Colors.brandMain}
-					color="white"
-					borderRadius="0px 0px 0px 14px"
-					p="8px 13px"
-					fontSize="14"
-					alignItems="center"
-					fontWeight="600"
-				>
-					Learn more
-				</Flex>
-				<Flex bgColor={'#9A2727'} alignItems="center" p="15px">
-					<ChevronRightIcon />
-				</Flex>
+				<Link href={link}>
+					<Flex
+						bgColor={Colors.brandMain}
+						color="white"
+						borderRadius="0px 0px 0px 14px"
+						p="8px 13px"
+						fontSize="14"
+						alignItems="center"
+						fontWeight="600"
+						cursor="pointer"
+					>
+						Learn more
+					</Flex>
+				</Link>
+				<Link href={link}>
+					<Flex bgColor={'#9A2727'} alignItems="center" p="15px" cursor="pointer">
+						<ChevronRightIcon />
+					</Flex>
+				</Link>
 			</Flex>
 		</Flex>
 	);
