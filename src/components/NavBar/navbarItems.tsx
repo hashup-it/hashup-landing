@@ -1,41 +1,25 @@
-import { Flex, Text, Box } from "@chakra-ui/react";
-import React from "react";
-import Link from "next/link";
+import { Flex, Text, Box } from '@chakra-ui/react';
+import React from 'react';
+import Link from 'next/link';
+import NavbarItem from './navbarItem';
+import { useRouter } from 'next/router';
 
 export const NavBarItems = () => {
-  return (
-    <Flex fontWeight="500" fontSize="14px" color="white" gridGap="24px">
-      <Link href="/gamers">
-        <Flex wrap="nowrap" gridGap="24px" _hover={{ opacity: "0.5" }}>
-          <Text cursor="pointer">Gamers</Text>
-        </Flex>
-      </Link>
-      <Text>.</Text>
-      <Link href="/creators">
-        <Flex wrap="nowrap" gridGap="24px" _hover={{ opacity: "0.5" }}>
-          <Text cursor="pointer">Creators</Text>
-        </Flex>
-      </Link>
-      <Text>.</Text>
-      <Link href="/investors">
-        <Flex wrap="nowrap" gridGap="24px" _hover={{ opacity: "0.5" }}>
-          <Text cursor="pointer">Investors</Text>
-        </Flex>
-      </Link>
-      <Text>.</Text>
-      <Link href="/token">
-        <Flex wrap="nowrap" gridGap="24px" _hover={{ opacity: "0.5" }}>
-          <Text cursor="pointer">Token</Text>
-        </Flex>
-      </Link>
-      <Text>.</Text>
-      <Link href="/cartridge">
-        <Flex wrap="nowrap" _hover={{ opacity: "0.5" }}>
-          <Text cursor="pointer">Cartridge</Text>
-        </Flex>
-      </Link>
-    </Flex>
-  );
+	const router = useRouter();
+
+	return (
+		<Flex fontWeight="500" fontSize="14px" color="white" gridGap="24px">
+			<NavbarItem link="gamers" label="Gamers" isActive={router.asPath === '/gamers'} />
+			<Text>.</Text>
+			<NavbarItem link="creators" label="Creators" isActive={router.asPath === '/creators'} />
+			<Text>.</Text>
+			<NavbarItem link="investors" label="Investors" isActive={router.asPath === '/investors'} />
+			<Text>.</Text>
+			<NavbarItem link="token" label="Token" isActive={router.asPath === '/token'} />
+			<Text>.</Text>
+			<NavbarItem link="cartridge" label="Cartridge" isActive={router.asPath === '/cartridge'} />
+		</Flex>
+	);
 };
 
 export default NavBarItems;
