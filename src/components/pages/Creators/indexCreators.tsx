@@ -4,6 +4,7 @@ import HeaderInvestors from './Header/headerCreators';
 import DescriptionCreators from './Description/descriptionCreators';
 import HowTo from './HowTo/howTo';
 import BigHashSection from './BigHashSection/bigHashSection';
+import Licences from './Licences/licences';
 
 export const IndexCreators = () => {
 	return (
@@ -12,6 +13,7 @@ export const IndexCreators = () => {
 			<DescriptionCreators />
 			<HowTo />
 			<BigHashSection />
+			<Licences />
 		</Flex>
 	);
 };

@@ -4,7 +4,15 @@ import ForCreators from './forCreators';
 
 export const HeaderCreators = () => {
 	return (
-		<Flex flexDirection="column" alignItems="center" justifyContent="space-between" w="100%" h="85vh" mb="200px">
+		<Flex
+			flexDirection="column"
+			alignItems="center"
+			justifyContent="space-between"
+			w="100%"
+			h="85vh"
+			mb="200px"
+			mt="100px"
+		>
 			<Image
 				src="/assets/desktopBg.png"
 				w="100vw"
