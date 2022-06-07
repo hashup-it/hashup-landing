@@ -66,7 +66,7 @@ export const ForGamers = () => {
 			>
 				<Text zIndex="4">Run GameXplorer</Text>
 			</Flex>
-			<Box mt="60px" w="1px" h="200px" bgColor={Colors.brandMain} />
+			<Box m="60px 0" w="1px" h="200px" bgColor={Colors.brandMain} />
 		</Flex>
 	);
 };
