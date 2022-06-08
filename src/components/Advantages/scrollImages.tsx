@@ -56,5 +56,6 @@ export const ScrollImages = ({
       );
   }, []);
 
+
   return <Flex>{<Image src={imageUriArray[currentAssetIndex]} />}</Flex>;
 };

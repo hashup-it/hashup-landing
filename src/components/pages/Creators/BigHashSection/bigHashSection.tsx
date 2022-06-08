@@ -1,15 +1,23 @@
 import { Flex, Image, SlideFade, Text } from '@chakra-ui/react';
-import React, { useRef } from 'react';
+import React, { useRef, useState, } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import { Colors } from '../../../../colors';
 import SectionInfoButton from '../../../SectionLabel/sectionInfoButton';
+import { HashScrollImages } from './hashScrollImages';
 
 export const BigHashSection = () => {
-	const ref = useRef(null);
-	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
+	const ref = useRef(null!);
+	const inputRef = useRef(null!)
+	const { enterCount } = useInViewport(
+	  ref,
+	  {},
+	  { disconnectOnLeave: false },
+	  {}
+	);
+	
 	return (
-		<>
+		
 			<SlideFade in={enterCount > 0} offsetY="25vh">
 				<Flex
 					justifyContent="center"
@@ -21,7 +29,12 @@ export const BigHashSection = () => {
 					zIndex="100"
 					ref={ref}
 				>
-					<Image src="assets/bigHash.png" position="absolute" top="-50%" right="-10%" zIndex="-1" />
+					<Flex position='absolute' top='-5%' zIndex='-1' ref={inputRef} >
+						<HashScrollImages animationHookReference={ref}/> {
+							<Image src='assets/images/hash_glitch/HashGlitch_00001.jpg'/>
+						}
+						
+					</Flex>
 					<Flex zIndex="100">
 						<SectionInfoButton label="TEKST" />
 					</Flex>
@@ -38,7 +51,7 @@ export const BigHashSection = () => {
 					</Text>
 				</Flex>
 			</SlideFade>
-		</>
+
 	);
 };
 
