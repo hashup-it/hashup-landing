@@ -19,7 +19,7 @@ export const Advantages = () => {
 
 	const inputRef = useRef(null);
 	const scrollHandler = (_) => {
-		if (inputRef.current.getBoundingClientRect().top > 0) setActiveCard(2);
+		if (inputRef.current.getBoundingClientRect().top > 0) setActiveCard(0);
 		if (
 			inputRef.current.getBoundingClientRect().top < 0 &&
 			inputRef.current.getBoundingClientRect().top > -0.2 * inputRef.current.getBoundingClientRect().height
@@ -69,7 +69,7 @@ export const Advantages = () => {
 						num={1}
 						labelFirst="Physical"
 						labelSecond="Distribution"
-						visible={activeCard === 1 ? false : true}
+						visible={activeCard === 0 ? true : false}
 					/>
 					<ArrowRightIcon color="white" mt="-130px" h="25px" />
 					<PhaseCard
@@ -78,7 +78,7 @@ export const Advantages = () => {
 						num={2}
 						labelFirst="Digital"
 						labelSecond="Distribution"
-						visible={activeCard === 1 ? false : true}
+						visible={activeCard === 2 ? true : false}
 					/>
 					<ArrowRightIcon color="white" mt="-130px" h="25px" />
 					<PhaseCard
