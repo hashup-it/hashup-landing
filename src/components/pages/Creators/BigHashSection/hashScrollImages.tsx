@@ -19,16 +19,16 @@ const handleOnScroll = (
 	}
 
 	const { offsetTop } = animationHookReference.current;
-	const animationBoundStart = offsetTop - window.scrollY + 2300;
-    const animationEnd = offsetTop - window.scrollY - 10
 
-	let assetIndex = Math.min(Math.floor(animationBoundStart / 30), assetCount);
+	const animationBoundStart = offsetTop - window.scrollY + 2400;
+
+	let assetIndex = Math.min(Math.floor(animationBoundStart / 30 ) , assetCount);
 
     if (assetIndex === 0) {
         assetIndex = 1
     }
-	setCurrentAssetIndex(assetIndex);
 
+	setCurrentAssetIndex(assetIndex);
 };
 
 interface IHashupLogoBackground {
@@ -48,7 +48,6 @@ export const HashScrollImages = ({ animationHookReference }: IHashupLogoBackgrou
 			window.removeEventListener('scroll', () => handleOnScroll(animationHookReference, setCurrentAssetIndex));
 	}, []);
     
-    console.log(imageUriArray[currentAssetIndex])
-
+	console.log(imageUriArray[currentAssetIndex])
 	return <Image src={imageUriArray[currentAssetIndex]} />;
 };

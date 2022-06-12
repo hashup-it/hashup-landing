@@ -24,7 +24,7 @@ export const BigHashSection = () => {
 					direction="column"
 					gridGap="45px"
 					ml="10.5%"
-					mt="300px"
+					mt="200px"
 					position="relative"
 					zIndex="100"
 					ref={ref}

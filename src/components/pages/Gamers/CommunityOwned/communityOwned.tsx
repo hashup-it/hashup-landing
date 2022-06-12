@@ -22,15 +22,12 @@ export const CommunityOwned = () => {
 	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
 	const [isActiveComponent, setIsActiveComponent] = useState<number>(0);
 
-	console.log(isActiveComponent);
-
 	const ref = useRef(null);
 	const inputRef = useRef(null!);
 
 	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
 	const scrollHandler = (any) => {
-		// console.log(inputRef.current ? convertPxToVw(inputRef.current.getBoundingClientRect().top) : null);
 
 		if (!inputRef.current) {
 			return;
