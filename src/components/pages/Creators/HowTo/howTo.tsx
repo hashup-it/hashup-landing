@@ -26,7 +26,7 @@ export const HowTo = () => {
 				>
 					<SectionInfoButton label="IT'S SIMPLE" />
 					<Flex flexDirection="column" alignItems="center" gridGap="25px">
-						<Text pt="30px" fontSize="50px" fontWeight="700">
+						<Text pt="30px" fontSize={["24px","32px", "40px", "50px"]} textAlign={{base: 'center'}}fontWeight="700">
 							Our platform is really easy to use<strong>.</strong>
 						</Text>
 						<Text fontSize="35px" fontWeight="700">

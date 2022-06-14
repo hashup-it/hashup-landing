@@ -17,7 +17,7 @@ export const DescriptionCreators = () => {
 						<HashupUnionLogo />
 					</Flex>
 					<Flex
-						fontSize="70px"
+						fontSize={['24px', '32px', '64px', '70px']}
 						maxW="80%"
 						textAlign="center"
 						fontWeight="700"

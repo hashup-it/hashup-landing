@@ -38,10 +38,10 @@ export const BigHashSection = () => {
 					<Flex zIndex="100">
 						<SectionInfoButton label="TEKST" />
 					</Flex>
-					<Text fontSize="60px" fontWeight="600" zIndex="100" maxW="70%">
+					<Text fontSize={['24px', '32px', '46px', '60px']} fontWeight="600" zIndex="100" maxW="70%">
 						Do you see a lack of immediate remuneration of creators?
 					</Text>
-					<Text fontSize="23px" fontWeight="500" as="span" w="50%" zIndex="100">
+					<Text fontSize={["16px", "18px", "23px", "23px"]} fontWeight="500" as="span" w="50%" zIndex="100">
 						Combines a digital game store with a blockchain explorer and social media for gamers.
 						<Text color={Colors.greyText} as="span">
 							{' '}

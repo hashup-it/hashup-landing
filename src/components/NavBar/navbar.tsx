@@ -13,13 +13,13 @@ export const NavBar = () => {
 
 	return (
 		<>
-			<Flex w="100vw" alignItems="center" justifyContent="space-between" zIndex="1000">
+			<Flex w={["100vw", "100vw", "100&", "100%"]} alignItems="center" justifyContent="space-between" zIndex="1000">
 				<Flex
 					display={['flex', 'flex', 'none', 'none']}
 					justifyContent="space-between"
 					alignItems="center"
 					position='fixed'
-					w="100vw"
+					w={["100%", "100%", "100vw", "100vw"]}
 					bgColor='black'
 					gridGap="10px"
 					mt='25px'

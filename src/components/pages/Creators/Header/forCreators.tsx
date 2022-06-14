@@ -31,7 +31,7 @@ export const ForCreators = () => {
 			</Flex>
 			<Flex
 				flexDirection="column"
-				fontSize="80px"
+				fontSize={{base: '38px', lg: "80px"}}
 				fontWeight="800"
 				color="white"
 				gridGap="-40px"
@@ -113,7 +113,7 @@ export const ForCreators = () => {
 				<Text zIndex="4">Publish your game</Text>
 			</Flex>
 			<SlideFade in={enterCount > 0} offsetY="20vh">
-				<Box mt="80px" mb="80px" w="1px" h="100px" bgColor={Colors.brandMain} ref={ref} />
+				<Box mt="80px" mb="80px" w="1px" h="100px" bgColor={Colors.brandMain} ref={ref} pt={{base: '-200px'}} />
 			</SlideFade>
 		</Flex>
 	);
