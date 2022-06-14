@@ -1,3 +1,4 @@
+import Cookie3Logo from "../../Icons/cookie3Logo";
 import PatchkitLogo from "../../Icons/patchkitLogo";
 
 export const Opinions = [
@@ -10,19 +11,19 @@ export const Opinions = [
     photo: "assets/piotrKorzuszek.png",
   },
   {
-    name: "Patryk Rossa",
-    role: "Founder & Software developer",
+    name: "Tom Kopera",
+    role: "CEO & Founder",
     opinion:
-      "We see HashUp as one of the most clever ways of blockchain implementation in the gaming industry. We’re excited to be a part of it!",
-    logo: <PatchkitLogo />,
+    "Hash aims to disrupt the multibilion dollar gaming industry with the use of blockchain as a way to create the new standard of games distribution",
+    logo: "",
     photo: "assets/piotrKorzuszek.png",
   },
   {
-    name: "Damian Sarnecki",
-    role: "Founder & Software developer",
+    name: "Filip Wielanier",
+    role: "CEO & Co-founder",
     opinion:
       "We see HashUp as one of the most clever ways of blockchain implementation in the gaming industry. We’re excited to be a part of it!",
-    logo: <PatchkitLogo />,
+    logo: <Cookie3Logo />,
     photo: "assets/piotrKorzuszek.png",
   },
 ];

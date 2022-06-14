@@ -7,7 +7,7 @@ interface IOpinion {
   name: string;
   role: string;
   opinion: string;
-  logo: any;
+  logo: React.ReactNode | string
 }
 
 export const Opinion: FC<IOpinion> = ({ name, role, opinion, logo }) => {

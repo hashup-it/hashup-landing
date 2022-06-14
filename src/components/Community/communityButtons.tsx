@@ -15,8 +15,10 @@ export interface ICommunityButtons {
 export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, icon, link }) => {
 	return (
 		<Flex
-			w="20%"
+			w={["85%", "75%", "20%","20%"]}
 			h="142px"
+			alignItems={{sm: 'center'}}
+			justifyContent={{sm: 'center'}}
 			borderWidth="1px"
 			borderColor={Colors.brandMain}
 			bgColor="transparent"

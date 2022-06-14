@@ -4,7 +4,7 @@ import StickySocials from "../StickySocials/stickySocials";
 
 export const GlobalContainer = ({ children }) => {
   return (
-    <Flex flexDirection="column" alignItems="center" w="100vw" p="30px 90px">
+    <Flex flexDirection="column" alignItems="center" w="100vw" p={{base: '20px 20px', lg: '30px 90px'}} >
       {children}
     </Flex>
   );

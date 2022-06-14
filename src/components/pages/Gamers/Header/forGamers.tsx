@@ -16,7 +16,7 @@ export const ForGamers = () => {
 			position="absolute"
 			h="100vh"
 		>
-			<Flex justifyContent="space-between" alignItems="center" gridGap="48px">
+			<Flex justifyContent="space-between" alignItems="center" gridGap="48px" display={['none', 'none', 'flex', 'flex']}>
 				<Text color={Colors.greyText}>For Investor</Text>
 				<Flex gridGap="10px" fontWeight="600">
 					<RedTriangleIcon mt="-5px" />
@@ -27,21 +27,21 @@ export const ForGamers = () => {
 			</Flex>
 			<Flex
 				flexDirection="column"
-				fontSize="80px"
+				fontSize={{base: '38px', lg: "80px"}}
 				fontWeight="800"
 				color="white"
 				gridGap="-40px"
 				alignItems="center"
 				lineHeight="100%"
 			>
-				<Flex alignItems="center" maxW="70%" textAlign="center">
+				<Flex alignItems="center" maxW="70%" textAlign="center" >
 					<Text>
 						{' '}
 						Decentralized Games Marketplace<strong>.</strong>
 					</Text>
 				</Flex>
 			</Flex>
-			<Text fontSize="28px" fontWeight="300" pt="32px">
+			<Text fontSize="28px" fontWeight="300" pt="32px" textAlign="center">
 				based on blockchain technology
 			</Text>
 			<Flex

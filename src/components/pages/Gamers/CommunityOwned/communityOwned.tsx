@@ -83,13 +83,13 @@ export const CommunityOwned = () => {
 		</Flex>
 		),
 		[ActiveText.SECOND]: () => (
-			<Flex direction="column" alignItems="center">
+			<Flex direction="column" alignItems="center" textAlign='center'>
 				<SlideFade in={enterCount > 0} offsetY="40px">
-					<Flex direction="column">
-						<Text lineHeight="100%">
+					<Flex direction="column" alignItems='center' textAlign='center'>
+						<Text lineHeight="100%" fontSize={{base: '38px', lg: "90px"}}>
 							Surpised<strong>?</strong>
 						</Text>
-						<Text fontSize="70px" lineHeight="100%">
+						<Text fontSize={{base: '38px', lg: "70px"}} lineHeight="100%">
 							How is that possible?
 						</Text>
 					</Flex>
@@ -183,7 +183,7 @@ export const CommunityOwned = () => {
 			<Flex
 				mt="40px"
 				//direction="column"
-				fontSize="90px"
+				fontSize={{base: '38px', lg: '90px'}}
 				fontWeight="700"
 				alignItems="stretch"
 				justifyContent="space-between"

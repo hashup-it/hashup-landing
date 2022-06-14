@@ -15,18 +15,17 @@ export const HeaderMain = () => {
       gridGap="32px"
       mt="50px"
     >
-      <Flex fontSize="15px" fontWeight="600" color="white" gridGap="4px">
-        <RedTriangleIcon mt="-5px" />
-        Solving the<strong>Gaming Industries'</strong>
-        biggest problems
+      <Flex fontSize={{base: '12px', lg: "15px"}} fontWeight="600" color="white" gridGap="4px" display={{}}>
+        <RedTriangleIcon mt="-5px" />Solving the <strong>Gaming Industries'</strong> biggest problems
         <RedTriangleIcon transform="rotate(3deg)" mt="15px" />
       </Flex>
       <Flex
         flexDirection="column"
-        fontSize="80px"
+        fontSize={{base: '38px', lg: "80px"}}
         fontWeight="800"
         color="white"
         gridGap="-40px"
+        textAlign='center'
         alignItems="center"
         lineHeight="100%"
       >

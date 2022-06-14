@@ -2,7 +2,6 @@ import { Box, Flex, Text } from '@chakra-ui/react';
 import Lottie from 'lottie-web';
 import Link from 'next/link';
 import React, { Suspense, useEffect, useRef } from 'react';
-import LottieLoader from 'react-lottie-loader';
 import { Colors } from '../../colors';
 import ArrowRightIcon from '../../Icons/arrowRightIcon';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
@@ -33,7 +32,7 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 
 	return (
 		<Flex
-			w="33%"
+			w={["85%", "85%", "85%", "33%"]}
 			marginTop="90px"
 			p="60px"
 			zIndex="10"

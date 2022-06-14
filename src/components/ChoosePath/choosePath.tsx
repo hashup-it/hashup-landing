@@ -47,7 +47,7 @@ export const ChoosePath = () => {
 			<SectionInfoButton label="WHO YOU ARE?" />
 			<Flex
 				p="20px"
-				fontSize="60px"
+				fontSize={["32px", "46px", "64px", "70px"]}
 				color="#ffffff"
 				fontWeight="700"
 				//ref={ref}
@@ -62,7 +62,7 @@ export const ChoosePath = () => {
 					innovators, and gamers!
 				</Text>
 			</Flex>
-			<Flex mt="30px" gridGap="32px" justifyContent="center" maxW="85vw">
+			<Flex mt="30px" gridGap="32px" justifyContent="center" maxW="85vw" direction={['column', 'column', 'column', 'row']}>
 				{data.map((element) => (
 					<PathComponent {...element} />
 				))}

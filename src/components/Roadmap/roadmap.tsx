@@ -48,7 +48,7 @@ export const Roadmap = () => {
             mt="38px"
             direction="column"
           >
-            <Text>Where are we right now?</Text>
+            <Text textAlign='center' fontSize={["32px", "46px", "64px", "70px"]}>Where are we right now?</Text>
           </Flex>
           <Flex
             mb="40px"

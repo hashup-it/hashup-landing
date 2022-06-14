@@ -16,6 +16,7 @@ export const StickySocials = () => {
 			cursor="pointer"
 			alignItems="center"
 			p="10px"
+			display={['none', 'none', 'flex', 'flex']}
 		>
 			{Socials.map((social) => (
 				<Link href={social.link}>

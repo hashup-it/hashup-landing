@@ -42,7 +42,7 @@ export const Ecosystem = () => {
       <SectionInfoButton label="TEKST DO ZMIANY" />
       <SlideFade in={enterCount > 0} offsetY="300px">
         <Flex flexDirection="column" alignItems="center" maxW="43vw" ref={ref}>
-          <Text fontSize="70px" fontWeight="700">
+          <Text fontSize={["32px", "46px", "64px", "70px"]} textAlign='center' fontWeight="700">
             Our Ecosystem<strong>.</strong>
           </Text>
           <Text
@@ -55,7 +55,7 @@ export const Ecosystem = () => {
             We designed our ecosystem as a consistent and complementary platform
             to ensure the best possible experience
           </Text>
-          <Flex gridGap="30px" mt="50px" mb="100px">
+          <Flex gridGap={["10px", "20px", "30px", "30px"]} mt="50px" mb="100px" direction={['column', 'row', 'row', 'row']}>
             <PlatformTile
               first="Game"
               second="Contract"

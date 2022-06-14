@@ -22,7 +22,7 @@ export const PlatformTile: FC<IPlatformTile> = ({
   return (
     <Flex
       onClick={onClick}
-      w="180px"
+      w={["95px", "150px", "180px", "180px"]}
       h="114px"
       p="25px"
       justifyContent="center"
@@ -47,7 +47,7 @@ export const PlatformTile: FC<IPlatformTile> = ({
       <Text fontSize="15px" fontWeight="300">
         {first}
       </Text>
-      <Text fontSize="20px" fontWeight="600">
+      <Text fontSize={{base: "16px", lg: "20px"}} fontWeight="600">
         {second}
       </Text>
       {!active && (

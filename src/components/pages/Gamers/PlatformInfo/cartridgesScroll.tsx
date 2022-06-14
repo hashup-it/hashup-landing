@@ -19,7 +19,7 @@ const handleOnScroll = (
 	}
 
 	const { offsetTop } = animationHookReference.current;
-  	const animationBoundEnd = offsetTop - window.scrollY + 500;
+  	const animationBoundEnd = offsetTop - window.scrollY + 400;
 
   const assetIndex = Math.min(Math.floor(animationBoundEnd / 30), assetCount);
   setCurrentAssetIndex(assetIndex);
