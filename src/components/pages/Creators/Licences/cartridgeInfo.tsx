@@ -15,15 +15,33 @@ export interface ICartridgeInfo {
 
 export const CartridgeInfo: FC<ICartridgeInfo> = ({ color, description, supply, fee, price, colorDesc }) => {
 	return (
-		<Flex flexDirection="column" lineHeight="110%" fontSize="65px" fontWeight="700" gridGap="17px">
+		<Flex
+			flexDirection="column"
+			lineHeight="110%"
+			fontSize={{ base: '45px', md: '55px', xl: '65px' }}
+			fontWeight="700"
+			gridGap="17px"
+		>
 			<Flex flexDirection="column">
 				<Text>{color}</Text>
 				<Text>cartridge</Text>
 			</Flex>
-			<Text flexDirection="column" lineHeight="110%" fontSize="20px" fontWeight="500" mt="25px">
+			<Text
+				flexDirection="column"
+				lineHeight="110%"
+				fontSize={{ base: '14px', md: '18px', xl: '20px' }}
+				fontWeight="500"
+				mt="25px"
+			>
 				{description}
 			</Text>
-			<Flex lineHeight="130%" fontSize="18px" fontWeight="500" flexDirection="column" color={Colors.greyText}>
+			<Flex
+				lineHeight="130%"
+				fontSize={{ base: '12px', md: '15px', xl: '18px' }}
+				fontWeight="500"
+				flexDirection="column"
+				color={Colors.greyText}
+			>
 				<Text>Supply: {supply}</Text>
 				<Text>Fee for exchange: {fee}</Text>
 				<Text>Price: {price}</Text>

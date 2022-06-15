@@ -21,8 +21,16 @@ export const Licences = () => {
 	return (
 		<>
 			<SlideFade in={enterCount > 0} offsetY="25vh">
-				<Flex justifyContent="space-between" mt="200px" ml="10.5%" position="relative" h="100vh" ref={ref}>
-					<Flex flexDirection="column" gridGap="60px">
+				<Flex
+					justifyContent={{ base: 'center', xl: 'space-between' }}
+					mt="200px"
+					ml={{ base: '0', xl: '10.5%' }}
+					mr={{ base: '0' }}
+					position="relative"
+					ref={ref}
+					mb={{ base: '35vh', md: '60vh', xl: '10vh' }}
+				>
+					<Flex flexDirection="column" gridGap={{ base: '3rem', xl: '60px' }}>
 						<SectionInfoButton label="LICENCJE" zIndex="1" />
 						<Flex gridGap="25px">
 							<Flex position="relative" onClick={() => setActiveCartridge(0)} cursor="pointer">
@@ -74,7 +82,7 @@ export const Licences = () => {
 							colorDesc={Cartridges[activeCartridge].colorDesc}
 						/>
 					</Flex>
-					<Flex position="absolute" right="-4%" top="10%">
+					<Flex position="absolute" right={{ base: '0%', xl: '-4%' }} top={{ base: '110%', xl: '10%' }}>
 						<Image src={`assets/${Cartridges[activeCartridge].image}`} zIndex="1" />
 						<Flex
 							position="absolute"
@@ -106,7 +114,7 @@ export const Licences = () => {
 								top="calc(50% - 40px)"
 								left="5%"
 								bgColor={Colors.brandMain}
-								p="20px"
+								p={{ base: '14px', md: '18px', xl: '20px' }}
 								borderRadius="5px"
 								zIndex="100"
 								cursor="pointer"
@@ -121,7 +129,7 @@ export const Licences = () => {
 								top="calc(50% - 35px)"
 								right="5%"
 								bgColor={Colors.brandMain}
-								p="20px"
+								p={{ base: '14px', md: '18px', xl: '20px' }}
 								borderRadius="5px"
 								zIndex="100"
 								cursor="pointer"
