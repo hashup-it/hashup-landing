@@ -6,11 +6,8 @@ import FacebookSocialIcon from '../../../Icons/facebookSocialIcon'
 import InstagramSocialIcon from '../../../Icons/instagramSocialIcon'
 import { Flex } from '@chakra-ui/react'
 import SocialIcon from './socialIcon'
+import MediumIcon from '../../../Icons/mediumIcon'
 
-export interface ISocialIconType {
-    iconUrl: React.ReactNode,
-    linkUrl: string,
-}
 
 const socials = [
     {
@@ -32,7 +29,11 @@ const socials = [
     {
         iconUrl: <InstagramSocialIcon />,
         linkUrl: 'https://www.instagram.com/hashup.it/'
-    }
+    },
+    {
+        iconUrl: <MediumIcon />,
+        linkUrl: 'https://medium.com/@HashUp'
+    },
 ]
 
 export const FooterSocials = () => {

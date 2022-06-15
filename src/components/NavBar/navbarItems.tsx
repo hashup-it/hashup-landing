@@ -12,12 +12,6 @@ export const NavBarItems = () => {
 			<NavbarItem link="gamers" label="Gamers" isActive={router.asPath === '/gamers'} />
 			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
 			<NavbarItem link="creators" label="Creators" isActive={router.asPath === '/creators'} />
-			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
-			<NavbarItem link="investors" label="Investors" isActive={router.asPath === '/investors'} />
-			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
-			<NavbarItem link="token" label="Token" isActive={router.asPath === '/token'} />
-			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
-			<NavbarItem link="cartridge" label="Cartridge" isActive={router.asPath === '/cartridge'} />
 		</Flex>
 	);
 };

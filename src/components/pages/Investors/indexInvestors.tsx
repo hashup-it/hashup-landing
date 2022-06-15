@@ -15,7 +15,7 @@ export const IndexInvestors = () => {
 
 
   return (
-    <Flex   flexDirection="column"
+    <Flex flexDirection="column"
       mt="100vh"
       alignItems="flex-start"
       justifyContent="space-between"

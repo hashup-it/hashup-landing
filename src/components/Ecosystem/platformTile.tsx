@@ -21,6 +21,7 @@ export const PlatformTile: FC<IPlatformTile> = ({
 }) => {
   return (
     <Flex
+      display={['none', 'none', 'flex', 'flex']}
       onClick={onClick}
       w={["95px", "150px", "180px", "180px"]}
       h="114px"

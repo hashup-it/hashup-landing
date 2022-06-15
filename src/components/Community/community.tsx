@@ -30,10 +30,7 @@ export const Community = () => {
 						mt="100px"
 						justifyContent="center"
 					>
-						<Text textAlign='center' fontSize={["32px", "46px", "64px", "70px"]}> Join the community</Text>
-						<Text color={Colors.brandMain} fontWeight="700">
-							!
-						</Text>
+						<Text textAlign='center' fontSize={["32px", "46px", "64px", "70px"]}> Join the community<strong>!</strong></Text>
 					</Flex>
 					<Flex
 						fontSize="20px"
@@ -47,7 +44,7 @@ export const Community = () => {
 							creators, innovators, and gamers!
 						</Text>
 					</Flex>
-					<Flex justifyContent="center" gridGap="20px" mt="70px" mb="100px" direction={['column', 'column', 'row', 'row']}>
+					<Flex justifyContent="center" gridGap="20px" mt="70px" mb="100px" direction={['column', 'column', 'row', 'row']} alignItems={{base: 'center'}}>
 						{CommunityInfo.map((element) => (
 							<CommunityButtons {...element} />
 						))}

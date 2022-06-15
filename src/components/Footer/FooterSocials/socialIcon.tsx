@@ -1,7 +1,10 @@
 import { Flex, Image } from '@chakra-ui/react'
 import React, { FC } from 'react'
-import { ISocialIconType } from './socials'
 
+export interface ISocialIconType {
+  iconUrl: React.ReactNode,
+  linkUrl: string,
+}
 
 export const SocialIcon: FC<ISocialIconType> = ({iconUrl, linkUrl}) => {
   return (

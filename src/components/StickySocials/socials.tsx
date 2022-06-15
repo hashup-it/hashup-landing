@@ -3,6 +3,7 @@ import FacebookSocialIcon from '../../Icons/facebookSocialIcon';
 import LinkedinIcon from '../../Icons/linkedinIcon';
 import TelegramSocialIcon from '../../Icons/telegramSocialIcon';
 import TwitterSocialIcon from '../../Icons/twitterSocialIcon';
+import MediumIcon from '../../Icons/mediumIcon';
 
 export const Socials = [
 	{
@@ -24,5 +25,10 @@ export const Socials = [
 		name: 'Facebook',
 		logo: <FacebookSocialIcon />,
 		link: SocialMediaUrls.facebook,
+	},
+	{
+		name: 'Medium',
+		logo: <MediumIcon />,
+		link: SocialMediaUrls.medium,
 	},
 ];

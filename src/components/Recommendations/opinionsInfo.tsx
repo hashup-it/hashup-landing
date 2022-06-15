@@ -22,7 +22,7 @@ export const Opinions = [
     name: "Filip Wielanier",
     role: "CEO & Co-founder",
     opinion:
-      "We see HashUp as one of the most clever ways of blockchain implementation in the gaming industry. We’re excited to be a part of it!",
+      "Hashup combines a wise approach to the blockchain games market and the desire to introduce innovative solutions. Through common goals, it is an ideal long-term partner for us.",
     logo: <Cookie3Logo />,
     photo: "assets/piotrKorzuszek.png",
   },
