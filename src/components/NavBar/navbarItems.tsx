@@ -8,15 +8,15 @@ export const NavBarItems = () => {
 	const router = useRouter();
 
 	return (
-		<Flex fontWeight="500" fontSize="14px" color="white" gridGap="24px">
+		<Flex fontWeight="500" fontSize="14px" color="white" gridGap="24px" direction={['column', 'column', 'row', 'row']}>
 			<NavbarItem link="gamers" label="Gamers" isActive={router.asPath === '/gamers'} />
-			<Text>.</Text>
+			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
 			<NavbarItem link="creators" label="Creators" isActive={router.asPath === '/creators'} />
-			<Text>.</Text>
+			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
 			<NavbarItem link="investors" label="Investors" isActive={router.asPath === '/investors'} />
-			<Text>.</Text>
+			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
 			<NavbarItem link="token" label="Token" isActive={router.asPath === '/token'} />
-			<Text>.</Text>
+			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
 			<NavbarItem link="cartridge" label="Cartridge" isActive={router.asPath === '/cartridge'} />
 		</Flex>
 	);

@@ -29,7 +29,7 @@ export const SectionInfoButton = ({
           borderRadius="0px 15px 0px 15px"
           p="1px"
           bgImage="linear-gradient(92.22deg, #FFFFFF -0.73%, rgba(255, 255, 255, 0.2) 98.18%)"
-          maxW="40vw"
+          maxW={["90vw", "40vw"]}
           _after={{
             content: '""',
             width: "99px",
@@ -47,13 +47,13 @@ export const SectionInfoButton = ({
             bgColor="black"
             w="100%"
             h="100%"
-            p="14px 82px 14px 82px"
+            p={["12px 32px 12px 32px", "14px 82px 14px 82px"]}
             borderRadius="0px 15px 0px 15px"
             justifyContent="center"
           >
             <Text
               color="white"
-              fontSize="14px"
+              fontSize={["12px", "14px", "14px", "14px"]}
               fontWeight="400"
               lineHeight="160%"
               letterSpacing="0.4em"

@@ -42,7 +42,7 @@ export const SectionOne = () => {
           >
             <Flex
               flexDirection="column"
-              fontSize="60px"
+              fontSize={["24px", "32px", "48px" ,"60px"]}
               fontWeight="800"
               lineHeight="120%"
             >
@@ -50,12 +50,12 @@ export const SectionOne = () => {
               <Text>brand-new and</Text>
               <Text>innovative platform</Text>
             </Flex>
-            <Text fontSize="25px" fontWeight="600">
+            <Text fontSize={["14px", "18px", "22px", "25px"]} fontWeight="600">
               that combines the advantages of physical and digital game
               distribution, giving gamers freedom and developers new earning
               opportunities<strong>.</strong>
             </Text>
-            <Text fontSize="25px" fontWeight="600">
+            <Text fontSize={["14px", "18px", "22px", "25px"]} fontWeight="600">
               We want to make the software distribution market transparent and
               fair following the will of gamers and developers<strong>.</strong>
             </Text>

@@ -10,18 +10,21 @@ import GrayCircleLauncher from '../../../../Icons/grayCircleLauncher'
 
 export const LauncherApp = () => {
   return (
-    <Flex justifyContent='space-between' position='relative' p='100px 0px 100px 210px'>
-    <Flex direction="column" justifyContent="flex-start" maxW="40%">
+    <Flex justifyContent='space-between' position='relative' p={['80px 0px 0px 80px', '100px 0px 100px 210px', '100px 0px 100px 210px' , '100px 0px 100px 210px']}>
+    <Flex direction="column" justifyContent="flex-start" maxW={['80%', '60%', '40%', "40%"]}>
     <Flex direction="column" >
         <Flex maxW="90%">
             <SectionInfoButton label="LAUNCHER APP" />
         </Flex>
-        <Flex pt='50px' fontSize='40px' fontWeight='600' lineHeight='110%' direction='column'>
+        <Flex pt='50px' fontSize={['24px', '32px', '40px', '40px']} fontWeight='600' lineHeight='110%' direction='column'>
             <Text>Lorem iplsum </Text>
             <Text>dolores mesnepeh</Text>
             <Text>amit dit<strong>.</strong></Text>
         </Flex>
-        <Box pt='50px' fontSize='26px' maxW='85%' fontWeight='500'>
+        <Flex pt='25px' pb='20px' display={['flex', 'flex', 'none', 'none']}>
+            <Image src='./assets/mobileLauncherApp.png'/>
+        </Flex>
+        <Box pt='50px' fontSize={["16px", "18px", "22px", "24px"]} maxW={['100%', '100%', '100%', '85%']} fontWeight='500'>
             <Text as='span'> Blablabla digital game store with a blockchain explorer and social media for gamers.</Text>
             <Text as='span' color={Colors.additional}>{' '}It also creates an environment for browsing games and user profiles whnvironment for browsing games and user profiles while introducing an element of social media.</Text>
         </Box>
@@ -38,16 +41,16 @@ export const LauncherApp = () => {
     </Flex>
 </Flex>
 
-    <Flex position='absolute' right='-350px' zIndex='2'>
-        <Image src='./assets/launcherApp.png'/>
+    <Flex display={['none', 'none', 'flex', 'flex']} position='absolute'  right='-250px'  zIndex='2'>
+        <Image src='./assets/launcherApp1.png'/>
     </Flex>
-    <Flex position='absolute' top='-2%' right='-100px' zIndex={1}>
+    <Flex display={['none', 'none', 'flex', 'flex']} position='absolute' bottom='30%' right='-100px' zIndex={1}>
         <RedCircleLauncher/>
     </Flex> 
-    <Flex position='absolute' bottom='13%' left='47%' zIndex={1}>
+    <Flex display={['none', 'none', 'flex', 'flex']} position='absolute' bottom='2%' left='45%' zIndex={1}>
         <GrayCircleLauncher/>
     </Flex> 
-    <Flex position='absolute' top='50%' left='70%' zIndex={100} >
+    <Flex display={['none', 'none', 'flex', 'flex']} position='absolute' top='50%' left='70%' zIndex={100} >
         <Image src='./assets/gameWallet.png'/>
     </Flex>
 </Flex>

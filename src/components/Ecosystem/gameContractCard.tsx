@@ -10,7 +10,7 @@ export const GameContractCard = () => {
 		<Flex w="100vw" h="80vh" p="50px 140px">
 			<Flex flexDirection="column" gridGap="50px" maxW="40%">
 				<GameContractLogo />
-				<Text fontSize="40px" fontWeight="700">
+				<Text fontSize={["16px", "24px", "32px", "40px"]} fontWeight="700" maxW=''>
 					Publish games independently without intermediares in 5 steps.
 				</Text>
 				<Text fontSize="17px" fontWeight="300" color={Colors.greyText}>

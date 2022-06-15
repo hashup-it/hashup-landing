@@ -53,7 +53,7 @@ export const Advantages = () => {
 			{/* <ScrollImages animationHookReference={ref} /> */}
 			<SlideFade in={enterCount > 0} offsetY="300px">
 				<Flex maxW="60vw" textAlign="center" flexDirection="column" gridGap="20px" mt="40px" ref={ref}>
-					<Text fontSize="70px" fontWeight="700" lineHeight="130%">
+					<Text fontSize={["32px", "46px", "64px", "70px"]} fontWeight="700" lineHeight="130%">
 						Advantages of the new distribution model<strong>!</strong>
 					</Text>
 					<Text fontSize="17px" fontWeight="300" color={Colors.greyText}>

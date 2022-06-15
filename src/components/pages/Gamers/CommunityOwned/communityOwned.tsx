@@ -22,15 +22,12 @@ export const CommunityOwned = () => {
 	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
 	const [isActiveComponent, setIsActiveComponent] = useState<number>(0);
 
-	console.log(isActiveComponent);
-
 	const ref = useRef(null);
 	const inputRef = useRef(null!);
 
 	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
 	const scrollHandler = (any) => {
-		// console.log(inputRef.current ? convertPxToVw(inputRef.current.getBoundingClientRect().top) : null);
 
 		if (!inputRef.current) {
 			return;
@@ -63,7 +60,7 @@ export const CommunityOwned = () => {
 		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-75')) {
 			setIsActiveComponent(3);
 		}
-		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-85')) {
+		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-90')) {
 			setIsActiveComponent(4);
 		}
 	};
@@ -77,20 +74,22 @@ export const CommunityOwned = () => {
 
 	const typeOptions: { [p: number]: () => React.ReactNode } = {
 		[ActiveText.FIRST]: () => (
+			<Flex direction="column" alignItems="center">
 			<SlideFade in={enterCount > 0} offsetY="40px">
-				<Text lineHeight="100%">
+				<Text lineHeight="100%" maxW='90%'>
 					Did you know that current model of gaming platforms <strong>limits</strong> you?
 				</Text>
 			</SlideFade>
+		</Flex>
 		),
 		[ActiveText.SECOND]: () => (
-			<Flex direction="column" alignItems="center">
+			<Flex direction="column" alignItems="center" textAlign='center'>
 				<SlideFade in={enterCount > 0} offsetY="40px">
-					<Flex direction="column">
-						<Text lineHeight="100%">
+					<Flex direction="column" alignItems='center' textAlign='center'>
+						<Text lineHeight="100%" fontSize={{base: '38px', lg: "90px"}}>
 							Surpised<strong>?</strong>
 						</Text>
-						<Text fontSize="70px" lineHeight="100%">
+						<Text fontSize={{base: '38px', lg: "70px"}} lineHeight="100%">
 							How is that possible?
 						</Text>
 					</Flex>
@@ -184,7 +183,7 @@ export const CommunityOwned = () => {
 			<Flex
 				mt="40px"
 				//direction="column"
-				fontSize="90px"
+				fontSize={{base: '38px', lg: '90px'}}
 				fontWeight="700"
 				alignItems="stretch"
 				justifyContent="space-between"

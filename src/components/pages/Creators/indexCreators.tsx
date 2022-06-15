@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex } from '@chakra-ui/react';
-import HeaderInvestors from './Header/headerCreators';
+import HeaderCreators from './Header/headerCreators';
 import DescriptionCreators from './Description/descriptionCreators';
 import HowTo from './HowTo/howTo';
 import BigHashSection from './BigHashSection/bigHashSection';
@@ -9,7 +9,7 @@ import Licences from './Licences/licences';
 export const IndexCreators = () => {
 	return (
 		<Flex flexDirection="column">
-			<HeaderInvestors />
+			<HeaderCreators />
 			<DescriptionCreators />
 			<HowTo />
 			<BigHashSection />
