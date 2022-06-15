@@ -7,7 +7,7 @@ import GameContractLogo from '../../Icons/gameContractLogo';
 
 export const GameContractCard = () => {
 	return (
-		<Flex w="100vw" h="80vh" p="50px 140px">
+		<Flex w="100vw" h="80vh" p="50px 140px" display={['none', 'none', 'flex', 'flex']}>
 			<Flex flexDirection="column" gridGap="50px" maxW="40%">
 				<GameContractLogo />
 				<Text fontSize={["16px", "24px", "32px", "40px"]} fontWeight="700" maxW=''>

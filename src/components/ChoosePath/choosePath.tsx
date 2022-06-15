@@ -18,7 +18,7 @@ export const ChoosePath = () => {
 		{
 			link: '/gamers',
 			topText: 'Freedom for',
-			path: '/assets/animations/wykres_v2.json',
+			path: '/assets/animations/pad_v2.json',
 			name: 'Gamer',
 			description:
 				'Share your experiences with other gamers. Take pride in your collection, follow your friends, and dive into the new wave of gaming!',
@@ -26,7 +26,7 @@ export const ChoosePath = () => {
 		{
 			link: '/investors',
 			topText: 'New place for',
-			path: '/assets/animations/pad_v2.json',
+			path: '/assets/animations/wykres_v2.json',
 			name: 'Investor',
 			description:
 				'A new distribution model means new and better opportunities. Discover the new world of investment!',

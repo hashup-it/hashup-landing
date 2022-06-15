@@ -7,6 +7,7 @@ import GameXplorerCard from "./gameXplorerCard";
 import PlatformTile from "./platformTile";
 import PCLauncherCard from "./pcLauncherCard";
 import { useInViewport } from "react-in-viewport";
+import MobileEcosystem from "./mobileEcosystem";
 
 export const Ecosystem = () => {
   const [activePlatform, setActivePlatform] = useState<number>(0);
@@ -36,17 +37,16 @@ export const Ecosystem = () => {
       flexDirection="column"
       gridGap="30px"
       alignItems="center"
-      mb="300px"
-      position="relative"
+      mb={["0px", "0px", "300px", "300px"]}
     >
       <SectionInfoButton label="TEKST DO ZMIANY" />
       <SlideFade in={enterCount > 0} offsetY="300px">
-        <Flex flexDirection="column" alignItems="center" maxW="43vw" ref={ref}>
-          <Text fontSize={["32px", "46px", "64px", "70px"]} textAlign='center' fontWeight="700">
+        <Flex direction="column" alignItems="center" maxW={["75vw", "75vw","43vw","43vw"]} ref={ref} >
+          <Text fontSize={["32px", "46px", "64px", "70px"]} fontWeight="700">
             Our Ecosystem<strong>.</strong>
           </Text>
           <Text
-            fontSize="17px"
+            fontSize="18px"
             fontWeight="300"
             lineHeight="170%"
             color={Colors.greyText}
@@ -55,7 +55,10 @@ export const Ecosystem = () => {
             We designed our ecosystem as a consistent and complementary platform
             to ensure the best possible experience
           </Text>
-          <Flex gridGap={["10px", "20px", "30px", "30px"]} mt="50px" mb="100px" direction={['column', 'row', 'row', 'row']}>
+          <Flex display={['flex', 'flex', 'none', 'none']}>
+            <MobileEcosystem />
+          </Flex>
+          <Flex gridGap={["10px", "20px", "30px", "30px"]} mt="50px" mb="100px" display={['none', 'none', 'flex', 'flex']}>
             <PlatformTile
               first="Game"
               second="Contract"
@@ -87,13 +90,14 @@ export const Ecosystem = () => {
       <Flex
         position="absolute"
         borderRadius="50%"
+        display={['none', 'none', 'flex', 'flex']}
         w="600px"
         h="600px"
         top="40%"
         left="40%"
-        bgGradient="radial(rgba(255,63,63,0.4) 0%, rgba(0,0,0,0.2) 60%)"
       />
       {Platforms[activePlatform].element}
+      
     </Flex>
   );
 };

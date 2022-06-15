@@ -17,13 +17,11 @@ export const ForGamers = () => {
 			h="100vh"
 		>
 			<Flex justifyContent="space-between" alignItems="center" gridGap="48px" display={['none', 'none', 'flex', 'flex']}>
-				<Text color={Colors.greyText}>For Investor</Text>
 				<Flex gridGap="10px" fontWeight="600">
 					<RedTriangleIcon mt="-5px" />
 					For Gamers
 					<RedTriangleIcon transform="rotate(3deg)" mt="15px" />
 				</Flex>
-				<Text color={Colors.greyText}>For Creators</Text>
 			</Flex>
 			<Flex
 				flexDirection="column"

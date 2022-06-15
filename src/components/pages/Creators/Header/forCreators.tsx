@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import RedTriangleIcon from '../../../../Icons/redTriangleIcon';
 import { Colors } from '../../../../colors';
 import { useInViewport } from 'react-in-viewport';
+import MobileSlider from './mobileSlider';
 
 export const ForCreators = () => {
 	const ref = useRef(null);
@@ -21,8 +22,6 @@ export const ForCreators = () => {
 			h="100vh"
 		>
 			<Flex justifyContent="space-between" alignItems="center" gridGap="48px">
-				<Text color={Colors.greyText}>For Investor</Text>
-				<Text color={Colors.greyText}>For Gamers</Text>
 				<Flex gridGap="10px" fontWeight="600">
 					<RedTriangleIcon w="" mt="-5px" />
 					For Creators
@@ -45,7 +44,10 @@ export const ForCreators = () => {
 					</Text>
 				</Flex>
 			</Flex>
-			<Flex justifyContent="space-between" fontSize="24px" fontWeight="400" gridGap="96px" pt="40px" pb="30px">
+			<Flex display={['flex', 'flex', 'none', 'none']}>
+					<MobileSlider />
+				</Flex>
+			<Flex justifyContent="space-between" fontSize="24px" fontWeight="400" gridGap="96px" pt="40px" pb="30px" display={['none', 'none', 'flex', 'flex']}>
 				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center">
 					<Text>
 						Do you know how{' '}

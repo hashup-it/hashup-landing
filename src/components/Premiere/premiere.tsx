@@ -32,11 +32,11 @@ export const Premiere = () => {
 				/>
 				<Flex flexDirection="column" justifyContent="space-between" alignItems="center" gridGap="70px">
 					<Flex flexDirection="column" zIndex="1" alignItems="center">
-						<Text fontSize="110px" fontWeight="700" lineHeight="100%">
+						<Text fontSize={["60px", "80px", "90px", "120px"]} fontWeight="700" lineHeight="100%">
 							Premiere
 						</Text>
-						<Text fontSize="50px" fontWeight="800" lineHeight="100%" letterSpacing="0.3em">
-							<strong>21</strong>th June
+						<Text fontSize={["24px", "38px", "46px", "50px"]} fontWeight="800" lineHeight="100%" letterSpacing="0.3em">
+							<strong>21</strong>TH JUNE
 						</Text>
 					</Flex>
 					<Time />

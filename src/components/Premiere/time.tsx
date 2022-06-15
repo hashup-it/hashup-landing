@@ -32,81 +32,84 @@ export const Time = () => {
   }, 1000);
 
   return (
-    <Flex zIndex="1" gridGap="40px" letterSpacing="0.6em">
+    <Flex zIndex="1" gridGap={["5px", "10px", "20px", "40px"]} letterSpacing="0.6em">
       <Flex flexDirection="column" alignItems="center">
         <Text
-          fontSize="80px"
+          fontSize={["32px", "46px", "60px", "80px"]}
           lineHeight="100%"
           fontWeight="200"
           textAlign="center"
         >
           {days.length === 1 ? "0" + days : days}
         </Text>
-        <Text color="#FF0202" fontSize="15px" fontWeight="600">
+        <Text color="white" fontSize={["7px","14px", "14px", "14px"]} fontWeight="600">
           DAYS
         </Text>
       </Flex>
       <Text
-        fontSize="80px"
+        fontSize={["32px", "46px", "60px", "80px"]}
         lineHeight="100%"
         fontWeight="200"
+        color={Colors.brandMain}
         textAlign="center"
       >
         :
       </Text>
       <Flex flexDirection="column" alignItems="center">
         <Text
-          fontSize="80px"
+          fontSize={["32px", "46px", "60px", "80px"]}
           lineHeight="100%"
           fontWeight="200"
           textAlign="center"
         >
           {hours.length === 1 ? "0" + hours : hours}
         </Text>
-        <Text color="#FF0202" fontSize="15px" fontWeight="600">
+        <Text color="white" fontSize={["7px","14px", "14px", "14px"]} fontWeight="600">
           HOURS
         </Text>
       </Flex>
       <Text
-        fontSize="80px"
+        fontSize={["32px", "46px", "60px", "80px"]}
         lineHeight="100%"
         fontWeight="200"
         textAlign="center"
+        color={Colors.brandMain}
       >
         :
       </Text>
       <Flex flexDirection="column" alignItems="center">
         <Text
-          fontSize="80px"
+          fontSize={["32px", "46px", "60px", "80px"]}
           lineHeight="100%"
           fontWeight="200"
           textAlign="center"
         >
           {minutes.length === 1 ? "0" + minutes : minutes}
         </Text>
-        <Text color="#FF0202" fontSize="15px" fontWeight="600">
-          MINUTES
+        <Text color="white" fontSize={["7px","14px", "14px", "14px"]} fontWeight="600">
+          MIN
         </Text>
       </Flex>
       <Text
-        fontSize="80px"
+        fontSize={["32px", "46px", "60px", "80px"]}
         lineHeight="100%"
         fontWeight="200"
         textAlign="center"
+        color={Colors.brandMain}
       >
         :
       </Text>
       <Flex flexDirection="column" alignItems="center">
         <Text
-          fontSize="80px"
+          fontSize={["32px", "46px", "60px", "80px"]}
           lineHeight="100%"
           fontWeight="200"
           textAlign="center"
         >
           {seconds.length === 1 ? "0" + seconds : seconds}
         </Text>
-        <Text color="#FF0202" fontSize="15px" fontWeight="600">
-          SECONDS
+        <Text color="white" fontSize={["7px","14px", "14px", "14px"]} fontWeight="600">
+          SEC
         </Text>
       </Flex>
     </Flex>
