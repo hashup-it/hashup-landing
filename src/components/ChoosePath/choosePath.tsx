@@ -62,7 +62,7 @@ export const ChoosePath = () => {
 					innovators, and gamers!
 				</Text>
 			</Flex>
-			<Flex mt="30px" gridGap="32px" justifyContent="center" maxW="85vw" direction={['column', 'column', 'column', 'row']}>
+			<Flex mt="30px" gridGap="32px" justifyContent="center" maxW={["100vw", "90vw", "85vw", "85vw"]} direction={['column', 'column', 'column', 'row']}>
 				{data.map((element) => (
 					<PathComponent {...element} />
 				))}

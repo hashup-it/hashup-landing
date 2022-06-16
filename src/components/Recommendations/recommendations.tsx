@@ -39,49 +39,15 @@ export const Recommendations = () => {
           w="100%"
           gridGap="15vw"
         >
-          <Flex position="relative" w="60%" h="60%">
-            <Parallax speed={4}>
-              <Box
-                bgColor={Colors.brandMain}
-                w="116px"
-                h="116px"
-                position="absolute"
-                top="10%"
-                left="5px"
-              />
-            </Parallax>
-            <Box position="absolute" top="8%" left="-15%">
-              <Parallax speed={4}>
-                <Box
-                  w="319px"
-                  h="319px"
-                  borderRadius="50%"
-                  bgGradient="linear(9deg, #050505 40%, rgba(255,63,63,0.5) 100%)"
-                  backdropFilter="blur(71px)"
-                />
-              </Parallax>
-            </Box>
+          <Flex position="relative" w="60%" h="60%">            
+            
             <Image
               src={Opinions[opinion].photo}
               w="300px"
               h="300px"
-              position="absolute"
             />
-            <Box position="absolute" bottom="30px" right="0">
-              <Parallax speed={-4}>
-                <AvatarDots />
-              </Parallax>
-            </Box>
 
-            <Box
-              w="280px"
-              h="280px"
-              border="5px solid rgba(255, 255, 255, 0.1)"
-              borderRadius="50%"
-              position="absolute"
-              top="10px"
-              left="10px"
-            />
+
           </Flex>
 
           <Flex flexDirection="column" gridGap="20px" alignItems="flex-start">

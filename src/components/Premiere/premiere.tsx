@@ -11,7 +11,7 @@ export const Premiere = () => {
 
 	return (
 		<Flex
-			h="100vh"
+			h={["60vh", "75vh", "100vh", "100vh"]}
 			w="100vw"
 			bgColor="black"
 			justifyContent="center"
