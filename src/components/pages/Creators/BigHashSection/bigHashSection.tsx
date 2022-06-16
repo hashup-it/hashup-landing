@@ -30,10 +30,10 @@ export const BigHashSection = () => {
 					ref={ref}
 				>
 					<Flex position='absolute' top='-5%' zIndex='-1' ref={inputRef} >
-						<HashScrollImages animationHookReference={ref}/> {
+						<HashScrollImages animationHookReference={ref}/> <Flex display={['none', 'none', 'flex', 'flex']}>{
 							<Image src='assets/images/hash_glitch/HashGlitch_00001.jpg'/>
 						}
-						
+						</Flex>
 					</Flex>
 					<Flex zIndex="100">
 						<SectionInfoButton label="TEKST" />

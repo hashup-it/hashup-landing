@@ -4,7 +4,7 @@ import React from 'react';
 export interface IMobileRightIcon {
 	onClick?: () => void
 	cursor: string,
-	opacity: string
+	opacity?: string
 }
 
 export const MobileRightIcon = ({onClick, cursor, opacity} : IMobileRightIcon ) => {

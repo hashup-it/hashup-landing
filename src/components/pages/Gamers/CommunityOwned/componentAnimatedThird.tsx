@@ -27,7 +27,7 @@ export const ComponentAnimatedThird = ({text, isActive}) => {
 			</Flex>) : 
 			<Flex justifyContent='flex-start' alignItems='center'> 
 			<Text
-				color='#9a9a9a'
+				color='white'
 				fontSize="26px"
 				fontWeight="500"
 				cursor="pointer"

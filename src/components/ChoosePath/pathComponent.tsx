@@ -39,13 +39,12 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 			direction="column"
 			position="relative"
 			borderRadius="10px"
-			backdropFilter="blur(20px)"
 			bg="linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)"
 			transition="0.01s"
-			_hover={{
+			_hover={{lg: {
 				bg: 'linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)',
 				transform: 'rotateX(360deg)',
-			}}
+			}}}
 		>
 			<Flex w="100%" h="100%" gridGap="3px" direction="column">
 				<Flex

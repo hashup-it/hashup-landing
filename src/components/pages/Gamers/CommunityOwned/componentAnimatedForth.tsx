@@ -19,7 +19,7 @@ export const ComponentAnimatedForth = ({ text, isActive }) => {
 				</Flex>
 			) : (
 				<Flex alignItems="center">
-					<Text color="#9a9a9a" fontSize="26px" fontWeight="500" cursor="pointer" maxW="60%">
+					<Text color="white" fontSize="26px" fontWeight="500" cursor="pointer" maxW="60%">
 						{text}
 					</Text>
 				</Flex>

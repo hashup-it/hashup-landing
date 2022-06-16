@@ -51,19 +51,9 @@ export const CommunityOwned = () => {
 		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-20')) {
 			setIsActiveComponent(0);
 		}
-		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-40')) {
-			setIsActiveComponent(1);
-		}
-		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-60')) {
-			setIsActiveComponent(2);
-		}
-		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-75')) {
-			setIsActiveComponent(3);
-		}
-		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-90')) {
-			setIsActiveComponent(4);
-		}
 	};
+
+	console.log(isActiveComponent)
 
 	useEffect(() => {
 		window.addEventListener('scroll', scrollHandler, true);
@@ -86,10 +76,10 @@ export const CommunityOwned = () => {
 			<Flex direction="column" alignItems="center" textAlign='center'>
 				<SlideFade in={enterCount > 0} offsetY="40px">
 					<Flex direction="column" alignItems='center' textAlign='center'>
-						<Text lineHeight="100%" fontSize={{base: '38px', lg: "90px"}}>
+						<Text lineHeight="100%" fontSize={{base: '36px', lg: "90px"}}>
 							Surpised<strong>?</strong>
 						</Text>
-						<Text fontSize={{base: '38px', lg: "70px"}} lineHeight="100%">
+						<Text fontSize={{base: '24px', lg: "70px"}} lineHeight="100%">
 							How is that possible?
 						</Text>
 					</Flex>

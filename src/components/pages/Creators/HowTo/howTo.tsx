@@ -29,7 +29,7 @@ export const HowTo = () => {
 						<Text pt="30px" fontSize={["24px","32px", "40px", "50px"]} textAlign={{base: 'center'}}fontWeight="700">
 							Our platform is really easy to use<strong>.</strong>
 						</Text>
-						<Text fontSize="35px" fontWeight="700">
+						<Text fontSize={["16px", "24px", "28px", "35px"]} fontWeight="700">
 							Step by step
 						</Text>
 					</Flex>

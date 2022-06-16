@@ -22,7 +22,7 @@ export const OpinionCard: FC<IOpinionCard> = ({ name, role, opinion, logo }) => 
           {role}
         </Text>
       </Flex>
-      <Flex>
+      <Flex alignItems={["center", "center", "flex-start", "flex-start"]}>
       {logo}
       </Flex>
     </Flex>

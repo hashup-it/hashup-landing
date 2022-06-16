@@ -28,6 +28,7 @@ const handleOnScroll = (
         assetIndex = 1
     }
 
+	console.log('bound start:', animationBoundStart)
 	setCurrentAssetIndex(assetIndex);
 };
 
