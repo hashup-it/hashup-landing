@@ -3,17 +3,17 @@ import React, { FC } from "react";
 import { Colors } from "../../colors";
 import PatchkitLogo from "../../Icons/patchkitLogo";
 
-interface IOpinion {
+interface IOpinionCard {
   name: string;
   role: string;
   opinion: string;
-  logo: React.ReactNode | string
+  logo: React.ReactNode
 }
 
-export const Opinion: FC<IOpinion> = ({ name, role, opinion, logo }) => {
+export const OpinionCard: FC<IOpinionCard> = ({ name, role, opinion, logo }) => {
   return (
-    <Flex flexDirection="column" gridGap="30px" alignItems="flex-start">
-      <Text fontSize="20px" fontWeight="300">
+    <Flex flexDirection="column" gridGap="30px" alignItems="flex-start" >
+      <Text fontSize="22px" fontWeight="300" minHeight="6em">
         "{opinion}"
       </Text>
       <Flex fontSize="20px" fontWeight="700" flexDirection="column">
@@ -27,4 +27,4 @@ export const Opinion: FC<IOpinion> = ({ name, role, opinion, logo }) => {
   );
 };
 
-export default Opinion;
+export default IOpinionCard;

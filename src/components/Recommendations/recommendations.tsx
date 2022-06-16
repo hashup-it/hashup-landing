@@ -1,67 +1,46 @@
-import { Box, Flex, Image, SlideFade, Text } from "@chakra-ui/react";
-import React, { useRef, useState } from "react";
-import { useInViewport } from "react-in-viewport";
-import { Parallax, ParallaxProvider, useParallax } from "react-scroll-parallax";
-import { Colors } from "../../colors";
-import AvatarDots from "../../Icons/avatarDots";
-import ChevronRightIcon from "../../Icons/chevronRightIcon";
-import Opinion from "./opinion";
-import { Opinions } from "./opinionsInfo";
+import { Box, Flex, Image, SlideFade, Text } from '@chakra-ui/react';
+import React, { useRef, useState } from 'react';
+import { useInViewport } from 'react-in-viewport';
+import { Parallax, ParallaxProvider, useParallax } from 'react-scroll-parallax';
+import { Colors } from '../../colors';
+import AvatarDots from '../../Icons/avatarDots';
+import ChevronRightIcon from '../../Icons/chevronRightIcon';
+import { OpinionCard } from './opinion';
+import { Opinions } from './opinionsInfo';
 
 export const Recommendations = () => {
-  const [opinion, setOpinion] = useState<number>(0);
+	const [opinion, setOpinion] = useState<number>(0);
 
-  const nextOpinion = () => {
-    if (opinion < Opinions.length - 1) setOpinion(opinion + 1);
-  };
+	const nextOpinion = () => {
+		if (opinion < Opinions.length - 1) setOpinion(opinion + 1);
+	};
 
-  const previousOpinion = () => {
-    if (opinion > 0) setOpinion(opinion - 1);
-  };
+  console.log(Opinions.length)
 
-  const ref = useRef(null);
-  const { enterCount } = useInViewport(
-    ref,
-    {},
-    { disconnectOnLeave: false },
-    {}
-  );
+	const previousOpinion = () => {
+		if (opinion > 0) setOpinion(opinion - 1);
+	};
 
-  return (
-    <>
-      <SlideFade in={enterCount > 0} offsetY="25vh">
-        <Flex
-          ref={ref}
-          p="70px 100px"
-          h="100vh"
-          justifyContent="center"
-          alignItems="center"
-          w="100%"
-          gridGap="15vw"
-        >
-          <Flex position="relative" w="60%" h="60%">            
-            
-            <Image
-              src={Opinions[opinion].photo}
-              w="300px"
-              h="300px"
-            />
+	const ref = useRef(null);
+	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
 
+	return (
+		<>
+				<Flex pt='150px' alignItems='center' width="100%" height='100vh'>
+          <Flex width="50%" justifyContent="start">
+            <Image src={Opinions[opinion].photo}/>
           </Flex>
-
-          <Flex flexDirection="column" gridGap="20px" alignItems="flex-start">
-            <Text fontSize="40px" fontWeight="700">
-              Look what people say<strong>.</strong>
-            </Text>
-            <Opinion
-              name={Opinions[opinion].name}
-              role={Opinions[opinion].role}
-              opinion={Opinions[opinion].opinion}
-              logo={Opinions[opinion].logo}
+          <Flex direction='column' width="50%" justifyContent="start">
+            <Text fontSize='50px' color='white' fontWeight='700'>Look what people say<strong>.</strong></Text>
+            <OpinionCard 
+            name={Opinions[opinion].name}
+            role={Opinions[opinion].role}
+            opinion={Opinions[opinion].opinion}
+            logo={Opinions[opinion].logo}
             />
-            <Flex gridGap="30px" mt="40px">
-              <ChevronRightIcon
+            <Flex pt='70px' gridGap='25px'>
+             <ChevronRightIcon
                 cursor="pointer"
                 transform="rotate(180deg)"
                 onClick={previousOpinion}
@@ -72,12 +51,11 @@ export const Recommendations = () => {
                 onClick={nextOpinion}
                 opacity={opinion === Opinions.length - 1 ? "0.5" : "1"}
               />
-            </Flex>
+              </Flex>
           </Flex>
-        </Flex>
-      </SlideFade>
-    </>
-  );
+				</Flex>
+		</>
+	);
 };
 
 export default Recommendations;

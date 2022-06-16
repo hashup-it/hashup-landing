@@ -15,8 +15,8 @@ export const Opinions = [
     role: "CEO & Founder",
     opinion:
     "Hash aims to disrupt the multibilion dollar gaming industry with the use of blockchain as a way to create the new standard of games distribution",
-    logo: "",
-    photo: "assets/piotrKorzuszek.png",
+    logo: <PatchkitLogo />,
+    photo: "assets/piotrKorzuszek1.png",
   },
   {
     name: "Filip Wielanier",
@@ -24,6 +24,6 @@ export const Opinions = [
     opinion:
       "Hashup combines a wise approach to the blockchain games market and the desire to introduce innovative solutions. Through common goals, it is an ideal long-term partner for us.",
     logo: <Cookie3Logo />,
-    photo: "assets/piotrKorzuszek.png",
+    photo: "assets/piotrKorzuszek1.png",
   },
 ];

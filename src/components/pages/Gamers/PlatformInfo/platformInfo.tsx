@@ -95,7 +95,7 @@ export const PlatformInfo = () => {
 						justifyContent={['center', 'center', 'flex-start', 'flex-start']}
 						direction={['column', 'column', 'row', 'row']}
 					>
-						<Text textAlign={{sm: 'center'}} fontSize={['22px', '32px', '42px', '50px']} fontWeight="600">
+						<Text fontSize={['22px', '32px', '42px', '50px']} fontWeight="600">
 							How our platform works<strong>?</strong>
 						</Text>
 						<PlayVideoIcon width={66} height={66} />
