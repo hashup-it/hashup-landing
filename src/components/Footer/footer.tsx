@@ -7,10 +7,15 @@ import { FooterSocials } from "./FooterSocials/socials";
 import Newsletter from "./Newsletter/newsletter";
 import Copywright from "./Copywright/copywright";
 import { Colors } from "../../colors";
+import MobileFooter from "./mobileFooter";
 
 export const Footer = () => {
   return (
-    <Flex direction="column" w="100%" pt="30px" gridGap="60px">
+    <Flex w={['none', 'none', '100%', '100%']} >
+      <Flex justifyContent='center' alignItems='center' display={['flex', 'flex', 'none', 'none']}>
+        <MobileFooter />
+      </Flex>
+    <Flex direction="column" w="100%" pt="30px" gridGap="60px" display={['none', 'none', 'flex', 'flex']}>
       <Flex justifyContent="space-between" alignItems="center" w="100%">
         <HashupLogo />
         <Flex
@@ -50,6 +55,7 @@ export const Footer = () => {
         </Flex>
       </Flex>
       <Copywright />
+    </Flex>
     </Flex>
   );
 };
