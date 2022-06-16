@@ -14,7 +14,7 @@ interface IProfitCard {
 
 export const ProfitCard: FC<IProfitCard> = ({ number, src, label, description, ...props }) => {
 	return (
-		<Flex flexDirection="column" gridGap="30px" maxW="40vw" {...props}>
+		<Flex flexDirection="column" gridGap="30px" maxW="40vw" {...props} display={['none', 'none', 'flex', 'flex']}>
 			<Flex gridGap="30px" alignItems="center">
 				<Box
 					as="video"

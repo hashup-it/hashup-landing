@@ -62,7 +62,7 @@ export const Advantages = () => {
 						game!
 					</Text>
 				</Flex>
-				<Flex gridGap="0px" w="80%" justifyContent="space-between" mt="100px" alignItems="center" mb="90px">
+				<Flex direction={['column', 'column', 'row', 'row']} gridGap="0px" w="80%" justifyContent="space-between" mt="100px" alignItems="center" mb="90px">
 					<PhaseCard
 						isActive={false}
 						image={<FirstDistributionModel />}

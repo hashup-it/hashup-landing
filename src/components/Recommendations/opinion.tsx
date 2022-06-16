@@ -12,17 +12,19 @@ interface IOpinionCard {
 
 export const OpinionCard: FC<IOpinionCard> = ({ name, role, opinion, logo }) => {
   return (
-    <Flex flexDirection="column" gridGap="30px" alignItems="flex-start" >
-      <Text fontSize="22px" fontWeight="300" minHeight="6em">
+    <Flex flexDirection="column" gridGap="30px" alignItems={["center", "center", "flex-start", "flex-start"]} >
+      <Text fontSize={{base: "16px" , lg: "22px"}} fontWeight="300" minHeight={["8em", "8em", "6em", "6em"]} alignItems={["center", "center", "flex-start", "flex-start"]} textAlign={{base: 'center', lg: 'left'}}>
         "{opinion}"
       </Text>
-      <Flex fontSize="20px" fontWeight="700" flexDirection="column">
+      <Flex fontSize="20px" fontWeight="700" flexDirection="column" textAlign={{base: 'center', lg: 'left'}} >
         {name},
-        <Text fontSize="15px" fontWeight="400" color={Colors.greyText}>
+        <Text fontSize="15px" fontWeight="400" color={Colors.greyText} textAlign={{base: 'center', lg: 'left'}}>
           {role}
         </Text>
       </Flex>
+      <Flex>
       {logo}
+      </Flex>
     </Flex>
   );
 };
