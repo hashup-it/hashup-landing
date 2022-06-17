@@ -56,8 +56,8 @@ export const ChoosePath = () => {
 				<Text> Choose a Path</Text>
 				<strong>.</strong>
 			</Flex>
-			<Flex fontSize="20px" color={Colors.greyText} fontWeight="300" direction="column" alignItems="center">
-				<Text maxWidth="60vw" textAlign="center">
+			<Flex fontSize={["18px", "18px", "20px", "20px"]} color={Colors.greyText} fontWeight="300" direction="column" alignItems="center">
+				<Text maxWidth={["75vw", "75vw", "60vw", "60vw"]} textAlign={["left", "left", "center", "center"]}>
 					Be the part of the revolution in the game industry and join our growing community of game creators,
 					innovators, and gamers!
 				</Text>

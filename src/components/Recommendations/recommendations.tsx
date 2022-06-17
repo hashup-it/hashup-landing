@@ -50,7 +50,7 @@ export const Recommendations = () => {
 			</Flex>
 
 			<Flex pt="150px" alignItems="center" width="100%" height="100vh" display={['none', 'none', 'flex', 'flex']}>
-				<Flex width="50%" justifyContent="start">
+				<Flex width="50%"  justifyContent="start">
 					<Image src={Opinions[opinion].photo} />
 				</Flex>
 				<Flex direction="column" width="50%" justifyContent="start">

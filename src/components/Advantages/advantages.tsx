@@ -8,6 +8,7 @@ import HashupLogoBg from '../../Icons/hashupLogoBg';
 import SecondDistributionModel from '../../Icons/secondDistributionModel';
 import ThirdDistributionModel from '../../Icons/thirdDistributionModel';
 import SectionInfoButton from '../SectionLabel/sectionInfoButton';
+import MobileCard from './mobileCard';
 import PhaseCard from './phaseCard';
 import { ScrollImages } from './scrollImages';
 
@@ -52,8 +53,8 @@ export const Advantages = () => {
 			<SectionInfoButton label="HOW DOES IT WORK" />
 			{/* <ScrollImages animationHookReference={ref} /> */}
 			<SlideFade in={enterCount > 0} offsetY="300px">
-				<Flex maxW="60vw" textAlign="center" flexDirection="column" gridGap="20px" mt="40px" ref={ref}>
-					<Text fontSize={["32px", "46px", "64px", "70px"]} fontWeight="700" lineHeight="130%">
+				<Flex maxW={["100vw", "80vw", "60vw", "60vw"]} textAlign={["left", "left", "center", "center"]} flexDirection="column" gridGap="20px" mt="40px" ref={ref}>
+					<Text fontSize={["28px", "46px", "64px", "70px"]} fontWeight="700" lineHeight="130%">
 						Advantages of the new distribution model<strong>!</strong>
 					</Text>
 					<Text fontSize="17px" fontWeight="300" color={Colors.greyText}>
@@ -62,7 +63,10 @@ export const Advantages = () => {
 						game!
 					</Text>
 				</Flex>
-				<Flex direction={['column', 'column', 'row', 'row']} gridGap="0px" w="80%" justifyContent="space-between" mt="100px" alignItems="center" mb="90px">
+				<Flex display={['flex', 'flex', 'none', 'none']} alignItems='center' justifyContent='center' pt='30px'>
+					<MobileCard />
+				</Flex>
+				<Flex display={['none', 'none', 'flex', 'flex']} gridGap="0px" w="80%" justifyContent="space-between" mt="100px" alignItems="center" mb="90px">
 					<PhaseCard
 						isActive={false}
 						image={<FirstDistributionModel />}
