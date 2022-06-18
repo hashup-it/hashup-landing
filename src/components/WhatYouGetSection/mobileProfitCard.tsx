@@ -9,17 +9,19 @@ export interface IMobileProfitCard {
     subNumber?: string,
     label: string, 
     description?: string,
+	width: string,
+	handlers: any,
 }
 
-export const MobileProfitCard = ({number, subNumber, label, description }: IMobileProfitCard) => {
+export const MobileProfitCard = ({number, subNumber, label, description, width, handlers }: IMobileProfitCard) => {
 	return (
-		<Flex direction="column" p="25px">
+		<Flex direction="column" p="25px" {...handlers} >
 			<Flex alignItems="center" gridGap="120px" justifyContent="flex-start">
 				<Flex gridGap="21px" alignItems="center">
 					<Text fontSize="48px" fontWeight="200" color="white">
 						{number}
 					</Text>
-					<Box w="80px" h="2px" bgColor={Colors.brandMain} />
+					<Box w={width} h="2px" bgColor={Colors.brandMain} />
 				</Flex>
 				<Flex>
 					<Text fontSize="48px" fontWeight="200" opacity="0.3">
