@@ -1,5 +1,5 @@
 import { Flex, Image, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader } from '@chakra-ui/react';
-import Link from 'next/link';
+import { Link } from '@chakra-ui/react';
 import React from 'react';
 import HamburgerMenu from '../../Icons/hamburgerMenu';
 import HashupLogo from '../../Icons/hashupLogo';

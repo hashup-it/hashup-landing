@@ -14,9 +14,9 @@ export const MobileLeftIcon = ({onClick, cursor, opacity}: IMobileLeftIcon ) => 
 			<path
 				d="M45 54L27 36L45 18"
 				stroke="white"
-				stroke-width="3"
-				stroke-linecap="round"
-				stroke-linejoin="round"
+				strokeWidth="3"
+				strokeLinecap="round"
+				strokeLinejoin="round"
 			/>
 		</Icon>
 	);

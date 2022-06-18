@@ -17,8 +17,6 @@ export const Recommendations = () => {
 		if (opinion < Opinions.length - 1) setOpinion(opinion + 1);
 	};
 
-	console.log(Opinions.length);
-
 	const previousOpinion = () => {
 		if (opinion > 0) setOpinion(opinion - 1);
 	};

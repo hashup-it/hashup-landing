@@ -29,7 +29,6 @@ export const Advantages = () => {
 		if (inputRef.current.getBoundingClientRect().top < -0.3 * inputRef.current.getBoundingClientRect().height) {
 			setActiveCard(1);
 		}
-		console.log(inputRef.current.getBoundingClientRect());
 	};
 
 	useEffect(() => {

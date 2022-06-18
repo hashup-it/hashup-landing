@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Flex, Image } from '@chakra-ui/react';
 
-const assetCount = 30;
+const assetCount = 29;
 
 const getImageId = () => {
-	const assetCount = 30;
 	const indices = Array.from(Array(assetCount).keys());
 
-	return indices.map((index) => `assets/images/hash_glitch/HashGlitch_${index.toString().padStart(5, '0')}.jpg`);
+	return indices.map((index) => `assets/images/hash_glitch/HashGlitch_${(index + 1).toString().padStart(5, '0')}.jpg`);
 };
 
 const handleOnScroll = (
@@ -28,7 +27,6 @@ const handleOnScroll = (
         assetIndex = 1
     }
 
-	console.log('bound start:', animationBoundStart)
 	setCurrentAssetIndex(assetIndex);
 };
 
@@ -49,6 +47,5 @@ export const HashScrollImages = ({ animationHookReference }: IHashupLogoBackgrou
 			window.removeEventListener('scroll', () => handleOnScroll(animationHookReference, setCurrentAssetIndex));
 	}, []);
     
-	console.log(imageUriArray[currentAssetIndex])
 	return <Image src={imageUriArray[currentAssetIndex]} />;
 };

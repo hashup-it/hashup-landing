@@ -53,7 +53,6 @@ export const CommunityOwned = () => {
 		}
 	};
 
-	console.log(isActiveComponent)
 
 	useEffect(() => {
 		window.addEventListener('scroll', scrollHandler, true);

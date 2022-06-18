@@ -12,8 +12,8 @@ export const RightArrowIcon = () => {
         <path 
         d="M9.5 20L17.5 12L9.5 4" 
         stroke="#CDCDCD" 
-        stroke-width="1.5" 
-        stroke-linecap="round" 
+        strokeWidth="1.5" 
+        strokeLinecap="round" 
         strokeLinejoin="round"/>
     </Icon>
   )

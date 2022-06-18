@@ -18,7 +18,6 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 	const element = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		if (element.current) console.log('firing');
 		Lottie.loadAnimation({
 			path: path,
 			renderer: 'svg',

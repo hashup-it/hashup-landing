@@ -10,11 +10,11 @@ export const RedCircleLauncher = () => {
         fill="none" 
         xmlns="http://www.w3.org/2000/svg">
 			<g filter="url(#filter0_f_2325_2726)">
-				<circle cx="336.5" cy="336.5" r="301.5" stroke="#FF3F3F" stroke-width="21" />
+				<circle cx="336.5" cy="336.5" r="301.5" stroke="#FF3F3F" strokeWidth="21" />
 			</g>
-			<circle cx="336.5" cy="336.5" r="301.5" stroke="#FF3F3F" stroke-width="21" />
+			<circle cx="336.5" cy="336.5" r="301.5" stroke="#FF3F3F" strokeWidth="21" />
 			<g opacity="0.4" filter="url(#filter1_f_2325_2726)">
-				<circle cx="336.5" cy="336.5" r="301.5" stroke="#6D0000" stroke-width="4" />
+				<circle cx="336.5" cy="336.5" r="301.5" stroke="#6D0000" strokeWidth="4" />
 			</g>
 			<defs>
 				<filter
