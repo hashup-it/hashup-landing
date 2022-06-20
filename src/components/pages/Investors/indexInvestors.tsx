@@ -23,7 +23,6 @@ export const IndexInvestors = () => {
       zIndex="0"
       position="relative"
       ref={ref}>
-          <HashScrollImages animationHookReference={ref}/>
     </Flex>
   )
 }
