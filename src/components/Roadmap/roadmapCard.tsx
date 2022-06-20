@@ -15,8 +15,8 @@ export const RoadmapCard = ({ data, quarter }: IRoadmapCardIRoadmapCard) => {
       bgGradient="linear(180deg, #010101 0%, rgba(1, 1, 1, 0) 100%)"
       direction="column"
       borderRadius="40px"
-      p="40px"
-      maxW="25vw"
+      p={["18px", "24px", "32px", "40px"]}
+      maxW={["40vw", "35vw", "30vw", "25vw"]}
     >
       <Box h="2px" w="25px" bgColor={Colors.brandMain} />
       <Flex fontSize="24px" fontWeight="400" color="white" pt="15px">

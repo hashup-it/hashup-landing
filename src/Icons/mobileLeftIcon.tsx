@@ -2,20 +2,21 @@ import { Icon } from '@chakra-ui/react';
 import React from 'react';
 
 export interface IMobileLeftIcon {
-	onClick: () => void
+	onClick?: () => void
 	cursor: string
+	opacity?: string
 }
 
-export const MobileLeftIcon = ({onClick, cursor}: IMobileLeftIcon ) => {
+export const MobileLeftIcon = ({onClick, cursor, opacity}: IMobileLeftIcon ) => {
 	return (
 
-		<Icon width="72px" height="72px" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={onClick} cursor={cursor}>
+		<Icon width="72px" height="72px" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={onClick} cursor={cursor} opacity={opacity}>
 			<path
 				d="M45 54L27 36L45 18"
 				stroke="white"
-				stroke-width="3"
-				stroke-linecap="round"
-				stroke-linejoin="round"
+				strokeWidth="3"
+				strokeLinecap="round"
+				strokeLinejoin="round"
 			/>
 		</Icon>
 	);

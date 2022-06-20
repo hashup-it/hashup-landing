@@ -17,8 +17,8 @@ export const RoadmapTaskDone = () => {
     <path 
         d="M13.625 8.625L9.25003 13L7.375 11.125" 
         stroke="#FF3F3F" 
-        stroke-width="1.5" 
-        stroke-linecap="round" 
+        strokeWidth="1.5" 
+        strokeLinecap="round" 
         strokeLinejoin="round"/>
     </Icon>
   )

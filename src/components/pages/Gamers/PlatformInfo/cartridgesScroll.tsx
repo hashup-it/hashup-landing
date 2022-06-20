@@ -44,6 +44,5 @@ export const CartridgesScroll = ({ animationHookReference }: IHashupLogoBackgrou
 			window.removeEventListener('scroll', () => handleOnScroll(animationHookReference, setCurrentAssetIndex));
 	}, []);
     
-	console.log(imageUriArray[currentAssetIndex])
 	return <Image src={imageUriArray[currentAssetIndex]} />;
 };

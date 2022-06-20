@@ -73,8 +73,8 @@ export const GameContractLogo = () => {
           y2="44.0908"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D8D8D8" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#D8D8D8" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1755_4427"
@@ -84,8 +84,8 @@ export const GameContractLogo = () => {
           y2="23.4033"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DFDFDF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#DFDFDF" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </Icon>

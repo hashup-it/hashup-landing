@@ -10,7 +10,7 @@ export const PartnersInfo = [
   },
   {
     name: "Patchkit",
-    logo: <PatchkitLogo />,
+    logo: <PatchkitLogo mr="100px"/>,
   },
   {
     name: "Gravity",

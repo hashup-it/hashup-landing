@@ -64,8 +64,8 @@ export const HashupLogo = ({ ...props }) => {
           y2="18.3016"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#D8D8D8" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#D8D8D8" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_1755_4127"
@@ -75,8 +75,8 @@ export const HashupLogo = ({ ...props }) => {
           y2="9.71464"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DFDFDF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#DFDFDF" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </Icon>

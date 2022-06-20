@@ -38,12 +38,12 @@ export const SecondDistributionModel = () => {
         <path
           d="M180.615 186.75L98.3896 243.787"
           stroke="white"
-          stroke-width="1.07484"
+          strokeWidth="1.07484"
         />
         <path
           d="M262.5 243.599L180.616 187.231"
           stroke="white"
-          stroke-width="1.07484"
+          strokeWidth="1.07484"
         />
         <circle cx="98.3899" cy="242.565" r="5.91165" fill="#FF3F3F" />
         <circle cx="180.616" cy="187.653" r="5.91165" fill="#FF3F3F" />

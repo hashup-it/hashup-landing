@@ -35,6 +35,7 @@ export const Ecosystem = () => {
   return (
     <Flex
       flexDirection="column"
+      pt='200px'
       gridGap="30px"
       alignItems="center"
       mb={["0px", "0px", "300px", "300px"]}

@@ -3,6 +3,7 @@ import React from 'react';
 import GameContractLogo from '../../Icons/gameContractLogo';
 import MobileGameContractLogo from '../../Icons/mobileGameContractLogo';
 import MobileGameXplorerLogoEcosystem from '../../Icons/mobileGameXplorerLogoEcosystem';
+import PCLauncherMobileLogo from '../../Icons/pcLauncherMobileLogo';
 
 export const MobileEcosystem = () => {
 	return (
@@ -31,6 +32,19 @@ export const MobileEcosystem = () => {
 				</Text>
                 <Flex pt='18px'> 
                 <Image src="assets/GameXplorerCard.png" />
+                </Flex>
+                </Flex>
+				<Flex pt='60px' justifyContent="center" direction="column" alignItems="center" gridGap="20px" >
+				<PCLauncherMobileLogo />
+				<Text fontSize="20px" fontWeight="700" textAlign="center">
+					First Blockchain PC Launcher for Gamers!
+				</Text>
+				<Text fontSize="16px" fontWeight="300" textAlign="center" color="#9A9A9A">
+					The future of social media. Create a stunning, customizable profile and take pride in your games
+					collection. Know your friends’ items and get inspired by following influencers!
+				</Text>
+                <Flex pt='18px'> 
+                <Image src="assets/pcLauncherCard.png" />
                 </Flex>
                 </Flex>
 			</Flex>

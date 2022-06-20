@@ -47,8 +47,8 @@ export const MobileGameContractLogo = () => {
 					y2="21.2755"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stop-color="#D8D8D8" />
-					<stop offset="1" stop-color="white" stop-opacity="0" />
+					<stop stopColor="#D8D8D8" />
+					<stop offset="1" stopColor="white" stopOpacity="0" />
 				</linearGradient>
 				<linearGradient
 					id="paint1_linear_2705_3329"
@@ -58,8 +58,8 @@ export const MobileGameContractLogo = () => {
 					y2="11.2927"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stop-color="#DFDFDF" />
-					<stop offset="1" stop-color="white" stop-opacity="0" />
+					<stop stopColor="#DFDFDF" />
+					<stop offset="1" stopColor="white" stopOpacity="0" />
 				</linearGradient>
 			</defs>
 		</Icon>

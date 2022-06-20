@@ -18,25 +18,30 @@ export const DescriptionCreators = () => {
 					</Flex>
 					<Flex
 						fontSize={['24px', '32px', '64px', '70px']}
-						maxW="80%"
+						maxW={['100%', '100%', '80%', '80%']}
 						textAlign="center"
 						fontWeight="700"
 						lineHeight="100%"
 						gridGap="-20px"
 					>
-						<RedTriangleIcon mt="-50px" transform="rotate(160deg)" h="62px" w="45px" />
+						<Flex>
+							<RedTriangleIcon mt="-50px" transform="rotate(160deg)" h="62px" w="45px" />
+						</Flex>
 						<Text>
 							HashUp is the answer to the market needs<strong>.</strong>
 						</Text>
-						<RedTriangleIcon
-							transform="rotate(-15deg)"
-							mt="130px"
-							left="73%"
-							position="absolute"
-							h="62px"
-							w="45px"
-							boxShadow="0px 6.61979px 6.61979px rgba(0, 0, 0, 0.25)"
-						/>
+						<Flex
+							position="relative"
+							left="-10%"
+							marginTop={["40px", "130px"]}
+						>
+							<RedTriangleIcon
+								transform="rotate(-15deg)"
+								position="absolute"
+								h="62px"
+								w="45px"
+							/>
+						</Flex>
 					</Flex>
 				</Flex>
 			</SlideFade>

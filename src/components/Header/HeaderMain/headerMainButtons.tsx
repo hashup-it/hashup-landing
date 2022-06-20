@@ -5,7 +5,7 @@ import ChevronRightIcon from "../../../Icons/chevronRightIcon";
 
 export const HeaderMainButtons = () => {
   return (
-    <Flex gridGap="31px" mt="40px" alignItems="center" direction={['column', 'column', 'row', 'row' ]}>
+    <Flex gridGap="31px" mt="40px" alignItems="center" direction={['column', 'column', 'row', 'row' ]} >
       <Flex
         bgColor={Colors.brandMain}
         w="200px"

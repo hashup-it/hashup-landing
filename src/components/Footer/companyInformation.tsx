@@ -13,7 +13,7 @@ const companyData = {
 
 export const CompanyInformation = () => {
   return (
-    <Flex direction='column' fontSize='12px' w='100%'>
+    <Flex direction='column' fontSize='12px' w='100%' textAlign={['center', 'center', 'left', 'left']}>
         <Text color="#6D6D6D" fontWeight="600">NASZA SIEDZIBA</Text>
         <Flex
         mt='10px'

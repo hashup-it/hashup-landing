@@ -13,7 +13,7 @@ export const GameXplorerCard = () => {
 				<Text fontSize="40px" fontWeight="700">
 					First blockchain explorer for the gamers!
 				</Text>
-				<Text fontSize="17px" fontWeight="300" color={Colors.greyText}>
+				<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
 					The future of social media. Create a stunning, customizable profile and take pride in your games
 					collection. Know your friends’ items and get inspired by following influencers!
 				</Text>

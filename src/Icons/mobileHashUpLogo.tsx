@@ -4,7 +4,7 @@ import React from 'react';
 export const MobileHashUpLogo = ({ ...props }) => {
 	return (
 		<Icon width="41px" height="41px" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<g clip-path="url(#clip0_2608_3929)">
+			<g clipPath="url(#clip0_2608_3929)">
 				<path
 					d="M9.90045 34.4119L3.57282 32.7164L15.8851 2.72476L22.2118 4.41999L9.90045 34.4119Z"
 					fill="white"
@@ -52,8 +52,8 @@ export const MobileHashUpLogo = ({ ...props }) => {
 					y2="25.0452"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stop-color="#FF0000" />
-					<stop offset="1" stop-color="#FF0000" stop-opacity="0" />
+					<stop stopColor="#FF0000" />
+					<stop offset="1" stopColor="#FF0000" stopOpacity="0" />
 				</linearGradient>
 				<linearGradient
 					id="paint1_linear_2608_3929"
@@ -63,8 +63,8 @@ export const MobileHashUpLogo = ({ ...props }) => {
 					y2="12.8821"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stop-color="#FF0000" />
-					<stop offset="1" stop-color="#FF0000" stop-opacity="0" />
+					<stop stopColor="#FF0000" />
+					<stop offset="1" stopColor="#FF0000" stopOpacity="0" />
 				</linearGradient>
 				<clipPath id="clip0_2608_3929">
 					<rect

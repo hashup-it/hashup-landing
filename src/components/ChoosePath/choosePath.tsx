@@ -44,7 +44,7 @@ export const ChoosePath = () => {
 	return (
 		<Flex direction="column" alignItems="center" position="relative" pt="70px" pb="150px">
 			<Box w="100vw" h="1px" position="absolute" top="0" bgColor="white" opacity="0.1" />
-			<SectionInfoButton label="WHO YOU ARE?" />
+			<SectionInfoButton label="WHO ARE YOU?" />
 			<Flex
 				p="20px"
 				fontSize={["32px", "46px", "64px", "70px"]}
@@ -56,13 +56,13 @@ export const ChoosePath = () => {
 				<Text> Choose a Path</Text>
 				<strong>.</strong>
 			</Flex>
-			<Flex fontSize="20px" color={Colors.greyText} fontWeight="300" direction="column" alignItems="center">
-				<Text maxWidth="60vw" textAlign="center">
+			<Flex fontSize={["18px", "18px", "20px", "20px"]} color={Colors.greyText} fontWeight="300" direction="column" alignItems="center">
+				<Text maxWidth={["75vw", "75vw", "60vw", "60vw"]} textAlign={["left", "left", "center", "center"]}>
 					Be the part of the revolution in the game industry and join our growing community of game creators,
 					innovators, and gamers!
 				</Text>
 			</Flex>
-			<Flex mt="30px" gridGap="32px" justifyContent="center" maxW="85vw" direction={['column', 'column', 'column', 'row']}>
+			<Flex mt="30px" gridGap="32px" justifyContent="center" maxW={["100vw", "90vw", "85vw", "85vw"]} direction={['column', 'column', 'column', 'row']}>
 				{data.map((element) => (
 					<PathComponent {...element} />
 				))}

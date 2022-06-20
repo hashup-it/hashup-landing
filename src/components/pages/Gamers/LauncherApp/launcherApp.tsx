@@ -50,7 +50,7 @@ export const LauncherApp = () => {
     <Flex display={['none', 'none', 'flex', 'flex']} position='absolute' bottom='2%' left='45%' zIndex={1}>
         <GrayCircleLauncher/>
     </Flex> 
-    <Flex display={['none', 'none', 'flex', 'flex']} position='absolute' top='50%' left='70%' zIndex={100} >
+    <Flex display={['none', 'none', 'flex', 'flex']} position='absolute' top='50%' left='70%' zIndex={100} mb='100px'>
         <Image src='./assets/gameWallet.png'/>
     </Flex>
 </Flex>

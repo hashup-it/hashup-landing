@@ -18,7 +18,6 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 	const element = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		if (element.current) console.log('firing');
 		Lottie.loadAnimation({
 			path: path,
 			renderer: 'svg',
@@ -32,20 +31,19 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 
 	return (
 		<Flex
-			w={["85%", "85%", "85%", "33%"]}
+			w={["100%", "90%", "85%", "33%"]}
 			marginTop="90px"
 			p="60px"
 			zIndex="10"
 			direction="column"
 			position="relative"
 			borderRadius="10px"
-			backdropFilter="blur(20px)"
 			bg="linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)"
 			transition="0.01s"
-			_hover={{
+			_hover={{lg: {
 				bg: 'linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)',
 				transform: 'rotateX(360deg)',
-			}}
+			}}}
 		>
 			<Flex w="100%" h="100%" gridGap="3px" direction="column">
 				<Flex
@@ -61,7 +59,7 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 				<Text fontSize="16px" color="white">
 					{topText}
 				</Text>
-				<Text fontSize="56px" color="white" fontWeight="700" zIndex="2">
+				<Text fontSize={["46px", "52px", "54px", "56px"]} color="white" fontWeight="700" zIndex="2">
 					{name}
 				</Text>
 			</Flex>

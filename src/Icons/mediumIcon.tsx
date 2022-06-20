@@ -4,7 +4,7 @@ import React from 'react';
 export const MediumIcon = () => {
 	return (
 		<Icon width="16px" height="16px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<g clip-path="url(#clip0_2679_3284)">
+			<g clipPath="url(#clip0_2679_3284)">
 				<path
 					d="M9.02496 7.88505C9.02496 10.3989 7.00463 12.4367 4.51256 12.4367C2.02049 12.4367 0 10.3984 0 7.88505C0 5.3717 2.02033 3.33325 4.51256 3.33325C7.00478 3.33325 9.02496 5.37124 9.02496 7.88505Z"
 					fill="white"

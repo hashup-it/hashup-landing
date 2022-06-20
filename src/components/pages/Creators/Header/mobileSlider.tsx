@@ -4,7 +4,9 @@ import React, { forwardRef, useState } from 'react';
 import { Colors } from '../../../../colors';
 import MobileLeftIcon from '../../../../Icons/mobileLeftIcon';
 import MobileRightIcon from '../../../../Icons/mobileRightIcon';
+import { useSwipeable } from 'react-swipeable';
 import RightArrowIcon from '../../../../Icons/rightArrowIcon';
+
 
 export const MobileSlider = () => {
 	const [activeText, setActiveText] = useState<number>(0);
@@ -17,6 +19,13 @@ export const MobileSlider = () => {
         })
     }
 
+    const handlers = useSwipeable({
+		onSwipedLeft: () => handleSwayForward(),
+		onSwipedRight: () => handleSwayBackward(),
+		trackMouse: true
+	});
+
+
     const handleSwayBackward = () => {
         setActiveText(previous => {
             const nextState = previous - 1;
@@ -26,7 +35,7 @@ export const MobileSlider = () => {
     }
 
 	return (
-		<Flex justifyContent="space-between" alignItems='center'>
+		<Flex justifyContent="space-between" alignItems='center' {...handlers} h='15vh'>
 			<MobileLeftIcon onClick={handleSwayBackward} cursor='pointer'/>
 			<Flex fontSize='18px' textAlign='center'>
                 {activeText === 0  && (

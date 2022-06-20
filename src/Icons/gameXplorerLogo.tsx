@@ -58,11 +58,11 @@ export const GameXplorerLogo = () => {
         y2="44.0912" 
         gradientUnits="userSpaceOnUse">
         <stop 
-        stop-color="#D8D8D8"/>
+        stopColor="#D8D8D8"/>
         <stop 
         offset="1" 
-        stop-color="white" 
-        stop-opacity="0"/>
+        stopColor="white" 
+        stopOpacity="0"/>
         </linearGradient>
         <linearGradient 
         id="paint1_linear_2230_2057" 
@@ -72,11 +72,11 @@ export const GameXplorerLogo = () => {
         y2="23.4033" 
         gradientUnits="userSpaceOnUse">
         <stop 
-        stop-color="#DFDFDF"/>
+        stopColor="#DFDFDF"/>
         <stop 
         offset="1" 
-        stop-color="white" 
-        stop-opacity="0"/>
+        stopColor="white" 
+        stopOpacity="0"/>
         </linearGradient>
         </defs>
     </Icon>

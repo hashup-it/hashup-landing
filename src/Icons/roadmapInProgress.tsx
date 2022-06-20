@@ -22,11 +22,11 @@ export const RoadmapInProgress = () => {
                 x2="5.67005" 
                 y2="20.8632" 
                 gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FF0000"/>
+                <stop stopColor="#FF0000"/>
                 <stop 
                 offset="1" 
-                stop-color="#FF0000" 
-                stop-opacity="0"/>
+                stopColor="#FF0000" 
+                stopOpacity="0"/>
                     </linearGradient>
                         </defs>
     </Icon>

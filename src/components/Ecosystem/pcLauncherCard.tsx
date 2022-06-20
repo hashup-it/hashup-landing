@@ -11,7 +11,7 @@ export const PCLauncherCard = () => {
     <Flex w="100vw" h="80vh" p="50px 140px">
       <Flex flexDirection="column" gridGap="50px" maxW="40%">
         <PCLauncherLogo />
-        <Text fontSize="40px" fontWeight="700">
+        <Text fontSize="44px" fontWeight="700">
             Blockchain Launcher for the gamers!
         </Text>
         <Text fontSize="17px" fontWeight="300" color={Colors.greyText}>
