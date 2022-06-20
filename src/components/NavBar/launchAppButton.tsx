@@ -24,8 +24,8 @@ export const LaunchAppButton = () => {
 					colorScheme={Colors.brandMain}
 					fontWeight="700"
 					fontSize="14px"
-					gridGap="14px"
-					p="17px 20px"
+					gridGap={["6px", "6px", "14px", "14px"]}
+					p={["22px 97px", "17px 97px", "17px 20px", "17px 20px"]}
 					m="0"
 					borderRadius="5px"
 					alignItems="center"

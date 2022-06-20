@@ -85,7 +85,7 @@ export const WhatYouGet = () => {
 						game for the gamers and increase profits for creators.
 					</Text>
 				</Flex>
-				<Flex display={['flex', 'flex', 'none', 'none']} alignItems="center" direction="column" background='blue' gridGap="48px" justifyContent="space-between">
+				<Flex display={['flex', 'flex', 'none', 'none']}  alignItems="center" direction="column" gridGap="48px" justifyContent="space-between">
 					<Flex>
 						<MobileProfitCard
 							width={card === 2 ? '23px' : '80px'}

@@ -41,15 +41,13 @@ export const ProfitCard: FC<IProfitCard> = ({ number, src, label, description, .
 			<Text fontSize="15px" fontWeight="300" color={Colors.greyText}>
 				{description}
 			</Text>
-			<Link href="/token">
 				<Flex gridGap="25px" alignItems="center" position="relative" p="10px 0" cursor="pointer">
 					<Text fontSize="12px" fontWeight="700">
-						Learn more about Tocenomic
+						Learn more about Tocenomics
 					</Text>
 					<ChevronRightIcon color={Colors.brandMain} />
 					<Box h="2px" w="40px" position="absolute" bottom="0" left="5px" bgColor={Colors.brandMain} />
 				</Flex>
-			</Link>
 		</Flex>
 	);
 };

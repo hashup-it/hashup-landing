@@ -16,7 +16,7 @@ export const ForGamers = () => {
 			position="absolute"
 			h="100vh"
 		>
-			<Flex justifyContent="space-between" alignItems="center" gridGap="48px" display={['none', 'none', 'flex', 'flex']}>
+			<Flex justifyContent="space-between" alignItems="center" gridGap="48px">
 				<Flex gridGap="10px" fontWeight="600">
 					<RedTriangleIcon mt="-5px" />
 					For Gamers

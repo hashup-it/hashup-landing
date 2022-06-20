@@ -103,10 +103,10 @@ export const PlatformInfo = () => {
 				</Flex>
 			</Flex>
 			<Flex direction="column" justifyContent="flex-start">
-				<Flex ref={ref} zIndex="0" display={['none', 'none', 'none', 'flex']}>
+				<Flex ref={ref} zIndex="0" display={['none', 'none', 'none', 'none']}>
 					<CartridgesScroll animationHookReference={ref} />
 				</Flex>
-				<Flex direction="column" p={["450px 0px 0px 80px" ,"500px 0px 0px 210px","500px 0px 0px 210px" , "500px 0px 0px 210px"]} zIndex="1">
+				<Flex direction="column" p={["250px 0px 0px 80px" ,"300px 0px 0px 210px","300px 0px 0px 210px" , "300px 0px 0px 210px"]} zIndex="1">
 					<Flex pt="100px" maxW="20%" right={{sm: '80%'}}>
 						<SectionInfoButton label="LICENSES" />
 					</Flex>

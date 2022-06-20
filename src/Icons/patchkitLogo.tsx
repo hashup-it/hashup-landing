@@ -1,7 +1,11 @@
 import { Icon } from "@chakra-ui/react";
 import React from "react";
 
-export const PatchkitLogo = () => {
+export interface PatchkitLogo {
+  mr?: string
+}
+
+export const PatchkitLogo = ({mr}: PatchkitLogo) => {
   return (
     <Icon
       width="224px"
@@ -9,6 +13,7 @@ export const PatchkitLogo = () => {
       viewBox="0 0 224 51"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      mr={mr}
     >
       <g clipPath="url(#clip0_1755_4382)">
         <path
