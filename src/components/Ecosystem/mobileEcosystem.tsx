@@ -30,7 +30,7 @@ export const MobileEcosystem = () => {
 					collection. Know your friends’ items and get inspired by following influencers!
 				</Text>
                 <Flex pt='18px'> 
-                <Image src="assets/GameXplorerCard.png" />
+                <Image src="assets/gameXplorerCard.png" />
                 </Flex>
                 </Flex>
 				<Flex pt='60px' justifyContent="center" direction="column" alignItems="center" gridGap="20px" >
@@ -44,7 +44,7 @@ export const MobileEcosystem = () => {
 					intermediaries.
 				</Text>
                 <Flex pt='18px'> 
-                <Image src="assets/GameContractCard.png" />
+                <Image src="assets/gameContractCard.png" />
                 </Flex>
                 </Flex>
 			</Flex>
