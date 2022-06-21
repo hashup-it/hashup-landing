@@ -25,6 +25,6 @@ export const Opinions = [
     opinion:
       "Hashup combines a wise approach to the blockchain games market and the desire to introduce innovative solutions. Through common goals, it is an ideal long-term partner for us.",
     logo: <Cookie3Logo />,
-    photo: "assets/FilipWielanier.png",
+    photo: "assets/filipWielanier.png",
   },
 ];
