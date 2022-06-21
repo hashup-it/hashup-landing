@@ -18,57 +18,49 @@ const responsive = {
 
 const itemsData: IRoadmapCardIRoadmapCard[] = [
   {
-    quarter: "Q1 2021",
+    quarter: "Q2 2022",
     data: [
-      { data: "Setting up legal entity", isDone: true },
-      { data: "$10M seed funding form Dupa z trupa" },
-      { data: "Market research" },
-      { data: "asdf" },
+      { data: "Blockchain Explorer for gamers", isDone: true },
+      { data: "Web2 Games Marketplace", isDone: true },
+      { data: "PC Launcher with Metamask", isDone: true },
+      { data: "First Games on our platform", isDone: true },
+      { data: "GameXplorer - first blockchain explorer for gamers", isDone: true },
+      { data: "GameContract - devkit for gamedevelopers and publishers", isDone: true },
+      { data: "First exclusive game on HashUp", isDone: true },
     ],
   },
   {
-    quarter: "Q2 2021",
+    quarter: "Q3 2022",
     data: [
-      { data: "Setting up legal entity", isDone: true },
-      { data: "$10M seed funding form Dupa z trupa" },
-      { data: "Market research" },
-      { data: "asdf" },
+      { data: "TOP CEX partnerships",},
+      { data: "TOP Gaming partnerships" },
+      { data: "TOP Crypto partnerships" },
+      { data: "More Games on our platforms. Games each week!" },
+      { data: "Game comments and reviews" },
     ],
   },
   {
-    quarter: "Q3 2021",
+    quarter: "Q4/Q1 2023 - LISTING",
     data: [
-      { data: "Setting up legal entity", isDone: true },
-      { data: "$10M seed funding form Dupa z trupa" },
-      { data: "Market research" },
-      { data: "asdf" },
+      { data: "Listing on DEX and TOP CEX"},
+      { data: "First AA+/AAA game premiere" },
+      { data: "GameCap.io - computer games’ ranking" },
+      { data: "Listing of 50+ games" },
+      { data: "PipBoy Metamask Unity/Unreal Plugin" },
+      { data: "Cloud Saves" },
+      { data: "Run GameSwapping" },
+
     ],
   },
   {
-    quarter: "Q1 2022",
+    quarter: "2023+",
     data: [
-      { data: "Setting up legal entity", isDone: true },
-      { data: "$10M seed funding form Dupa z trupa" },
-      { data: "Market research" },
-      { data: "asdf" },
-    ],
-  },
-  {
-    quarter: "Q1 2022",
-    data: [
-      { data: "Setting up legal entity", isDone: true },
-      { data: "$10M seed funding form Dupa z trupa" },
-      { data: "Market research" },
-      { data: "asdf" },
-    ],
-  },
-  {
-    quarter: "Q1 2022",
-    data: [
-      { data: "Setting up legal entity", isDone: true },
-      { data: "$10M seed funding form Dupa z trupa" },
-      { data: "Market research" },
-      { data: "asdf" },
+      { data: "Decentralized superconsole"},
+      { data: "Social Media Based on ERC20 Games ownership" },
+      { data: "GameWallet - Crypto Wallet with communicator for gamers and degens" },
+      { data: "ERC20 DLCs Licensing" },
+      { data: "HashUp becomes publisher" },
+      { data: "Open Source AAA Games" },
     ],
   },
 ];

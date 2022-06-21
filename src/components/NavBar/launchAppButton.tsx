@@ -65,6 +65,11 @@ export const LaunchAppButton = () => {
 							<a target="_blank">GameContract</a>
 						</Link>
 					</MenuItem>
+					<MenuItem _hover={{ bgColor: '#181717' }}>
+						<Link href="">
+							<a target="_blank">PCLauncher</a>
+						</Link>
+					</MenuItem>
 				</MenuList>
 			</>
 			{/* )} */}

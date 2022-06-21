@@ -57,15 +57,13 @@ export const Advantages = () => {
 						Advantages of the new distribution model<strong>!</strong>
 					</Text>
 					<Text fontSize="17px" fontWeight="300" color={Colors.greyText}>
-						HashUp is a game distribution platform that combines native licensed media with the world of the
-						web3, using the ERC20 token standard. Finally, you can truly own, sell, exchange, and trade your
-						game!
-					</Text>
+					The solution restores the proprietary nature of commerce and is compatible with both the Web2 and Web3 worlds by combining the advantages of a physical and digital world.</Text>
+					<Text fontWeight='500'>Hodl, exchange, sell, buy games like degens.</Text>
 				</Flex>
 				<Flex display={['flex', 'flex', 'none', 'none']} alignItems='center' justifyContent='center' pt='30px'>
 					<MobileCard />
 				</Flex>
-				<Flex display={['none', 'none', 'flex', 'flex']} h='60vh' gridGap="0px" w="80%" justifyContent="space-between" mt="100px" alignItems="center" mb="90px">
+				<Flex display={['none', 'none', 'flex', 'flex']} h='60vh' gridGap="0px" w="80%" justifyContent="space-between" mt="50px" alignItems="center" mb="90px">
 					<PhaseCard
 						isActive={false}
 						image={<FirstDistributionModel />}

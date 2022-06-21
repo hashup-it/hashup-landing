@@ -1,5 +1,6 @@
 import Cookie3Logo from "../../Icons/cookie3Logo";
 import PatchkitLogo from "../../Icons/patchkitLogo";
+import BlockchainVenturesHubLogo from "../../Icons/blockchainVenturesHubLogo";
 
 export const Opinions = [
   {
@@ -15,7 +16,7 @@ export const Opinions = [
     role: "CEO & Founder",
     opinion:
     "Hash aims to disrupt the multibilion dollar gaming industry with the use of blockchain as a way to create the new standard of games distribution",
-    logo: <PatchkitLogo />,
+    logo: <BlockchainVenturesHubLogo />,
     photo: "assets/tomKopera.png",
   },
   {

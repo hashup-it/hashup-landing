@@ -40,7 +40,7 @@ export const Footer = () => {
         <Text>HashUp.it</Text>
         <Box w="17px" h="1px" bgColor={Colors.brandMain} />
         <a href="/">
-          <Text>Idź do strony głównej</Text>
+          <Text> Go to homepage</Text>
         </a>
       </Flex>
       <Flex justifyContent="space-between" gridGap="60px">

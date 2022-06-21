@@ -35,12 +35,12 @@ export const ForGamers = () => {
 				<Flex alignItems="center" maxW="70%" textAlign="center" >
 					<Text>
 						{' '}
-						Decentralized Games Marketplace<strong>.</strong>
+						Video Games Marketplace with Digital Cartridges<strong>.</strong>
 					</Text>
 				</Flex>
 			</Flex>
 			<Text fontSize="28px" fontWeight="300" pt="32px" textAlign="center">
-				based on blockchain technology
+				Web2 games on Web3.
 			</Text>
 			<Flex
 				borderRadius="5"

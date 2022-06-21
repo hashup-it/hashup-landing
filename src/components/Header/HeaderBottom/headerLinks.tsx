@@ -7,7 +7,7 @@ import Whitepaper from "./whitepaper";
 export const HeaderLinks = () => {
   return (
     <Flex gridGap="24px" alignItems="center">
-      <Link href='https://hashup.gitbook.io/hashup-whitepaper/' _hover={{ opacity: '0.5' }}>
+      <Link href='https://cdn.hashup.it/hashup-whitepaper-eng.pdf' _hover={{ opacity: '0.5' }}>
       <Whitepaper />
       </Link>
       <Flex fontSize="14px" fontWeight="600" color="white" cursor="pointer">

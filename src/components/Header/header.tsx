@@ -10,9 +10,9 @@ export const Header = () => {
       alignItems="center"
       justifyContent="space-between"
       w="100%"
-      h="85vh"
-      pb="10px"
-      mb="50px"
+      h={["none", "none", "85vh", "85vh"]}
+      pb={["0px", "0px", "10px","10px"]}
+      mb={["0px", "0px", "50px", "50px"]}
     >
       <Image src='assets/mobileMainHeader.png'
       display={['flex', 'flex', 'none', 'none']}

@@ -25,10 +25,10 @@ export const DescriptionCreators = () => {
 						gridGap="-20px"
 					>
 						<Flex>
-							<RedTriangleIcon mt="-50px" transform="rotate(160deg)" h="62px" w="45px" />
+							<RedTriangleIcon mt="-50px" transform="rotate(160deg)" h={["31px", "31px", "62px", "62px"]} w={["22px", "22px", "45px", "45px"]} />
 						</Flex>
 						<Text>
-							HashUp is the answer to the market needs<strong>.</strong>
+							HashUp is the easiest way to get into Web3.0<strong>.</strong>
 						</Text>
 						<Flex
 							position="relative"
@@ -36,10 +36,11 @@ export const DescriptionCreators = () => {
 							marginTop={["40px", "130px"]}
 						>
 							<RedTriangleIcon
+								mt={{base: "25px"}}
 								transform="rotate(-15deg)"
 								position="absolute"
-								h="62px"
-								w="45px"
+								h={["31px", "31px", "62px", "62px"]} 
+								w={["22px", "22px", "45px", "45px"]} 
 							/>
 						</Flex>
 					</Flex>
