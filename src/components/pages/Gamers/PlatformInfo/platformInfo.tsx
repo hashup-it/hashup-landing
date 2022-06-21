@@ -1,4 +1,4 @@
-import { Flex, Image, Text, Box } from '@chakra-ui/react';
+import { Flex, Image, Text, Box, Link } from '@chakra-ui/react';
 import React, { useRef, useState } from 'react';
 import GameXplorerLogo from '../../../../Icons/gameXplorerLogo';
 import PlayVideoIcon from '../../../../Icons/playVideoIcon';
@@ -48,7 +48,7 @@ export const PlatformInfo = () => {
 					alignItems="center"
 					p={['30px 0px 0px 0px', '40px 80px 0 px 40px', '40px 220px 0px 220px', '40px 220px 0px 220px']}
 					gridGap={[ "50px", "100px", "120px", "150px"]}
-					zIndex="1"
+					zIndex="10"
 				>
 					<Flex
 						direction="column"
@@ -72,10 +72,13 @@ export const PlatformInfo = () => {
 								element of social media.
 							</Text>
 						</Box>
-						<Flex gridGap="3px" justifyContent='flex-start'>
+						<Link href='https://gamexplorer.io/' target='_blank' zIndex='2' _hover={{active: 'none'}}>
+						<Flex gridGap="3px" justifyContent='flex-start' zIndex='2' cursor='pointer' _hover={{opacity: '0.8'}}> 
 							<Flex
+								zIndex='10000'
 								bgColor={Colors.brandMain}
 								color="white"
+								cursor='pointer'
 								borderRadius="0px 0px 0px 14px"
 								p="8px 13px"
 								fontSize="14px"
@@ -88,7 +91,9 @@ export const PlatformInfo = () => {
 								<ChevronRightIcon />
 							</Flex>
 						</Flex>
+						</Link>
 					</Flex>
+					
 					<Flex
 						gridGap={["20px", "30px", "40p", "40px"]}
 						alignItems={['center', 'center', 'flex-start', 'flex-start' ]}
@@ -98,7 +103,7 @@ export const PlatformInfo = () => {
 						<Text fontSize={['22px', '32px', '42px', '50px']} fontWeight="600">
 							How our platform works<strong>?</strong>
 						</Text>
-						<PlayVideoIcon width={66} height={66} cursor='pointer' />
+						<PlayVideoIcon width={66} height={66} cursor='pointer' _hover={{opacity: '0.8'}} />
 					</Flex>
 				</Flex>
 			</Flex>

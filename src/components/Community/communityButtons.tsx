@@ -12,13 +12,16 @@ export interface ICommunityButtons {
 	link: string;
 }
 
-export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, icon, link }) => {
+export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, icon, link, }) => {
 	return (
+		<Link href={link} target='_blank' >
 		<Flex
 			w={["85%", "75%", "20%","20%"]}
 			h="142px"
-			alignItems={{sm: 'center'}}
-			justifyContent={{sm: 'center'}}
+			cursor='pointer'
+			_hover={{opacity: '0.8'}}
+			alignItems='start'
+			justifyContent='start'
 			borderWidth="1px"
 			borderColor={Colors.brandMain}
 			bgColor="transparent"
@@ -33,10 +36,8 @@ export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, ico
 				borderBottomRightRadius: '34px',
 			}}
 		>
-			<Link href={link}>
-				<a target="_blank">
 					<Flex direction="column" cursor="pointer">
-						<Flex justifyContent="space-between" alignItems="center" gridGap="56px">
+						<Flex justifyContent="space-between" alignItems="center" gridGap="56px" cursor="pointer">
 							<Flex gridGap="12px" alignItems="center">
 								{icon}
 								<Text color="white" fontSize="32px" fontWeight="400" lineHeight="160%">
@@ -46,12 +47,11 @@ export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, ico
 							<RightArrowIcon />
 						</Flex>
 					</Flex>
-				</a>
-			</Link>
 			<Text color={Colors.subGrey} fontSize="12px" fontWeight="400" lineHeight="140%">
 				{description}
 			</Text>
 		</Flex>
+		</Link>
 	);
 };
 

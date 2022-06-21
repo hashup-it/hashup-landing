@@ -17,10 +17,6 @@ export const PartnersInfo = [
     logo: <Image src="assets/gravityTeamLogo.png" mr="100px" />,
   },
   {
-    name: "Polygon",
-    logo: <PolygonLogo />,
-  },
-  {
     name: "Synapse",
     logo: <Image src="assets/synapseLogo.png" mr="100px" />,
   },

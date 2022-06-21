@@ -82,7 +82,7 @@ export const CommunityOwned = () => {
 			<Flex direction="column" alignItems="center">
 			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Text lineHeight="100%" maxW={['100%', '100%', '90%', '90%']} fontSize={["30px", "42px", "70px", "90px"]}>
-				All the advantages of physical and digital distribution comined into <strong>one</strong>.
+				All the advantages of physical and digital distribution combined into <strong>one</strong>.
 				</Text>
 			</SlideFade>
 		</Flex>

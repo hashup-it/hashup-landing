@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Text, Link } from '@chakra-ui/react'
 import React from 'react'
 
 export const AboutHashUp = () => {
@@ -13,9 +13,8 @@ export const AboutHashUp = () => {
 		fontWeight="400"
 		fontSize="13px"
 		color="white">
-            <Text>Team</Text>
-            <Text>Media</Text>
-            <Text>O nas</Text>
+            <Link href='/gamers' _hover={{opacity: '0.6'}}><Text>For Gamers</Text></Link>
+            <Link href='/creators' _hover={{opacity: '0.6'}}><Text>For Creators</Text></Link>
         </Flex>
     </Flex>
   )

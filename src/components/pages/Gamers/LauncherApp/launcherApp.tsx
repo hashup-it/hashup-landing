@@ -60,18 +60,22 @@ export const LauncherApp = () => {
 						<AppleLogo />
 					</Flex>
 					<Flex direction="column" pt="40px">
+						<Flex>
 						<Link href={SocialMediaUrls.launcherLink} _hover={{active: 'none'}} >
 							<Button
 								_hover={{opacity: "0.8"}}
 								fontWeight="700"
-								fontSize="18px"
+								fontSize="14px"
+								w='198px'
+								h='50px'
 								p="15px"
 								borderRadius="5px"
 								bgColor={Colors.brandMain}
 							>
-								DOWNLOAD
+								Download Launcher
 							</Button>
 						</Link>
+						</Flex>
 					</Flex>
 				</Flex>
 			</Flex>
