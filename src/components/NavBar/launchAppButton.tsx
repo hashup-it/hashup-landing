@@ -66,7 +66,7 @@ export const LaunchAppButton = () => {
 						</Link>
 					</MenuItem>
 					<MenuItem _hover={{ bgColor: '#181717' }}>
-						<Link href="">
+						<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct">
 							<a target="_blank">PCLauncher</a>
 						</Link>
 					</MenuItem>
