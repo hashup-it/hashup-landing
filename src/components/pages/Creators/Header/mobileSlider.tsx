@@ -40,17 +40,17 @@ export const MobileSlider = () => {
 			<Flex fontSize='18px' textAlign='center'>
                 {activeText === 0  && (
                 <Text>
-                    Do you know how <Text as='span' color={Colors.brandMain}> easy it is to publish games </Text> with us?
+                    Did you know that <Text as='span' color={Colors.brandMain}> you can release a game on web3 </Text> in 10 minutes?
                 </Text>
                 )}
                 {activeText === 1 && (
                     <Text>
-                    Did you know that you <Text as='span' color={Colors.brandMain}> don't </Text> <Text as='span' color={Colors.brandMain}>  have to lose money on your game </Text> sales at all?
+                    Did you know that <Text as='span' color={Colors.brandMain}> you earn royalties on each </Text> game exchange?
                     </Text>
                 )}
                 {activeText === 2 && (
                     <Text>
-                    Making money on <Text as='span' color={Colors.brandMain}> game trading? </Text> It's possible!
+                    Did you know that <Text as='span' color={Colors.brandMain}> you can decide on the HashUp platform </Text> with $HASH?
                     </Text>
                 )}
 			</Flex>

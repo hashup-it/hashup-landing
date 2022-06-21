@@ -13,6 +13,7 @@ import Ecosystem from "../components/Ecosystem/ecosystem";
 import Roadmap from "../components/Roadmap/roadmap";
 import React, { Suspense } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Licences from "../components/pages/Creators/Licences/licences";
 
 const Index = () => (
   <Flex>
@@ -27,7 +28,6 @@ const Index = () => (
         <Recommendations />
         <Ecosystem />
         <Roadmap />
-        <Premiere />
         <Community />
       </ParallaxProvider>
     </GlobalContainer>

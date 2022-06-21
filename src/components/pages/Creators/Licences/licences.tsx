@@ -47,7 +47,7 @@ export const Licences = () => {
 								)}
 							</Flex>
 							<Flex position="relative" onClick={() => setActiveCartridge(1)} cursor="pointer">
-								Diamond
+								Gray
 								{activeCartridge === 1 && (
 									<Flex
 										position="absolute"
@@ -60,7 +60,7 @@ export const Licences = () => {
 								)}
 							</Flex>
 							<Flex position="relative" onClick={() => setActiveCartridge(2)} cursor="pointer">
-								Gray
+								Custom
 								{activeCartridge === 2 && (
 									<Flex
 										position="absolute"

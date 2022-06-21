@@ -36,7 +36,7 @@ export const BigHashSection = () => {
                     </Flex>
                 </Flex>
                 <Flex zIndex="100">
-                    <SectionInfoButton label="TEKST" />
+                    <SectionInfoButton label="DIGITAL GAME STORE" />
                 </Flex>
                 <Text fontSize={['24px', '32px', '46px', '60px']} fontWeight="600" zIndex="100" maxW="70%">
                     Do you see a lack of immediate remuneration of creators?

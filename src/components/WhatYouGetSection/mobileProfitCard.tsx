@@ -37,7 +37,7 @@ export const MobileProfitCard = ({number, subNumber, label, description, width, 
 					{description}
 				</Text>
 				<Flex alignItems="center" pt='30px' gridGap="15px" fontWeight="700" fontSize="14px" w='350px' h='30px'>
-					<Text>Learn more about Tokenomic</Text>
+					<Text>Learn more</Text>
 					<RedChevronIRightIcon />
 				</Flex>
 			</Flex>

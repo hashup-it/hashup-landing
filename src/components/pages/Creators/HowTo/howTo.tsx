@@ -47,15 +47,15 @@ export const HowTo = () => {
 					>
 						<Flex flexDirection="column">
 							<Text fontSize="12px" fontWeight="500" color="white">
-								Zobacz instrukcję
+								See how to
 							</Text>
 							<Text fontSize="15px" fontWeight="600" color={Colors.brandMain}>
-								Publikacja gry
+								Publish game
 							</Text>
 						</Flex>
 						<ChevronRightIcon />
 					</Flex>
-					<Image src="assets/cartridgeCreation.png" />
+					<Image src="assets/cartridgeCreation1.png" />
 				</Flex>
 			</SlideFade>
 		</>

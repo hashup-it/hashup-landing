@@ -14,13 +14,13 @@ export const Ecosystem = () => {
 
   const Platforms = [
     {
-      element: <GameContractCard />,
+      element: <PCLauncherCard />,
     },
     {
       element: <GameXplorerCard />,
     },
     {
-      element: <PCLauncherCard />,
+      element: <GameContractCard />,
     },
   ];
 
@@ -61,8 +61,8 @@ export const Ecosystem = () => {
           </Flex>
           <Flex gridGap={["10px", "20px", "30px", "30px"]} mt="50px" mb="100px" display={['none', 'none', 'flex', 'flex']}>
             <PlatformTile
-              first="Game"
-              second="Contract"
+              first="PC"
+              second="Launcher"
               active
               transform={90}
               onClick={() => setActivePlatform(0)}
@@ -77,8 +77,8 @@ export const Ecosystem = () => {
               bgColor={activePlatform === 1 ? Colors.brandMain : ""}
             />
             <PlatformTile
-              first="PC"
-              second="Launcher"
+              first="Game"
+              second="Contract"
               active
               transform={90}
               onClick={() => setActivePlatform(2)}

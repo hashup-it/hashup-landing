@@ -16,7 +16,7 @@ export const HeaderMain = () => {
       mt="50px"
     >
       <Flex fontSize={{base: '12px', lg: "15px"}} fontWeight="600" color="white" gridGap="4px" display={{}}>
-        <RedTriangleIcon mt="-5px" />Solving the <strong>Gaming Industries'</strong> biggest problems
+        <RedTriangleIcon mt="-5px" />Licensing protocol based on  <strong>ERC20</strong> 
         <RedTriangleIcon transform="rotate(3deg)" mt="15px" />
       </Flex>
       <Flex

@@ -48,7 +48,7 @@ export const Roadmap = () => {
             mt="38px"
             direction="column"
           >
-            <Text textAlign='center' fontSize={["32px", "46px", "64px", "70px"]}>Where are we right now?</Text>
+            <Text textAlign='center' fontSize={["32px", "46px", "64px", "70px"]}>On the way to the most interesting cryptocurrency listing ever!</Text>
           </Flex>
           <Flex
             mb="40px"
@@ -59,9 +59,8 @@ export const Roadmap = () => {
             alignItems="center"
           >
             <Text maxWidth="60vw" textAlign="center">
-              We believe that by decentralization of game distribution it’s
-              possible to lower a price of the game for the gamers and increase
-              profits for creators.{" "}
+            We plan to combine listings at the largest CEX, IDO at the largest Launchpads, listing ALL games released on HashUp before our listing. 100x+ listings in one day.
+
             </Text>
           </Flex>
           <CarouselRoadmap />

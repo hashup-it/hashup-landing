@@ -37,58 +37,53 @@ export const ForCreators = () => {
 				alignItems="center"
 				lineHeight="100%"
 			>
-				<Flex alignItems="center" maxW="70%" textAlign="center">
+				<Flex alignItems="center" maxW="90%" textAlign="center">
 					<Text>
-						{' '}
-						You are able to freely CREATE, sell and earn<strong>.</strong>
+						Create digital cartridges of your games just like in the 80s<strong>.</strong>
 					</Text>
 				</Flex>
 			</Flex>
 			<Flex display={['flex', 'flex', 'none', 'none']}>
 					<MobileSlider />
 				</Flex>
-			<Flex justifyContent="space-between" fontSize="24px" fontWeight="400" gridGap="96px" pt="40px" pb="30px" display={['none', 'none', 'flex', 'flex']}>
+			<Flex justifyContent="space-between" fontSize="24px" fontWeight="400" gridGap="106px" pt="40px" pb="30px" display={['none', 'none', 'flex', 'flex']}>
 				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center">
 					<Text>
-						Do you know how{' '}
+						Did you know that{' '}
 						<Text as="span" color={Colors.brandMain}>
-							easy it is{' '}
-						</Text>{' '}
-					</Text>
-					<Text>
-						<Text as="span" color={Colors.brandMain}>
-							to publish games
-						</Text>{' '}
-						with us?
+						you can
+						</Text>
+						<Text color={Colors.brandMain}>
+						release a game on web3
+						</Text>
+						<Text>in 10 minutes?</Text>
 					</Text>
 				</Flex>
-				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center">
-					<Text>
-						Did you know that you{' '}
+				<Flex justifyContent="flex-start" lineHeight="120%" direction="column"  alignItems='center' textAlign="center">
+				<Text>
+						Did you know that{' '}
 						<Text as="span" color={Colors.brandMain}>
-							don't
+						you  
 						</Text>
-					</Text>
-					<Text color={Colors.brandMain}>have to lose money on your</Text>
-					<Text color={Colors.brandMain}>
-						game{' '}
-						<Text as="span" color="white">
-							sales at all?
+						<Text color={Colors.brandMain}>
+						earn royalties on each
 						</Text>
+						<Text>game exchange?</Text>
 					</Text>
 				</Flex>
-				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center">
-					<Text>
-						Making money on{' '}
+				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center" alignItems='ce'>
+				<Text>
+						Did you know that{' '}
 						<Text as="span" color={Colors.brandMain}>
-							game
-						</Text>{' '}
-					</Text>
-					<Text>
-						<Text as="span" color={Colors.brandMain}>
-							trading?{' '}
+						you can
 						</Text>
-						It’s possible!
+						<Text color={Colors.brandMain}>
+						 decide on the HashUp
+						</Text>
+						<Text as="span" color={Colors.brandMain}>
+						platform{" "}
+						</Text>
+						<Text as="span" >with $HASH?</Text>
 					</Text>
 				</Flex>
 			</Flex>

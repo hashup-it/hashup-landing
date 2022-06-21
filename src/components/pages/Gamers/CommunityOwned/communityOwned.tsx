@@ -39,13 +39,6 @@ export const CommunityOwned = () => {
 		if (inputRef.current.getBoundingClientRect().top >= convertVhToPx('20')) {
 			setActiveText(ActiveText.FIRST);
 		}
- 
-		if (
-			inputRef.current.getBoundingClientRect().top < convertVhToPx('20') &&
-			inputRef.current.getBoundingClientRect().top > -0.4 * inputRef.current.getBoundingClientRect().height
-		) {
-			setActiveText(ActiveText.SECOND);
-		}
 
 		if (inputRef.current.getBoundingClientRect().top <= convertVhToPx('-5')) {
 			setIsActiveComponent(0);
@@ -87,22 +80,20 @@ export const CommunityOwned = () => {
 	const typeOptions: { [p: number]: () => React.ReactNode } = {
 		[ActiveText.FIRST]: () => (
 			<Flex direction="column" alignItems="center">
-			<SlideFade in={enterCount > 0} offsetY="40px">
-				<Text lineHeight="100%" maxW={['100%', '100%', '90%', '90%']} fontSize={{base: '36px', lg: "90px"}}>
-					Did you know that current model of gaming platforms <strong>limits</strong> you?
+			<SlideFade in={enterCount > 0} offsetY="100px">
+				<Text lineHeight="100%" maxW={['100%', '100%', '90%', '90%']} fontSize={["30px", "42px", "70px", "90px"]}>
+				All the advantages of physical and digital distribution comined into <strong>one</strong>.
 				</Text>
 			</SlideFade>
 		</Flex>
-		),
+		), /*
 		[ActiveText.SECOND]: () => (
 			<Flex direction="column" alignItems="center" textAlign='center'>
 				<SlideFade in={enterCount > 0} offsetY="40px">
 					<Flex direction="column" alignItems='center' textAlign='center'>
 						<Text lineHeight="100%" fontSize={{base: '36px', lg: "90px"}}>
-							Surpised<strong>?</strong>
 						</Text>
 						<Text fontSize={{base: '24px', lg: "70px"}} lineHeight="100%">
-							How is that possible?
 						</Text>
 					</Flex>
 				</SlideFade>
@@ -181,12 +172,12 @@ export const CommunityOwned = () => {
 						</Flex>
 					</Flex>
 				</SlideFade>
-			</Flex>
-		),
-	};
+			</Flex> 
+		),*/
+	}; 
 
 	return (
-		<Flex direction="column" alignItems="center" ref={inputRef} mb="320px">
+		<Flex direction="column" alignItems="center" ref={inputRef} mb={["80px", "100px", "150px", "200px"]}>
 			<Flex gridGap="6px">
 				<Text fontSize="12px" color={Colors.brandMain}>
 					COMMUNITY-OWNED

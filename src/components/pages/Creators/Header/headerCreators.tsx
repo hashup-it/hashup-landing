@@ -15,11 +15,10 @@ export const HeaderCreators = () => {
 		>
 			<Image
 				src="/assets/desktopBg.png"
-				w="100vw"
+				w="100%"
 				zIndex="0"
-				opacity="0.3"
+				opacity="0.4"
 				bgGradient="linear(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%)"
-				position="absolute"
 				left="0"
 			/>
 			<ForCreators />

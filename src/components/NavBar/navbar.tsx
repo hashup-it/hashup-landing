@@ -58,7 +58,7 @@ export const NavBar = () => {
 					<NavBarItems />
 				</Flex>
 
-				<Flex alignItems="center" gridGap="36px" ml="-80px" display={['none', 'none', 'flex', 'flex']}>
+				<Flex alignItems="center" gridGap="36px"  display={['none', 'none', 'flex', 'flex']}>
 					<LaunchAppButton />
 				</Flex>
 			</Flex>

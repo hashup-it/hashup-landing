@@ -7,7 +7,7 @@ import FormPremiere from './formPremiere';
 export const Newsletter = () => {
 	return (
 		<Flex flexDirection="column" gridGap="30px" alignItems="center" zIndex="1">
-			<Text fontSize="40px" fontWeight="300">
+			<Text textAlign='center' fontSize={["24px", "24px", "40px", "40px"]} fontWeight="300">
 				Be ready and subscribe our newsletter
 			</Text>
 			{/* <Flex gridGap="10px" h="8vh" w="100%" justifyContent="center"> */}

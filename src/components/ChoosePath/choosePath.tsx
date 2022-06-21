@@ -9,27 +9,26 @@ export const ChoosePath = () => {
 	const data: IPathComponents[] = [
 		{
 			link: '/creators',
-			topText: 'New economy for',
+			topText: 'New market for',
 			path: '/assets/animations/pc_v2.json',
-			name: 'Creator',
-			description:
-				'Get familiar with the new model of the creator economy. Publish games without intermediaries and decide how you want to earn. ',
+			name: 'Creators',
+			description: 'Open up to a whole new market and sell games using digital cartridges on the blockchain. Tens of millions of players are waiting for your games!',
 		},
 		{
 			link: '/gamers',
 			topText: 'Freedom for',
 			path: '/assets/animations/pad_v2.json',
-			name: 'Gamer',
+			name: 'Gamers',
 			description:
-				'Share your experiences with other gamers. Take pride in your collection, follow your friends, and dive into the new wave of gaming!',
+				'Hodl games in your wallet and swap them out. Just like we used to on the shelf. We respect gamers. #HODL_GAMES!',
 		},
 		{
-			link: '/investors',
+			link: 'https://hashup.gitbook.io/hashup-whitepaper/',
 			topText: 'New place for',
 			path: '/assets/animations/wykres_v2.json',
-			name: 'Investor',
+			name: 'Investors',
 			description:
-				'A new distribution model means new and better opportunities. Discover the new world of investment!',
+				'HashUp opens the market for investing in indie and AAA games. Anyone will be able to fund games and make money from it!',
 		},
 	];
 

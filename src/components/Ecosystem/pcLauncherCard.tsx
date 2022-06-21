@@ -8,15 +8,14 @@ import PCLauncherLogo from '../../Icons/pcLauncherLogo';
 
 export const PCLauncherCard = () => {
   return (
-    <Flex w="100vw" h="80vh" p="50px 140px">
+    <Flex w="100vw" h="80vh" p="50px 140px" display={['none', 'none', 'flex', 'flex']}>
       <Flex flexDirection="column" gridGap="50px" maxW="40%">
         <PCLauncherLogo />
         <Text fontSize="44px" fontWeight="700">
-            Blockchain Launcher for the gamers!
+        PC Launcher with Metamask and DRM!
         </Text>
         <Text fontSize="17px" fontWeight="300" color={Colors.greyText}>
-        HashUp wants to make the process of releasing games as simple as can be. 
-        With GameContract we’re able to take the developer's journey to the next level.
+        Keep the games in the metamask. Download games. Trade games on our PC Launcher. We're building a social media following based on owning games and everything related to them! The first PC Launcher for web2 and web3 games. Created by degens for gamers! Your virtual gaming shelf is the HashUp PC Launcher!
         </Text>
         <Flex gridGap="3px">
           <Flex

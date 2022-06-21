@@ -43,7 +43,7 @@ export const ProfitCard: FC<IProfitCard> = ({ number, src, label, description, .
 			</Text>
 				<Flex gridGap="25px" alignItems="center" position="relative" p="10px 0" cursor="pointer">
 					<Text fontSize="12px" fontWeight="700">
-						Learn more about Tocenomics
+						Learn more
 					</Text>
 					<ChevronRightIcon color={Colors.brandMain} />
 					<Box h="2px" w="40px" position="absolute" bottom="0" left="5px" bgColor={Colors.brandMain} />

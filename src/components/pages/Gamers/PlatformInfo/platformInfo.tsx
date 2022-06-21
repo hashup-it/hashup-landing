@@ -5,8 +5,8 @@ import PlayVideoIcon from '../../../../Icons/playVideoIcon';
 import SectionInfoButton from '../../../SectionLabel/sectionInfoButton';
 import { Colors } from '../../../../colors';
 import ChevronRightIcon from '../../../../Icons/chevronRightIcon';
-import { HashpadScroll } from './hashPadSroll';
 import { CartridgesScroll } from './cartridgesScroll';
+import { HashPadSroll } from './hashPadSroll';
 import MobileGameXplorerLogo from '../../../../Icons/mobileGameXplorerLogo';
 
 export const PlatformInfo = () => {
@@ -28,17 +28,17 @@ export const PlatformInfo = () => {
 					lineHeight="110%"
 					zIndex="1"
 				>
-					<Text>With hashup you </Text>
-					<Text>can be a gamer without</Text>
+					<Text>A platform for </Text>
+					<Text>gamers and game developers created by</Text>
 					<Text>
-						limits<strong>.</strong>
+					Softoshi Gamermoto<strong>.</strong>
 					</Text>
 				</Flex>
 			</Flex>
 			<Flex direction="column" position="relative">
 				<Flex pt="-30px" ref={inputRef}>
-					<HashpadScroll animationHookReference={inputRef} />{' '}
-					{<Image src="/assets/images/hash_pad/iPad_00001.jpg" />}
+					<HashPadSroll />
+					{<Image src="/assets/images/hash_pad/iPad_00000.jpg" />}
 				</Flex>
 				<Flex
 					position="absolute"
@@ -98,22 +98,19 @@ export const PlatformInfo = () => {
 						<Text fontSize={['22px', '32px', '42px', '50px']} fontWeight="600">
 							How our platform works<strong>?</strong>
 						</Text>
-						<PlayVideoIcon width={66} height={66} />
+						<PlayVideoIcon width={66} height={66} cursor='pointer' />
 					</Flex>
 				</Flex>
 			</Flex>
 			<Flex direction="column" justifyContent="flex-start">
-				<Flex ref={ref} zIndex="0" display={['none', 'none', 'none', 'none']}>
-					<CartridgesScroll animationHookReference={ref} />
-				</Flex>
-				<Flex direction="column" p={["250px 0px 0px 80px" ,"300px 0px 0px 210px","300px 0px 0px 210px" , "300px 0px 0px 210px"]} zIndex="1">
+				<Flex direction="column" p={["450px 0px 0px 80px" ,"300px 0px 0px 210px","300px 0px 0px 210px" , "300px 0px 0px 210px"]} zIndex="1">
 					<Flex pt="100px" maxW="20%" right={{sm: '80%'}}>
 						<SectionInfoButton label="LICENSES" />
 					</Flex>
 					<Flex pt="50px" maxW={["85%", "80%", "70%", "70%"]} fontSize={['24px', '32px', '64px', '70px']} fontWeight="600" lineHeight="110%" direction="column">
-						<Text>Cartrigde what</Text>
+						<Text>What can </Text>
 						<Text>
-							is it to the gamer<strong>?</strong>
+						gamers gain using our cartridges<strong>?</strong>
 						</Text>
 					</Flex>
 					<Box pt="50px" fontSize={["16px", "18px", "22px", "26px"]} maxW={['80%', '60%', '50%', "50%"]} fontWeight="500">
@@ -126,9 +123,9 @@ export const PlatformInfo = () => {
 							{' '}
 							In short, they work just like other cryptocurrencies.{' '}
 						</Text>
-						<Text pt="50px" color={Colors.additional}>
+						<Text pt="50px" color='white'>
 							{' '}
-							Owning a unit entitles the owner to launch the game.{' '}
+							Store games in your crypto wallet. Alongside <strong>Bitcoin</strong> and <strong>Ethereum</strong>.{' '}
 						</Text>
 					</Box>
 				</Flex>

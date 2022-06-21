@@ -11,8 +11,8 @@ import { useSwipeable } from 'react-swipeable';
 const CardsInfo = [
 	{
 		number: '01',
-		label: 'No intermediaries',
-		description: 'Take the fruit of your labor and enjoy the freedom of distribution!',
+		label: 'Own the platform!',
+		description: 'Platform profits pump and burn $HASH. In real time. EACH SALE OF A GAME INCREASES THE PRICE OF THE TOKEN',
 		src: 'assets/videos/HashCoinWeb.mp4',
 		subNumber: '02',
 	},
@@ -26,6 +26,7 @@ const CardsInfo = [
 	{
 		number: '03',
 		label: 'Gamers and Creators run the market',
+		description: 'Players define prices by swapping games. Next generation subscription model with no monthly subscription and the largest game library!',
 		src: 'assets//videos/LaptopWeb.mp4',
 	},
 ];

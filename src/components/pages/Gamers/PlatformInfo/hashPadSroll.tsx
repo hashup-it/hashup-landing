@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Flex, Image } from '@chakra-ui/react';
 
 const assetCount = 24;
@@ -7,7 +7,7 @@ const getImageId = () => {
 	const assetCount = 24;
 	const indices = Array.from(Array(assetCount).keys());
 
-	return indices.map((index) => `assets/images/hash_pad/iPad_${index.toString().padStart(5, '0')}.jpg`);
+	return indices.map((index) => `assets/images/hash_pad/iPad_${(index).toString().padStart(5, '0')}.jpg`);
 };
 
 const handleOnScroll = (
@@ -18,31 +18,30 @@ const handleOnScroll = (
 		return;
 	}
 
-	const { offsetTop } = animationHookReference.current;
-  	const animationBoundEnd = offsetTop - window.scrollY + 2400;
+	const pixelsFromBottom = window.innerHeight - animationHookReference.current.getBoundingClientRect().top
+	const pixelsFromBottomLimit = window.innerHeight + animationHookReference.current.getBoundingClientRect().height
 
-  const assetIndex = Math.min(Math.floor(animationBoundEnd / 30), assetCount);
-  setCurrentAssetIndex(assetIndex);
+	const assetIndex = Math.min(Math.floor(pixelsFromBottom / (pixelsFromBottomLimit / assetCount) *1.2), assetCount);
 
 	setCurrentAssetIndex(assetIndex);
 };
 
-interface IHashupLogoBackground {
-	animationHookReference: React.MutableRefObject<HTMLDivElement>;
-}
-
-export const HashpadScroll = ({ animationHookReference }: IHashupLogoBackground) => {
+export const HashPadSroll = () => {
 	const [currentAssetIndex, setCurrentAssetIndex] = useState(0);
+
+	const hashImageReference = useRef(null!);
+
 	const imageUriArray = getImageId();
 	useEffect(() => {
-		window.removeEventListener('scroll', () => handleOnScroll(animationHookReference, setCurrentAssetIndex));
-		window.addEventListener('scroll', () => handleOnScroll(animationHookReference, setCurrentAssetIndex), {
+		window.removeEventListener('scroll', () => handleOnScroll(hashImageReference, setCurrentAssetIndex));
+		window.addEventListener('scroll', () => handleOnScroll(hashImageReference, setCurrentAssetIndex), {
 			passive: true,
 		});
 
 		return () =>
-			window.removeEventListener('scroll', () => handleOnScroll(animationHookReference, setCurrentAssetIndex));
+			window.removeEventListener('scroll', () => handleOnScroll(hashImageReference, setCurrentAssetIndex));
 	}, []);
     
-	return <Image src={imageUriArray[currentAssetIndex]} />;
+	return <Image src={imageUriArray[currentAssetIndex]} ref={hashImageReference} />;
 };
+
