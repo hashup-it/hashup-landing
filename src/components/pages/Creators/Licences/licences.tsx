@@ -102,7 +102,7 @@ export const Licences = () => {
 							right="-5%"
 							bg={Cartridges[activeCartridge].gradient}
 							borderRadius="50%"
-							filter="blur(150px)"
+							filter="blur(149px)"
 							h="300px"
 							w="300px"
 							zIndex="0"
