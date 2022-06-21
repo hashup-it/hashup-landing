@@ -18,7 +18,7 @@ export const GameContractCard = () => {
 					developer’s journey to the next level by publishing games on GameContract, eliminating
 					intermediaries.
 				</Text>
-				<Link href="https://test.gamecontract.io">
+				<Link href="https://gamecontract.io/">
 					<a target="_blank">
 						<Flex gridGap="3px">
 							<Flex

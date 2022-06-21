@@ -1,4 +1,4 @@
-import { Flex, Text, Box } from '@chakra-ui/react';
+import { Flex, Text, Box, Link } from '@chakra-ui/react';
 import React from 'react';
 import { Colors } from '../../colors';
 import ElipseMobileIcon from '../../Icons/elipseMobileIcon';
@@ -10,10 +10,11 @@ export interface IMobileProfitCard {
     label: string, 
     description?: string,
 	width: string,
+	link: string,
 	handlers: any,
 }
 
-export const MobileProfitCard = ({number, subNumber, label, description, width, handlers }: IMobileProfitCard) => {
+export const MobileProfitCard = ({number, subNumber, label, description, width, handlers, link }: IMobileProfitCard) => {
 	return (
 		<Flex direction="column" p="25px" {...handlers} h='40vh'>
 			<Flex alignItems="center" gridGap="120px" justifyContent="flex-start" w='100%'>
@@ -37,7 +38,9 @@ export const MobileProfitCard = ({number, subNumber, label, description, width, 
 					{description}
 				</Text>
 				<Flex alignItems="center" pt='30px' gridGap="15px" fontWeight="700" fontSize="14px" w='350px' h='30px'>
-					<Text>Learn more</Text>
+					<Link href={link}>
+					<Text >Learn more</Text>
+					</Link>
 					<RedChevronIRightIcon />
 				</Flex>
 			</Flex>

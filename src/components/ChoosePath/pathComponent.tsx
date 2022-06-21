@@ -71,7 +71,7 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 					{description}
 				</Text>
 			</Flex>
-			<Flex gridGap="6px" paddingTop="30px">
+			<Flex gridGap="6px" paddingTop="30px" _hover={{opacity: '0.8'}}>
 				<Link href={link}>
 					<Flex
 						bgColor={Colors.brandMain}

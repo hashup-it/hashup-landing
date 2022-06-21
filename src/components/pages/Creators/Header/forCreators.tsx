@@ -1,4 +1,4 @@
-import { Flex, Text, Box, SlideFade } from '@chakra-ui/react';
+import { Flex, Text, Box, SlideFade, Link } from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import RedTriangleIcon from '../../../../Icons/redTriangleIcon';
 import { Colors } from '../../../../colors';
@@ -48,36 +48,36 @@ export const ForCreators = () => {
 				</Flex>
 			<Flex justifyContent="space-between" fontSize="24px" fontWeight="400" gridGap="106px" pt="40px" pb="30px" display={['none', 'none', 'flex', 'flex']}>
 				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center">
-					<Text>
+					<Text as='div'>
 						Did you know that{' '}
 						<Text as="span" color={Colors.brandMain}>
 						you can
 						</Text>
-						<Text color={Colors.brandMain}>
+						<Text as='div' color={Colors.brandMain}>
 						release a game on web3
 						</Text>
-						<Text>in 10 minutes?</Text>
+						<Text as='div'>in 10 minutes?</Text>
 					</Text>
 				</Flex>
 				<Flex justifyContent="flex-start" lineHeight="120%" direction="column"  alignItems='center' textAlign="center">
-				<Text>
+				<Text as='div'>
 						Did you know that{' '}
 						<Text as="span" color={Colors.brandMain}>
 						you  
 						</Text>
-						<Text color={Colors.brandMain}>
+						<Text as='div' color={Colors.brandMain}>
 						earn royalties on each
 						</Text>
-						<Text>game exchange?</Text>
+						<Text as='div'>game exchange?</Text>
 					</Text>
 				</Flex>
-				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center" alignItems='ce'>
-				<Text>
+				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center" alignItems='center'>
+				<Text as='div'>
 						Did you know that{' '}
 						<Text as="span" color={Colors.brandMain}>
 						you can
 						</Text>
-						<Text color={Colors.brandMain}>
+						<Text  as='div' color={Colors.brandMain}>
 						 decide on the HashUp
 						</Text>
 						<Text as="span" color={Colors.brandMain}>
@@ -87,7 +87,9 @@ export const ForCreators = () => {
 					</Text>
 				</Flex>
 			</Flex>
+			<Link href='https://gamecontract.io/' _hover={{active: 'none'}}>
 			<Flex
+				_hover={{opacity: '0.8'}}
 				borderRadius="5"
 				zIndex="2"
 				p="17px 22px"
@@ -109,6 +111,7 @@ export const ForCreators = () => {
 			>
 				<Text zIndex="4">Publish your game</Text>
 			</Flex>
+			</Link>
 			<SlideFade in={enterCount > 0} offsetY="20vh">
 				<Box mt="80px" mb="80px" w="1px" h="100px" bgColor={Colors.brandMain} ref={ref} pt={{base: '-200px'}} />
 			</SlideFade>

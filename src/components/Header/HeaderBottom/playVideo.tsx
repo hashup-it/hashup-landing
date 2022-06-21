@@ -13,7 +13,7 @@ export const PlayVideo = () => {
       color="white"
       cursor="pointer"
     >
-      <PlayVideoIcon /> Play Video<Text color={Colors.brandMain}></Text>
+      <PlayVideoIcon cursor='pointer' _hover={{opacity: '0.8'}}/> Play Video<Text color={Colors.brandMain}></Text>
     </Flex>
   );
 };

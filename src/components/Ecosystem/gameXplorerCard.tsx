@@ -17,7 +17,7 @@ export const GameXplorerCard = () => {
 					The future of social media. Create a stunning, customizable profile and take pride in your games
 					collection. Know your friends’ items and get inspired by following influencers!
 				</Text>
-				<Link href="https://test.gamexplorer.io">
+				<Link href="https://gamexplorer.io/">
 					<a target="_blank">
 						<Flex gridGap="3px">
 							<Flex

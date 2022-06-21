@@ -29,11 +29,14 @@ export const HeaderMain = () => {
         alignItems="center"
         lineHeight="100%"
       >
-        <Flex>Decentralized Games</Flex>
-        <Flex>Marketplace and</Flex>
-        <Flex>
+        <Flex display={['none', 'none', 'flex', 'flex']}>Decentralized Games</Flex>
+        <Flex display={['none', 'none', 'flex', 'flex']}>Marketplace and</Flex>
+        <Flex display={['none', 'none', 'flex', 'flex']}>
           Publishing Platform
           <strong>.</strong>
+        </Flex>
+        <Flex display={['flex', 'flex', 'none', 'none']} >
+        <Text> Decentralized Games Marketplace and Publishing Platform<strong>.</strong></Text>
         </Flex>
       </Flex>
       <HeaderMainButtons />

@@ -15,6 +15,7 @@ const CardsInfo = [
 		description: 'Platform profits pump and burn $HASH. In real time. EACH SALE OF A GAME INCREASES THE PRICE OF THE TOKEN',
 		src: 'assets/videos/HashCoinWeb.mp4',
 		subNumber: '02',
+		link: '/gamers'
 	},
 	{
 		number: '02',
@@ -22,12 +23,14 @@ const CardsInfo = [
 		description: 'Build your collection. Buy, sell and trade your games permisionless.',
 		src: 'assets/videos/CartridgeWeb.mp4',
 		subNumber: '03',
+		link: '/gamers'
 	},
 	{
 		number: '03',
 		label: 'Gamers and Creators run the market',
 		description: 'Players define prices by swapping games. Next generation subscription model with no monthly subscription and the largest game library!',
 		src: 'assets//videos/LaptopWeb.mp4',
+		link: '/creators'
 	},
 ];
 
@@ -94,6 +97,7 @@ export const WhatYouGet = () => {
 							subNumber={CardsInfo[card].subNumber}
 							label={CardsInfo[card].label}
 							description={CardsInfo[card].description}
+							link={CardsInfo[card].link}
 							handlers={handlers}
 						/>
 					</Flex>
@@ -119,6 +123,7 @@ export const WhatYouGet = () => {
 						label={CardsInfo[card].label}
 						description={CardsInfo[card].description}
 						src={CardsInfo[card].src}
+						link={CardsInfo[card].link}
 					/>
 					<Flex gridGap="10px">
 						<Flex

@@ -23,7 +23,7 @@ export const SocialMediaUrls = {
   twitter: "https://twitter.com/HashUp_it",
   discord: "https://discord.gg/ZxwhHb7R9e",
   gitbook: "https://hashup-it.gitbook.io/hashup-it-1/",
-  launcherLink: "",
+  launcherLink: "https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct",
   jankowskiTelegram: "https://t.me/SzymonJankowski",
 } as const;
 

@@ -56,12 +56,12 @@ export const LaunchAppButton = () => {
 					onMouseLeave={onClose}
 				>
 					<MenuItem _hover={{ bgColor: '#181717' }}>
-						<Link href="https://test.gamexplorer.io">
+						<Link href="https://gamexplorer.io/">
 							<a target="_blank">GameXplorer</a>
 						</Link>
 					</MenuItem>
 					<MenuItem _hover={{ bgColor: '#181717' }}>
-						<Link href="https://test.gamecontract.io">
+						<Link href="https://gamecontract.io/">
 							<a target="_blank">GameContract</a>
 						</Link>
 					</MenuItem>

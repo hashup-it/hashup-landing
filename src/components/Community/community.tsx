@@ -44,9 +44,9 @@ export const Community = () => {
 							creators, innovators, and gamers!
 						</Text>
 					</Flex>
-					<Flex justifyContent="center" gridGap="20px" mt="70px" mb="100px" direction={['column', 'column', 'row', 'row']} alignItems={{base: 'center'}}>
+					<Flex justifyContent="center" gridGap="20px" mt="70px" mb="100px" direction={['column', 'column', 'row', 'row']} alignItems={{base: 'center'}} cursor='pointer' >
 						{CommunityInfo.map((element) => (
-							<CommunityButtons {...element} />
+							<CommunityButtons  {...element} />
 						))}
 					</Flex>
 				</SlideFade>

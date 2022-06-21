@@ -45,7 +45,7 @@ export const HowTo = () => {
 						cursor="pointer"
 						mb="70px"
 					>
-						<Flex flexDirection="column">
+						<Flex flexDirection="column" _hover={{opacity: '0.8'}}>
 							<Text fontSize="12px" fontWeight="500" color="white">
 								See how to
 							</Text>

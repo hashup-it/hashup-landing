@@ -20,11 +20,14 @@ export const MobileFooter = () => {
 				<Text>HashUp.it</Text>
 				<Box w="17px" h="1px" bgColor={Colors.brandMain} />
 				<a href="/">
-					<Text> Go to homepage</Text>
+					<Text>Go to the main page</Text>
 				</a>
 			</Flex>
-            <Flex alignItems='center' pt='50px'>
+            <Flex alignItems='center' pt='3px'>
+			<Flex direction='column'>
+			<Newsletter />
             <CompanyInformation />
+			</Flex>
             </Flex>
             <Flex pt='20px'>
             <Copywright />

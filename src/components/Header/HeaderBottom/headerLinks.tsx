@@ -13,9 +13,11 @@ export const HeaderLinks = () => {
       <Flex fontSize="14px" fontWeight="600" color="white" cursor="pointer">
         Media<strong>.</strong>
       </Flex>
+      <Link href='https://hashup.gitbook.io/hashup-whitepaper/' _hover={{ opacity: '0.5' }}>
       <Flex fontSize="14px" fontWeight="600" color="white" cursor="pointer">
         Docs<strong>.</strong>
       </Flex>
+      </Link>
       <PlayVideo />
     </Flex>
   );

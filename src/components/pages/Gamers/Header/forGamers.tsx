@@ -1,4 +1,4 @@
-import { Flex, Text, Box } from '@chakra-ui/react';
+import { Flex, Text, Box, Link } from '@chakra-ui/react';
 import React from 'react';
 import RedTriangleIcon from '../../../../Icons/redTriangleIcon';
 import { Colors } from '../../../../colors';
@@ -42,7 +42,9 @@ export const ForGamers = () => {
 			<Text fontSize="28px" fontWeight="300" pt="32px" textAlign="center">
 				Web2 games on Web3.
 			</Text>
+			<Link href='https://gamexplorer.io/' _hover={{active: 'none'}}>
 			<Flex
+				_hover={{opacity: '0.8'}}
 				borderRadius="5"
 				zIndex="2"
 				p="17px 22px"
@@ -64,6 +66,7 @@ export const ForGamers = () => {
 			>
 				<Text zIndex="4">Run GameXplorer</Text>
 			</Flex>
+			</Link>
 			<Box m="60px 0" w="1px" h="200px" bgColor={Colors.brandMain} />
 		</Flex>
 	);

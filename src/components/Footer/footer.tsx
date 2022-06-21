@@ -8,6 +8,8 @@ import Newsletter from "./Newsletter/newsletter";
 import Copywright from "./Copywright/copywright";
 import { Colors } from "../../colors";
 import MobileFooter from "./mobileFooter";
+import PlatformsFooter from "./platformsFooter";
+import KnowledgeFooter from "./knowledgeFooter";
 
 export const Footer = () => {
   return (
@@ -40,16 +42,18 @@ export const Footer = () => {
         <Text>HashUp.it</Text>
         <Box w="17px" h="1px" bgColor={Colors.brandMain} />
         <a href="/">
-          <Text> Go to homepage</Text>
+          <Text>Go to the main page</Text>
         </a>
       </Flex>
       <Flex justifyContent="space-between" gridGap="60px">
         <Flex>
           <CompanyInformation />
         </Flex>
-        <Flex>
+        <Flex direction='column'>
           <AboutHashUp />
+          <KnowledgeFooter />
         </Flex>
+        <PlatformsFooter />
         <Flex>
           <Newsletter />
         </Flex>
