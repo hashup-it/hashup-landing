@@ -34,7 +34,7 @@ export const SectionOne = () => {
 							lineHeight="120%"
 						>
 							<Text>HashUp is a</Text>
-							<Text>brand-new and</Text>
+							<Text>brand new and</Text>
 							<Text>innovative platform</Text>
 						</Flex>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
@@ -43,6 +43,9 @@ export const SectionOne = () => {
 						</Text>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
 						We want to make the software distribution market transparent and fair following the will of gamers and developers<strong>.</strong>
+						</Text>
+						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
+						Our distribution model allows you to swap games<strong>.</strong>
 						</Text>
 					</Flex>
 					<Partners />

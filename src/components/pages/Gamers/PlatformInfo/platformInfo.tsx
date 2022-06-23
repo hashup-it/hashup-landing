@@ -101,7 +101,7 @@ export const PlatformInfo = () => {
 						direction={['column', 'column', 'row', 'row']}
 					>
 						<Text fontSize={['22px', '32px', '42px', '50px']} fontWeight="600">
-							How does our platform works<strong>?</strong>
+							How does our platform work<strong>?</strong>
 						</Text>
 						<PlayVideoIcon width={66} height={66} cursor='pointer' _hover={{opacity: '0.8'}} />
 					</Flex>

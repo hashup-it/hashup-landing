@@ -36,7 +36,7 @@ export const MobileSlider = () => {
 
 	return (
 		<Flex justifyContent="space-between" alignItems='center' {...handlers} h='15vh'>
-			<MobileLeftIcon onClick={handleSwayBackward} cursor='pointer'/>
+			<MobileLeftIcon width='42px' height='42px' onClick={handleSwayBackward} cursor='pointer'/>
 			<Flex fontSize='18px' textAlign='center'>
                 {activeText === 0  && (
                 <Text>
@@ -54,7 +54,7 @@ export const MobileSlider = () => {
                     </Text>
                 )}
 			</Flex>
-			<MobileRightIcon onClick={handleSwayForward} cursor='pointer'/>
+			<MobileRightIcon  width='42px' height='42px'  onClick={handleSwayForward} cursor='pointer'/>
 		</Flex>
 	);
 };

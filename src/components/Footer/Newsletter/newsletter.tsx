@@ -7,7 +7,7 @@ import Form from '../../Premiere/form';
 export const Newsletter = () => {
 	return (
 		<>
-			<Form />
+			<Form/>
 		</>
 		// <Flex
 		// flexDirection="column"

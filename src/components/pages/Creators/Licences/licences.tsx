@@ -30,7 +30,7 @@ export const Licences = () => {
 					ref={ref}
 					mb={{ base: '35vh', md: '60vh', xl: '10vh' }}
 				>
-					<Flex flexDirection="column" gridGap={{ base: '3rem', xl: '60px' }}>
+					<Flex flexDirection="column" gridGap={{ base: '3rem', xl: '60px' }} pb={['40px', '60px', '100px', '100px']}>
 						<SectionInfoButton label="LICENCES" zIndex="1" />
 						<Flex gridGap="25px">
 							<Flex position="relative" onClick={() => setActiveCartridge(0)} cursor="pointer">

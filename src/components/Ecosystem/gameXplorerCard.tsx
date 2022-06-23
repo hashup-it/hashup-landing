@@ -8,9 +8,9 @@ import GameXplorerLogo from '../../Icons/gameXplorerLogo';
 export const GameXplorerCard = () => {
 	return (
 		<Flex w="100vw" h="80vh" p="50px 140px">
-			<Flex flexDirection="column" gridGap="50px" maxW="40%">
+			<Flex flexDirection="column" gridGap="50px" maxW="45%">
 				<GameXplorerLogo />
-				<Text fontSize="40px" fontWeight="700">
+				<Text fontSize="44px" fontWeight="700" w='79%'>
 					First blockchain explorer for the gamers!
 				</Text>
 				<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
@@ -22,10 +22,10 @@ export const GameXplorerCard = () => {
 						<Flex gridGap="3px">
 							<Flex
 								bgColor={Colors.brandMain}
-								fontSize="11px"
+								fontSize="13px"
 								fontWeight="600"
-								p="11px 20px"
-								borderRadius="0 0 0 15px"
+								p="12px 22px"
+								borderRadius="0 0 0 19px"
 								cursor="pointer"
 							>
 								Explore
@@ -33,7 +33,7 @@ export const GameXplorerCard = () => {
 							<Flex
 								bgColor={Colors.brandMain}
 								opacity="0.6"
-								p="10px"
+								p="12px"
 								alignItems="center"
 								cursor="pointer"
 							>
