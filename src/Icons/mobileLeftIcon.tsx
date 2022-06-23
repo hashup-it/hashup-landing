@@ -5,12 +5,14 @@ export interface IMobileLeftIcon {
 	onClick?: () => void
 	cursor: string
 	opacity?: string
+	width: string
+	height: string
 }
 
-export const MobileLeftIcon = ({onClick, cursor, opacity}: IMobileLeftIcon ) => {
+export const MobileLeftIcon = ({onClick, cursor, opacity, width, height}: IMobileLeftIcon ) => {
 	return (
 
-		<Icon width="72px" height="72px" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={onClick} cursor={cursor} opacity={opacity}>
+		<Icon width={width} height={height} viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={onClick} cursor={cursor} opacity={opacity}>
 			<path
 				d="M45 54L27 36L45 18"
 				stroke="white"

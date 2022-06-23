@@ -31,7 +31,7 @@ export const HeaderMainButtons = () => {
 			</Link>
 			<Link href="https://gamexplorer.io/" _hover={{ opacity: '0.5' }} target="_blank">
 				<Flex
-					bgColor="black"
+					bgColor="#00000080"
 					w="200px"
 					h="70px"
 					borderRadius="0 25px 0 0"

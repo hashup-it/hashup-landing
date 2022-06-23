@@ -13,7 +13,7 @@ export const GameContractCard = () => {
 				<Text fontSize={["16px", "24px", "32px", "44px"]} fontWeight="700" w='95%'>
 					Publish games independently without intermediares in 5 steps.
 				</Text>
-				<Text fontSize="20px" fontWeight="300" color={Colors.greyText} w='75%'>
+				<Text fontSize="20px" fontWeight="300" color={Colors.greyText} w='95%'>
 					Our goal is to make the process of publishing games as simple as possible. You can take your
 					developer’s journey to the next level by publishing games on GameContract, eliminating
 					intermediaries.
@@ -23,18 +23,18 @@ export const GameContractCard = () => {
 						<Flex gridGap="3px">
 							<Flex
 								bgColor={Colors.brandMain}
-								fontSize="11px"
+								fontSize="13px"
 								fontWeight="600"
-								p="11px 20px"
-								borderRadius="0 0 0 15px"
+								p="12px 22px"
+								borderRadius="0 0 0 18px"
 								cursor="pointer"
 							>
-								Create Your ERC-20 License
+								Create Your License
 							</Flex>
 							<Flex
 								bgColor={Colors.brandMain}
 								opacity="0.6"
-								p="10px"
+								p="12px"
 								alignItems="center"
 								cursor="pointer"
 							>

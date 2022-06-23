@@ -19,7 +19,7 @@ export const LauncherApp = () => {
 			<Flex direction="column" justifyContent="flex-start" maxW={['80%', '60%', '40%', '40%']}>
 				<Flex direction="column">
 					<Flex maxW="90%">
-						<SectionInfoButton label="PC Launcher" />
+						<SectionInfoButton label="PC LAUNCHER" />
 					</Flex>
 					<Flex
 						pt="50px"
@@ -84,7 +84,7 @@ export const LauncherApp = () => {
 			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" right="-250px" zIndex="2">
 				<Image src="./assets/launcherApp1.png" />
 			</Flex>
-			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" bottom="35%" right="-100px" zIndex={1}>
+			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" bottom="40%" right="-100px" zIndex={1}>
 				<RedCircleLauncher />
 			</Flex>
 			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" bottom="10%" left="45%" zIndex={1}>

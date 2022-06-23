@@ -31,11 +31,11 @@ export const Recommendations = () => {
 					Look what people say<strong>.</strong>
 				</Text>
 				<Flex alignItems="center" pt='5px'>
-					<MobileLeftIcon cursor="pointer" onClick={previousOpinion} opacity={opinion === 0 ? '0.5' : '1'}/>
+					<MobileLeftIcon width='42px' height='42px' cursor="pointer" onClick={previousOpinion} opacity={opinion === 0 ? '0.5' : '1'}/>
 					<Flex maxW="90%" pt="30px" transform='translateX(-5%)'>
 						<Image src={Opinions[opinion].photo} />
 					</Flex>
-					<MobileRightIcon cursor="pointer" onClick={nextOpinion} opacity={opinion === Opinions.length - 1 ? '0.5' : '1'} />
+					<MobileRightIcon  width='42px' height='42px' cursor="pointer" onClick={nextOpinion} opacity={opinion === Opinions.length - 1 ? '0.5' : '1'} />
 				</Flex>
 				<Flex>
 					<OpinionCard

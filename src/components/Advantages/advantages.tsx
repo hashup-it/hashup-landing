@@ -64,7 +64,7 @@ export const Advantages = () => {
 				<Flex display={['flex', 'flex', 'none', 'none']} alignItems='center' justifyContent='center' pt='30px'>
 					<MobileCard />
 				</Flex>
-				<Flex display={['none', 'none', 'flex', 'flex']} h='60vh' gridGap="0px" w="100%" justifyContent="space-between" mt="50px" alignItems="center" mb="90px">
+				<Flex display={['none', 'none', 'flex', 'flex']} h='60vh' w="100%" justifyContent="space-between" mt="50px" alignItems="center" mb="90px"  >
 					<PhaseCard
 						isActive={false}
 						image={<FirstDistributionModel />}

@@ -15,14 +15,14 @@ export const Socials = [
 		link: SocialMediaUrls.twitter,
 	},
 	{
-		name: 'Discord',
-		logo: <DiscordSocialIcons />,
-		link: SocialMediaUrls.discord,
-	},
-	{
 		name: 'Telegram',
 		logo: <TelegramSocialIcon />,
 		link: SocialMediaUrls.telegram,
+	},
+	{
+		name: 'Discord',
+		logo: <DiscordSocialIcons />,
+		link: SocialMediaUrls.discord,
 	},
 	{
 		name: 'LinkedIn',

@@ -50,12 +50,11 @@ export const ForCreators = () => {
 				justifyContent="space-between"
 				fontSize="24px"
 				fontWeight="400"
-				gridGap="106px"
 				pt="40px"
 				pb="30px"
 				display={['none', 'none', 'flex', 'flex']}
 			>
-				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center">
+				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center" w='33vw'>
 					<Text as="div">
 						Do you know that{' '}
 						<Text as="span" color={Colors.brandMain}>
@@ -73,6 +72,7 @@ export const ForCreators = () => {
 					direction="column"
 					alignItems="center"
 					textAlign="center"
+					w='33vw'
 				>
 					<Text as="div">
 						Do you know that{' '}
@@ -91,6 +91,7 @@ export const ForCreators = () => {
 					direction="column"
 					textAlign="center"
 					alignItems="center"
+					w='33vw'
 				>
 					<Text as="div">
 						Do you know that <Text as="span">the games</Text>

@@ -4,6 +4,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { Flex, Text } from "@chakra-ui/react";
 import { IRoadmapCardIRoadmapCard } from "./roadmapCard";
+import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -75,6 +76,7 @@ export const CarouselRoadmap = () => {
       disableButtonsControls
       paddingLeft={90}
       paddingRight={90}
+      disableDotsControls={true}
       responsive={responsive}
     />
   );
