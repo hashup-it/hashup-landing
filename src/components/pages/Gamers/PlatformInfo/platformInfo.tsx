@@ -28,10 +28,10 @@ export const PlatformInfo = () => {
 					lineHeight="110%"
 					zIndex="1"
 				>
-					<Text>A platform for </Text>
-					<Text>gamers and game developers created by</Text>
+					<Text>A brand new platform</Text>
+					<Text>for gamers and game</Text>
 					<Text>
-					Softoshi Gamermoto<strong>.</strong>
+					developers<strong>.</strong>
 					</Text>
 				</Flex>
 			</Flex>
@@ -101,7 +101,7 @@ export const PlatformInfo = () => {
 						direction={['column', 'column', 'row', 'row']}
 					>
 						<Text fontSize={['22px', '32px', '42px', '50px']} fontWeight="600">
-							How our platform works<strong>?</strong>
+							How does our platform works<strong>?</strong>
 						</Text>
 						<PlayVideoIcon width={66} height={66} cursor='pointer' _hover={{opacity: '0.8'}} />
 					</Flex>

@@ -6,6 +6,7 @@ import TwitterSocialIcon from '../../Icons/twitterSocialIcon';
 import MediumIcon from '../../Icons/mediumIcon';
 import DiscordSocialIcons from '../../Icons/discordSocialIcons';
 import InstagramSocialIcon from '../../Icons/instagramSocialIcon';
+import LinkedinSocialIcon from '../../Icons/linkedinSocialIcon';
 
 export const Socials = [
 	{
@@ -25,7 +26,7 @@ export const Socials = [
 	},
 	{
 		name: 'LinkedIn',
-		logo: <LinkedinIcon />,
+		logo: <LinkedinSocialIcon />,
 		link: SocialMediaUrls.linkedIn,
 	},
 	{

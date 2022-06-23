@@ -34,18 +34,15 @@ export const SectionOne = () => {
 							lineHeight="120%"
 						>
 							<Text>HashUp is a</Text>
-							<Text>licensing protocol</Text>
-							<Text>for games by degens!</Text>
+							<Text>brand-new and</Text>
+							<Text>innovative platform</Text>
 						</Flex>
-						<Text fontSize={['14px', '18px', '20px', '20px']} fontWeight="400">
-							Each game released in this form comes with separate ERC20 licenses, called ERC20 Cartridges,
-							reminiscent of the physical cartridges of the 1980s<strong>.</strong>
+						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
+						that combines advantages of physical and digital game distribution, 
+						giving gamers freedom and developers new earning opportunities<strong>.</strong>
 						</Text>
-						<Text fontSize={['14px', '18px', '20px', '20px']} fontWeight="400">
-							HashUp's cartridge compatibility with the ERC20 standard makes it possible to store games in
-							any cryptocurrency wallet and provide liquidity on decentralized exchanges to determine the
-							true price of software using an Automated Market Maker (AMM) - the mechanism we called
-							GameSwapping<strong>.</strong>
+						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
+						We want to make the software distribution market transparent and fair following the will of gamers and developers<strong>.</strong>
 						</Text>
 					</Flex>
 					<Partners />

@@ -11,8 +11,8 @@ import { useSwipeable } from 'react-swipeable';
 const CardsInfo = [
 	{
 		number: '01',
-		label: 'Own the platform!',
-		description: 'Platform profits pump and burn $HASH. In real time. EACH SALE OF A GAME INCREASES THE PRICE OF THE TOKEN',
+		label: 'The #HASH token',
+		description: "When the platform grows bigger, the token's price also goes higher. It all happens in real time!",
 		src: 'assets/videos/HashCoinWeb.mp4',
 		subNumber: '02',
 		link: '/gamers'
@@ -28,7 +28,7 @@ const CardsInfo = [
 	{
 		number: '03',
 		label: 'Gamers and Creators run the market',
-		description: 'Players define prices by swapping games. Next generation subscription model with no monthly subscription and the largest game library!',
+		description: "Less commissions and more influence on the market. Doesn't it sound awesome?",
 		src: 'assets//videos/LaptopWeb.mp4',
 		link: '/creators'
 	},
@@ -65,28 +65,28 @@ export const WhatYouGet = () => {
 
 	return (
 		<Flex h="120vh" flexDirection="column" p="90px 90px 0 90px" alignItems="center" bgColor="#0A0A0A" mb="100px">
-			<SectionInfoButton label="WHAT DO YOU GET?" zIndex="1" />
+			<SectionInfoButton label="WHAT DO YOU GET?" zIndex="1000" />
 			<Flex position="relative" w="100vw" h="100%" mt="20px" flexDirection="column" alignItems="center">
 				<Flex
 					flexDirection="column"
 					gridGap="7px"
 					zIndex="10"
 					alignItems="center"
-					w={['85%', '80%', '70%', '70%']}
+					w={['85%', '80%', '75%', '85%']}
 					mt="30px"
 					mb={['30px', '30px', '60px', '60px']}
 				>
 					<Text fontSize={['30px', '42px', '56px', '70px']} fontWeight="700">
-						What HashUp gives you<strong>?</strong>
+					What does HashUp give you<strong>?</strong>
 					</Text>
 					<Text
 						fontSize={['18px', '18px', '20px', '20px']}
 						fontWeight="300"
 						color={Colors.greyText}
+						maxW={['none', 'none', '65%', '66%']}
 						textAlign={['left', 'left', 'center', 'center']}
 					>
-						We believe that by decentralization of game distribution it’s possible to lower a price of the
-						game for the gamers and increase profits for creators.
+						We believe that by the decentralization of the game distribution it is possible to lower the games' prices and increase profits for the creators.
 					</Text>
 				</Flex>
 				<Flex display={['flex', 'flex', 'none', 'none']}  alignItems="center" direction="column" gridGap="48px" justifyContent="space-between">

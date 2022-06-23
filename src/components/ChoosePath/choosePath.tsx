@@ -9,7 +9,7 @@ export const ChoosePath = () => {
 	const data: IPathComponents[] = [
 		{
 			link: '/creators',
-			topText: 'New market for',
+			topText: 'New economy for',
 			path: '/assets/animations/pc_v2.json',
 			name: 'Creators',
 			description: 'Open up to a whole new market and sell games using digital cartridges on the blockchain. Tens of millions of players are waiting for your games!',
@@ -20,7 +20,7 @@ export const ChoosePath = () => {
 			path: '/assets/animations/pad_v2.json',
 			name: 'Gamers',
 			description:
-				'Hodl games in your wallet and swap them out. Just like we used to on the shelf. We respect gamers. #HODL_GAMES!',
+				'Keep your games in your wallet and swap them just like you did before with physical cartridges. Gain more freedom with us. ',
 		},
 		{
 			link: 'https://hashup.gitbook.io/hashup-whitepaper/',
@@ -28,7 +28,7 @@ export const ChoosePath = () => {
 			path: '/assets/animations/wykres_v2.json',
 			name: 'Investors',
 			description:
-				'HashUp opens the market for investing in indie and AAA games. Anyone will be able to fund games and make money from it!',
+				'A new distribution model means better opportunities. Anyone will be able to fund games and make money from it!',
 		},
 	];
 
@@ -57,8 +57,8 @@ export const ChoosePath = () => {
 			</Flex>
 			<Flex fontSize={["18px", "18px", "20px", "20px"]} color={Colors.greyText} fontWeight="300" direction="column" alignItems="center">
 				<Text maxWidth={["75vw", "75vw", "60vw", "60vw"]} textAlign={["left", "left", "center", "center"]}>
-					Be the part of the revolution in the game industry and join our growing community of game creators,
-					innovators, and gamers!
+				Be part of the revolution in the game industry and join our growing community 
+of game creators, innovators, and gamers! 
 				</Text>
 			</Flex>
 			<Flex mt="30px" gridGap="32px" justifyContent="center" maxW={["100vw", "90vw", "85vw", "85vw"]} direction={['column', 'column', 'column', 'row']}>

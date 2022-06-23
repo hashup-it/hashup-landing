@@ -40,7 +40,7 @@ export const Ecosystem = () => {
       alignItems="center"
       mb={["0px", "0px", "300px", "300px"]}
     >
-      <SectionInfoButton label="ECOSYSTEM" />
+      <SectionInfoButton label="HASHUP PLATFORMS" />
       <SlideFade in={enterCount > 0} offsetY="300px">
         <Flex direction="column" alignItems="center" maxW={["75vw", "75vw","43vw","43vw"]} ref={ref} >
           <Text fontSize={["32px", "46px", "64px", "70px"]} fontWeight="700">

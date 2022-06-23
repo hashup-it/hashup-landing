@@ -33,7 +33,7 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 		<Flex
 			w={["100%", "90%", "85%", "33%"]}
 			marginTop="90px"
-			p="60px"
+			p="45px"
 			zIndex="10"
 			direction="column"
 			position="relative"
@@ -56,7 +56,7 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 					h="265px"
 					zIndex="0"
 				/>
-				<Text fontSize="16px" color="white">
+				<Text fontSize="16px" color="white" zIndex='100'>
 					{topText}
 				</Text>
 				<Text fontSize={["46px", "52px", "54px", "56px"]} color="white" fontWeight="700" zIndex="2">
