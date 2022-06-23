@@ -9,14 +9,13 @@ import PCLauncherLogo from '../../Icons/pcLauncherLogo';
 export const PCLauncherCard = () => {
   return (
     <Flex w="100vw" h="80vh" p="50px 140px" display={['none', 'none', 'flex', 'flex']}>
-      <Flex flexDirection="column" gridGap="50px" maxW="40%">
+      <Flex flexDirection="column" gridGap="50px" maxW="50%">
         <PCLauncherLogo />
         <Text fontSize="44px" fontWeight="700">
         PC Launcher with Metamask and DRM!
         </Text>
         <Text fontSize="17px" fontWeight="300" color={Colors.greyText}>
-        Keep the games in the metamask. Download games. Trade games on our PC Launcher. We're building a social media following based on owning games and everything related to them! The first PC Launcher for web2 and web3 games. Created by degens for gamers! Your virtual gaming shelf is the HashUp PC Launcher!
-        </Text>
+        Our tool that allows you to download and play Web 2.0 and Web3 games on your computer. Your virtual gaming shelf is the HashUp PC Launcher!        </Text>
         <Flex gridGap="3px">
           <Flex
             bgColor={Colors.brandMain}

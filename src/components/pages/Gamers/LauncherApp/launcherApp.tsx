@@ -14,12 +14,12 @@ export const LauncherApp = () => {
 		<Flex
 			justifyContent="space-between"
 			position="relative"
-			p={['80px 0px 0px 80px', '100px 0px 100px 210px', '100px 0px 100px 210px', '100px 0px 100px 210px']}
+			p={['80px 0px 100px 80px', '100px 0px 100px 210px', '100px 0px 100px 210px', '100px 0px 25% 210px']}
 		>
 			<Flex direction="column" justifyContent="flex-start" maxW={['80%', '60%', '40%', '40%']}>
 				<Flex direction="column">
 					<Flex maxW="90%">
-						<SectionInfoButton label="LAUNCHER APP" />
+						<SectionInfoButton label="PC Launcher" />
 					</Flex>
 					<Flex
 						pt="50px"
@@ -45,19 +45,20 @@ export const LauncherApp = () => {
 					>
 						<Text as="span">
 							{' '}
-							Keep the games in the metamask. Download games. Trade games on our PC Launcher.{' '}
+							Our tool that allows you to download and play Web 2.0 and Web3 games on your computer.
 						</Text>
 						<Text as="span" color={Colors.additional}>
 							{' '}
-							We're building a social media following based on owning games and everything related to
-							them! The first PC Launcher for web2 and web3 games. Created by degens for gamers! Your
-							virtual gaming shelf is the HashUp PC Launcher!
+							Your virtual gaming shelf is the HashUp PC Launcher
 						</Text>
 					</Box>
-					<Flex pt="50px" alignItems="center" gridGap="23px">
+					<Flex pt="50px" alignItems="center" gridGap="23px" justifyContent='flex-start'>
 						<MicrosoftLogo />
 						<HTMlLogo />
-						<AppleLogo />
+						<Flex borderRadius='9px' borderColor='#232323' borderWidth='1px' alignItems='center' justifyContent='center' p='11px 17px' gridGap='13px'>
+							<AppleLogo />
+							<Text fontSize='15px' fontWeight='500' color='#6B6969'>SOON</Text>
+						</Flex>
 					</Flex>
 					<Flex direction="column" pt="40px">
 						<Flex>
@@ -83,7 +84,7 @@ export const LauncherApp = () => {
 			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" right="-250px" zIndex="2">
 				<Image src="./assets/launcherApp1.png" />
 			</Flex>
-			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" bottom="40%" right="-100px" zIndex={1}>
+			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" bottom="35%" right="-100px" zIndex={1}>
 				<RedCircleLauncher />
 			</Flex>
 			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" bottom="10%" left="45%" zIndex={1}>
@@ -92,10 +93,9 @@ export const LauncherApp = () => {
 			<Flex
 				display={['none', 'none', 'flex', 'flex']}
 				position="absolute"
-				top="50%"
+				top="44%"
 				left="70%"
 				zIndex={100}
-				mb="100px"
 			>
 				<Image src="./assets/gameWallet.png" />
 			</Flex>

@@ -14,8 +14,7 @@ export const MobileEcosystem = () => {
 					PC Launcher with Metamask and DRM!
 				</Text>
 				<Text fontSize="16px" fontWeight="300" textAlign="center" color="#9A9A9A">
-				Keep the games in the metamask. Download games. Trade games on our PC Launcher. We're building a social media following based on owning games and everything related to them! 
-				The first PC Launcher for web2 and web3 games.
+				Our tool that allows you to download and play Web 2.0 and Web3 games on your computer. Your virtual gaming shelf is the HashUp PC Launcher!
 				</Text>
 				<Flex pt="18px">  
 					<Image src="assets/pcLauncherCard.png" />
