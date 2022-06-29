@@ -7,6 +7,7 @@ import MediumIcon from '../../Icons/mediumIcon';
 import DiscordSocialIcons from '../../Icons/discordSocialIcons';
 import InstagramSocialIcon from '../../Icons/instagramSocialIcon';
 import LinkedinSocialIcon from '../../Icons/linkedinSocialIcon';
+import TelegramPLSocialIcon from '../../Icons/telegramPLSocialIcon';
 
 export const Socials = [
 	{
@@ -18,6 +19,11 @@ export const Socials = [
 		name: 'Telegram',
 		logo: <TelegramSocialIcon />,
 		link: SocialMediaUrls.telegram,
+	},
+	{
+		name: 'TelegramPL',
+		logo: <TelegramPLSocialIcon />,
+		link: SocialMediaUrls.telegramPL,
 	},
 	{
 		name: 'Discord',
