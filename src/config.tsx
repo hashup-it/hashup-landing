@@ -19,6 +19,7 @@ export const SocialMediaUrls = {
   linkedIn: "https://www.linkedin.com/company/hashupit",
   instagram: "https://www.instagram.com/hashup.it/",
   telegram: "https://t.me/HashUpChat",
+  telegramPL: "https://t.me/HashUpChatPL",
   medium: "https://medium.com/@HashUp",
   twitter: "https://twitter.com/HashUp_it",
   discord: "https://discord.gg/ZxwhHb7R9e",
