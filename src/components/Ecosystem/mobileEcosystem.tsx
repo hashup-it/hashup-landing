@@ -11,7 +11,7 @@ export const MobileEcosystem = () => {
 			<Flex direction="column" alignItems="center" gridGap="20px">
 				<PCLauncherMobileLogo /> 
 				<Text fontSize="20px" fontWeight="700" textAlign="center">
-					PC Launcher with Metamask and DRM!
+					PC Launcher with MetaMask and DRM!
 				</Text>
 				<Text fontSize="16px" fontWeight="300" textAlign="center" color="#9A9A9A">
 				Our tool that allows you to download and play Web 2.0 and Web3 games on your computer. Your virtual gaming shelf is the HashUp PC Launcher!

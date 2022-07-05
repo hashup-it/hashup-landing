@@ -23,7 +23,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
     data: [
       { data: "Blockchain Explorer for gamers", isDone: true },
       { data: "Web2 Games Marketplace", isDone: true },
-      { data: "PC Launcher with Metamask", isDone: true },
+      { data: "PC Launcher with MetaMask", isDone: true },
       { data: "First Games on our platform", isDone: true },
       { data: "GameXplorer - first blockchain explorer for gamers", isDone: true },
       { data: "GameContract - devkit for gamedevelopers and publishers", isDone: true },

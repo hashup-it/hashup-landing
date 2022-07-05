@@ -12,7 +12,7 @@ export const PCLauncherCard = () => {
       <Flex flexDirection="column" gridGap="50px" >
         <PCLauncherLogo />
         <Text fontSize="44px" fontWeight="700" w='50%'>
-        PC Launcher with Metamask and DRM!
+        PC Launcher with MetaMask and DRM!
         </Text>
         <Text fontSize="20px" fontWeight="300" color={Colors.greyText} w='35%'>
         Our tool that allows you to download and play Web 2.0 and Web3 games on your computer. Your virtual gaming shelf is the HashUp PC Launcher!        </Text>

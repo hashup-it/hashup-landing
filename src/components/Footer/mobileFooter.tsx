@@ -11,13 +11,12 @@ import Copywright from './Copywright/copywright';
 
 export const MobileFooter = () => {
 	return (
-		<Flex direction="column" pb="20px" alignItems="center" justifyContent="center" pt='50px'>
+		<Flex direction="column" pb="20px" alignItems="center" justifyContent="center" pt='50px' zIndex='1000'>
 			<HashupLogo />
 			<Flex pt="50px">
 				<FooterSocials />
 			</Flex>
 			<Flex justifyContent="space-between" alignItems="center" gridGap='12px' pt='35px'>
-				<Text>HashUp.it</Text>
 				<Box w="17px" h="1px" bgColor={Colors.brandMain} />
 				<a href="/">
 					<Text>Go to the main page</Text>

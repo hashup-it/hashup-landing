@@ -14,19 +14,20 @@ export const PlatformInfo = () => {
 	const inputRef = useRef(null!);
 
 	return (
-		<Flex direction="column" justifyContent="flex-start">
-			<Flex direction="column" p={["0px 0px 0px 80px", "0px 0px 0px 150px", "0px 0px 0px 150px" , "0px 0px 0px 150px"]}>
-				<Flex maxW="20%">
+		<Flex direction="column" justifyContent="flex-start" alignItems={{base: 'center', lg: 'flex-start'}}>
+			<Flex direction="column" p={["20px", "20px", "0px 0px 0px 150px" , "0px 0px 0px 150px"]} alignItems={{base: 'center', lg: 'flex-start'}}>
+				<Flex maxW={["100%", "100%", "20%", "20%"]}>
 					<SectionInfoButton label="PLATFORM" />
 				</Flex>
 				<Flex
 					direction="column"
-					fontSize={['24px', '32px', '64px', '70px']}
+					fontSize={['28px', '32px', '64px', '70px']}
 					fontWeight="700"
 					pt="46px"
 					gridGap="-40px"
 					lineHeight="110%"
 					zIndex="1"
+					textAlign={{base: 'center', lg: 'left'}}
 				>
 					<Text>A brand new platform</Text>
 					<Text>for gamers and game</Text>
@@ -56,13 +57,13 @@ export const PlatformInfo = () => {
 						gridGap="50px"
 						alignItems={['center', 'center', 'flex-start', 'flex-start' ]}
 					>
-						<Flex display={['none', 'none', 'flex', 'flex']}>
+						<Flex display={['none', 'none', 'flex', 'flex']} >
 						<GameXplorerLogo />
 						</Flex>
 						<Flex display={['flex', 'flex', 'none', 'none']}>
 							<MobileGameXplorerLogo />
 						</Flex>
-						<Box fontSize={['14px', '18px', '22px', '26px']} fontWeight="500" maxW={['60%', '75%', 'none', 'none']}>
+						<Box fontSize={['14px', '18px', '22px', '26px']} fontWeight="500" maxW={['85%', '90%', 'none', 'none']} textAlign={{base: 'center', lg: 'left'}}>
 							<Text as="span">
 								Combines a digital game store with a blockchain explorer and social media for gamers.
 							</Text>
@@ -108,17 +109,17 @@ export const PlatformInfo = () => {
 				</Flex>
 			</Flex>
 			<Flex direction="column" justifyContent="flex-start">
-				<Flex direction="column" p={["450px 0px 0px 80px" ,"300px 0px 0px 210px","300px 0px 0px 210px" , "300px 0px 0px 210px"]} zIndex="1">
+				<Flex direction="column" p={["450px 0px 0px 50px" ,"300px 0px 0px 210px","300px 0px 0px 210px" , "300px 0px 0px 210px"]} zIndex="1">
 					<Flex pt="100px" maxW="20%" right={{sm: '80%'}}>
 						<SectionInfoButton label="LICENSES" />
 					</Flex>
-					<Flex pt="50px" maxW={["85%", "80%", "70%", "70%"]} fontSize={['24px', '32px', '64px', '70px']} fontWeight="600" lineHeight="110%" direction="column">
+					<Flex pt="50px" maxW={["100%", "100%", "70%", "70%"]} fontSize={['24px', '32px', '64px', '70px']} fontWeight="600" lineHeight="110%" direction="column">
 						<Text>What can </Text>
 						<Text>
 						gamers gain using our cartridges<strong>?</strong>
 						</Text>
 					</Flex>
-					<Box pt="50px" fontSize={["16px", "18px", "22px", "26px"]} maxW={['80%', '60%', '50%', "50%"]} fontWeight="500">
+					<Box pt="50px" fontSize={["16px", "18px", "22px", "26px"]} maxW={['90%', '60%', '50%', "50%"]} fontWeight="500">
 						<Text as="span">
 							{' '}
 							The gaming licenses you purchased on the HashUp platform are in the form of{' '}

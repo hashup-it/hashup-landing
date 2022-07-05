@@ -7,20 +7,25 @@ import InstagramSocialIcon from '../../../Icons/instagramSocialIcon'
 import { Flex } from '@chakra-ui/react'
 import SocialIcon from './socialIcon'
 import MediumIcon from '../../../Icons/mediumIcon'
+import DiscordSocialIcons from '../../../Icons/discordSocialIcons'
 
 
 const socials = [
     {
-        iconUrl: <LinkedinSocialIcon />,
-        linkUrl: 'https://www.linkedin.com/company/hashupit'
+        iconUrl: <TwitterSocialIcon />,
+        linkUrl: 'https://twitter.com/HashUp_it'
     },
     {
         iconUrl: <TelegramSocialIcon />, 
         linkUrl: 'https://t.me/HashUpAnnouncements'
     }, 
     {
-        iconUrl: <TwitterSocialIcon />,
-        linkUrl: 'https://twitter.com/HashUp_it'
+        iconUrl: <DiscordSocialIcons />,
+        linkUrl: 'https://discord.gg/ZxwhHb7R9e'
+    },
+    {
+        iconUrl: <LinkedinSocialIcon />,
+        linkUrl: 'https://www.linkedin.com/company/hashupit'
     },
     {
         iconUrl: <FacebookSocialIcon />,
