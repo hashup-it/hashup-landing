@@ -14,9 +14,9 @@ export const LauncherApp = () => {
 		<Flex
 			justifyContent="space-between"
 			position="relative"
-			p={['80px 0px 100px 80px', '100px 0px 100px 210px', '100px 0px 100px 210px', '100px 0px 25% 210px']}
+			p={['80px 0px 100px 50px', '100px 0px 100px 210px', '100px 0px 100px 210px', '100px 0px 25% 210px']}
 		>
-			<Flex direction="column" justifyContent="flex-start" maxW={['80%', '60%', '40%', '40%']}>
+			<Flex direction="column" justifyContent="flex-start" maxW={['90%', '80%', '40%', '40%']}>
 				<Flex direction="column">
 					<Flex maxW="90%">
 						<SectionInfoButton label="PC LAUNCHER" />

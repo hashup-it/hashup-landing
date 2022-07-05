@@ -91,8 +91,8 @@ export const Licences = () => {
 							bg={Cartridges[activeCartridge].gradient}
 							borderRadius="50%"
 							filter="blur(150px)"
-							h="300px"
-							w="300px"
+							h={["250px", "250px", "300px", "300px"]}
+							w={["250px", "250px", "300px", "300px"]}
 							zIndex="0"
 							opacity="0.5"
 						/>
@@ -102,9 +102,9 @@ export const Licences = () => {
 							right="-5%"
 							bg={Cartridges[activeCartridge].gradient}
 							borderRadius="50%"
-							filter="blur(149px)"
-							h="300px"
-							w="300px"
+							filter="blur(150px)"
+							h={["250px", "250px", "300px", "300px"]}
+							w={["250px", "250px", "300px", "300px"]}
 							zIndex="0"
 							opacity="0.5"
 						/>

@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Flex, Image, SlideFade, Text } from '@chakra-ui/react';
+import { Flex, Image, SlideFade, Text, Link } from '@chakra-ui/react';
 import SectionInfoButton from '../../../SectionLabel/sectionInfoButton';
 import { Colors } from '../../../../colors';
 import ChevronRightIcon from '../../../../Icons/chevronRightIcon';
@@ -30,6 +30,7 @@ export const HowTo = () => {
 							Our platform is really easy to use<strong>.</strong>
 						</Text>
 					</Flex>
+					<Link href='https://gamecontract.io/' target='_blank' _hover={{opacity: '0.8'}}>
 					<Flex
 						bgColor="black"
 						w="200px"
@@ -52,7 +53,8 @@ export const HowTo = () => {
 						</Flex>
 						<ChevronRightIcon />
 					</Flex>
-					<Image src="assets/cartridgeCreation1.png" />
+					</Link>
+					<Image src="assets/cartridgeCreation1.png" display={['none', 'flex', 'flex', 'flex']}/>
 				</Flex>
 			</SlideFade>
 		</>
