@@ -12,7 +12,7 @@ export const SectionOne = () => {
 	return (
 		<Flex
 			flexDirection="column"
-			mt="28vh"
+			mt="160px"
 			alignItems="flex-start"
 			justifyContent="space-between"
 			w="100%"
@@ -24,7 +24,7 @@ export const SectionOne = () => {
 				<ScrollImages animationHookReference={ref} />
 			</Flex>
 			<Flex flexDirection="column" gridGap="30px" zIndex="10" mb="250px">
-				<SlideFade in={enterCount > 0} offsetY="300px">
+				<SlideFade in={enterCount > 0} offsetY="100px">
 					{/* <HashupLogoBg zIndex="1" position="absolute" right="0" top="100vh" /> */}
 					<Flex ref={ref} flexDirection="column" maxW="42vw" ml="18vw" gridGap="30px" zIndex="10" mb="100px">
 						<Flex
@@ -38,14 +38,15 @@ export const SectionOne = () => {
 							<Text>innovative platform</Text>
 						</Flex>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
-						that combines advantages of physical and digital game distribution, 
-						giving gamers freedom and developers new earning opportunities<strong>.</strong>
+							that combines advantages of physical and digital game distribution, giving gamers freedom
+							and developers new earning opportunities<strong>.</strong>
 						</Text>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
-						We want to make the software distribution market transparent and fair following the will of gamers and developers<strong>.</strong>
+							We want to make the software distribution market transparent and fair following the will of
+							gamers and developers<strong>.</strong>
 						</Text>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
-						Our distribution model allows you to swap games<strong>.</strong>
+							Our distribution model allows you to swap games<strong>.</strong>
 						</Text>
 					</Flex>
 					<Partners />

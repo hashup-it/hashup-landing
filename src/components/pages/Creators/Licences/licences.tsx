@@ -20,7 +20,7 @@ export const Licences = () => {
 
 	return (
 		<>
-			<SlideFade in={enterCount > 0} offsetY="25vh">
+			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Flex
 					justifyContent={{ base: 'center', xl: 'space-between' }}
 					mt="200px"
@@ -30,7 +30,11 @@ export const Licences = () => {
 					ref={ref}
 					mb={{ base: '35vh', md: '60vh', xl: '10vh' }}
 				>
-					<Flex flexDirection="column" gridGap={{ base: '3rem', xl: '60px' }} pb={['40px', '60px', '100px', '100px']}>
+					<Flex
+						flexDirection="column"
+						gridGap={{ base: '3rem', xl: '60px' }}
+						pb={['40px', '60px', '100px', '100px']}
+					>
 						<SectionInfoButton label="LICENCES" zIndex="1" />
 						<Flex gridGap="25px">
 							<Flex position="relative" onClick={() => setActiveCartridge(0)} cursor="pointer">
@@ -91,8 +95,8 @@ export const Licences = () => {
 							bg={Cartridges[activeCartridge].gradient}
 							borderRadius="50%"
 							filter="blur(150px)"
-							h={["250px", "250px", "300px", "300px"]}
-							w={["250px", "250px", "300px", "300px"]}
+							h={['250px', '250px', '300px', '300px']}
+							w={['250px', '250px', '300px', '300px']}
 							zIndex="0"
 							opacity="0.5"
 						/>
@@ -103,8 +107,8 @@ export const Licences = () => {
 							bg={Cartridges[activeCartridge].gradient}
 							borderRadius="50%"
 							filter="blur(150px)"
-							h={["250px", "250px", "300px", "300px"]}
-							w={["250px", "250px", "300px", "300px"]}
+							h={['250px', '250px', '300px', '300px']}
+							w={['250px', '250px', '300px', '300px']}
 							zIndex="0"
 							opacity="0.5"
 						/>

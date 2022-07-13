@@ -11,7 +11,7 @@ export const DescriptionCreators = () => {
 
 	return (
 		<>
-			<SlideFade in={enterCount > 0} offsetY="25vh">
+			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Flex alignItems="center" justifyContent="center" direction="column" position="relative" ref={ref}>
 					<Flex position="absolute">
 						<HashupUnionLogo />
@@ -25,22 +25,23 @@ export const DescriptionCreators = () => {
 						gridGap="-20px"
 					>
 						<Flex>
-							<RedTriangleIcon mt="-50px" transform="rotate(160deg)" h={["31px", "31px", "62px", "62px"]} w={["22px", "22px", "45px", "45px"]} />
+							<RedTriangleIcon
+								mt="-50px"
+								transform="rotate(160deg)"
+								h={['31px', '31px', '62px', '62px']}
+								w={['22px', '22px', '45px', '45px']}
+							/>
 						</Flex>
 						<Text>
 							HashUp is the easiest way to get into Web3.0<strong>.</strong>
 						</Text>
-						<Flex
-							position="relative"
-							left="-10%"
-							marginTop={["40px", "130px"]}
-						>
+						<Flex position="relative" left="-10%" marginTop={['40px', '130px']}>
 							<RedTriangleIcon
-								mt={{base: "25px"}}
+								mt={{ base: '25px' }}
 								transform="rotate(-15deg)"
 								position="absolute"
-								h={["31px", "31px", "62px", "62px"]} 
-								w={["22px", "22px", "45px", "45px"]} 
+								h={['31px', '31px', '62px', '62px']}
+								w={['22px', '22px', '45px', '45px']}
 							/>
 						</Flex>
 					</Flex>

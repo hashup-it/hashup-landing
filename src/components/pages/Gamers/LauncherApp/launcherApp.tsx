@@ -14,7 +14,7 @@ export const LauncherApp = () => {
 		<Flex
 			justifyContent="space-between"
 			position="relative"
-			p={['80px 0px 100px 50px', '100px 0px 100px 210px', '100px 0px 100px 210px', '100px 0px 25% 210px']}
+			p={['130px 0px 100px 50px', '200px 0px 100px 210px', '200px 0px 100px 210px', '200px 0px 25% 210px']}
 		>
 			<Flex direction="column" justifyContent="flex-start" maxW={['90%', '80%', '40%', '40%']}>
 				<Flex direction="column">
@@ -29,7 +29,7 @@ export const LauncherApp = () => {
 						direction="column"
 					>
 						<Text>PC Launcher</Text>
-						<Text>with Metamask</Text>
+						<Text>with MetaMask</Text>
 						<Text>
 							and DRM<strong>.</strong>
 						</Text>
@@ -52,30 +52,40 @@ export const LauncherApp = () => {
 							Your virtual gaming shelf is the HashUp PC Launcher
 						</Text>
 					</Box>
-					<Flex pt="50px" alignItems="center" gridGap="23px" justifyContent='flex-start'>
+					<Flex pt="50px" alignItems="center" gridGap="23px" justifyContent="flex-start">
 						<MicrosoftLogo />
 						<HTMlLogo />
-						<Flex borderRadius='9px' borderColor='#232323' borderWidth='1px' alignItems='center' justifyContent='center' p='11px 17px' gridGap='13px'>
+						<Flex
+							borderRadius="9px"
+							borderColor="#232323"
+							borderWidth="1px"
+							alignItems="center"
+							justifyContent="center"
+							p="11px 17px"
+							gridGap="13px"
+						>
 							<AppleLogo />
-							<Text fontSize='15px' fontWeight='500' color='#6B6969'>SOON</Text>
+							<Text fontSize="15px" fontWeight="500" color="#6B6969">
+								SOON
+							</Text>
 						</Flex>
 					</Flex>
 					<Flex direction="column" pt="40px">
 						<Flex>
-						<Link href={SocialMediaUrls.launcherLink} _hover={{active: 'none'}} >
-							<Button
-								_hover={{opacity: "0.8"}}
-								fontWeight="700"
-								fontSize="14px"
-								w='198px'
-								h='50px'
-								p="15px"
-								borderRadius="5px"
-								bgColor={Colors.brandMain}
-							>
-								Download Launcher
-							</Button>
-						</Link>
+							<Link href={SocialMediaUrls.launcherLink} _hover={{ active: 'none' }}>
+								<Button
+									_hover={{ opacity: '0.8' }}
+									fontWeight="700"
+									fontSize="14px"
+									w="198px"
+									h="50px"
+									p="15px"
+									borderRadius="5px"
+									bgColor={Colors.brandMain}
+								>
+									Download Launcher
+								</Button>
+							</Link>
 						</Flex>
 					</Flex>
 				</Flex>
@@ -90,13 +100,7 @@ export const LauncherApp = () => {
 			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" bottom="10%" left="45%" zIndex={1}>
 				<GrayCircleLauncher />
 			</Flex>
-			<Flex
-				display={['none', 'none', 'flex', 'flex']}
-				position="absolute"
-				top="44%"
-				left="70%"
-				zIndex={100}
-			>
+			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" top="44%" left="70%" zIndex={100}>
 				<Image src="./assets/gameWallet.png" />
 			</Flex>
 		</Flex>

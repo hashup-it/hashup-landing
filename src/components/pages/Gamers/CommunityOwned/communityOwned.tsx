@@ -76,12 +76,12 @@ export const CommunityOwned = () => {
 
 	const typeOptions: { [p: number]: () => React.ReactNode } = {
 		[ActiveText.FIRST]: () => (
-			<Flex direction="column" alignItems="center" w='100%'>
+			<Flex direction="column" alignItems="center" w="100%">
 				<SlideFade in={enterCount > 0} offsetY="100px">
 					<Text
 						lineHeight="100%"
 						maxW={['100%', '100%', '85%', '85%']}
-						textAlign='center'
+						textAlign="center"
 						fontSize={['30px', '42px', '70px', '90px']}
 					>
 						Did you know that current model of gaming platforms <strong> limits</strong> you?
@@ -90,11 +90,15 @@ export const CommunityOwned = () => {
 			</Flex>
 		),
 		[ActiveText.SECOND]: () => (
-			<Flex direction="column" alignItems="center" textAlign="center" w='100%'>
+			<Flex direction="column" alignItems="center" textAlign="center" w="100%">
 				<SlideFade in={enterCount > 0} offsetY="40px">
 					<Flex direction="column" alignItems="center" textAlign="center">
-						<Text lineHeight="100%" fontSize={{ base: '36px', lg: '90px' }}>Surprised<strong>?</strong></Text>
-						<Text fontSize={{ base: '24px', lg: '70px' }} lineHeight="100%">How is that possible?</Text>
+						<Text lineHeight="100%" fontSize={{ base: '36px', lg: '90px' }}>
+							Surprised<strong>?</strong>
+						</Text>
+						<Text fontSize={{ base: '24px', lg: '70px' }} lineHeight="100%">
+							How is that possible?
+						</Text>
 					</Flex>
 				</SlideFade>
 				<SlideFade in={enterCount > 0} offsetY="40px">
@@ -167,7 +171,7 @@ export const CommunityOwned = () => {
 									isActive={isActiveComponent}
 								/>
 								{isActiveComponent === 2 ? (
-									<SlideFade in={enterCount > 0} offsetY="60px">
+									<SlideFade in={enterCount > 0} offsetY="40px">
 										<Flex
 											direction="column"
 											fontSize={['30px', '30px', '90px', '90px']}
@@ -198,7 +202,7 @@ export const CommunityOwned = () => {
 									</SlideFade>
 								) : null}
 								{isActiveComponent === 4 ? (
-									<SlideFade in={enterCount > 0} offsetY="60px">
+									<SlideFade in={enterCount > 0} offsetY="40px">
 										<ElementCompOne activeComp={true} />
 									</SlideFade>
 								) : null}
@@ -211,7 +215,7 @@ export const CommunityOwned = () => {
 	};
 
 	return (
-		<Flex direction="column" alignItems="center" ref={inputRef} mb={['80px', '100px', '150px', '200px']} w='100%'>
+		<Flex direction="column" alignItems="center" ref={inputRef} mb={['80px', '100px', '150px', '200px']} w="100%">
 			<Flex gridGap="6px">
 				<Text fontSize="12px" color={Colors.brandMain}>
 					COMMUNITY-OWNED

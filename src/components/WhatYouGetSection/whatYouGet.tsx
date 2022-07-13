@@ -15,7 +15,7 @@ const CardsInfo = [
 		description: "When the platform grows bigger, the token's price also goes higher. It all happens in real time!",
 		src: 'assets/videos/HashCoinWeb.mp4',
 		subNumber: '02',
-		link: '/gamers'
+		link: '/gamers',
 	},
 	{
 		number: '02',
@@ -23,14 +23,14 @@ const CardsInfo = [
 		description: 'Build your collection. Buy, sell and trade your games permisionless.',
 		src: 'assets/videos/CartridgeWeb.mp4',
 		subNumber: '03',
-		link: '/gamers'
+		link: '/gamers',
 	},
 	{
 		number: '03',
 		label: 'Gamers and Creators run the market',
 		description: "Less commissions and more influence on the market. Doesn't it sound awesome?",
 		src: 'assets//videos/LaptopWeb.mp4',
-		link: '/creators'
+		link: '/creators',
 	},
 ];
 
@@ -39,20 +39,20 @@ export const WhatYouGet = () => {
 
 	const nextCard = (forceForward = false) => {
 		if (forceForward) {
-			setCard(previousCard => previousCard < 2 ? previousCard + 1 : 0);
+			setCard((previousCard) => (previousCard < 2 ? previousCard + 1 : 0));
 		} else {
 			if (card < 2) {
-				setCard(previousCard => previousCard + 1)
+				setCard((previousCard) => previousCard + 1);
 			}
 		}
 	};
 
 	const previousCard = (forceForward = false) => {
 		if (forceForward) {
-			setCard(previousCard => previousCard > 0 ? previousCard - 1 : 2);
+			setCard((previousCard) => (previousCard > 0 ? previousCard - 1 : 2));
 		} else {
 			if (card > 0) {
-				setCard(previousCard => previousCard - 1)
+				setCard((previousCard) => previousCard - 1);
 			}
 		}
 	};
@@ -60,11 +60,11 @@ export const WhatYouGet = () => {
 	const handlers = useSwipeable({
 		onSwipedLeft: () => nextCard(true),
 		onSwipedRight: () => previousCard(true),
-		trackMouse: true
+		trackMouse: true,
 	});
 
 	return (
-		<Flex h="120vh" flexDirection="column" p="90px 90px 0 90px" alignItems="center" bgColor="#0A0A0A" mb="100px">
+		<Flex h="120vh" flexDirection="column" p="70px 90px 0 90px" alignItems="center" bgColor="#0A0A0A">
 			<SectionInfoButton label="WHAT DO YOU GET?" zIndex="1000" />
 			<Flex position="relative" w="100vw" h="100%" mt="20px" flexDirection="column" alignItems="center">
 				<Flex
@@ -77,7 +77,7 @@ export const WhatYouGet = () => {
 					mb={['30px', '30px', '60px', '60px']}
 				>
 					<Text fontSize={['30px', '42px', '56px', '70px']} fontWeight="700">
-					What does HashUp give you<strong>?</strong>
+						What does HashUp give you<strong>?</strong>
 					</Text>
 					<Text
 						fontSize={['18px', '18px', '20px', '20px']}
@@ -86,10 +86,17 @@ export const WhatYouGet = () => {
 						maxW={['none', 'none', '65%', '66%']}
 						textAlign={['left', 'left', 'center', 'center']}
 					>
-						We believe that by the decentralization of the game distribution it is possible to lower the games' prices and increase profits for the creators.
+						We believe that by the decentralization of the game distribution it is possible to lower the
+						games' prices and increase profits for the creators.
 					</Text>
 				</Flex>
-				<Flex display={['flex', 'flex', 'none', 'none']}  alignItems="center" direction="column" gridGap="48px" justifyContent="space-between">
+				<Flex
+					display={['flex', 'flex', 'none', 'none']}
+					alignItems="center"
+					direction="column"
+					gridGap="48px"
+					justifyContent="space-between"
+				>
 					<Flex>
 						<MobileProfitCard
 							width={card === 2 ? '23px' : '80px'}

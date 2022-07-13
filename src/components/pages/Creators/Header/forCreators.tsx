@@ -54,7 +54,7 @@ export const ForCreators = () => {
 				pb="30px"
 				display={['none', 'none', 'flex', 'flex']}
 			>
-				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center" w='33vw'>
+				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center" w="33vw">
 					<Text as="div">
 						Do you know that{' '}
 						<Text as="span" color={Colors.brandMain}>
@@ -72,7 +72,7 @@ export const ForCreators = () => {
 					direction="column"
 					alignItems="center"
 					textAlign="center"
-					w='33vw'
+					w="33vw"
 				>
 					<Text as="div">
 						Do you know that{' '}
@@ -91,7 +91,7 @@ export const ForCreators = () => {
 					direction="column"
 					textAlign="center"
 					alignItems="center"
-					w='33vw'
+					w="33vw"
 				>
 					<Text as="div">
 						Do you know that <Text as="span">the games</Text>
@@ -133,7 +133,7 @@ export const ForCreators = () => {
 					<Text zIndex="4">Publish your game</Text>
 				</Flex>
 			</Link>
-			<SlideFade in={enterCount > 0} offsetY="20vh">
+			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Box
 					mt="80px"
 					mb="80px"

@@ -20,17 +20,20 @@ export const Community = () => {
 		<>
 			<Flex flexDirection="column" alignItems="center" bgColor="#0A0A0A" justifyContent="space-between">
 				<Box h="1px" w="100vw" bgColor="white" opacity="0.1" />
-				<SlideFade in={enterCount > 0} offsetY="25vh">
+				<SlideFade in={enterCount > 0} offsetY="100px">
 					<Flex
 						ref={ref}
 						p="20px"
 						fontSize="60px"
 						color="#ffffff"
 						fontWeight="700"
-						mt="100px"
+						mt="50px"
 						justifyContent="center"
 					>
-						<Text textAlign='center' fontSize={["32px", "46px", "64px", "70px"]}> Join the community<strong>!</strong></Text>
+						<Text textAlign="center" fontSize={['32px', '46px', '64px', '70px']}>
+							{' '}
+							Join the community<strong>!</strong>
+						</Text>
 					</Flex>
 					<Flex
 						fontSize="20px"
@@ -44,9 +47,17 @@ export const Community = () => {
 							creators, innovators, and gamers!
 						</Text>
 					</Flex>
-					<Flex justifyContent="center" gridGap="20px" mt="70px" mb="100px" direction={['column', 'column', 'row', 'row']} alignItems={{base: 'center'}} cursor='pointer' >
+					<Flex
+						justifyContent="center"
+						gridGap="20px"
+						mt="70px"
+						mb="100px"
+						direction={['column', 'column', 'row', 'row']}
+						alignItems={{ base: 'center' }}
+						cursor="pointer"
+					>
 						{CommunityInfo.map((element) => (
-							<CommunityButtons  {...element} />
+							<CommunityButtons {...element} />
 						))}
 					</Flex>
 				</SlideFade>

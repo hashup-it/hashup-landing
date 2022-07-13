@@ -23,10 +23,10 @@ export const Advantages = () => {
 		if (inputRef.current.getBoundingClientRect().top > 0) setActiveCard(0);
 		if (
 			inputRef.current.getBoundingClientRect().top < 0 &&
-			inputRef.current.getBoundingClientRect().top > -0.2 * inputRef.current.getBoundingClientRect().height
+			inputRef.current.getBoundingClientRect().top > -0.1 * inputRef.current.getBoundingClientRect().height
 		)
 			setActiveCard(2);
-		if (inputRef.current.getBoundingClientRect().top < -0.3 * inputRef.current.getBoundingClientRect().height) {
+		if (inputRef.current.getBoundingClientRect().top < -0.2 * inputRef.current.getBoundingClientRect().height) {
 			setActiveCard(1);
 		}
 	};
@@ -45,26 +45,43 @@ export const Advantages = () => {
 			flexDirection="column"
 			bgColor="#0A0A0A"
 			w="100vw"
-			p="90px"
+			p="70px"
 			alignItems="center"
 			justifyContent="space-between"
 		>
 			<SectionInfoButton label="HOW DOES IT WORK" />
 			{/* <ScrollImages animationHookReference={ref} /> */}
-			<SlideFade in={enterCount > 0} offsetY="300px">
-				<Flex maxW={["100vw", "80vw", "60vw", "60vw"]} textAlign={["left", "left", "center", "center"]} flexDirection="column" gridGap="20px" mt="40px" ref={ref}>
-					<Text fontSize={["28px", "46px", "64px", "70px"]} fontWeight="700" lineHeight="130%">
+			<SlideFade in={enterCount > 0} offsetY="100px">
+				<Flex
+					maxW={['100vw', '80vw', '60vw', '60vw']}
+					textAlign={['left', 'left', 'center', 'center']}
+					flexDirection="column"
+					gridGap="20px"
+					mt="40px"
+					ref={ref}
+				>
+					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%">
 						Advantages of the new distribution model<strong>!</strong>
 					</Text>
 					<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
-					HashUp is a game distribution platform that combines native licensed media with the world of the Web3, 
-						using the ERC20 token standard. </Text>
-					<Text fontSize="20px" fontWeight="300">Finally, you can truly hodl, sell, exchange, and trade your game! </Text>
+						HashUp is a game distribution platform that combines native licensed media with the world of the
+						Web3, using the ERC20 token standard.{' '}
+					</Text>
+					<Text fontSize="20px" fontWeight="300">
+						Finally, you can truly hodl, sell, exchange, and trade your game!{' '}
+					</Text>
 				</Flex>
-				<Flex display={['flex', 'flex', 'none', 'none']} alignItems='center' justifyContent='center' pt='30px'>
+				<Flex display={['flex', 'flex', 'none', 'none']} alignItems="center" justifyContent="center" pt="30px">
 					<MobileCard />
 				</Flex>
-				<Flex display={['none', 'none', 'flex', 'flex']} h='60vh' w="100%" justifyContent="space-between" mt="50px" alignItems="center" mb="90px"  >
+				<Flex
+					display={['none', 'none', 'flex', 'flex']}
+					h="60vh"
+					w="100%"
+					justifyContent="space-between"
+					mt="50px"
+					alignItems="center"
+				>
 					<PhaseCard
 						isActive={false}
 						image={<FirstDistributionModel />}

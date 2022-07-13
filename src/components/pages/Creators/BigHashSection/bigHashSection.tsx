@@ -11,13 +11,13 @@ export const BigHashSection = () => {
 	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
 	return (
-		<SlideFade in={enterCount > 0} offsetY="25vh">
+		<SlideFade in={enterCount > 0} offsetY="100px">
 			<Flex
 				justifyContent="center"
 				direction="column"
 				gridGap="45px"
 				ml="10.5%"
-				mt={["40px", "60px", "100px", "200px"]}
+				mt={['40px', '60px', '100px', '200px']}
 				position="relative"
 				zIndex="100"
 				ref={ref}
@@ -44,7 +44,8 @@ export const BigHashSection = () => {
 					We combine a digital game store with a blockchain explorer for gamers.{' '}
 					<Text color={Colors.greyText} as="span">
 						{' '}
-						It also creates an environment for browsing games and user profiles while introducing an element of social media.
+						It also creates an environment for browsing games and user profiles while introducing an element
+						of social media.
 					</Text>
 				</Text>
 			</Flex>
