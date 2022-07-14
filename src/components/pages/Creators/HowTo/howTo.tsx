@@ -13,13 +13,13 @@ export const HowTo = () => {
 		<>
 			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Flex
-					mt="150px"
+					mt={['90px', '150px']}
 					direction="column"
 					justifyContent="center"
 					alignItems="center"
-					p="50px"
+					p={['30px', '50px']}
 					zIndex="100"
-					gridGap="38px"
+					gridGap={['25px', '38px']}
 					bg="linear-gradient(180deg, rgba(10, 10, 10, 1) 3.18%, #000000 31.65%)"
 					borderRadius="30px"
 					ref={ref}
@@ -47,7 +47,7 @@ export const HowTo = () => {
 							alignItems="center"
 							justifyContent="space-between"
 							cursor="pointer"
-							mb="70px"
+							mb={['35px', '70px']}
 						>
 							<Flex flexDirection="column" _hover={{ opacity: '0.8' }}>
 								<Text fontSize="12px" fontWeight="500" color="white">

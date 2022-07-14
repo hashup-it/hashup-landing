@@ -135,8 +135,8 @@ export const ForCreators = () => {
 			</Link>
 			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Box
-					mt="80px"
-					mb="80px"
+					mt={['20px', '80px']}
+					mb={['20px', '80px']}
 					w="1px"
 					h="100px"
 					bgColor={Colors.brandMain}

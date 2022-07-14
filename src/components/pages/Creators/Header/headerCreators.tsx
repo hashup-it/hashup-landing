@@ -11,12 +11,12 @@ export const HeaderCreators = () => {
 			w="100%"
 			h="85vh"
 			mb="200px"
-			mt="100px"
+			mt={['10px', '100px']}
 		>
 			<Image
 				src="/assets/desktopBg1.png"
-				top='0'
-				position='absolute'
+				top="0"
+				position="absolute"
 				w="100vw"
 				zIndex="0"
 				opacity="0.4"

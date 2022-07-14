@@ -39,10 +39,15 @@ export const ForGamers = () => {
 					</Text>
 				</Flex>
 			</Flex>
-			<Text fontSize="28px" fontWeight="300" pt="32px" textAlign="center">
+			<Text fontSize={['18px', '28px']} fontWeight="300" pt="32px" textAlign="center">
 				Web2 games on Web3.
 			</Text>
-				<Flex gridGap="12px" alignItems="center" justifyContent="center" direction={['column', 'column', 'row', 'row']}>
+			<Flex
+				gridGap="12px"
+				alignItems="center"
+				justifyContent="center"
+				direction={['column', 'column', 'row', 'row']}
+			>
 				<Link href="https://gamexplorer.io/" _hover={{ active: 'none' }}>
 					<Flex
 						_hover={{ opacity: '0.8' }}
@@ -70,12 +75,12 @@ export const ForGamers = () => {
 					>
 						<Text zIndex="4">Run GameXplorer</Text>
 					</Flex>
-					</Link>
-					<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct" _hover={{ active: 'none' }}>
+				</Link>
+				<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct" _hover={{ active: 'none' }}>
 					<Flex
 						borderRadius="5"
 						w="198px"
-						cursor='pointer'
+						cursor="pointer"
 						alignItems="center"
 						justifyContent="center"
 						_hover={{ opacity: '0.8' }}
@@ -88,8 +93,8 @@ export const ForGamers = () => {
 					>
 						<Text zIndex="4">Download Launcher</Text>
 					</Flex>
-					</Link>
-				</Flex>
+				</Link>
+			</Flex>
 
 			<Box m="60px 0" w="1px" h="200px" bgColor={Colors.brandMain} />
 		</Flex>

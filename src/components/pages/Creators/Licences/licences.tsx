@@ -23,7 +23,7 @@ export const Licences = () => {
 			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Flex
 					justifyContent={{ base: 'center', xl: 'space-between' }}
-					mt="200px"
+					mt={['100px', '200px']}
 					ml={{ base: '0', xl: '10.5%' }}
 					mr={{ base: '0' }}
 					position="relative"
@@ -32,8 +32,8 @@ export const Licences = () => {
 				>
 					<Flex
 						flexDirection="column"
-						gridGap={{ base: '3rem', xl: '60px' }}
-						pb={['40px', '60px', '100px', '100px']}
+						gridGap={{ base: '1.5rem', xl: '60px' }}
+						pb={['20px', '30px', '100px', '100px']}
 					>
 						<SectionInfoButton label="LICENCES" zIndex="1" />
 						<Flex gridGap="25px">
