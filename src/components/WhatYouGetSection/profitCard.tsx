@@ -9,7 +9,7 @@ interface IProfitCard {
 	label: string;
 	description: string;
 	src: string;
-	link: string; 
+	link: string;
 }
 
 export const ProfitCard: FC<IProfitCard> = ({ number, src, label, description, link, ...props }) => {
@@ -41,15 +41,15 @@ export const ProfitCard: FC<IProfitCard> = ({ number, src, label, description, l
 			<Text fontSize="15px" fontWeight="300" color={Colors.greyText}>
 				{description}
 			</Text>
-				<Flex gridGap="25px" alignItems="center" position="relative" p="10px 0" cursor="pointer">
-					<Link href={link} _hover={{opacity: '0.8'}}>
+			<Flex gridGap="25px" alignItems="center" position="relative" p="10px 0" cursor="pointer">
+				<Link href={link} _hover={{ opacity: '0.8' }}>
 					<Text fontSize="12px" fontWeight="700">
 						Learn more
 					</Text>
-					</Link>
-					<ChevronRightIcon color={Colors.brandMain} />
-					<Box h="2px" w="40px" position="absolute" bottom="0" left="5px" bgColor={Colors.brandMain} />
-				</Flex>
+				</Link>
+				<ChevronRightIcon color={Colors.brandMain} />
+				<Box h="2px" w="40px" position="absolute" bottom="0" left="5px" bgColor={Colors.brandMain} />
+			</Flex>
 		</Flex>
 	);
 };

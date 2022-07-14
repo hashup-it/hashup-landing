@@ -64,9 +64,17 @@ export const WhatYouGet = () => {
 	});
 
 	return (
-		<Flex h="120vh" flexDirection="column" p="70px 90px 0 90px" alignItems="center" bgColor="#0A0A0A">
+		<Flex
+			// h="120vh"
+			flexDirection="column"
+			p="70px 90px 0 90px"
+			alignItems="center"
+			bgColor="#0A0A0A"
+			position="relative"
+			w="100vw"
+		>
 			<SectionInfoButton label="WHAT DO YOU GET?" zIndex="1000" />
-			<Flex position="relative" w="100vw" h="100%" mt="20px" flexDirection="column" alignItems="center">
+			<Flex w="100vw" h="100%" mt="20px" flexDirection="column" alignItems="center">
 				<Flex
 					flexDirection="column"
 					gridGap="7px"
@@ -124,6 +132,9 @@ export const WhatYouGet = () => {
 					p="0 180px"
 					zIndex="1"
 					alignItems="center"
+					h="50%"
+					minHeight="50%"
+					maxHeight="50%"
 				>
 					<ProfitCard
 						number={CardsInfo[card].number}
@@ -132,7 +143,7 @@ export const WhatYouGet = () => {
 						src={CardsInfo[card].src}
 						link={CardsInfo[card].link}
 					/>
-					<Flex gridGap="10px">
+					<Flex gridGap="10px" right="10%">
 						<Flex
 							bgColor={Colors.brandMain}
 							p="20px 25px"
