@@ -52,7 +52,7 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image, num, labelFirst, la
 						color="white"
 						alignItems="center"
 						justifyContent="center"
-						p="20px 0"
+						p="60px 0"
 						gridGap="5px"
 						zIndex="1"
 						bgGradient="linear(180deg, rgba(255, 63, 63, 1), rgba(255, 63, 63, 0))"
@@ -83,12 +83,12 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image, num, labelFirst, la
 							mt="-20px"
 							mr="-10px"
 						/>
-						<Text fontSize="26px" fontWeight="700">
+						{/* <Text fontSize="26px" fontWeight="700">
 							<strong>#</strong>
 							{num}
 						</Text>
 						<Text fontWeight="700">{labelFirst}</Text>
-						<strong>{labelSecond}</strong>
+						<strong>{labelSecond}</strong> */}
 						{image}
 					</Flex>
 				</Flex>
@@ -102,11 +102,11 @@ export const PhaseCard: FC<IPhaseCard> = ({ isActive, image, num, labelFirst, la
 					p="0px"
 					gridGap="10px"
 				>
-					<Text fontSize="26px" fontWeight="700">
+					{/* <Text fontSize="26px" fontWeight="700">
 						#{num}
 					</Text>
 					<Text>{labelFirst}</Text>
-					{labelSecond}
+					{labelSecond} */}
 					{image}
 				</Flex>
 			)}

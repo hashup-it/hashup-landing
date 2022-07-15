@@ -26,7 +26,7 @@ export const Advantages = () => {
 			inputRef.current.getBoundingClientRect().top > -0.1 * inputRef.current.getBoundingClientRect().height
 		)
 			setActiveCard(2);
-		if (inputRef.current.getBoundingClientRect().top < -0.2 * inputRef.current.getBoundingClientRect().height) {
+		if (inputRef.current.getBoundingClientRect().top < -0.15 * inputRef.current.getBoundingClientRect().height) {
 			setActiveCard(1);
 		}
 	};
@@ -79,7 +79,7 @@ export const Advantages = () => {
 					h="60vh"
 					w="100%"
 					justifyContent="space-between"
-					mt="50px"
+					mt="20px"
 					alignItems="center"
 				>
 					<PhaseCard
