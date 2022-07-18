@@ -15,12 +15,12 @@ export const Header = () => {
 			mb={['0px', '0px', '50px', '50px']}
 		>
 			<Box
-				bg="linear-gradient(180deg, rgba(78,77,97,1) 15%, rgba(0,0,0,1) 80%)"
+				bg="linear-gradient(180deg, rgba(0,0,0,0.1) 15%, rgba(0,0,0,1) 90%)"
 				position="absolute"
 				top="0"
 				left="0"
-				zIndex="0"
-				h="150vh"
+				zIndex="2"
+				h="57.25vw"
 				w="100vw"
 				display={['none', 'none', 'flex', 'flex']}
 			/>
@@ -46,8 +46,8 @@ export const Header = () => {
 				left="0"
 				top="0"
 				zIndex="1"
-				opacity="1"
-			/>
+				//opacity="1"
+			></Box>
 			<HeaderMain />
 			<HeaderBottom />
 		</Flex>
