@@ -31,7 +31,7 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 
 	return (
 		<Flex
-			w={["100%", "90%", "85%", "33%"]}
+			w={['100%', '90%', '85%', '33%']}
 			marginTop="90px"
 			p="45px"
 			zIndex="10"
@@ -40,10 +40,12 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 			borderRadius="10px"
 			bg="linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)"
 			transition="0.01s"
-			_hover={{lg: {
-				bg: 'linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)',
-				transform: 'rotateX(360deg)',
-			}}}
+			_hover={{
+				lg: {
+					bg: 'linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(10, 10, 10, 0) 100%)',
+					transform: 'rotateX(360deg)',
+				},
+			}}
 		>
 			<Flex w="100%" h="100%" gridGap="3px" direction="column">
 				<Flex
@@ -56,10 +58,10 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 					h="265px"
 					zIndex="0"
 				/>
-				<Text fontSize="16px" color="white" zIndex='100'>
+				<Text fontSize="16px" color="white" zIndex="100">
 					{topText}
 				</Text>
-				<Text fontSize={["46px", "52px", "54px", "56px"]} color="white" fontWeight="700" zIndex="2">
+				<Text fontSize={['46px', '52px', '54px', '56px']} color="white" fontWeight="700" zIndex="2">
 					{name}
 				</Text>
 			</Flex>
@@ -71,7 +73,7 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 					{description}
 				</Text>
 			</Flex>
-			<Flex gridGap="6px" paddingTop="30px" _hover={{opacity: '0.8'}}>
+			<Flex gridGap="6px" paddingTop="30px" _hover={{ opacity: '0.8' }}>
 				<Link href={link}>
 					<Flex
 						bgColor={Colors.brandMain}

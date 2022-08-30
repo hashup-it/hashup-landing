@@ -7,7 +7,7 @@ const getImageId = () => {
 	const assetCount = 24;
 	const indices = Array.from(Array(assetCount).keys());
 
-	return indices.map((index) => `assets/images/hash_pad/iPad_${(index).toString().padStart(5, '0')}.jpg`);
+	return indices.map((index) => `assets/images/hash_pad/iPad_${index.toString().padStart(5, '0')}.jpg`);
 };
 
 const handleOnScroll = (
@@ -18,10 +18,13 @@ const handleOnScroll = (
 		return;
 	}
 
-	const pixelsFromBottom = window.innerHeight - animationHookReference.current.getBoundingClientRect().top
-	const pixelsFromBottomLimit = window.innerHeight + animationHookReference.current.getBoundingClientRect().height
+	const pixelsFromBottom = window.innerHeight - animationHookReference.current.getBoundingClientRect().top;
+	const pixelsFromBottomLimit = window.innerHeight + animationHookReference.current.getBoundingClientRect().height;
 
-	const assetIndex = Math.min(Math.floor(pixelsFromBottom / (pixelsFromBottomLimit / assetCount) *1.2), assetCount);
+	const assetIndex = Math.min(
+		Math.floor((pixelsFromBottom / (pixelsFromBottomLimit / assetCount)) * 1.2),
+		assetCount
+	);
 
 	setCurrentAssetIndex(assetIndex);
 };
@@ -41,7 +44,6 @@ export const HashPadSroll = () => {
 		return () =>
 			window.removeEventListener('scroll', () => handleOnScroll(hashImageReference, setCurrentAssetIndex));
 	}, []);
-    
+
 	return <Image src={imageUriArray[currentAssetIndex]} ref={hashImageReference} />;
 };
-

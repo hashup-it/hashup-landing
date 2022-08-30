@@ -6,7 +6,9 @@ const assetCount = 29;
 const getImageId = () => {
 	const indices = Array.from(Array(assetCount).keys());
 
-	return indices.map((index) => `assets/images/hash_glitch/HashGlitch_${(index + 1).toString().padStart(5, '0')}.jpg`);
+	return indices.map(
+		(index) => `assets/images/hash_glitch/HashGlitch_${(index + 1).toString().padStart(5, '0')}.jpg`
+	);
 };
 
 const handleOnScroll = (
@@ -17,8 +19,8 @@ const handleOnScroll = (
 		return;
 	}
 
-	const pixelsFromBottom = window.innerHeight - animationHookReference.current.getBoundingClientRect().top
-	const pixelsFromBottomLimit = window.innerHeight + animationHookReference.current.getBoundingClientRect().height
+	const pixelsFromBottom = window.innerHeight - animationHookReference.current.getBoundingClientRect().top;
+	const pixelsFromBottomLimit = window.innerHeight + animationHookReference.current.getBoundingClientRect().height;
 
 	const assetIndex = Math.min(Math.floor(pixelsFromBottom / (pixelsFromBottomLimit / assetCount)), assetCount);
 
@@ -40,6 +42,6 @@ export const HashScrollImages = () => {
 		return () =>
 			window.removeEventListener('scroll', () => handleOnScroll(hashImageReference, setCurrentAssetIndex));
 	}, []);
-    
+
 	return <Image src={imageUriArray[currentAssetIndex]} ref={hashImageReference} />;
 };

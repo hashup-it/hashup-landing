@@ -1,11 +1,9 @@
-import { Flex, Text } from '@chakra-ui/react'
-import React from 'react'
-import IndexGamers from '../components/pages/Gamers/indexGamers'
+import { Flex, Text } from '@chakra-ui/react';
+import React from 'react';
+import IndexGamers from '../components/pages/Gamers/indexGamers';
 
 export const Gamers = () => {
-  return (
-    <IndexGamers />
-  )
-}
+	return <IndexGamers />;
+};
 
-export default Gamers
+export default Gamers;

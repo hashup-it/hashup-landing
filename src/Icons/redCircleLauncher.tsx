@@ -3,12 +3,7 @@ import React from 'react';
 
 export const RedCircleLauncher = () => {
 	return (
-		<Icon 
-        width="673px" 
-        height="673px" 
-        viewBox="0 0 673 673" 
-        fill="none" 
-        xmlns="http://www.w3.org/2000/svg">
+		<Icon width="673px" height="673px" viewBox="0 0 673 673" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g filter="url(#filter0_f_2325_2726)">
 				<circle cx="336.5" cy="336.5" r="301.5" stroke="#FF3F3F" strokeWidth="21" />
 			</g>
