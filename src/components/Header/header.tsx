@@ -28,7 +28,7 @@ export const Header = () => {
 			<Box
 				display={['none', 'none', 'flex', 'flex']}
 				as="video"
-				src="/assets/videos/HashUpHeader.mp4"
+				src="/assets/videos/hashup.mp4"
 				autoPlay
 				playsInline
 				preload="none"
