@@ -1,10 +1,8 @@
-import { Flex, Box, Text, SlideFade } from '@chakra-ui/react';
+import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import SectionInfoButton from '../SectionLabel/sectionInfoButton';
 import { Colors } from '../../colors';
-import RoadmapCard from './roadmapCard';
 import CarouselRoadmap from './carouselRoadmap';
-import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { useInViewport } from 'react-in-viewport';
 
@@ -30,7 +28,7 @@ export const Roadmap = () => {
 					<SectionInfoButton label="ROADMAP" />
 					<Flex p="20px" fontSize="60px" color="#ffffff" fontWeight="700" mt="38px" direction="column">
 						<Text textAlign="center" fontSize={['32px', '46px', '64px', '70px']}>
-							Where are we right now?
+							Where are we right now<strong>?</strong>
 						</Text>
 					</Flex>
 					<Flex

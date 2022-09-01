@@ -1,5 +1,5 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
-import React, { Component, FC } from 'react';
+import { Flex } from '@chakra-ui/react';
+import React, { FC } from 'react';
 import { Colors } from '../../colors';
 import HashupSingleLogo from '../../Icons/hashupSingleLogo';
 

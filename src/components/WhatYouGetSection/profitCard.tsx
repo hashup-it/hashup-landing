@@ -1,7 +1,6 @@
-import { Box, Flex, Text, Link } from '@chakra-ui/react';
+import { Box, Flex, Link, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { Colors } from '../../colors';
-import ArrowRightIcon from '../../Icons/arrowRightIcon';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
 
 interface IProfitCard {
@@ -14,7 +13,14 @@ interface IProfitCard {
 
 export const ProfitCard: FC<IProfitCard> = ({ number, src, label, description, link, ...props }) => {
 	return (
-		<Flex flexDirection="column" gridGap="30px" maxW="40vw" {...props} display={['none', 'none', 'flex', 'flex']}>
+		<Flex
+			flexDirection="column"
+			gridGap="30px"
+			maxW="40vw"
+			{...props}
+			display={['none', 'none', 'flex', 'flex']}
+			pb="32px"
+		>
 			<Flex gridGap="30px" alignItems="center">
 				<Box
 					as="video"
@@ -25,10 +31,12 @@ export const ProfitCard: FC<IProfitCard> = ({ number, src, label, description, l
 					muted
 					loop
 					position="absolute"
-					w="100vw"
+					w="100%"
+					h="100%"
 					left="0"
 					top="0"
 					zIndex="-1"
+					objectFit="cover"
 				/>
 				<Text fontSize="50px" fontWeight="200">
 					{number}

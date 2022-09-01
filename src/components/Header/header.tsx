@@ -5,15 +5,7 @@ import HeaderMain from './HeaderMain/headerMain';
 
 export const Header = () => {
 	return (
-		<Flex
-			flexDirection="column"
-			alignItems="center"
-			justifyContent="space-between"
-			w="100%"
-			h={['none', 'none', '85vh', '85vh']}
-			pb={['0px', '0px', '10px', '10px']}
-			mb={['0px', '0px', '50px', '50px']}
-		>
+		<Flex flexDirection="column" alignItems="center" w="100%" h="100%">
 			<Box
 				bg="linear-gradient(180deg, rgba(0,0,0,0.1) 15%, rgba(0,0,0,1) 90%)"
 				position="absolute"
@@ -22,10 +14,11 @@ export const Header = () => {
 				zIndex="2"
 				h="57.25vw"
 				w="100vw"
+				clipPath="polygon(0 0, 100% 0, 100% 100vh, 0 100vh)"
 				display={['none', 'none', 'flex', 'flex']}
 			/>
 			<Image
-				src="assets/mobileMainHeader.png"
+				src="/assets/mobileMainHeader.png"
 				display={['flex', 'flex', 'none', 'none']}
 				zIndex="0"
 				w="100vw"
@@ -35,18 +28,18 @@ export const Header = () => {
 			<Box
 				display={['none', 'none', 'flex', 'flex']}
 				as="video"
-				src="assets/videos/HashUpHeader.mp4"
+				src="/assets/videos/HashUpHeader.mp4"
 				autoPlay
 				playsInline
 				preload="none"
 				muted
 				loop
 				position="absolute"
-				w="100vw"
-				left="0"
+				w="100%"
 				top="0"
+				left="0"
+				clipPath="polygon(0 0, 100% 0, 100% 100vh, 0 100vh)"
 				zIndex="1"
-				//opacity="1"
 			></Box>
 			<HeaderMain />
 			<HeaderBottom />

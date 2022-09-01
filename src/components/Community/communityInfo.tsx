@@ -1,5 +1,4 @@
 import React from 'react';
-import { ICommunityButtons } from './communityButtons';
 import LinkedinIcon from '../../Icons/linkedinIcon';
 import TelegramIcon from '../../Icons/telegramIcon';
 import TwitterIcon from '../../Icons/twitterIcon';

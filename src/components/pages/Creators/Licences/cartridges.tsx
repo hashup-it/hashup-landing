@@ -1,4 +1,3 @@
-import GrayCircleLauncher from '../../../../Icons/grayCircleLauncher';
 import { ICartridgeInfo } from './cartridgeInfo';
 
 export const Cartridges: ICartridgeInfo[] = [

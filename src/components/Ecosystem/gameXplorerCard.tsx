@@ -10,7 +10,7 @@ export const GameXplorerCard = () => {
 		<Flex w="100vw" h="80vh" p="50px 140px">
 			<Flex flexDirection="column" gridGap="50px" maxW="45%">
 				<GameXplorerLogo />
-				<Text fontSize="44px" fontWeight="700" w='79%'>
+				<Text fontSize="44px" fontWeight="700" w="79%">
 					First blockchain explorer for the gamers!
 				</Text>
 				<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
@@ -43,7 +43,7 @@ export const GameXplorerCard = () => {
 					</a>
 				</Link>
 			</Flex>
-			<Image src="assets/gameXplorerCard.png" position="absolute" right="0" w="50%" />
+			<Image src="/assets/gameXplorerCard.png" position="absolute" right="0" w="50%" />
 		</Flex>
 	);
 };

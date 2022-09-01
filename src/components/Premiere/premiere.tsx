@@ -1,7 +1,6 @@
 import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import { useInViewport } from 'react-in-viewport';
-import { Colors } from '../../colors';
 import Newsletter from './newsletter';
 import Time from './time';
 

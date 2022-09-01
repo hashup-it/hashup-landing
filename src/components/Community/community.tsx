@@ -1,15 +1,8 @@
 import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
-import Link from 'next/link';
 import React, { useRef } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import { Colors } from '../../colors';
-import DiscordIcon from '../../Icons/discordIcon';
-import HashupLogo from '../../Icons/hashupLogo';
-import LinkedinIcon from '../../Icons/linkedinIcon';
-import TelegramIcon from '../../Icons/telegramIcon';
-import TwitterIcon from '../../Icons/twitterIcon';
 import CommunityButtons from './communityButtons';
-import { ICommunityButtons } from './communityButtons';
 import CommunityInfo from './communityInfo';
 
 export const Community = () => {
@@ -43,7 +36,7 @@ export const Community = () => {
 						alignItems="center"
 					>
 						<Text maxWidth="60vw" textAlign="center">
-							Be the part of the revolution in the game industry and join our growing community of game
+							Be a part of the revolution in the game industry and join our growing community of game
 							creators, innovators, and gamers!
 						</Text>
 					</Flex>
@@ -57,7 +50,7 @@ export const Community = () => {
 						cursor="pointer"
 					>
 						{CommunityInfo.map((element) => (
-							<CommunityButtons {...element} />
+							<CommunityButtons key={element.link} {...element} />
 						))}
 					</Flex>
 				</SlideFade>

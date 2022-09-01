@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
 import { Socials } from './socials';
@@ -19,7 +19,7 @@ export const StickySocials = () => {
 			display={['none', 'none', 'flex', 'flex']}
 		>
 			{Socials.map((social) => (
-				<Link href={social.link}>
+				<Link href={social.link} key={social.link}>
 					<a target="_blank">
 						<Flex gridGap="0" _hover={{ opacity: '0.7' }}>
 							{social.logo}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Flex, Image } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 
 const assetCount = 24;
 
@@ -19,10 +19,10 @@ const handleOnScroll = (
 	}
 
 	const { offsetTop } = animationHookReference.current;
-  	const animationBoundEnd = offsetTop - window.scrollY + 400;
+	const animationBoundEnd = offsetTop - window.scrollY + 400;
 
-  const assetIndex = Math.min(Math.floor(animationBoundEnd / 30), assetCount);
-  setCurrentAssetIndex(assetIndex);
+	const assetIndex = Math.min(Math.floor(animationBoundEnd / 30), assetCount);
+	setCurrentAssetIndex(assetIndex);
 
 	setCurrentAssetIndex(assetIndex);
 };
@@ -43,6 +43,6 @@ export const CartridgesScroll = ({ animationHookReference }: IHashupLogoBackgrou
 		return () =>
 			window.removeEventListener('scroll', () => handleOnScroll(animationHookReference, setCurrentAssetIndex));
 	}, []);
-    
+
 	return <Image src={imageUriArray[currentAssetIndex]} />;
 };

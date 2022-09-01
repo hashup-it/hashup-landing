@@ -1,11 +1,10 @@
-import { Flex, Image, Text, Box, Link } from '@chakra-ui/react';
-import React, { useRef, useState } from 'react';
+import { Box, Flex, Link, Text } from '@chakra-ui/react';
+import React, { useRef } from 'react';
 import GameXplorerLogo from '../../../../Icons/gameXplorerLogo';
 import PlayVideoIcon from '../../../../Icons/playVideoIcon';
 import SectionInfoButton from '../../../SectionLabel/sectionInfoButton';
 import { Colors } from '../../../../colors';
 import ChevronRightIcon from '../../../../Icons/chevronRightIcon';
-import { CartridgesScroll } from './cartridgesScroll';
 import { HashPadSroll } from './hashPadSroll';
 import MobileGameXplorerLogo from '../../../../Icons/mobileGameXplorerLogo';
 
@@ -43,7 +42,6 @@ export const PlatformInfo = () => {
 			<Flex direction="column" position="relative">
 				<Flex pt="-30px" ref={inputRef}>
 					<HashPadSroll />
-					{<Image src="/assets/images/hash_pad/iPad_00000.jpg" />}
 				</Flex>
 				<Flex
 					position="absolute"

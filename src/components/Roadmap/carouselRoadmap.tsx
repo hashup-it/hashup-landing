@@ -1,10 +1,7 @@
 import React from 'react';
-import RoadmapCard from './roadmapCard';
+import RoadmapCard, { IRoadmapCardIRoadmapCard } from './roadmapCard';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import { Flex, Text } from '@chakra-ui/react';
-import { IRoadmapCardIRoadmapCard } from './roadmapCard';
-import { NodeNextRequest } from 'next/dist/server/base-http/node';
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -41,7 +38,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 		],
 	},
 	{
-		quarter: 'Q4/Q1 2023 - LISTING',
+		quarter: 'Q4/Q1 2023 – LISTING',
 		data: [
 			{ data: 'Listing on DEX and TOP CEX' },
 			{ data: 'First AA+/AAA game premiere' },

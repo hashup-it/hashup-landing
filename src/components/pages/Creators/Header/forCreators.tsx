@@ -1,4 +1,4 @@
-import { Flex, Text, Box, SlideFade, Link } from '@chakra-ui/react';
+import { Box, Flex, Link, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import RedTriangleIcon from '../../../../Icons/redTriangleIcon';
 import { Colors } from '../../../../colors';
