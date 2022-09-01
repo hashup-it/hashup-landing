@@ -30,7 +30,7 @@ export const Roadmap = () => {
 					<SectionInfoButton label="ROADMAP" />
 					<Flex p="20px" fontSize="60px" color="#ffffff" fontWeight="700" mt="38px" direction="column">
 						<Text textAlign="center" fontSize={['32px', '46px', '64px', '70px']}>
-							Where are we right now?
+							Where are we right now<strong>?</strong>
 						</Text>
 					</Flex>
 					<Flex

@@ -32,7 +32,7 @@ export const ThirdDistributionModel = () => {
 				d="M254.678 211.711L83.2224 211.711"
 				stroke="white"
 				strokeWidth="1.29986"
-				stroke-dasharray="2.6 2.6"
+				strokeDasharray="2.6 2.6"
 			/>
 			<circle cx="82.194" cy="211.585" r="6.27359" fill="#FF3F3F" />
 			<circle cx="254.552" cy="211.585" r="6.27359" fill="#FF3F3F" />

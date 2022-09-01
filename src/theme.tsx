@@ -48,6 +48,14 @@ const theme = extendTheme({
 			strong: {
 				color: Colors.brandMain,
 			},
+			_focus: {
+				boxShadow: 'none !important',
+				outline: 'none !important',
+			},
+			_focusVisible: {
+				boxShadow: 'none !important',
+				outline: 'auto !important',
+			},
 		},
 	},
 });

@@ -43,5 +43,5 @@ export const HashScrollImages = () => {
 			window.removeEventListener('scroll', () => handleOnScroll(hashImageReference, setCurrentAssetIndex));
 	}, []);
 
-	return <Image src={imageUriArray[currentAssetIndex]} ref={hashImageReference} />;
+	return <Image objectFit="cover" src={imageUriArray[currentAssetIndex]} ref={hashImageReference} />;
 };

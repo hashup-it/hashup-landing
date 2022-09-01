@@ -19,8 +19,8 @@ export const enum ActiveText {
 }
 
 export const CommunityOwned = () => {
-	const [activeText, setActiveText] = useState<number>(ActiveText.FIRST);
-	const [isActiveComponent, setIsActiveComponent] = useState<number>(0);
+	const [activeText, setActiveText] = useState<number>(ActiveText.SECOND);
+	const [isActiveComponent, setIsActiveComponent] = useState<number>(4);
 
 	const ref = useRef(null);
 	const inputRef = useRef(null!);
@@ -67,12 +67,13 @@ export const CommunityOwned = () => {
 		console.log(inputRef.current.getBoundingClientRect().top);
 	};
 
-	useEffect(() => {
-		window.addEventListener('scroll', scrollHandler, true);
-		return () => {
-			window.removeEventListener('scroll', scrollHandler, true);
-		};
-	}, []);
+	/** Scroll handling */
+	// useEffect(() => {
+	// 	window.addEventListener('scroll', scrollHandler, true);
+	// 	return () => {
+	// 		window.removeEventListener('scroll', scrollHandler, true);
+	// 	};
+	// }, []);
 
 	const typeOptions: { [p: number]: () => React.ReactNode } = {
 		[ActiveText.FIRST]: () => (
@@ -92,27 +93,22 @@ export const CommunityOwned = () => {
 		[ActiveText.SECOND]: () => (
 			<Flex direction="column" alignItems="center" textAlign="center" w="100%">
 				<SlideFade in={enterCount > 0} offsetY="40px">
-					<Flex direction="column" alignItems="center" textAlign="center">
-						<Text lineHeight="100%" fontSize={{ base: '36px', lg: '90px' }}>
-							Surprised<strong>?</strong>
-						</Text>
-						<Text fontSize={{ base: '24px', lg: '70px' }} lineHeight="100%">
-							How is that possible?
+					<Flex direction="column" alignItems="start" textAlign="center">
+						<Text
+							lineHeight="100%"
+							maxW={['100%', '100%', '85%', '85%']}
+							textAlign="center"
+							fontSize={['30px', '42px', '70px', '90px']}
+						>
+							Did you know that current model of gaming platforms <strong> limits</strong> you?
 						</Text>
 					</Flex>
 				</SlideFade>
 				<SlideFade in={enterCount > 0} offsetY="40px">
 					<Flex direction="column" maxW={['80%', '80%', '100vw', '100vw']} ml={['15%', '15%', '0%', '0%']}>
 						<Flex direction="column" mt="100px" textAlign="start">
-							<Text
-								fontSize={['20px', '20px', '60px', '60px']}
-								maxW={['100%', '100%', '70%', '70%']}
-								lineHeight="110%"
-							>
-								Well,
-							</Text>
 							<Text fontSize={['20px', '20px', '60px', '60px']} maxW="70%" lineHeight="110%">
-								it is, here’s <strong>how</strong>:
+								Here’s <strong>how</strong>:
 							</Text>
 						</Flex>
 

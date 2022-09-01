@@ -13,7 +13,9 @@ export const HeaderMain = () => {
 			zIndex="10"
 			justifyContent="center"
 			gridGap="32px"
-			mt="50px"
+			height="100%"
+			/** Mobile-fixup */
+			mt={{base: '73px', lg: '0'}}
 		>
 			<Flex fontSize={{ base: '12px', lg: '15px' }} fontWeight="600" color="white" gridGap="4px" display={{}}>
 				<RedTriangleIcon mt="-5px" />

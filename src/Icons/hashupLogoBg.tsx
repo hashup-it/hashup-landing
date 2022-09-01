@@ -46,9 +46,9 @@ export const HashupLogoBg = ({ ...props }) => {
 					width="1633.04"
 					height="1741.4"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feGaussianBlur in="BackgroundImage" stdDeviation="102.397" />
 					<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1755_4347" />
 					<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1755_4347" result="shape" />

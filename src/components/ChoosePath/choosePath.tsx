@@ -13,7 +13,7 @@ export const ChoosePath = () => {
 			path: '/assets/animations/pc_v2.json',
 			name: 'Creators',
 			description:
-				'Open up to a whole new market and sell games using digital cartridges on the blockchain. Tens of millions of players are waiting for your games!',
+				'Open up to a whole new market and sell games using digital cartridges on blockchain. Tens of millions of players are waiting for your games!',
 		},
 		{
 			link: '/gamers',
@@ -76,7 +76,7 @@ export const ChoosePath = () => {
 				direction={['column', 'column', 'column', 'row']}
 			>
 				{data.map((element) => (
-					<PathComponent {...element} />
+					<PathComponent key={element.link} {...element} />
 				))}
 			</Flex>
 			<Flex

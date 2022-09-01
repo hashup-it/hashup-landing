@@ -3,7 +3,7 @@ import React from 'react';
 import OdlIcon from '../../../Icons/odlIcon';
 import CopywrightInfo from './copywrightInfo';
 
-export const Copywright = () => {
+export const Copyright = () => {
 	return (
 		<Flex w="100%" justifyContent="space-between" direction={['column', 'column', 'row', 'row']}>
 			<Text fontSize="12px" color={['white', 'white', '#8a8f98', '#8a8f98']}>
@@ -37,4 +37,4 @@ export const Copywright = () => {
 	);
 };
 
-export default Copywright;
+export default Copyright;

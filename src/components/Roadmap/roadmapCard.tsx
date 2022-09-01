@@ -17,6 +17,7 @@ export const RoadmapCard = ({ data, quarter }: IRoadmapCardIRoadmapCard) => {
 			borderRadius="40px"
 			p={['18px', '24px', '32px', '40px']}
 			maxW={['70vw', '70vw', '30vw', '25vw']}
+			userSelect="none"
 		>
 			<Box h="2px" w="25px" bgColor={Colors.brandMain} />
 			<Flex fontSize="24px" fontWeight="400" color="white" pt="15px">
@@ -26,7 +27,7 @@ export const RoadmapCard = ({ data, quarter }: IRoadmapCardIRoadmapCard) => {
 			</Flex>
 			<Flex mt="30px" direction="column" gridGap="9px">
 				{data.map((element) => (
-					<RoadmapCardElement {...element} />
+					<RoadmapCardElement key={element.data} {...element} />
 				))}
 			</Flex>
 		</Flex>

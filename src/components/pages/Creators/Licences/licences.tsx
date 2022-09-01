@@ -1,5 +1,5 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
-import { Flex, Image, SlideFade, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef, useState } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import { Colors } from '../../../../colors';
@@ -19,7 +19,7 @@ export const Licences = () => {
 	};
 
 	return (
-		<>
+		<Box userSelect="none">
 			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Flex
 					justifyContent={{ base: 'center', xl: 'space-between' }}
@@ -145,7 +145,7 @@ export const Licences = () => {
 					</Flex>
 				</Flex>
 			</SlideFade>
-		</>
+		</Box>
 	);
 };
 

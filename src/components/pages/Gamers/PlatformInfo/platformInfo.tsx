@@ -43,7 +43,6 @@ export const PlatformInfo = () => {
 			<Flex direction="column" position="relative">
 				<Flex pt="-30px" ref={inputRef}>
 					<HashPadSroll />
-					{<Image src="/assets/images/hash_pad/iPad_00000.jpg" />}
 				</Flex>
 				<Flex
 					position="absolute"

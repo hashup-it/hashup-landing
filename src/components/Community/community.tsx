@@ -43,7 +43,7 @@ export const Community = () => {
 						alignItems="center"
 					>
 						<Text maxWidth="60vw" textAlign="center">
-							Be the part of the revolution in the game industry and join our growing community of game
+							Be a part of the revolution in the game industry and join our growing community of game
 							creators, innovators, and gamers!
 						</Text>
 					</Flex>
@@ -57,7 +57,7 @@ export const Community = () => {
 						cursor="pointer"
 					>
 						{CommunityInfo.map((element) => (
-							<CommunityButtons {...element} />
+							<CommunityButtons key={element.link} {...element} />
 						))}
 					</Flex>
 				</SlideFade>

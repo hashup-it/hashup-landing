@@ -19,8 +19,9 @@ export const OpinionCard: FC<IOpinionCard> = ({ name, role, opinion, logo }) => 
 				minHeight={['8em', '8em', '6em', '6em']}
 				alignItems={['center', 'center', 'flex-start', 'flex-start']}
 				textAlign={{ base: 'center', lg: 'left' }}
+				fontStyle="italic"
 			>
-				"{opinion}"
+				{opinion}
 			</Text>
 			<Flex fontSize="20px" fontWeight="700" flexDirection="column" textAlign={{ base: 'center', lg: 'left' }}>
 				{name},

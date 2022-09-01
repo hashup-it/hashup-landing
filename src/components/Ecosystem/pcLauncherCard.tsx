@@ -33,7 +33,7 @@ export const PCLauncherCard = () => {
 					</Flex>
 				</Flex>
 			</Flex>
-			<Image src="assets/pcLauncherCard.png" position="absolute" right="0" w="50%" />
+			<Image src="/assets/pcLauncherCard.png" position="absolute" right="0" w="50%" />
 		</Flex>
 	);
 };

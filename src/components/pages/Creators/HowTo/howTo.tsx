@@ -60,7 +60,7 @@ export const HowTo = () => {
 							<ChevronRightIcon />
 						</Flex>
 					</Link>
-					<Image src="assets/cartridgeCreation1.png" display={['none', 'flex', 'flex', 'flex']} />
+					<Image src="/assets/cartridgeCreation1.png" display={['none', 'flex', 'flex', 'flex']} />
 				</Flex>
 			</SlideFade>
 		</>

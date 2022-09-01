@@ -5,7 +5,7 @@ import AboutHashUp from './aboutHashUp';
 import CompanyInformation from './companyInformation';
 import { FooterSocials } from './FooterSocials/socials';
 import Newsletter from './Newsletter/newsletter';
-import Copywright from './Copywright/copywright';
+import Copyright from './Copywright/copyright';
 import { Colors } from '../../colors';
 import MobileFooter from './mobileFooter';
 import PlatformsFooter from './platformsFooter';
@@ -48,7 +48,7 @@ export const Footer = () => {
 						<Newsletter />
 					</Flex>
 				</Flex>
-				<Copywright />
+				<Copyright />
 			</Flex>
 		</Flex>
 	);

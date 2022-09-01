@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Flex, Image } from '@chakra-ui/react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Box, Image } from '@chakra-ui/react';
 
 const assetCount = 24;
 
@@ -7,7 +7,7 @@ const getImageId = () => {
 	const assetCount = 24;
 	const indices = Array.from(Array(assetCount).keys());
 
-	return indices.map((index) => `assets/images/hash_pad/iPad_${index.toString().padStart(5, '0')}.jpg`);
+	return indices.map((index) => `/assets/images/hash_pad/iPad_${index.toString().padStart(5, '0')}.jpg`);
 };
 
 const handleOnScroll = (
@@ -26,6 +26,7 @@ const handleOnScroll = (
 		assetCount
 	);
 
+	console.log('index:', assetIndex);
 	setCurrentAssetIndex(assetIndex);
 };
 
@@ -45,5 +46,13 @@ export const HashPadSroll = () => {
 			window.removeEventListener('scroll', () => handleOnScroll(hashImageReference, setCurrentAssetIndex));
 	}, []);
 
-	return <Image src={imageUriArray[currentAssetIndex]} ref={hashImageReference} />;
+	return (
+		<Box ref={hashImageReference}>
+			{currentAssetIndex === 24 ? (
+				<Image src="/assets/images/hash_pad/iPad_00000.jpg" />
+			) : (
+				<Image src={imageUriArray[currentAssetIndex]} />
+			)}
+		</Box>
+	);
 };

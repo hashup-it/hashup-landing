@@ -45,7 +45,7 @@ export const GameContractCard = () => {
 				</Link>
 			</Flex>
 
-			<Image src="assets/gameContractCard.png" position="absolute" right="0" w="50%" />
+			<Image src="/assets/gameContractCard.png" position="absolute" right="0" w="50%" />
 		</Flex>
 	);
 };

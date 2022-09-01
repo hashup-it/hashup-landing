@@ -7,7 +7,7 @@ import { Colors } from '../../colors';
 import CompanyInformation from './companyInformation';
 import AboutHashUp from './aboutHashUp';
 import Newsletter from './Newsletter/newsletter';
-import Copywright from './Copywright/copywright';
+import Copyright from './Copywright/copyright';
 
 export const MobileFooter = () => {
 	return (
@@ -29,7 +29,7 @@ export const MobileFooter = () => {
 				</Flex>
 			</Flex>
 			<Flex pt="20px">
-				<Copywright />
+				<Copyright />
 			</Flex>
 		</Flex>
 	);

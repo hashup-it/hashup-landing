@@ -28,7 +28,7 @@ export const Recommendations = () => {
 		<>
 			<Flex display={['flex', 'flex', 'none', 'none']} direction="column" alignItems="center">
 				<Text fontSize="32px" color="white" fontWeight="700">
-					Look what people say<strong>.</strong>
+					See what people say<strong>.</strong>
 				</Text>
 				<Flex alignItems="center" pt="5px">
 					<MobileLeftIcon
@@ -59,13 +59,13 @@ export const Recommendations = () => {
 				</Flex>
 			</Flex>
 
-			<Flex pt="150px" alignItems="center" width="100%" height="100vh" display={['none', 'none', 'flex', 'flex']}>
+			<Flex pt="150px" alignItems="center" width="100%" height="100vh" display={['none', 'none', 'flex', 'flex']} my="92px">
 				<Flex width="50%" justifyContent="start">
 					<Image src={Opinions[opinion].photo} />
 				</Flex>
 				<Flex direction="column" width="50%" justifyContent="start">
 					<Text fontSize="50px" color="white" fontWeight="700">
-						Look what people say<strong>.</strong>
+						See what people say<strong>.</strong>
 					</Text>
 					<OpinionCard
 						name={Opinions[opinion].name}

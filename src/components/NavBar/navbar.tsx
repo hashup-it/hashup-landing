@@ -39,18 +39,21 @@ export const NavBar = () => {
 				justifyContent="space-between"
 				zIndex="1000"
 				ref={ref}
+				py="24px"
 			>
 				<Flex
 					display={['flex', 'flex', 'none', 'none']}
 					justifyContent="space-between"
 					alignItems="center"
 					position="fixed"
+					top="0"
+					left="0"
 					w={['100%', '100%', '100vw', '100vw']}
 					bgColor={isScroll ? 'black' : 'none'}
 					gridGap="10px"
-					mt="25px"
 					p="20px"
 					zIndex="10000"
+					transition="background .33s"
 				>
 					<Flex justifyContent="space-between" alignItems="center" w="100%">
 						<Flex>

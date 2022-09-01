@@ -35,7 +35,7 @@ export const LauncherApp = () => {
 						</Text>
 					</Flex>
 					<Flex pt="25px" pb="20px" display={['flex', 'flex', 'none', 'none']}>
-						<Image src="./assets/mobileLauncherApp.png" />
+						<Image src="/assets/mobileLauncherApp.png" />
 					</Flex>
 					<Box
 						pt="50px"
@@ -92,7 +92,7 @@ export const LauncherApp = () => {
 			</Flex>
 
 			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" right="-250px" zIndex="2">
-				<Image src="./assets/launcherApp1.png" />
+				<Image src="/assets/launcherApp1.png" />
 			</Flex>
 			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" bottom="40%" right="-100px" zIndex={1}>
 				<RedCircleLauncher />
@@ -101,7 +101,7 @@ export const LauncherApp = () => {
 				<GrayCircleLauncher />
 			</Flex>
 			<Flex display={['none', 'none', 'flex', 'flex']} position="absolute" top="44%" left="70%" zIndex={100}>
-				<Image src="./assets/gameWallet.png" />
+				<Image src="/assets/gameWallet.png" />
 			</Flex>
 		</Flex>
 	);

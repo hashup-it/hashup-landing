@@ -61,7 +61,7 @@ export const Advantages = () => {
 					ref={ref}
 				>
 					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%">
-						Advantages of the new distribution model<strong>!</strong>
+						Advantages of the new distribution model<strong>.</strong>
 					</Text>
 					<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
 						HashUp is a game distribution platform that combines native licensed media with the world of the
@@ -88,7 +88,7 @@ export const Advantages = () => {
 						num={1}
 						labelFirst="Physical"
 						labelSecond="Distribution"
-						visible={activeCard === 0 ? true : false}
+						visible={activeCard === 0}
 					/>
 					<ArrowRightIcon color="white" mt="-130px" h="25px" />
 					<PhaseCard
@@ -97,11 +97,11 @@ export const Advantages = () => {
 						num={2}
 						labelFirst="Digital"
 						labelSecond="Distribution"
-						visible={activeCard === 2 ? true : false}
+						visible={activeCard === 2}
 					/>
 					<ArrowRightIcon color="white" mt="-130px" h="25px" />
 					<PhaseCard
-						isActive={activeCard === 1 ? true : false}
+						isActive={activeCard === 1}
 						image={<ThirdDistributionModel />}
 						num={3}
 						labelFirst="Decentralized"

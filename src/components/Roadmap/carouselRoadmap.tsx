@@ -41,7 +41,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 		],
 	},
 	{
-		quarter: 'Q4/Q1 2023 - LISTING',
+		quarter: 'Q4/Q1 2023 – LISTING',
 		data: [
 			{ data: 'Listing on DEX and TOP CEX' },
 			{ data: 'First AA+/AAA game premiere' },

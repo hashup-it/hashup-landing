@@ -16,7 +16,7 @@ export const MobileHashDistributionModel = () => {
 				d="M177.771 36.7366L24.4299 36.7366"
 				stroke="white"
 				strokeWidth="1.16253"
-				stroke-dasharray="2.33 2.33"
+				strokeDasharray="2.33 2.33"
 			/>
 			<circle cx="23.5101" cy="36.6241" r="5.61078" fill="#FF3F3F" />
 			<circle cx="177.658" cy="36.6241" r="5.61078" fill="#FF3F3F" />

@@ -1,4 +1,4 @@
-import { Flex, Image, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import React, { FC } from 'react';
 import { Colors } from '../../colors';
@@ -37,12 +37,17 @@ export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, ico
 				}}
 			>
 				<Flex direction="column" cursor="pointer">
-					<Flex justifyContent="space-between" alignItems="center" gridGap="56px" cursor="pointer">
+					<Flex
+						alignItems="center"
+						gridGap="16px"
+						cursor="pointer"
+						fontSize="32px"
+						fontWeight="400"
+						lineHeight="160%"
+					>
 						<Flex gridGap="12px" alignItems="center">
 							{icon}
-							<Text color="white" fontSize="32px" fontWeight="400" lineHeight="160%">
-								{name}
-							</Text>
+							<Text color="white">{name}</Text>
 						</Flex>
 						<RightArrowIcon />
 					</Flex>

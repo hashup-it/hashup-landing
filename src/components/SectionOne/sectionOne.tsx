@@ -1,8 +1,6 @@
-import { Box, Flex, Slide, SlideFade, Text } from '@chakra-ui/react';
+import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import { useInViewport } from 'react-in-viewport';
-import HashupLogoBg from '../../Icons/hashupLogoBg';
-import { ScrollImages } from '../Advantages/scrollImages';
 import Partners from './partners';
 
 export const SectionOne = () => {
@@ -20,9 +18,6 @@ export const SectionOne = () => {
 			position="relative"
 			ref={ref}
 		>
-			<Flex position="absolute" top="-15vh" right="-20vw" w="80vw">
-				<ScrollImages animationHookReference={ref} />
-			</Flex>
 			<Flex flexDirection="column" gridGap="30px" zIndex="10" mb="250px">
 				<SlideFade in={enterCount > 0} offsetY="100px">
 					{/* <HashupLogoBg zIndex="1" position="absolute" right="0" top="100vh" /> */}
@@ -38,7 +33,7 @@ export const SectionOne = () => {
 							<Text>innovative platform</Text>
 						</Flex>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
-							that combines advantages of physical and digital game distribution, giving gamers freedom
+							combining advantages of physical and digital game distribution, giving gamers freedom
 							and developers new earning opportunities<strong>.</strong>
 						</Text>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
