@@ -1,6 +1,6 @@
-import { Button, Flex, Menu, MenuButton, MenuItem, MenuList, Select, useDisclosure } from '@chakra-ui/react';
+import { Button, Menu, MenuButton, MenuItem, MenuList, useDisclosure } from '@chakra-ui/react';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import { Colors } from '../../colors';
 import ChevronDownIcon from '../../Icons/chevronDownIcon';
 

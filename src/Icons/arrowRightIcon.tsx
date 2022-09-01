@@ -1,5 +1,5 @@
 import { Icon } from '@chakra-ui/react';
-import React, { FC } from 'react';
+import React from 'react';
 
 export const ArrowRightIcon = ({ color, h, mt, ...props }: { color?: string; h?: string; mt?: string }) => {
 	return (

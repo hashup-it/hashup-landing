@@ -1,6 +1,5 @@
-import { Flex, Heading, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import React from 'react';
-import { Colors } from '../../../colors';
 import RedTriangleIcon from '../../../Icons/redTriangleIcon';
 import HeaderMainButtons from './headerMainButtons';
 
@@ -15,7 +14,7 @@ export const HeaderMain = () => {
 			gridGap="32px"
 			height="100%"
 			/** Mobile-fixup */
-			mt={{base: '73px', lg: '0'}}
+			mt={{ base: '73px', lg: '0' }}
 		>
 			<Flex fontSize={{ base: '12px', lg: '15px' }} fontWeight="600" color="white" gridGap="4px" display={{}}>
 				<RedTriangleIcon mt="-5px" />

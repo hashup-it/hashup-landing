@@ -1,7 +1,5 @@
-import { Flex, Input, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import React from 'react';
-import { Colors } from '../../colors';
-import Form from './form';
 import FormPremiere from './formPremiere';
 
 export const Newsletter = () => {

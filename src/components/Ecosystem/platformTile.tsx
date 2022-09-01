@@ -1,5 +1,5 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
-import React, { FC, useState } from 'react';
+import { Flex, Text } from '@chakra-ui/react';
+import React, { FC } from 'react';
 import { Colors } from '../../colors';
 
 interface IPlatformTile {

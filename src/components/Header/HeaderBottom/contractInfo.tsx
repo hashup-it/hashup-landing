@@ -3,7 +3,6 @@ import { Flex, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Colors } from '../../../colors';
 import HashupSingleLogo from '../../../Icons/hashupSingleLogo';
-import MetamaskButton from './metamaskButton';
 
 export const ContractInfo = () => {
 	return (

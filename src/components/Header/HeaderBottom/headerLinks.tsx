@@ -1,6 +1,4 @@
-import { ChevronDownIcon } from '@chakra-ui/icons';
-import { Flex, Text, MenuButton, useDisclosure, Button, MenuList, MenuItem, Menu } from '@chakra-ui/react';
-import DropdownButton from 'antd/lib/dropdown/dropdown-button';
+import { Button, Flex, Menu, MenuButton, MenuItem, MenuList, useDisclosure } from '@chakra-ui/react';
 import Link from 'next/link';
 import React from 'react';
 import { Colors } from '../../../colors';

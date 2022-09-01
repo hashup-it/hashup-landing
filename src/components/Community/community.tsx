@@ -1,15 +1,8 @@
 import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
-import Link from 'next/link';
 import React, { useRef } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import { Colors } from '../../colors';
-import DiscordIcon from '../../Icons/discordIcon';
-import HashupLogo from '../../Icons/hashupLogo';
-import LinkedinIcon from '../../Icons/linkedinIcon';
-import TelegramIcon from '../../Icons/telegramIcon';
-import TwitterIcon from '../../Icons/twitterIcon';
 import CommunityButtons from './communityButtons';
-import { ICommunityButtons } from './communityButtons';
 import CommunityInfo from './communityInfo';
 
 export const Community = () => {

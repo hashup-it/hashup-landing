@@ -5,6 +5,7 @@ export interface IElipseMobileIcon {
 	opacity: string;
 	onClick: () => void;
 }
+
 export const ElipseMobileIcon = ({ opacity, onClick }: IElipseMobileIcon) => {
 	return (
 		<Icon

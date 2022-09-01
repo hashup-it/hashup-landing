@@ -2,7 +2,6 @@ import React from 'react';
 import { Flex, Image, Text } from '@chakra-ui/react';
 import { Colors } from '../../colors';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
-import GameXplorerLogo from '../../Icons/gameXplorerLogo';
 import PCLauncherLogo from '../../Icons/pcLauncherLogo';
 
 export const PCLauncherCard = () => {

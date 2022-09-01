@@ -1,9 +1,8 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
 import Lottie from 'lottie-web';
 import Link from 'next/link';
-import React, { Suspense, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Colors } from '../../colors';
-import ArrowRightIcon from '../../Icons/arrowRightIcon';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
 
 export interface IPathComponents {

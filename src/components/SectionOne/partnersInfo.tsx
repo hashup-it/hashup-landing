@@ -1,7 +1,5 @@
 import { Image } from '@chakra-ui/react';
-import BlockchainAllianceLogo from '../../Icons/blockchainAllianceLogo';
 import PatchkitLogo from '../../Icons/patchkitLogo';
-import PolygonLogo from '../../Icons/polygonLogo';
 
 export const PartnersInfo = [
 	{

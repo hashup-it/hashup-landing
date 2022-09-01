@@ -1,4 +1,4 @@
-import { Flex, Text, Box, Image, Link, Button } from '@chakra-ui/react';
+import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react';
 import React from 'react';
 import SectionInfoButton from '../../../SectionLabel/sectionInfoButton';
 import { Colors } from '../../../../colors';

@@ -1,9 +1,6 @@
-import { Box, Flex, Image, SlideFade, Text } from '@chakra-ui/react';
+import { Flex, Image, Text } from '@chakra-ui/react';
 import React, { useRef, useState } from 'react';
 import { useInViewport } from 'react-in-viewport';
-import { Parallax, ParallaxProvider, useParallax } from 'react-scroll-parallax';
-import { Colors } from '../../colors';
-import AvatarDots from '../../Icons/avatarDots';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
 import MobileLeftIcon from '../../Icons/mobileLeftIcon';
 import MobileRightIcon from '../../Icons/mobileRightIcon';
@@ -59,7 +56,14 @@ export const Recommendations = () => {
 				</Flex>
 			</Flex>
 
-			<Flex pt="150px" alignItems="center" width="100%" height="100vh" display={['none', 'none', 'flex', 'flex']} my="92px">
+			<Flex
+				pt="150px"
+				alignItems="center"
+				width="100%"
+				height="100vh"
+				display={['none', 'none', 'flex', 'flex']}
+				my="92px"
+			>
 				<Flex width="50%" justifyContent="start">
 					<Image src={Opinions[opinion].photo} />
 				</Flex>

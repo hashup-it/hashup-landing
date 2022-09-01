@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Flex, Image, SlideFade, Text, Link } from '@chakra-ui/react';
+import { Flex, Image, Link, SlideFade, Text } from '@chakra-ui/react';
 import SectionInfoButton from '../../../SectionLabel/sectionInfoButton';
 import { Colors } from '../../../../colors';
 import ChevronRightIcon from '../../../../Icons/chevronRightIcon';

@@ -1,4 +1,4 @@
-import { Flex, Image, SlideFade, Text } from '@chakra-ui/react';
+import { Flex, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import { Colors } from '../../../../colors';
@@ -22,7 +22,14 @@ export const BigHashSection = () => {
 				zIndex="100"
 				ref={ref}
 			>
-				<Flex position="absolute" top={['10', '10', '-5', '-5%']} zIndex="-1" ref={inputRef} right="13.37vw" maxHeight="100%">
+				<Flex
+					position="absolute"
+					top={['10', '10', '-5', '-5%']}
+					zIndex="-1"
+					ref={inputRef}
+					right="13.37vw"
+					maxHeight="100%"
+				>
 					<HashScrollImages />
 				</Flex>
 				<Flex zIndex="100">
@@ -41,7 +48,8 @@ export const BigHashSection = () => {
 					We combine a digital game store with a blockchain explorer for gamers.{' '}
 					<Text color={Colors.greyText} as="span">
 						{' '}
-						It also creates an environment for browsing games and user profiles while introducing a social media element.
+						It also creates an environment for browsing games and user profiles while introducing a social
+						media element.
 					</Text>
 				</Text>
 			</Flex>

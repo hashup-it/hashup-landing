@@ -1,4 +1,4 @@
-import { Flex, Text, Box, Link } from '@chakra-ui/react';
+import { Box, Flex, Link, Text } from '@chakra-ui/react';
 import React from 'react';
 import RedTriangleIcon from '../../../../Icons/redTriangleIcon';
 import { Colors } from '../../../../colors';

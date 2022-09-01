@@ -1,6 +1,5 @@
-import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
-import React, { useRef, useEffect } from 'react';
-import { useInViewport } from 'react-in-viewport';
+import { Box, Flex, Text } from '@chakra-ui/react';
+import React from 'react';
 import { Colors } from '../../colors';
 import SectionInfoButton from '../SectionLabel/sectionInfoButton';
 import PathComponent, { IPathComponents } from './pathComponent';

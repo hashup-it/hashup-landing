@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Flex, Image } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 
 const assetCount = 24;
 

@@ -7,13 +7,11 @@ import Community from '../components/Community/community';
 import { Flex } from '@chakra-ui/react';
 import StickySocials from '../components/StickySocials/stickySocials';
 import WhatYouGet from '../components/WhatYouGetSection/whatYouGet';
-import Premiere from '../components/Premiere/premiere';
 import Recommendations from '../components/Recommendations/recommendations';
 import Ecosystem from '../components/Ecosystem/ecosystem';
 import Roadmap from '../components/Roadmap/roadmap';
-import React, { Suspense } from 'react';
+import React from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import Licences from '../components/pages/Creators/Licences/licences';
 
 const Index = () => (
 	<Flex>

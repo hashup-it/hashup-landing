@@ -1,6 +1,5 @@
-import { Flex, Text, Image } from '@chakra-ui/react';
+import { Flex, Image, Text } from '@chakra-ui/react';
 import React from 'react';
-import GameContractLogo from '../../Icons/gameContractLogo';
 import MobileGameContractLogo from '../../Icons/mobileGameContractLogo';
 import MobileGameXplorerLogoEcosystem from '../../Icons/mobileGameXplorerLogoEcosystem';
 import PCLauncherMobileLogo from '../../Icons/pcLauncherMobileLogo';

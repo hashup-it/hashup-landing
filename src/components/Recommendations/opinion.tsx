@@ -1,7 +1,6 @@
-import { Flex, Image, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { Colors } from '../../colors';
-import PatchkitLogo from '../../Icons/patchkitLogo';
 
 interface IOpinionCard {
 	name: string;

@@ -1,4 +1,4 @@
-import { Flex, Image } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import React, { FC } from 'react';
 
 export interface ISocialIconType {

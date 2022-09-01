@@ -1,7 +1,6 @@
-import { Flex, Text, Box, Link } from '@chakra-ui/react';
+import { Box, Flex, Link, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Colors } from '../../colors';
-import ElipseMobileIcon from '../../Icons/elipseMobileIcon';
 import RedChevronIRightIcon from '../../Icons/redChevronIRightIcon';
 
 export interface IMobileProfitCard {

@@ -1,9 +1,8 @@
-import { Flex, Text, Box, Image } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Colors } from '../../colors';
 import HashupSingleLogo from '../../Icons/hashupSingleLogo';
 import MobileHashDistributionModel from '../../Icons/mobileHashDistributionModel';
-import ThirdDistributionModel from '../../Icons/thirdDistributionModel';
 
 export const MobileCard = () => {
 	return (

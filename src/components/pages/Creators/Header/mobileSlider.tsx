@@ -1,11 +1,9 @@
-import { ArrowLeftIcon, ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { Flex, Text } from '@chakra-ui/react';
-import React, { forwardRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Colors } from '../../../../colors';
 import MobileLeftIcon from '../../../../Icons/mobileLeftIcon';
 import MobileRightIcon from '../../../../Icons/mobileRightIcon';
 import { useSwipeable } from 'react-swipeable';
-import RightArrowIcon from '../../../../Icons/rightArrowIcon';
 
 export const MobileSlider = () => {
 	const [activeText, setActiveText] = useState<number>(0);

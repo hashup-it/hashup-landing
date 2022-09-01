@@ -1,10 +1,8 @@
-import { Flex, Box, Text, SlideFade } from '@chakra-ui/react';
+import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import SectionInfoButton from '../SectionLabel/sectionInfoButton';
 import { Colors } from '../../colors';
-import RoadmapCard from './roadmapCard';
 import CarouselRoadmap from './carouselRoadmap';
-import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { useInViewport } from 'react-in-viewport';
 

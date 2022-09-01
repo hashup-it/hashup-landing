@@ -33,8 +33,8 @@ export const SectionOne = () => {
 							<Text>innovative platform</Text>
 						</Flex>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
-							combining advantages of physical and digital game distribution, giving gamers freedom
-							and developers new earning opportunities<strong>.</strong>
+							combining advantages of physical and digital game distribution, giving gamers freedom and
+							developers new earning opportunities<strong>.</strong>
 						</Text>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
 							We want to make the software distribution market transparent and fair following the will of

@@ -1,6 +1,5 @@
 import { SocialMediaUrls } from '../../config';
 import FacebookSocialIcon from '../../Icons/facebookSocialIcon';
-import LinkedinIcon from '../../Icons/linkedinIcon';
 import TelegramSocialIcon from '../../Icons/telegramSocialIcon';
 import TwitterSocialIcon from '../../Icons/twitterSocialIcon';
 import MediumIcon from '../../Icons/mediumIcon';

@@ -1,4 +1,4 @@
-import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
+import { Flex, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef, useState } from 'react';
 import { Colors } from '../../colors';
 import SectionInfoButton from '../SectionLabel/sectionInfoButton';

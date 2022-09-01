@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Icon } from '@chakra-ui/react';
+import { Icon } from '@chakra-ui/react';
 
 export const HTMlLogo = () => {
 	return (

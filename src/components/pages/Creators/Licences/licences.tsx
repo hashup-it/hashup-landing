@@ -1,5 +1,5 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Flex, Image, SlideFade, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, SlideFade } from '@chakra-ui/react';
 import React, { useRef, useState } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import { Colors } from '../../../../colors';

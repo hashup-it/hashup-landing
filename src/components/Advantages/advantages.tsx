@@ -1,16 +1,14 @@
-import { Box, Flex, SlideFade, Text } from '@chakra-ui/react';
+import { Flex, SlideFade, Text } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import { Colors } from '../../colors';
 import ArrowRightIcon from '../../Icons/arrowRightIcon';
 import FirstDistributionModel from '../../Icons/firstDistributionModel';
-import HashupLogoBg from '../../Icons/hashupLogoBg';
 import SecondDistributionModel from '../../Icons/secondDistributionModel';
 import ThirdDistributionModel from '../../Icons/thirdDistributionModel';
 import SectionInfoButton from '../SectionLabel/sectionInfoButton';
 import MobileCard from './mobileCard';
 import PhaseCard from './phaseCard';
-import { ScrollImages } from './scrollImages';
 
 export const Advantages = () => {
 	const [activeCard, setActiveCard] = useState<number>(0);

@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { Flex, Text, Box, SlideFade } from '@chakra-ui/react';
+import React from 'react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import { Colors } from '../../../../colors';
 
 export interface IComponentAnimatedForth {

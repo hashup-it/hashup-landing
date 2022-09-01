@@ -1,9 +1,7 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
-import { Flex, Text, SlideFade } from '@chakra-ui/react';
+import React, { useRef, useState } from 'react';
+import { Flex, SlideFade, Text } from '@chakra-ui/react';
 import { Colors } from '../../../../colors';
 import { useInViewport } from 'react-in-viewport';
-import { access } from 'fs';
-import ComponentAnimated from './componentAnimatedOne';
 import ComponentAnimatedOne from './componentAnimatedOne';
 import ComponentAnimatedSecond from './componentAnimatedSecond';
 import ComponentAnimatedThird from './componentAnimatedThird';

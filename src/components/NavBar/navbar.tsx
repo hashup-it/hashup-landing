@@ -1,14 +1,10 @@
-import { Flex, Image, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, Text } from '@chakra-ui/react';
-import { Link } from '@chakra-ui/react';
+import { Flex, Link, Modal, ModalContent, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react';
 import React, { useEffect, useRef, useState } from 'react';
 import CloseMenuIcon from '../../Icons/closeMenuIcon';
 import HamburgerMenu from '../../Icons/hamburgerMenu';
 import HashupLogo from '../../Icons/hashupLogo';
 import MobileHashUpLogo from '../../Icons/mobileHashUpLogo';
-import Whitepaper from '../Header/HeaderBottom/whitepaper';
-import LanguageSelect from './languageSelect';
 import LaunchAppButton from './launchAppButton';
-import MobileNavbarItem from './mobileNavbarItem';
 import MobileNavbarItems from './mobileNavbarItems';
 import NavBarItems from './navbarItems';
 

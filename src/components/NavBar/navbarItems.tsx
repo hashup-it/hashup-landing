@@ -1,6 +1,5 @@
-import { Flex, Text, Box } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import React from 'react';
-import Link from 'next/link';
 import NavbarItem from './navbarItem';
 import { useRouter } from 'next/router';
 

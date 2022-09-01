@@ -1,7 +1,6 @@
-import { Flex, Box, Text } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Colors } from '../../colors';
-import RoadmapTaskDone from '../../Icons/roadmapTaskDone';
 import { IRoadmapCardElement, RoadmapCardElement } from './roadmapCardElement';
 
 export interface IRoadmapCardIRoadmapCard {

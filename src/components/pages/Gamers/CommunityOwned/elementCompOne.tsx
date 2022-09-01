@@ -1,6 +1,5 @@
-import React, { FC } from 'react';
-import { Flex, Text, Box, SlideFade } from '@chakra-ui/react';
-import { Colors } from '../../../../colors';
+import React from 'react';
+import { Flex, Text } from '@chakra-ui/react';
 
 export interface IComponentAnimatedSecond {
 	activeComp: boolean;

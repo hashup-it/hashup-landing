@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { Flex, SlideFade, Text } from '@chakra-ui/react';
 import HashupUnionLogo from '../../../../Icons/hashupUnionLogo';
 import RedTriangleIcon from '../../../../Icons/redTriangleIcon';
-import { Colors } from '../../../../colors';
 import { useInViewport } from 'react-in-viewport';
 
 export const DescriptionCreators = () => {
