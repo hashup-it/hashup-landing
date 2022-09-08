@@ -1,11 +1,8 @@
-import { Flex, Text } from '@chakra-ui/react'
-import React from 'react'
-import IndexCreators from '../components/pages/Creators/indexCreators'
+import React from 'react';
+import IndexCreators from '../components/pages/Creators/indexCreators';
 
 export const Creators = () => {
-  return (
-    <IndexCreators />
-  )
-}
+	return <IndexCreators />;
+};
 
-export default Creators
+export default Creators;

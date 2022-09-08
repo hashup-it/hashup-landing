@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Flex, Image, SlideFade, Text, Link } from '@chakra-ui/react';
+import { Flex, Image, Link, SlideFade, Text } from '@chakra-ui/react';
 import SectionInfoButton from '../../../SectionLabel/sectionInfoButton';
 import { Colors } from '../../../../colors';
 import ChevronRightIcon from '../../../../Icons/chevronRightIcon';
@@ -60,7 +60,7 @@ export const HowTo = () => {
 							<ChevronRightIcon />
 						</Flex>
 					</Link>
-					<Image src="assets/cartridgeCreation1.png" display={['none', 'flex', 'flex', 'flex']} />
+					<Image src="/assets/cartridgeCreation1.png" display={['none', 'flex', 'flex', 'flex']} />
 				</Flex>
 			</SlideFade>
 		</>

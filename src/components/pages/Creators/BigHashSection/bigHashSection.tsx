@@ -1,4 +1,4 @@
-import { Flex, Image, SlideFade, Text } from '@chakra-ui/react';
+import { Flex, SlideFade, Text } from '@chakra-ui/react';
 import React, { useRef } from 'react';
 import { useInViewport } from 'react-in-viewport';
 import { Colors } from '../../../../colors';
@@ -22,17 +22,21 @@ export const BigHashSection = () => {
 				zIndex="100"
 				ref={ref}
 			>
-				<Flex position="absolute" top={['10', '10', '-5', '-5%']} zIndex="-1" ref={inputRef}>
+				<Flex
+					position="absolute"
+					top={['10', '10', '-5', '-5%']}
+					zIndex="-1"
+					ref={inputRef}
+					right="13.37vw"
+					maxHeight="100%"
+				>
 					<HashScrollImages />
-					<Flex display={['none', 'none', 'flex', 'flex']}>
-						<Image src="assets/images/hash_glitch/HashGlitch_00001.jpg" />
-					</Flex>
 				</Flex>
 				<Flex zIndex="100">
 					<SectionInfoButton label="DIGITAL GAME STORE" />
 				</Flex>
 				<Text fontSize={['24px', '32px', '46px', '60px']} fontWeight="600" zIndex="100" maxW="70%">
-					Do you see a lack of immediate remuneration of creators?
+					Do you see the lack of immediate remuneration of creators?
 				</Text>
 				<Text
 					fontSize={['16px', '18px', '23px', '23px']}
@@ -44,8 +48,8 @@ export const BigHashSection = () => {
 					We combine a digital game store with a blockchain explorer for gamers.{' '}
 					<Text color={Colors.greyText} as="span">
 						{' '}
-						It also creates an environment for browsing games and user profiles while introducing an element
-						of social media.
+						It also creates an environment for browsing games and user profiles while introducing a social
+						media element.
 					</Text>
 				</Text>
 			</Flex>

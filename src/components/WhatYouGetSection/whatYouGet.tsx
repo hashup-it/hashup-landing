@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { Colors } from '../../colors';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
@@ -13,15 +13,15 @@ const CardsInfo = [
 		number: '01',
 		label: 'The #HASH token',
 		description: "When the platform grows bigger, the token's price also goes higher. It all happens in real time!",
-		src: 'assets/videos/HashCoinWeb.mp4',
+		src: '/assets/videos/coins.mp4',
 		subNumber: '02',
 		link: '/gamers',
 	},
 	{
 		number: '02',
 		label: 'True ownership',
-		description: 'Build your collection. Buy, sell and trade your games permisionless.',
-		src: 'assets/videos/CartridgeWeb.mp4',
+		description: 'Build your collection. Buy, sell and trade your games permissionless.',
+		src: '/assets/videos/cartridges.mp4',
 		subNumber: '03',
 		link: '/gamers',
 	},
@@ -29,7 +29,7 @@ const CardsInfo = [
 		number: '03',
 		label: 'Gamers and Creators run the market',
 		description: "Less commissions and more influence on the market. Doesn't it sound awesome?",
-		src: 'assets//videos/LaptopWeb.mp4',
+		src: '/assets/videos/laptop.mp4',
 		link: '/creators',
 	},
 ];

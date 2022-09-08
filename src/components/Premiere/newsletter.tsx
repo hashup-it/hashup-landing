@@ -1,13 +1,11 @@
-import { Flex, Input, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import React from 'react';
-import { Colors } from '../../colors';
-import Form from './form';
 import FormPremiere from './formPremiere';
 
 export const Newsletter = () => {
 	return (
 		<Flex flexDirection="column" gridGap="30px" alignItems="center" zIndex="1">
-			<Text textAlign='center' fontSize={["24px", "24px", "40px", "40px"]} fontWeight="300">
+			<Text textAlign="center" fontSize={['24px', '24px', '40px', '40px']} fontWeight="300">
 				Be ready and subscribe our newsletter
 			</Text>
 			{/* <Flex gridGap="10px" h="8vh" w="100%" justifyContent="center"> */}

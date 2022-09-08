@@ -1,6 +1,6 @@
-import { Button, Flex, Menu, MenuButton, MenuItem, MenuList, Select, useDisclosure } from '@chakra-ui/react';
+import { Button, Menu, MenuButton, MenuItem, MenuList, useDisclosure } from '@chakra-ui/react';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import { Colors } from '../../colors';
 import ChevronDownIcon from '../../Icons/chevronDownIcon';
 
@@ -24,8 +24,8 @@ export const LaunchAppButton = () => {
 					colorScheme={Colors.brandMain}
 					fontWeight="700"
 					fontSize="14px"
-					gridGap={["6px", "6px", "14px", "14px"]}
-					p={["22px 97px", "17px 97px", "17px 20px", "17px 20px"]}
+					gridGap={['6px', '6px', '14px', '14px']}
+					p={['22px 97px', '17px 97px', '17px 20px', '17px 20px']}
 					m="0"
 					borderRadius="5px"
 					alignItems="center"

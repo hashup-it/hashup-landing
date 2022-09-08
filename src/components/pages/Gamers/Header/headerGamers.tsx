@@ -10,8 +10,11 @@ export const HeaderGamers = () => {
 				w="100%"
 				zIndex="0"
 				position="absolute"
+				top="0"
+				left="0"
 				h="100vh"
 				opacity="0.7"
+				clipPath="polygon(0 0, 100% 0, 100% calc(100vh - 136px), 0 calc(100vh - 136px))"
 				display={['none', 'none', 'flex', 'flex']}
 				bgGradient="linear(180deg, rgba(0, 0, 0, 0) 77.54%, #000000 92.75%)"
 			/>

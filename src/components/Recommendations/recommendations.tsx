@@ -1,9 +1,6 @@
-import { Box, Flex, Image, SlideFade, Text } from '@chakra-ui/react';
+import { Flex, Image, Text } from '@chakra-ui/react';
 import React, { useRef, useState } from 'react';
 import { useInViewport } from 'react-in-viewport';
-import { Parallax, ParallaxProvider, useParallax } from 'react-scroll-parallax';
-import { Colors } from '../../colors';
-import AvatarDots from '../../Icons/avatarDots';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
 import MobileLeftIcon from '../../Icons/mobileLeftIcon';
 import MobileRightIcon from '../../Icons/mobileRightIcon';
@@ -28,14 +25,26 @@ export const Recommendations = () => {
 		<>
 			<Flex display={['flex', 'flex', 'none', 'none']} direction="column" alignItems="center">
 				<Text fontSize="32px" color="white" fontWeight="700">
-					Look what people say<strong>.</strong>
+					See what people say<strong>.</strong>
 				</Text>
-				<Flex alignItems="center" pt='5px'>
-					<MobileLeftIcon width='42px' height='42px' cursor="pointer" onClick={previousOpinion} opacity={opinion === 0 ? '0.5' : '1'}/>
-					<Flex maxW="90%" pt="30px" transform='translateX(-5%)'>
+				<Flex alignItems="center" pt="5px">
+					<MobileLeftIcon
+						width="42px"
+						height="42px"
+						cursor="pointer"
+						onClick={previousOpinion}
+						opacity={opinion === 0 ? '0.5' : '1'}
+					/>
+					<Flex maxW="90%" pt="30px" transform="translateX(-5%)">
 						<Image src={Opinions[opinion].photo} />
 					</Flex>
-					<MobileRightIcon  width='42px' height='42px' cursor="pointer" onClick={nextOpinion} opacity={opinion === Opinions.length - 1 ? '0.5' : '1'} />
+					<MobileRightIcon
+						width="42px"
+						height="42px"
+						cursor="pointer"
+						onClick={nextOpinion}
+						opacity={opinion === Opinions.length - 1 ? '0.5' : '1'}
+					/>
 				</Flex>
 				<Flex>
 					<OpinionCard
@@ -47,13 +56,20 @@ export const Recommendations = () => {
 				</Flex>
 			</Flex>
 
-			<Flex pt="150px" alignItems="center" width="100%" height="100vh" display={['none', 'none', 'flex', 'flex']}>
-				<Flex width="50%"  justifyContent="start">
+			<Flex
+				pt="150px"
+				alignItems="center"
+				width="100%"
+				height="100vh"
+				display={['none', 'none', 'flex', 'flex']}
+				my="92px"
+			>
+				<Flex width="50%" justifyContent="start">
 					<Image src={Opinions[opinion].photo} />
 				</Flex>
 				<Flex direction="column" width="50%" justifyContent="start">
 					<Text fontSize="50px" color="white" fontWeight="700">
-						Look what people say<strong>.</strong>
+						See what people say<strong>.</strong>
 					</Text>
 					<OpinionCard
 						name={Opinions[opinion].name}
