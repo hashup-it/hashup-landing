@@ -1,9 +1,10 @@
 import React from 'react';
+import { Documents } from '../../../config';
 
 export const CopywrightInfo = [
 	{
 		name: 'Lightpaper',
-		url: 'https://cdn.hashup.it/landing/lightpaper.pdf',
+		url: Documents.lightpaper,
 	},
 	{
 		name: 'Terms & conditions',
