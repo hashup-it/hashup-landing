@@ -29,7 +29,7 @@ export const Documents = {
 	termsAndConditions: 'https://cdn.hashup.it/landing/HashUp.IT_-_Terms_And_Contitions.pdf',
 	// airdropTermsOfUse: "https://cdn.hashup.it/landing/Hash_Token_Airdrop_Terms_and_Conditions.pdf",
 	privacyPolicy: 'https://cdn.hashup.it/landing/HashUp.IT_-_Data_Protection_Policy.pdf',
-	lightpaper: 'https://cdn.hashup.it/landing/lightpaper.pdf',
+	lightpaper: 'https://wiki.hashup.it',
 	pitchdeck: 'https://cdn.hashup.it/landing/HashUp_PitchDeck.pdf',
 	whitepaperPL: 'https://cdn.hashup.it/hashup-whitepaper-pl.pdf',
 	whitepaperEN: 'https://cdn.hashup.it/hashup-whitepaper-eng.pdf',
