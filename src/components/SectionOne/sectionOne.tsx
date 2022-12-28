@@ -28,20 +28,22 @@ export const SectionOne = () => {
 							fontWeight="800"
 							lineHeight="120%"
 						>
-							<Text>HashUp is a</Text>
-							<Text>brand new and</Text>
-							<Text>innovative platform</Text>
+							{/*HashUp is the first open-source decentralized games and tokens distribution protocol */}
+							<Text>HashUp is the</Text>
+							<Text>first open-source and </Text>
+							<Text><strong>decentralized</strong>games</Text>
+							<Text>distribution protocol!</Text>
+							<Text fontSize={"30px"}>Make everyone able to sell your games!</Text>
 						</Flex>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
-							combining advantages of physical and digital game distribution, giving gamers freedom and
-							developers new earning opportunities<strong>.</strong>
+							Publish games and sell them on <strong>multiple stores</strong> at the same time! Allow everyone to sell your games!
 						</Text>
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
-							We want to make the software distribution market transparent and fair following the will of
-							gamers and developers<strong>.</strong>
+						Insert your gaming marketplace into the <strong>PC Launcher HashUp</strong> by PatchKit where you will find dozens of games ready to be sold from day one!
 						</Text>
+
 						<Text fontSize={['14px', '18px', '26px', '30px']} fontWeight="600">
-							Our distribution model allows you to swap games<strong>.</strong>
+							<strong>Connect to The HashUp protocol, sell and earn! </strong>
 						</Text>
 					</Flex>
 					<Partners />

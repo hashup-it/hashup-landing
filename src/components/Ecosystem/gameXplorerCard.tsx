@@ -11,11 +11,11 @@ export const GameXplorerCard = () => {
 			<Flex flexDirection="column" gridGap="50px" maxW="45%">
 				<GameXplorerLogo />
 				<Text fontSize="44px" fontWeight="700" w="79%">
-					First blockchain explorer for the gamers!
+					Explore Games and add them to your store!
 				</Text>
 				<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
-					The future of social media. Create a stunning, customizable profile and take pride in your games
-					collection. Know your friends’ items and get inspired by following influencers!
+				More and more games are appearing on the HashUp protocole. Search the best ones and add them to your store. 
+				The HashUp protocol is a great store for games that ANYONE can sell! The developers decide how much money you make as a store!
 				</Text>
 				<Link href="https://gamexplorer.io/">
 					<a target="_blank">

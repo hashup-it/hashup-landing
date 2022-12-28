@@ -28,7 +28,10 @@ export const Roadmap = () => {
 					<SectionInfoButton label="ROADMAP" />
 					<Flex p="20px" fontSize="60px" color="#ffffff" fontWeight="700" mt="38px" direction="column">
 						<Text textAlign="center" fontSize={['32px', '46px', '64px', '70px']}>
-							Where are we right now<strong>?</strong>
+						On the road to true
+						</Text>
+						<Text textAlign="center" fontSize={['32px', '46px', '64px', '70px']}>
+						<strong>decentralised</strong> distribution!
 						</Text>
 					</Flex>
 					<Flex
@@ -40,8 +43,8 @@ export const Roadmap = () => {
 						alignItems="center"
 					>
 						<Text maxWidth="60vw" textAlign="center">
-							We plan to combine listings at the largest CEX, IDO at the largest Launchpads, listing ALL
-							games released on HashUp before our listing. 100x+ listings in one day.
+							We are building a real game distribution infrastructure based on thousands of game stores, 
+							where everyone can become the owner of their own store. <b>On the way to first 1000 web3 gaming stores!</b>
 						</Text>
 					</Flex>
 					<CarouselRoadmap />

@@ -33,10 +33,10 @@ export const BigHashSection = () => {
 					<HashScrollImages />
 				</Flex>
 				<Flex zIndex="100">
-					<SectionInfoButton label="DIGITAL GAME STORE" />
+					<SectionInfoButton label="Decentralized Marketing" />
 				</Flex>
 				<Text fontSize={['24px', '32px', '46px', '60px']} fontWeight="600" zIndex="100" maxW="70%">
-					Do you see the lack of immediate remuneration of creators?
+				Define store commissions!
 				</Text>
 				<Text
 					fontSize={['16px', '18px', '23px', '23px']}
@@ -45,11 +45,10 @@ export const BigHashSection = () => {
 					w={['80%', '80%', '50%', '50%']}
 					zIndex="100"
 				>
-					We combine a digital game store with a blockchain explorer for gamers.{' '}
+					It will determine how much money the stores that sell your games make. 
 					<Text color={Colors.greyText} as="span">
 						{' '}
-						It also creates an environment for browsing games and user profiles while introducing a social
-						media element.
+						Remember, the more you give, the more marketing you get!
 					</Text>
 				</Text>
 			</Flex>

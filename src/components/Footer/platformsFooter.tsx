@@ -14,7 +14,7 @@ export const PlatformsFooter = () => {
 				<Link href="https://gamecontract.io/" _hover={{ opacity: '0.6' }}>
 					<Text>GameContract</Text>
 				</Link>
-				<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct" _hover={{ opacity: '0.6' }}>
+				<Link href="https://wiki.hashup.it/get-started/pc-launcher" _hover={{ opacity: '0.6' }}>
 					<Text>PC Launcher</Text>
 				</Link>
 			</Flex>

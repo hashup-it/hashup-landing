@@ -4,17 +4,18 @@ import MobileGameContractLogo from '../../Icons/mobileGameContractLogo';
 import MobileGameXplorerLogoEcosystem from '../../Icons/mobileGameXplorerLogoEcosystem';
 import PCLauncherMobileLogo from '../../Icons/pcLauncherMobileLogo';
 
+export const launcherString = `PC Launcher makes sure that your game files are up to date. It allows you to publish Indie, AAA and Web3 Games outside the browser and inject blockchain into your games. Upgrade your web3 store by adding PC Launcher and sell all your games from HashUp protocol earning up to 90%!`
+
 export const MobileEcosystem = () => {
 	return (
 		<Flex justifyContent="center" direction="column" alignItems="center" pt="60px">
 			<Flex direction="column" alignItems="center" gridGap="20px">
 				<PCLauncherMobileLogo />
 				<Text fontSize="20px" fontWeight="700" textAlign="center">
-					PC Launcher with MetaMask and DRM!
+					PC Launcher 3.0
 				</Text>
 				<Text fontSize="16px" fontWeight="300" textAlign="center" color="#9A9A9A">
-					Our tool that allows you to download and play Web 2.0 and Web3 games on your computer. Your virtual
-					gaming shelf is the HashUp PC Launcher!
+					{launcherString}
 				</Text>
 				<Flex pt="18px">
 					<Image src="/assets/pcLauncherCard.png" />

@@ -25,7 +25,7 @@ const Index = () => (
 				<WhatYouGet />
 				<Recommendations />
 				<Ecosystem />
-				{/* <Roadmap /> */}
+				<Roadmap />
 				<Community />
 			</ParallaxProvider>
 		</GlobalContainer>

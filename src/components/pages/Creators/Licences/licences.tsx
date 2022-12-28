@@ -35,7 +35,7 @@ export const Licences = () => {
 						gridGap={{ base: '1.5rem', xl: '60px' }}
 						pb={['20px', '30px', '100px', '100px']}
 					>
-						<SectionInfoButton label="LICENCES" zIndex="1" />
+						<SectionInfoButton label="LICENCES 3.0" zIndex="1" />
 						<Flex gridGap="25px">
 							<Flex position="relative" onClick={() => setActiveCartridge(0)} cursor="pointer">
 								Gold

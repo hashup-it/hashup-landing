@@ -11,7 +11,7 @@ export const IndexGamers = () => {
 		<Flex direction="column">
 			<StickySocials />
 			<HeaderGamers />
-			<CommunityOwned />
+			{/* <CommunityOwned /> */}
 			<PlatformInfo />
 			<LauncherApp />
 		</Flex>

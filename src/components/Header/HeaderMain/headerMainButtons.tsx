@@ -29,6 +29,32 @@ export const HeaderMainButtons = () => {
 					<ChevronRightIcon />
 				</Flex>
 			</Link>
+
+			<Link href="https://wiki.hashup.it/" _hover={{ opacity: '0.5' }}>
+				<Flex
+					bgColor={Colors.brandMain}
+					w="200px"
+					h="70px"
+					borderRadius="0 0 0 0px"
+					p="12px 19px"
+					alignItems="center"
+					justifyContent="space-between"
+					cursor="pointer"
+					transition="ease 0.2s"
+				>
+					<Flex flexDirection="column">
+						<Text fontSize="15px" fontWeight="500" color="black">
+							Connect
+						</Text>
+						<Text fontSize="18px" fontWeight="600" color="white">
+							and Sell!
+						</Text>
+					</Flex>
+					<ChevronRightIcon />
+				</Flex>
+			</Link>
+
+
 			<Link href="https://gamexplorer.io/" _hover={{ opacity: '0.5' }} target="_blank">
 				<Flex
 					bgColor="#00000080"

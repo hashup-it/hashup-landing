@@ -58,21 +58,27 @@ export const Advantages = () => {
 					mt="40px"
 					ref={ref}
 				>
-					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%">
-						Advantages of the new distribution model<strong>.</strong>
+					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%" textAlign={"center"}>
+						<strong>One</strong> protocol<strong>.</strong>
+					</Text>
+					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%" textAlign={"center"}>
+						<strong>Hundreds</strong> stores<strong>.</strong>
+					</Text>
+					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%" textAlign={"center"}>
+						<strong>One</strong> Wallet<strong>.</strong>
 					</Text>
 					<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
-						HashUp is a game distribution platform that combines native licensed media with the world of the
-						Web3, using the ERC20 token standard.{' '}
+						HashUp is a protocol for token-license distribution. It allows you to sell games and tokens on multiple web3 stores
+						simultaneously from one place. {' '}
 					</Text>
 					<Text fontSize="20px" fontWeight="300">
-						Finally, you can truly hodl, sell, exchange, and trade your game!{' '}
+						You decide how much the stores earn! Use it to <strong>decentralize</strong> your marketing! {' '}
 					</Text>
 				</Flex>
 				<Flex display={['flex', 'flex', 'none', 'none']} alignItems="center" justifyContent="center" pt="30px">
 					<MobileCard />
 				</Flex>
-				<Flex
+				{/* <Flex
 					display={['none', 'none', 'flex', 'flex']}
 					h="60vh"
 					w="100%"
@@ -105,7 +111,7 @@ export const Advantages = () => {
 						labelFirst="Decentralized"
 						labelSecond="Web 3.0."
 					/>
-				</Flex>
+				</Flex> */}
 			</SlideFade>
 		</Flex>
 	);

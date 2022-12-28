@@ -42,8 +42,8 @@ export const Ecosystem = () => {
 						Our Ecosystem<strong>.</strong>
 					</Text>
 					<Text fontSize="18px" fontWeight="300" lineHeight="170%" color={Colors.greyText} textAlign="center">
-						We designed our ecosystem as a consistent and complementary platform to ensure the best possible
-						experience
+					In creating our ecosystem, we modeled it after the physical game distribution of the 1990s. Create a cartridge in the GameContract.io factory, send it to the warehouse 
+					(the HashUp protocol), and any store can download games from the warehouse and sell them (by connecting to protocol)!
 					</Text>
 					<Flex display={['flex', 'flex', 'none', 'none']}>
 						<MobileEcosystem />

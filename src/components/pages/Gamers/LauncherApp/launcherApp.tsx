@@ -8,6 +8,7 @@ import HTMlLogo from '../../../../Icons/htmlLogo';
 import RedCircleLauncher from '../../../../Icons/redCircleLauncher';
 import GrayCircleLauncher from '../../../../Icons/grayCircleLauncher';
 import { SocialMediaUrls } from '../../../../config';
+import { launcherString } from '../../../Ecosystem/mobileEcosystem';
 
 export const LauncherApp = () => {
 	return (
@@ -45,11 +46,11 @@ export const LauncherApp = () => {
 					>
 						<Text as="span">
 							{' '}
-							Our tool that allows you to download and play Web 2.0 and Web3 games on your computer.
+							{launcherString}
 						</Text>
 						<Text as="span" color={Colors.additional}>
 							{' '}
-							Your virtual gaming shelf is the HashUp PC Launcher
+							Get ready for the next bull with HashUp!
 						</Text>
 					</Box>
 					<Flex pt="50px" alignItems="center" gridGap="23px" justifyContent="flex-start">
@@ -72,7 +73,7 @@ export const LauncherApp = () => {
 					</Flex>
 					<Flex direction="column" pt="40px">
 						<Flex>
-							<Link href={SocialMediaUrls.launcherLink} _hover={{ active: 'none' }}>
+							<Link href={"https://calendly.com/ceohashup"} _hover={{ active: 'none' }}>
 								<Button
 									_hover={{ opacity: '0.8' }}
 									fontWeight="700"
@@ -83,7 +84,7 @@ export const LauncherApp = () => {
 									borderRadius="5px"
 									bgColor={Colors.brandMain}
 								>
-									Download Launcher
+									Book a call with us!
 								</Button>
 							</Link>
 						</Flex>

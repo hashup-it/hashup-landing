@@ -32,7 +32,7 @@ export const DescriptionCreators = () => {
 							/>
 						</Flex>
 						<Text>
-							HashUp is the easiest way to get into Web3.0<strong>.</strong>
+						Why publish games separately on 100 stores when you can on HashUp<strong>?</strong>
 						</Text>
 						<Flex position="relative" left="-10%" marginTop={['40px', '130px']}>
 							<RedTriangleIcon

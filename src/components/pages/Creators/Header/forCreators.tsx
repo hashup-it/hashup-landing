@@ -24,7 +24,7 @@ export const ForCreators = () => {
 			<Flex justifyContent="space-between" alignItems="center" gridGap="48px">
 				<Flex gridGap="10px" fontWeight="600">
 					<RedTriangleIcon w="" mt="-5px" />
-					For Creators
+					For GameDevs 3.0
 					<RedTriangleIcon transform="rotate(3deg)" mt="15px" />
 				</Flex>
 			</Flex>
@@ -39,7 +39,7 @@ export const ForCreators = () => {
 			>
 				<Flex alignItems="center" maxW="90%" textAlign="center">
 					<Text>
-						Create digital <strong>cartridges</strong> of your games. <strong>80s style</strong>.
+					One place to publish in multiple stores.
 					</Text>
 				</Flex>
 			</Flex>
@@ -56,55 +56,53 @@ export const ForCreators = () => {
 			>
 				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center" w="33vw">
 					<Text as="div">
-						Do you know that{' '}
-						<Text as="span" color={Colors.brandMain}>
-							you can
-						</Text>
-						<Text as="div" color={Colors.brandMain}>
-							release a game on web3
-						</Text>
-						<Text as="div">in 10 minutes?</Text>
-					</Text>
-				</Flex>
-				<Flex
-					justifyContent="flex-start"
-					lineHeight="120%"
-					direction="column"
-					alignItems="center"
-					textAlign="center"
-					w="33vw"
-				>
-					<Text as="div">
-						Do you know that{' '}
-						<Text as="span" color={Colors.brandMain}>
-							you
-						</Text>
-						<Text as="div" color={Colors.brandMain}>
-							earn royalties on each
-						</Text>
-						<Text as="div">game exchange?</Text>
-					</Text>
-				</Flex>
-				<Flex
-					justifyContent="flex-start"
-					lineHeight="120%"
-					direction="column"
-					textAlign="center"
-					alignItems="center"
-					w="33vw"
-				>
-					<Text as="div">
-						Do you know that <Text as="span">the games</Text>
+						Create a license  
 						<Text as="div">
-							you release can be{' '}
-							<Text as="span" color={Colors.brandMain}>
-								stored on{' '}
+						for your indie game or a 
+						</Text>
+						<Text as="div">
+						<strong>starterpack 3.0</strong>
+						</Text>
+						<Text as="div"> </Text>
+					</Text>
+				</Flex>
+				<Flex
+					justifyContent="flex-start"
+					lineHeight="120%"
+					direction="column"
+					alignItems="center"
+					textAlign="center"
+					w="33vw"
+				>
+					<Text as="div">
+					Set <b>price</b> and commission for stores. 
+						<Text as="span">
+						
+						</Text>
+						<Text as="div" color={Colors.brandMain}>
+						</Text>
+						<Text as="div"><strong>Now you decide how much they earn!</strong></Text>
+					</Text>
+				</Flex>
+				<Flex
+					justifyContent="flex-start"
+					lineHeight="120%"
+					direction="column"
+					textAlign="center"
+					alignItems="center"
+					w="33vw"
+				>
+					<Text as="div">
+						Did you know that 
+						<Text as="div">
+						now anyone can sell your 
+							<Text as="span">
+							
 							</Text>
 						</Text>
-						<Text as="span" color={Colors.brandMain}>
-							digital wallets
+						<Text as="span">
+						<b>games on your terms!</b>
 						</Text>
-						?
 					</Text>
 				</Flex>
 			</Flex>

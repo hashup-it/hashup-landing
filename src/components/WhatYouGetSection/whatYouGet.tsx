@@ -11,26 +11,26 @@ import { useSwipeable } from 'react-swipeable';
 const CardsInfo = [
 	{
 		number: '01',
-		label: 'The #HASH token',
-		description: "When the platform grows bigger, the token's price also goes higher. It all happens in real time!",
-		src: '/assets/videos/coins.mp4',
-		subNumber: '02',
-		link: '/gamers',
-	},
-	{
-		number: '02',
-		label: 'True ownership',
-		description: 'Build your collection. Buy, sell and trade your games permissionless.',
+		label: 'Sell games everywhere',
+		description: 'Thanks to the power of the HashUp protocol, anyone can now sell your games. Goodbye exclusivity! Welcome equality!',
 		src: '/assets/videos/cartridges.mp4',
 		subNumber: '03',
 		link: '/gamers',
 	},
 	{
-		number: '03',
-		label: 'Gamers and Creators run the market',
-		description: "Less commissions and more influence on the market. Doesn't it sound awesome?",
+		number: '02',
+		label: 'License Finance',
+		description: "License Finance, a swappable DEX license that will replace the subscription model. Own the games, don't rent them!",
 		src: '/assets/videos/laptop.mp4',
 		link: '/creators',
+	},
+	{
+		number: '03',
+		label: 'The $HASH token',
+		description: "One token to connect hundreds of game stores.  10% of the entire sales volume makes the # token go to the moon!",
+		src: '/assets/videos/coins.mp4',
+		subNumber: '02',
+		link: 'https://wiki.hashup.it/get-started/token',
 	},
 ];
 
@@ -93,9 +93,9 @@ export const WhatYouGet = () => {
 						color={Colors.greyText}
 						maxW={['none', 'none', '65%', '66%']}
 						textAlign={['left', 'left', 'center', 'center']}
+						style={{color: 'white'}}
 					>
-						We believe that by the decentralization of the game distribution it is possible to lower the
-						games' prices and increase profits for the creators.
+						We believe in equal opportunity for the sale of games and tokens! <b>Goodbye to exclusivity, welcome equality!</b> Everyone can sell all the games that are on the HashUp protocol!
 					</Text>
 				</Flex>
 				<Flex

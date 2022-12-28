@@ -3,6 +3,7 @@ import { Flex, Image, Text } from '@chakra-ui/react';
 import { Colors } from '../../colors';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
 import PCLauncherLogo from '../../Icons/pcLauncherLogo';
+import { launcherString } from './mobileEcosystem';
 
 export const PCLauncherCard = () => {
 	return (
@@ -10,13 +11,13 @@ export const PCLauncherCard = () => {
 			<Flex flexDirection="column" gridGap="50px">
 				<PCLauncherLogo />
 				<Text fontSize="44px" fontWeight="700" w="50%">
-					PC Launcher with MetaMask and DRM!
+					PC Launcher 3.0
 				</Text>
 				<Text fontSize="20px" fontWeight="300" color={Colors.greyText} w="35%">
-					Our tool that allows you to download and play Web 2.0 and Web3 games on your computer. Your virtual
-					gaming shelf is the HashUp PC Launcher!{' '}
+					{launcherString}{' '}
 				</Text>
 				<Flex gridGap="3px">
+					<a href='https://wiki.hashup.it/get-started/pc-launcher'>
 					<Flex
 						bgColor={Colors.brandMain}
 						fontSize="13px"
@@ -25,8 +26,9 @@ export const PCLauncherCard = () => {
 						borderRadius="0 0 0 18px"
 						cursor="pointer"
 					>
-						Play Games
+						Use PC Launcher
 					</Flex>
+					</a>
 					<Flex bgColor={Colors.brandMain} opacity="0.6" p="12px" alignItems="center" cursor="pointer">
 						<ChevronRightIcon />
 					</Flex>

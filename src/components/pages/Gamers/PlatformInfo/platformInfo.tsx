@@ -32,11 +32,11 @@ export const PlatformInfo = () => {
 					zIndex="1"
 					textAlign={{ base: 'center', lg: 'left' }}
 				>
-					<Text>A brand new platform</Text>
+					{/* <Text>Fina</Text>
 					<Text>for gamers and game</Text>
 					<Text>
 						developers<strong>.</strong>
-					</Text>
+					</Text> */}
 				</Flex>
 			</Flex>
 			<Flex direction="column" position="relative">
@@ -72,12 +72,11 @@ export const PlatformInfo = () => {
 							textAlign={{ base: 'center', lg: 'left' }}
 						>
 							<Text as="span">
-								Combines a digital game store with a blockchain explorer and social media for gamers.
+							More and more games are appearing on the HashUp protocole. Search the best ones and add them to your store. The HashUp protocol is a great store for games that ANYONE can sell! The developers decide how much money you make as a store!
 							</Text>
 							<Text color="#A1A1A6" as="span">
 								{' '}
-								It also creates an environment for browsing games and user profiles while introducing an
-								element of social media.
+								
 							</Text>
 						</Box>
 						<Link href="https://gamexplorer.io/" target="_blank" zIndex="2" _hover={{ active: 'none' }}>
@@ -127,8 +126,8 @@ export const PlatformInfo = () => {
 					p={['450px 0px 0px 50px', '300px 0px 0px 210px', '300px 0px 0px 210px', '300px 0px 0px 210px']}
 					zIndex="1"
 				>
-					<Flex pt="100px" maxW="20%" right={{ sm: '80%' }}>
-						<SectionInfoButton label="LICENSES" />
+					<Flex pt="100px" maxW="25%" right={{ sm: '80%' }}>
+						<SectionInfoButton label="LICENSES 3.0" />
 					</Flex>
 					<Flex
 						pt="50px"
@@ -138,9 +137,9 @@ export const PlatformInfo = () => {
 						lineHeight="110%"
 						direction="column"
 					>
-						<Text>What can </Text>
+						<Text>Add games from HashUp</Text>
 						<Text>
-							gamers gain using our cartridges<strong>?</strong>
+							to your marketplace! 
 						</Text>
 					</Flex>
 					<Box
@@ -151,17 +150,12 @@ export const PlatformInfo = () => {
 					>
 						<Text as="span">
 							{' '}
-							The gaming licenses you purchased on the HashUp platform are in the form of{' '}
-							<strong>ERC-20 tokens</strong>.
-						</Text>
-						<Text as="span" color={Colors.additional}>
-							{' '}
-							In short, they work just like other cryptocurrencies.{' '}
+							HashUp allows publishing web2 and web3 games using blockchain technology. 
+							HashUp's infrastructure reduces the cost of creating a real gaming marketplace to zero!
 						</Text>
 						<Text pt="50px" color="white">
 							{' '}
-							Store games in your crypto wallet. Alongside <strong>Bitcoin</strong> and{' '}
-							<strong>Ethereum</strong>.{' '}
+							Sell with HashUp today!
 						</Text>
 					</Box>
 				</Flex>

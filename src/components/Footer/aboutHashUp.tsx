@@ -9,10 +9,10 @@ export const AboutHashUp = () => {
 			</Text>
 			<Flex mt="10px" mb="23px" gridGap="9px" direction="column" fontWeight="400" fontSize="13px" color="white">
 				<Link href="/gamers" _hover={{ opacity: '0.6' }}>
-					<Text>For Gamers</Text>
+					<Text>For Marketplaces</Text>
 				</Link>
 				<Link href="/creators" _hover={{ opacity: '0.6' }}>
-					<Text>For Creators</Text>
+					<Text>For GameDevs</Text>
 				</Link>
 			</Flex>
 		</Flex>

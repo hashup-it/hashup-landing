@@ -11,12 +11,11 @@ export const GameContractCard = () => {
 			<Flex flexDirection="column" gridGap="50px" maxW="50%">
 				<GameContractLogo />
 				<Text fontSize={['16px', '24px', '32px', '44px']} fontWeight="700" w="95%">
-					Publish games independently without intermediares in 5 steps.
+					A digital cartridge factory that anyone can sell!
 				</Text>
 				<Text fontSize="20px" fontWeight="300" color={Colors.greyText} w="95%">
-					Our goal is to make the process of publishing games as simple as possible. You can take your
-					developer’s journey to the next level by publishing games on GameContract, eliminating
-					intermediaries.
+				Create digital cartridges for your indie game or create a starterpack for your web3 game, set the price and sales rules. 
+				With the HashUp protocol, anyone can sell games that are on the protocol. 
 				</Text>
 				<Link href="https://gamecontract.io/">
 					<a target="_blank">
@@ -29,7 +28,7 @@ export const GameContractCard = () => {
 								borderRadius="0 0 0 18px"
 								cursor="pointer"
 							>
-								Create Your License
+								Create Your Cartridges 3.0
 							</Flex>
 							<Flex
 								bgColor={Colors.brandMain}

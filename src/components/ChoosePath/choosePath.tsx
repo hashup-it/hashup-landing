@@ -9,26 +9,26 @@ export const ChoosePath = () => {
 		{
 			link: '/creators',
 			topText: 'New economy for',
-			path: '/assets/animations/pc_v2.json',
-			name: 'Creators',
+			path: '/assets/animations/pad_v2.json',
+			name: 'GameDevs',
 			description:
-				'Open up to a whole new market and sell games using digital cartridges on blockchain. Tens of millions of players are waiting for your games!',
+				`Open up to a whole new market and sell games using digital licenses on blockchain. Give everyone the opportunity to sell your game! Decide about marketplace fee!`,
 		},
 		{
 			link: '/gamers',
 			topText: 'Freedom for',
-			path: '/assets/animations/pad_v2.json',
-			name: 'Gamers',
+			path: '/assets/animations/pc_v2.json',
+			name: 'Marketplaces',
 			description:
-				'Keep your games in your wallet and swap them just like you did before with physical cartridges. Gain more freedom with us. ',
+				'Connect to the protocol and choose the games you sell on your own store! Use the PC Launcher and take your web3 marketpace to a new level!',
 		},
 		{
 			link: 'https://hashup.gitbook.io/hashup-whitepaper/',
 			topText: 'New place for',
 			path: '/assets/animations/wykres_v2.json',
-			name: 'Investors',
+			name: 'Degens',
 			description:
-				'A new distribution model means better opportunities. Anyone will be able to fund games and make money from it!',
+				'Decentralized Generation will swap licenses on decentralized exchanges making subscription model useless! HashUp is for decentralized generation people from future!',
 		},
 	];
 

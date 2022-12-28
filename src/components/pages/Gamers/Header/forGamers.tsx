@@ -19,7 +19,7 @@ export const ForGamers = () => {
 			<Flex justifyContent="space-between" alignItems="center" gridGap="48px">
 				<Flex gridGap="10px" fontWeight="600">
 					<RedTriangleIcon mt="-5px" />
-					For Gamers
+					For Marketplaces
 					<RedTriangleIcon transform="rotate(3deg)" mt="15px" />
 				</Flex>
 			</Flex>
@@ -35,12 +35,12 @@ export const ForGamers = () => {
 				<Flex alignItems="center" maxW="70%" textAlign="center">
 					<Text>
 						{' '}
-						Video Games Marketplace with Digital Cartridges<strong>.</strong>
+						Connect to The HashUp Protocol and earn up to 90%<strong>!</strong>
 					</Text>
 				</Flex>
 			</Flex>
 			<Text fontSize={['18px', '28px']} fontWeight="300" pt="32px" textAlign="center">
-				Web2 games on Web3.
+			A sustainable business model for you in these challenging times!
 			</Text>
 			<Flex
 				gridGap="12px"
@@ -73,7 +73,7 @@ export const ForGamers = () => {
 							filter: 'blur(35px)',
 						}}
 					>
-						<Text zIndex="4">Run GameXplorer</Text>
+						<Text zIndex="4">Explorer Games to Sell!</Text>
 					</Flex>
 				</Link>
 				<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct" _hover={{ active: 'none' }}>
@@ -91,7 +91,7 @@ export const ForGamers = () => {
 						fontWeight="700"
 						fontSize="14px"
 					>
-						<Text zIndex="4">Download Launcher</Text>
+						<Text zIndex="4">Test PC Launcher</Text>
 					</Flex>
 				</Link>
 			</Flex>
