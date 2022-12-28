@@ -7,7 +7,7 @@ export default class Document extends NextDocument {
 			<Html>
 				<Head>
 					<title>The HashUp Cartridge</title>
-					<meta name="description" content="HashUp.it – We will free the game market." />
+					<meta name="description" content="Content providing protocol and PC Launcher to your web3 marketplace." />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<link rel="icon" href="assets/favicon.ico" />
 				</Head>
