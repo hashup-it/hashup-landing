@@ -21,17 +21,17 @@ export const SectionOne = () => {
 			<Flex flexDirection="column" gridGap="30px" zIndex="10" mb="250px">
 				<SlideFade in={enterCount > 0} offsetY="100px">
 					{/* <HashupLogoBg zIndex="1" position="absolute" right="0" top="100vh" /> */}
-					<Flex ref={ref} flexDirection="column" maxW="42vw" ml="18vw" gridGap="30px" zIndex="10" mb="100px">
+					<Flex ref={ref} flexDirection="column" maxW="48vw" ml="18vw" gridGap="30px" zIndex="10" mb="100px">
 						<Flex
 							flexDirection="column"
 							fontSize={['24px', '32px', '48px', '60px']}
 							fontWeight="800"
 							lineHeight="120%"
-						>
+						> 
 							{/*HashUp is the first open-source decentralized games and tokens distribution protocol */}
-							<Text>HashUp is the</Text>
-							<Text>first open-source and </Text>
-							<Text><strong>decentralized</strong>games</Text>
+							<Text>Hash<strong>Up</strong> is the</Text>
+							<Text>first open-source </Text>
+							<Text><strong>video game</strong></Text>
 							<Text>distribution protocol!</Text>
 							<Text fontSize={"30px"}>Make everyone able to sell your games!</Text>
 						</Flex>
