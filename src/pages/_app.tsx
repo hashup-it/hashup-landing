@@ -8,17 +8,21 @@ import NavBar from '../components/NavBar/navbar';
 import { ChakraProvider } from '@chakra-ui/react';
 import Footer from '../components/Footer/footer';
 import { PolygonLabel } from '../components/PolygonLabel/polygonLabel';
+import "../components/Map/Map.css"
+import { MoralisProvider } from 'react-moralis';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ChakraProvider resetCSS theme={theme}>
-			<Fonts />
-			<GlobalContainer>
+			<MoralisProvider serverUrl='https://cawxglhowrkc.grandmoralis.com:2053/server' appId='vtTf7ftC58VeOXocaZuqmPKOuzozvXZgIOGON6lL'>
+				<Fonts />
+				<GlobalContainer>
 				<PolygonLabel />
 				<NavBar />
 				<Component {...pageProps} />
 				<Footer />
-			</GlobalContainer>
+				</GlobalContainer>
+			</MoralisProvider>
 		</ChakraProvider>
 	);
 }
