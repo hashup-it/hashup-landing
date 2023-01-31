@@ -26,7 +26,7 @@ export const StoreInfo: FC<StoreInfoProps> = ({ storeName, description, logo, ci
   const [transactions, setTransactions] = useState([]);
 
   const query = useMoralisQuery('Bought',
-    query => query.equalTo('marketplace', marketplace), [marketplace], {autoFetch: false});
+    query => query.equalTo('marketplace', marketplace).descending('block_timestamp'), [marketplace], {autoFetch: false});
   
   useEffect(() => {
       void query.fetch();
