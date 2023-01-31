@@ -113,16 +113,17 @@ export const StoreInfo: FC<StoreInfoProps> = ({ storeName, description, logo, ci
         <>
           <Flex flexDirection="column" gap="35px" position="relative" maxH="50vh">
           
-            <Flex gap="20px" w="100%" mt="8vh" alignItems="center" >
+            <Flex gap="20px" w="100%" mt="7vh" alignItems="center" >
             
                 <Image src={logo} h="64px" w="64px" />
                   
                 <Flex flexDirection="column" w="100%" overflowWrap="revert">
-                  <Link href={storeLink} target="_blank" color={Colors.brandMain} _hover={{textDecoration: 'underline', gap: '30px'}}
+                  <Link href={storeLink} target="_blank" color={Colors.brandMain} _hover={{textDecoration: 'underline', gap: '20px'}}
                       p="0" display="flex" alignItems="center" gap="10px" transition="0.5s ease-in-out">
                     <Text fontSize="22px" fontWeight="700" color={Colors.brandMain}>{storeName}</Text>
                 <ChevronRightIcon color={Colors.brandMain} boxSize="35px" />
-                  </Link>
+              </Link>
+              <Text fontSize="12px" color="rgba(255, 255, 255, 0.6)">{marketplace.slice(0, 6)}...{marketplace.slice(-6) }</Text>
               
               <Text fontSize="15px">{city}, {country}</Text>
             </Flex>

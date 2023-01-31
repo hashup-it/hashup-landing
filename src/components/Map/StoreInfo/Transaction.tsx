@@ -7,14 +7,14 @@ import { Colors } from '../../../colors'
 export const Transaction = ({user, game, quantity, time, hash}: {user: string, game: string, quantity: string, time: any, hash: string}) => {
   return (
     <Grid templateColumns="2fr 4fr 2fr 1fr" fontSize="12px" bgColor="rgba(30, 30, 30, 0.7)" borderRadius="10px" p="15px" w="100%" justifyContent="space-between" justifyItems='center' alignItems="center">
-        <Text>{moment(time).fromNow()}</Text>
+        <Text fontSize="11px">{moment(time).fromNow()}</Text>
           <Flex flexDirection="column">
-        <Text>User: &nbsp;{user.slice(0, 8)}...</Text>
-        <Text>Game: {game.slice(0, 8)}...</Text>
+        <Flex><Text fontWeight="700">User:</Text> &nbsp;{user.slice(0, 8)}...</Flex>
+        <Flex><Text fontWeight="700">Game:</Text> &nbsp;{game.slice(0, 8)}...</Flex>
           </Flex>
           <Flex flexDirection="column" alignItems="center">
-              <Text>Quantity</Text>
-        <Text>{ quantity }</Text>
+              <Text fontWeight="700">Quantity</Text>
+        <Text >{ quantity }</Text>
       </Flex>
       <Link href={`https://polygonscan.com/tx/${hash}"`} target="_blank">
         <InfoIcon _hover={{ color: Colors.brandMain, cursor: 'pointer' }} />
