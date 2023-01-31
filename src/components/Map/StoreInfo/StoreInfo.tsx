@@ -23,14 +23,31 @@ export const StoreInfo: FC<StoreInfoProps> = ({ storeName, description, logo, ci
   
   //is store info visible
   const [show, setShow] = useState<boolean>(false);
-  const [transactions, setTransactions] = useState();
+  const [transactions, setTransactions] = useState([]);
 
-  const query = useMoralisQuery('Bought', query => query.equalTo('marketplace', marketplace), [marketplace], { autoFetch: false });
+  const query = useMoralisQuery('Bought',
+    query => query.equalTo('marketplace', marketplace), [marketplace], {autoFetch: false});
   
   useEffect(() => {
-    if (!query.isLoading && !query.isFetching) console.log(query.data);
-  }, [marketplace])
+      void query.fetch();
+  }, [storeName])
   
+  useEffect(() => { 
+    const payload = (query.data as any).map((entity: any) => {
+      console.log("entity", entity.attributes);
+      const converted = {
+        id: entity.attributes.transaction_hash,
+        value: entity.attributes.amount,
+        token: entity.attributes.address,
+        user: entity.attributes.user ?? entity.attributes.referrer,
+        time: entity.attributes.block_timestamp,
+      };
+      return converted;
+    });
+
+    setTransactions(payload)
+  }, [query.data, query.isFetching, query.isLoading])
+
   //setting delay if display is becoming true
   //in order to avoid displaying content on the low width
   //(ux improvement)
@@ -126,12 +143,13 @@ export const StoreInfo: FC<StoreInfoProps> = ({ storeName, description, logo, ci
               <Text>Details</Text>
             </Grid>
             <Flex flexDirection="column" gap="10px">
-              <Transaction />
-              <Transaction />
-              <Transaction />
-              <Transaction />
-              <Transaction />
-              <Transaction />
+            {transactions?.length > 0 && transactions?.map((transaction: any) => <Transaction
+              time={transaction.time}
+              hash={transaction.id}
+              quantity={transaction.value}
+              game={transaction.token}
+              user={transaction.user} />
+              )}
             </Flex>
           </Flex>
         

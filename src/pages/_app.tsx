@@ -14,7 +14,7 @@ import { MoralisProvider } from 'react-moralis';
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ChakraProvider resetCSS theme={theme}>
-			<MoralisProvider serverUrl='https://cawxglhowrkc.grandmoralis.com:2053/server' appId='vtTf7ftC58VeOXocaZuqmPKOuzozvXZgIOGON6lL'>
+			<MoralisProvider serverUrl='https://m8n2yl4ato6n.grandmoralis.com:2053/server' appId='eC4wceXEnSV2YnbaVOaE5XPrvwBXgEvDQXLG0i3M'>
 				<Fonts />
 				<GlobalContainer>
 				<PolygonLabel />
