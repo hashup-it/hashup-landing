@@ -175,7 +175,7 @@ const onStoreMouseEnter = (map: any, popup: any) => {
         //content of the popup
         const popupHtml = `
             <div style="display: flex; gap: 10px; align-items: center; padding: 0 10px;">
-                <img src="${logo}" style="height: 30px; width: 30px"/>
+                <img src="${logo}" style="width: 30px"/>
                 <div style="display: flex; flex-direction: column; align-items: center;">
                     <strong>${storeName}</strong>
                     <p style="color: white; font-size: 10px; line-height: 80%">${city}, ${country}</p>
@@ -235,7 +235,7 @@ const lowWidthPopupShow = (
     //content of the popup
     const popupHtml = `
         <a href="${storeLink}" style="text-decoration: none; display: flex; gap: 10px; align-items: center; padding: 0 10px;">
-            <img src="${logo}" style="height: 30px; width: 30px"/>
+            <img src="${logo}" style="width: 30px"/>
             <div style="display: flex; flex-direction: column; align-items: center;">
                 <strong>${storeName}</strong>
                 <p style="color: white; font-size: 10px; line-height: 110%">${city}, ${country}</p>
