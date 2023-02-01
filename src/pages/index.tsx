@@ -12,6 +12,8 @@ import Ecosystem from '../components/Ecosystem/ecosystem';
 import Roadmap from '../components/Roadmap/roadmap';
 import React from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Map from '../components/Map/Map';
+import { StoresLogo } from '../components/StoresLogo/StoresLogo';
 
 const Index = () => (
 	<Flex>
@@ -19,6 +21,8 @@ const Index = () => (
 			<ParallaxProvider>
 				<StickySocials />
 				<Header />
+				<Map />
+				<StoresLogo />
 				<SectionOne />
 				<Advantages />
 				<ChoosePath />
