@@ -19,7 +19,7 @@ export const StoresLogo = () => {
 
   return (
     <Flex w="90vw" gap="15px" flexWrap="wrap" mt="50px" justifyContent="center">
-        {logos.map((logo, index) => <Image key={index} src={logo} w="100px" h="100px"/>)}
+        {logos.map((logo, index) => <Image key={index} src={logo} w="100px"/>)}
     </Flex>
   )
 }
