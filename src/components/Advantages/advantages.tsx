@@ -47,7 +47,7 @@ export const Advantages = () => {
 			alignItems="center"
 			justifyContent="space-between"
 		>
-			<SectionInfoButton label="HOW DOES IT WORK" />
+			<SectionInfoButton label="Mission statement" />
 			{/* <ScrollImages animationHookReference={ref} /> */}
 			<SlideFade in={enterCount > 0} offsetY="100px">
 				<Flex
@@ -68,11 +68,11 @@ export const Advantages = () => {
 						<strong>One</strong> Wallet<strong>.</strong>
 					</Text>
 					<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
-						HashUp is a protocol for token-license distribution. It allows you to sell games and tokens on multiple web3 stores
-						simultaneously from one place. {' '}
+						The HashUp protocol is a decentralised pool of tokens and licences that anyone can sell. 
 					</Text>
 					<Text fontSize="20px" fontWeight="300">
-						You decide how much the stores earn! Use it to <strong>decentralize</strong> your marketing! {' '}
+					<i>We want to create the best crypto based tool that allows game studios to publish on multiple marketplaces at the time and users to create web3 platforms without having to know how to code.
+					We love to watch our ever growing community of gamedev studios, game publishers, game influencers and game stores owners.</i>
 					</Text>
 				</Flex>
 				<Flex display={['flex', 'flex', 'none', 'none']} alignItems="center" justifyContent="center" pt="30px">

@@ -3,6 +3,11 @@ import React from 'react';
 import RedTriangleIcon from '../../../Icons/redTriangleIcon';
 import HeaderMainButtons from './headerMainButtons';
 
+const data = [
+	`Protocol and infrastructure for gaming marketplaces.`,
+	`asdasd`
+]
+
 export const HeaderMain = () => {
 	return (
 		<Flex
@@ -18,7 +23,7 @@ export const HeaderMain = () => {
 		>
 			<Flex fontSize={{ base: '12px', lg: '15px' }} fontWeight="600" color="white" gridGap="4px" display={{}}>
 				<RedTriangleIcon mt="-5px" />
-				Content Providing Protocol to your <strong>Marketplace</strong>
+				The HashUp protocol is a decentralised pool of tokens and licences that anyone can sell. 
 				<RedTriangleIcon transform="rotate(3deg)" mt="15px" />
 			</Flex>
 			<Flex
@@ -31,16 +36,16 @@ export const HeaderMain = () => {
 				alignItems="center"
 				lineHeight="100%"
 			>
-				<Flex display={['none', 'none', 'flex', 'flex']}>Protocol and</Flex>
+				<Flex display={['none', 'none', 'flex', 'flex']}>Pool of games and</Flex>
 				<Flex display={['none', 'none', 'flex', 'flex']}>infrastructure for</Flex>
 				<Flex display={['none', 'none', 'flex', 'flex']}>
-					<strong style={{marginLeft: '10px'}}>Gaming </strong>3.0
+					<strong style={{marginLeft: '10px'}}>Gaming </strong> Marketplaces
 					<strong>.</strong>
 				</Flex>
 				<Flex display={['flex', 'flex', 'none', 'none']}>
 					<Text>
 						{' '}
-						Protocol and infrastructure for <strong>gaming</strong> marketplaces<strong>.</strong>
+						Pool of games for <strong>gaming</strong> marketplaces<strong>.</strong>
 					</Text>
 				</Flex>
 			</Flex>
