@@ -51,14 +51,21 @@ export const NavBar = () => {
 					zIndex="10000"
 					transition="background .33s"
 				>
-					<Flex justifyContent="space-between" alignItems="center" w="100%">
+					<Flex
+						justifyContent="space-between"
+						alignItems="center"
+						w="100%"
+					>
 						<Flex>
 							<a href="/">
 								{/* <MobileHashUpLogo cursor="pointer" /> */}
 								<HashupLogo />
 							</a>
 						</Flex>
-						<Flex gridGap="15px" alignItems="center">
+						<Flex
+							gridGap="15px"
+							alignItems="center"
+						>
 							<Flex cursor="pointer">
 								<HamburgerMenu onClick={onOpen} />
 							</Flex>
@@ -74,30 +81,66 @@ export const NavBar = () => {
 					<NavBarItems />
 				</Flex>
 
-				<Flex alignItems="center" gridGap="36px" display={['none', 'none', 'flex', 'flex']}>
+				<Flex
+					alignItems="center"
+					gridGap="36px"
+					display={['none', 'none', 'flex', 'flex']}
+				>
 					<LaunchAppButton />
 				</Flex>
 			</Flex>
 
-			<Modal isOpen={isOpen} onClose={onClose} size="full">
+			<Modal
+				isOpen={isOpen}
+				onClose={onClose}
+				size="full"
+			>
 				<ModalOverlay h="100vh" />
-				<ModalContent bg="black" w="100%">
+				<ModalContent
+					bg="black"
+					w="100%"
+				>
 					<ModalHeader>
-						<Flex alignItems="center" justifyContent="center">
-							<Flex direction="column" gridGap="46px">
-								<Flex justifyContent="space-between" gridGap="156px" alignItems="center">
+						<Flex
+							alignItems="center"
+							justifyContent="center"
+						>
+							<Flex
+								direction="column"
+								gridGap="46px"
+							>
+								<Flex
+									justifyContent="space-between"
+									gridGap="156px"
+									alignItems="center"
+								>
 									<Flex>
 										<MobileHashUpLogo cursor="pointer" />
 									</Flex>
-									<Flex gridGap="16px" alignItems="center" justifyContent="center">
+									<Flex
+										gridGap="16px"
+										alignItems="center"
+										justifyContent="center"
+									>
 										<Text>Close</Text>
-										<CloseMenuIcon onClick={onClose} cursor="pointer" />
+										<CloseMenuIcon
+											onClick={onClose}
+											cursor="pointer"
+										/>
 									</Flex>
 								</Flex>
-								<Flex alignItems="center" justifyContent="center" direction="column">
+								<Flex
+									alignItems="center"
+									justifyContent="center"
+									direction="column"
+								>
 									<MobileNavbarItems />
 								</Flex>
-								<Flex pt="100%" alignItems="center" justifyContent="center">
+								<Flex
+									pt="100%"
+									alignItems="center"
+									justifyContent="center"
+								>
 									<LaunchAppButton />
 								</Flex>
 							</Flex>

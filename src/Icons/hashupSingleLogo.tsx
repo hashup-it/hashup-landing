@@ -35,12 +35,30 @@ export const HashupSingleLogo: FC<Props> = ({ h, zIndex, position, top, right, m
 				d="M11.2781 15.9157C11.149 16.2294 10.8697 16.4563 10.5362 16.5183L8.34072 16.9267C8.18512 16.9556 8.05914 16.8009 8.119 16.6544L13.4137 3.69529L16.0189 4.39334L11.2781 15.9157Z"
 				fill="white"
 			/>
-			<path d="M9.94442 13.7323L10.6426 11.1267L14.566 12.178L13.4728 14.6777L9.94442 13.7323Z" fill="white" />
-			<path d="M3.76777 6.69501L4.82598 4.18635L7.79789 4.98267L7.09984 7.58783L3.76777 6.69501Z" fill="white" />
-			<path d="M7.76537 7.8247L8.8321 5.31833L14.593 6.80355L13.4357 9.28564L7.76537 7.8247Z" fill="white" />
-			<path d="M14.482 10.2108L15.7952 7.12551L16.4778 7.30843L16.3446 10.7099L14.482 10.2108Z" fill="#FF3F3F" />
-			<path d="M5.46102 12.5311L6.74589 10.0827L10.8176 11.1738L9.76863 13.6853L5.46102 12.5311Z" fill="white" />
-			<path d="M2.25741 11.672L2.44092 8.26392L4.13335 8.7174L2.83465 11.8267L2.25741 11.672Z" fill="#FF3F3F" />
+			<path
+				d="M9.94442 13.7323L10.6426 11.1267L14.566 12.178L13.4728 14.6777L9.94442 13.7323Z"
+				fill="white"
+			/>
+			<path
+				d="M3.76777 6.69501L4.82598 4.18635L7.79789 4.98267L7.09984 7.58783L3.76777 6.69501Z"
+				fill="white"
+			/>
+			<path
+				d="M7.76537 7.8247L8.8321 5.31833L14.593 6.80355L13.4357 9.28564L7.76537 7.8247Z"
+				fill="white"
+			/>
+			<path
+				d="M14.482 10.2108L15.7952 7.12551L16.4778 7.30843L16.3446 10.7099L14.482 10.2108Z"
+				fill="#FF3F3F"
+			/>
+			<path
+				d="M5.46102 12.5311L6.74589 10.0827L10.8176 11.1738L9.76863 13.6853L5.46102 12.5311Z"
+				fill="white"
+			/>
+			<path
+				d="M2.25741 11.672L2.44092 8.26392L4.13335 8.7174L2.83465 11.8267L2.25741 11.672Z"
+				fill="#FF3F3F"
+			/>
 			<path
 				d="M6.75347 7.5111L2.52793 14.4834L5.53026 7.17691L6.75347 7.5111Z"
 				fill="url(#paint0_linear_1755_4167)"
@@ -59,7 +77,11 @@ export const HashupSingleLogo: FC<Props> = ({ h, zIndex, position, top, right, m
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="#D8D8D8" />
-					<stop offset="1" stopColor="white" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<linearGradient
 					id="paint1_linear_1755_4167"
@@ -70,7 +92,11 @@ export const HashupSingleLogo: FC<Props> = ({ h, zIndex, position, top, right, m
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="#DFDFDF" />
-					<stop offset="1" stopColor="white" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 			</defs>
 		</Icon>

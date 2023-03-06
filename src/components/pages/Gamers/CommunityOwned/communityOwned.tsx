@@ -26,7 +26,7 @@ export const CommunityOwned = () => {
 
 	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
-	const scrollHandler = (any) => {
+	const scrollHandler = any => {
 		if (!inputRef.current) {
 			return;
 		}
@@ -75,8 +75,15 @@ export const CommunityOwned = () => {
 
 	const typeOptions: { [p: number]: () => React.ReactNode } = {
 		[ActiveText.FIRST]: () => (
-			<Flex direction="column" alignItems="center" w="100%">
-				<SlideFade in={enterCount > 0} offsetY="100px">
+			<Flex
+				direction="column"
+				alignItems="center"
+				w="100%"
+			>
+				<SlideFade
+					in={enterCount > 0}
+					offsetY="100px"
+				>
 					<Text
 						lineHeight="100%"
 						maxW={['100%', '100%', '85%', '85%']}
@@ -89,9 +96,21 @@ export const CommunityOwned = () => {
 			</Flex>
 		),
 		[ActiveText.SECOND]: () => (
-			<Flex direction="column" alignItems="center" textAlign="center" w="100%">
-				<SlideFade in={enterCount > 0} offsetY="40px">
-					<Flex direction="column" alignItems="start" textAlign="center">
+			<Flex
+				direction="column"
+				alignItems="center"
+				textAlign="center"
+				w="100%"
+			>
+				<SlideFade
+					in={enterCount > 0}
+					offsetY="40px"
+				>
+					<Flex
+						direction="column"
+						alignItems="start"
+						textAlign="center"
+					>
 						<Text
 							lineHeight="100%"
 							maxW={['100%', '100%', '85%', '85%']}
@@ -102,10 +121,25 @@ export const CommunityOwned = () => {
 						</Text>
 					</Flex>
 				</SlideFade>
-				<SlideFade in={enterCount > 0} offsetY="40px">
-					<Flex direction="column" maxW={['80%', '80%', '100vw', '100vw']} ml={['15%', '15%', '0%', '0%']}>
-						<Flex direction="column" mt="100px" textAlign="start">
-							<Text fontSize={['20px', '20px', '60px', '60px']} maxW="70%" lineHeight="110%">
+				<SlideFade
+					in={enterCount > 0}
+					offsetY="40px"
+				>
+					<Flex
+						direction="column"
+						maxW={['80%', '80%', '100vw', '100vw']}
+						ml={['15%', '15%', '0%', '0%']}
+					>
+						<Flex
+							direction="column"
+							mt="100px"
+							textAlign="start"
+						>
+							<Text
+								fontSize={['20px', '20px', '60px', '60px']}
+								maxW="70%"
+								lineHeight="110%"
+							>
 								Here’s <strong>how</strong>:
 							</Text>
 						</Flex>
@@ -127,7 +161,10 @@ export const CommunityOwned = () => {
 									text="Can you trade games with friends like you used to?"
 								/>
 								{isActiveComponent === 0 ? (
-									<SlideFade in={enterCount > 0} offsetY="40px">
+									<SlideFade
+										in={enterCount > 0}
+										offsetY="40px"
+									>
 										<Text fontSize={['30px', '30px', '90px', '90px']}>
 											<strong>No</strong>.
 										</Text>
@@ -145,7 +182,10 @@ export const CommunityOwned = () => {
 									isActive={isActiveComponent}
 								/>
 								{isActiveComponent === 1 ? (
-									<SlideFade in={enterCount > 0} offsetY="40px">
+									<SlideFade
+										in={enterCount > 0}
+										offsetY="40px"
+									>
 										<Flex fontSize={['30px', '30px', '90px', '90px']}>
 											<Text>
 												<strong>No</strong>.
@@ -165,7 +205,10 @@ export const CommunityOwned = () => {
 									isActive={isActiveComponent}
 								/>
 								{isActiveComponent === 2 ? (
-									<SlideFade in={enterCount > 0} offsetY="40px">
+									<SlideFade
+										in={enterCount > 0}
+										offsetY="40px"
+									>
 										<Flex
 											direction="column"
 											fontSize={['30px', '30px', '90px', '90px']}
@@ -191,12 +234,18 @@ export const CommunityOwned = () => {
 									isActive={isActiveComponent}
 								/>
 								{isActiveComponent === 3 ? (
-									<SlideFade in={enterCount > 0} offsetY="40px">
+									<SlideFade
+										in={enterCount > 0}
+										offsetY="40px"
+									>
 										<ElementCompOne activeComp={false} />
 									</SlideFade>
 								) : null}
 								{isActiveComponent === 4 ? (
-									<SlideFade in={enterCount > 0} offsetY="40px">
+									<SlideFade
+										in={enterCount > 0}
+										offsetY="40px"
+									>
 										<ElementCompOne activeComp={true} />
 									</SlideFade>
 								) : null}
@@ -209,12 +258,24 @@ export const CommunityOwned = () => {
 	};
 
 	return (
-		<Flex direction="column" alignItems="center" ref={inputRef} mb={['80px', '100px', '150px', '200px']} w="100%">
+		<Flex
+			direction="column"
+			alignItems="center"
+			ref={inputRef}
+			mb={['80px', '100px', '150px', '200px']}
+			w="100%"
+		>
 			<Flex gridGap="6px">
-				<Text fontSize="12px" color={Colors.brandMain}>
+				<Text
+					fontSize="12px"
+					color={Colors.brandMain}
+				>
 					COMMUNITY-OWNED
 				</Text>
-				<Text fontSize="12px" color="white">
+				<Text
+					fontSize="12px"
+					color="white"
+				>
 					AND OPERATED
 				</Text>
 			</Flex>
@@ -230,7 +291,10 @@ export const CommunityOwned = () => {
 				textAlign="center"
 				ref={ref}
 			>
-				<SlideFade in={enterCount > 0} offsetY="100px">
+				<SlideFade
+					in={enterCount > 0}
+					offsetY="100px"
+				>
 					{typeOptions[activeText]()}
 				</SlideFade>
 			</Flex>

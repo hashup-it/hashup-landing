@@ -3,7 +3,13 @@ import React from 'react';
 
 export const MicrosoftLogo = () => {
 	return (
-		<Icon width="20px" height="21px" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<Icon
+			width="20px"
+			height="21px"
+			viewBox="0 0 20 21"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
 			<g clipPath="url(#clip0_2322_2494)">
 				<path
 					d="M9.33908 1.80141C12.721 1.22792 16.1094 0.687627 19.4978 0.166504C19.4999 3.45795 19.4978 6.74693 19.4999 10.0382C16.1137 10.0526 12.7275 10.1097 9.33908 10.1217C9.33684 7.34659 9.33684 4.574 9.33908 1.80141Z"
@@ -24,7 +30,12 @@ export const MicrosoftLogo = () => {
 			</g>
 			<defs>
 				<clipPath id="clip0_2322_2494">
-					<rect width="18.75" height="20.8333" fill="white" transform="translate(0.75 0.166504)" />
+					<rect
+						width="18.75"
+						height="20.8333"
+						fill="white"
+						transform="translate(0.75 0.166504)"
+					/>
 				</clipPath>
 			</defs>
 		</Icon>

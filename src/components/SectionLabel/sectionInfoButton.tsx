@@ -9,7 +9,10 @@ export const SectionInfoButton = ({ zIndex, label, ...props }: { label: string; 
 
 	return (
 		<>
-			<SlideFade in={enterCount > 0} offsetY="100px">
+			<SlideFade
+				in={enterCount > 0}
+				offsetY="100px"
+			>
 				<Flex
 					ref={ref}
 					position="relative"

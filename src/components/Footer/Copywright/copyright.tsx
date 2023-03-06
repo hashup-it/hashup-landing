@@ -5,8 +5,15 @@ import CopywrightInfo from './copywrightInfo';
 
 export const Copyright = () => {
 	return (
-		<Flex w="100%" justifyContent="space-between" direction={['column', 'column', 'row', 'row']}>
-			<Text fontSize="12px" color={['white', 'white', '#8a8f98', '#8a8f98']}>
+		<Flex
+			w="100%"
+			justifyContent="space-between"
+			direction={['column', 'column', 'row', 'row']}
+		>
+			<Text
+				fontSize="12px"
+				color={['white', 'white', '#8a8f98', '#8a8f98']}
+			>
 				Copyright © {new Date().getFullYear()} by HashUp All Rights Reserved.
 			</Text>
 			<Flex

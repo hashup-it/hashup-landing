@@ -7,7 +7,7 @@ const getImageId = () => {
 	const assetCount = 24;
 	const indices = Array.from(Array(assetCount).keys());
 
-	return indices.map((index) => `assets/images/hash_cartridges/cartridge_${index.toString().padStart(5, '0')}.jpg`);
+	return indices.map(index => `assets/images/hash_cartridges/cartridge_${index.toString().padStart(5, '0')}.jpg`);
 };
 
 const handleOnScroll = (

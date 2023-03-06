@@ -14,13 +14,32 @@ import KnowledgeFooter from './knowledgeFooter';
 export const Footer = () => {
 	return (
 		<Flex w={['none', 'none', '100%', '100%']}>
-			<Flex justifyContent="center" alignItems="center" display={['flex', 'flex', 'none', 'none']}>
+			<Flex
+				justifyContent="center"
+				alignItems="center"
+				display={['flex', 'flex', 'none', 'none']}
+			>
 				<MobileFooter />
 			</Flex>
-			<Flex direction="column" w="100%" pt="30px" gridGap="60px" display={['none', 'none', 'flex', 'flex']}>
-				<Flex justifyContent="space-between" alignItems="center" w="100%">
+			<Flex
+				direction="column"
+				w="100%"
+				pt="30px"
+				gridGap="60px"
+				display={['none', 'none', 'flex', 'flex']}
+			>
+				<Flex
+					justifyContent="space-between"
+					alignItems="center"
+					w="100%"
+				>
 					<HashupLogo />
-					<Flex fontSize="16px" fontWeight="400" gridGap="47px" alignItems="center">
+					<Flex
+						fontSize="16px"
+						fontWeight="400"
+						gridGap="47px"
+						alignItems="center"
+					>
 						<Text>
 							{' '}
 							OUR <strong>SOCIAL MEDIA</strong>
@@ -28,14 +47,26 @@ export const Footer = () => {
 						<FooterSocials />
 					</Flex>
 				</Flex>
-				<Flex justifyContent="flex-start" gridGap="17px" alignItems="center" fontSize="14px">
+				<Flex
+					justifyContent="flex-start"
+					gridGap="17px"
+					alignItems="center"
+					fontSize="14px"
+				>
 					<Text>HashUp.it</Text>
-					<Box w="17px" h="1px" bgColor={Colors.brandMain} />
+					<Box
+						w="17px"
+						h="1px"
+						bgColor={Colors.brandMain}
+					/>
 					<a href="/">
 						<Text>Go to the main page</Text>
 					</a>
 				</Flex>
-				<Flex justifyContent="space-between" gridGap="60px">
+				<Flex
+					justifyContent="space-between"
+					gridGap="60px"
+				>
 					<Flex>
 						<CompanyInformation />
 					</Flex>

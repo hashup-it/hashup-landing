@@ -17,8 +17,16 @@ export const CloseMenuIcon = ({ onClick, cursor }: ICloseMenuIcon) => {
 			onClick={onClick}
 			cursor={cursor}
 		>
-			<path d="M1.38464 1L19.3846 19" stroke="#FF3F3F" stroke-width="2" />
-			<path d="M19.3846 1L1.38464 19" stroke="#FF3F3F" stroke-width="2" />
+			<path
+				d="M1.38464 1L19.3846 19"
+				stroke="#FF3F3F"
+				stroke-width="2"
+			/>
+			<path
+				d="M19.3846 1L1.38464 19"
+				stroke="#FF3F3F"
+				stroke-width="2"
+			/>
 		</Icon>
 	);
 };

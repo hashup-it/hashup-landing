@@ -3,10 +3,7 @@ import React from 'react';
 import RedTriangleIcon from '../../../Icons/redTriangleIcon';
 import HeaderMainButtons from './headerMainButtons';
 
-const data = [
-	`Protocol and infrastructure for gaming marketplaces.`,
-	`asdasd`
-]
+const data = [`Protocol and infrastructure for gaming marketplaces.`, `asdasd`];
 
 export const HeaderMain = () => {
 	return (
@@ -21,10 +18,19 @@ export const HeaderMain = () => {
 			/** Mobile-fixup */
 			mt={{ base: '73px', lg: '0' }}
 		>
-			<Flex fontSize={{ base: '12px', lg: '15px' }} fontWeight="600" color="white" gridGap="4px" display={{}}>
+			<Flex
+				fontSize={{ base: '12px', lg: '15px' }}
+				fontWeight="600"
+				color="white"
+				gridGap="4px"
+				display={{}}
+			>
 				<RedTriangleIcon mt="-5px" />
-				The HashUp protocol is a decentralised pool of tokens and licences that anyone can sell. 
-				<RedTriangleIcon transform="rotate(3deg)" mt="15px" />
+				The HashUp protocol is a decentralised pool of tokens and licences that anyone can sell.
+				<RedTriangleIcon
+					transform="rotate(3deg)"
+					mt="15px"
+				/>
 			</Flex>
 			<Flex
 				flexDirection="column"
@@ -39,7 +45,7 @@ export const HeaderMain = () => {
 				<Flex display={['none', 'none', 'flex', 'flex']}>Pool of games and</Flex>
 				<Flex display={['none', 'none', 'flex', 'flex']}>infrastructure for</Flex>
 				<Flex display={['none', 'none', 'flex', 'flex']}>
-					<strong style={{marginLeft: '10px'}}>Gaming </strong> Marketplaces
+					<strong style={{ marginLeft: '10px' }}>Gaming </strong> Marketplaces
 					<strong>.</strong>
 				</Flex>
 				<Flex display={['flex', 'flex', 'none', 'none']}>

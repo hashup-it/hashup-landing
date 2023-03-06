@@ -17,7 +17,12 @@ export const ElipseMobileIcon = ({ opacity, onClick }: IElipseMobileIcon) => {
 			opacity={opacity}
 			onClick={onClick}
 		>
-			<circle cx="3" cy="3" r="3" fill="white" />
+			<circle
+				cx="3"
+				cy="3"
+				r="3"
+				fill="white"
+			/>
 		</Icon>
 	);
 };

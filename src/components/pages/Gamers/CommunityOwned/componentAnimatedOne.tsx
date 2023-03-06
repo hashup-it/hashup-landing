@@ -10,10 +10,22 @@ export interface ComponentAnimatedOne {
 
 export const ComponentAnimatedOne = ({ text, isActive }) => {
 	return (
-		<Flex justifyContent="flex-start" textAlign="start">
+		<Flex
+			justifyContent="flex-start"
+			textAlign="start"
+		>
 			{isActive === 0 ? (
-				<Flex justifyContent="flex-start" gridGap="26px" alignItems="center">
-					<Box bgColor={Colors.brandMain} w="88px" h="1px" display={['none', 'none', 'flex', 'flex']} />
+				<Flex
+					justifyContent="flex-start"
+					gridGap="26px"
+					alignItems="center"
+				>
+					<Box
+						bgColor={Colors.brandMain}
+						w="88px"
+						h="1px"
+						display={['none', 'none', 'flex', 'flex']}
+					/>
 					<Text
 						color="white"
 						fontSize={['20px', '20px', '26px', '26px']}
@@ -25,7 +37,10 @@ export const ComponentAnimatedOne = ({ text, isActive }) => {
 					</Text>
 				</Flex>
 			) : (
-				<Flex justifyContent="flex-start" alignItems="center">
+				<Flex
+					justifyContent="flex-start"
+					alignItems="center"
+				>
 					<Text
 						color="#9a9a9a"
 						fontSize={['20px', '20px', '26px', '26px']}

@@ -3,7 +3,14 @@ import React from 'react';
 
 export const CopyIcon = ({ ...props }) => {
 	return (
-		<Icon width="17px" height="17px" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+		<Icon
+			width="17px"
+			height="17px"
+			viewBox="0 0 17 17"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
 			<path
 				d="M14.2601 6.55811H7.96006C7.18686 6.55811 6.56006 7.18491 6.56006 7.95811V14.2581C6.56006 15.0313 7.18686 15.6581 7.96006 15.6581H14.2601C15.0333 15.6581 15.6601 15.0313 15.6601 14.2581V7.95811C15.6601 7.18491 15.0333 6.55811 14.2601 6.55811Z"
 				stroke="#FF3F3F"

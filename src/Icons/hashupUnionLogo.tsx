@@ -3,8 +3,17 @@ import React from 'react';
 
 export const HashupUnionLogo = () => {
 	return (
-		<Icon width="222px" height="242px" viewBox="0 0 222 242" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<mask id="path-1-inside-1_2438_2503" fill="white">
+		<Icon
+			width="222px"
+			height="242px"
+			viewBox="0 0 222 242"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<mask
+				id="path-1-inside-1_2438_2503"
+				fill="white"
+			>
 				<path
 					fillRule="evenodd"
 					clipRule="evenodd"
@@ -26,7 +35,11 @@ export const HashupUnionLogo = () => {
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="white" />
-					<stop offset="1" stopColor="white" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 			</defs>
 		</Icon>

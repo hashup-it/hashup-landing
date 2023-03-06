@@ -21,7 +21,13 @@ export const MobileLeftIcon = ({ onClick, cursor, opacity, width, height }: IMob
 			cursor={cursor}
 			opacity={opacity}
 		>
-			<path d="M45 54L27 36L45 18" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+			<path
+				d="M45 54L27 36L45 18"
+				stroke="white"
+				strokeWidth="3"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			/>
 		</Icon>
 	);
 };

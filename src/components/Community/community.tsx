@@ -11,9 +11,22 @@ export const Community = () => {
 
 	return (
 		<>
-			<Flex flexDirection="column" alignItems="center" bgColor="#0A0A0A" justifyContent="space-between">
-				<Box h="1px" w="100vw" bgColor="white" opacity="0.1" />
-				<SlideFade in={enterCount > 0} offsetY="100px">
+			<Flex
+				flexDirection="column"
+				alignItems="center"
+				bgColor="#0A0A0A"
+				justifyContent="space-between"
+			>
+				<Box
+					h="1px"
+					w="100vw"
+					bgColor="white"
+					opacity="0.1"
+				/>
+				<SlideFade
+					in={enterCount > 0}
+					offsetY="100px"
+				>
 					<Flex
 						ref={ref}
 						p="20px"
@@ -23,7 +36,10 @@ export const Community = () => {
 						mt="50px"
 						justifyContent="center"
 					>
-						<Text textAlign="center" fontSize={['32px', '46px', '64px', '70px']}>
+						<Text
+							textAlign="center"
+							fontSize={['32px', '46px', '64px', '70px']}
+						>
 							{' '}
 							Join the community<strong>!</strong>
 						</Text>
@@ -35,7 +51,10 @@ export const Community = () => {
 						direction="column"
 						alignItems="center"
 					>
-						<Text maxWidth="60vw" textAlign="center">
+						<Text
+							maxWidth="60vw"
+							textAlign="center"
+						>
 							Be a part of the revolution in the game industry and join our growing community of game
 							creators, innovators, and gamers!
 						</Text>
@@ -49,12 +68,20 @@ export const Community = () => {
 						alignItems={{ base: 'center' }}
 						cursor="pointer"
 					>
-						{CommunityInfo.map((element) => (
-							<CommunityButtons key={element.link} {...element} />
+						{CommunityInfo.map(element => (
+							<CommunityButtons
+								key={element.link}
+								{...element}
+							/>
 						))}
 					</Flex>
 				</SlideFade>
-				<Box h="1px" w="100vw" bgColor="white" opacity="0.1" />
+				<Box
+					h="1px"
+					w="100vw"
+					bgColor="white"
+					opacity="0.1"
+				/>
 			</Flex>
 		</>
 	);

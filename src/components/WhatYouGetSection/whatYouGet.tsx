@@ -12,7 +12,8 @@ const CardsInfo = [
 	{
 		number: '01',
 		label: 'Sell games everywhere',
-		description: 'Thanks to the power of the HashUp protocol, anyone can now sell your games. Goodbye exclusivity! Welcome equality!',
+		description:
+			'Thanks to the power of the HashUp protocol, anyone can now sell your games. Goodbye exclusivity! Welcome equality!',
 		src: '/assets/videos/cartridges.mp4',
 		subNumber: '03',
 		link: '/gamers',
@@ -20,14 +21,16 @@ const CardsInfo = [
 	{
 		number: '02',
 		label: 'License Finance',
-		description: "License Finance, a swappable DEX license that will replace the subscription model. Own the games, don't rent them!",
+		description:
+			"License Finance, a swappable DEX license that will replace the subscription model. Own the games, don't rent them!",
 		src: '/assets/videos/laptop.mp4',
 		link: '/creators',
 	},
 	{
 		number: '03',
 		label: 'The $HASH token',
-		description: "One token to connect hundreds of game stores.  10% of the entire sales volume makes the # token go to the moon!",
+		description:
+			'One token to connect hundreds of game stores.  10% of the entire sales volume makes the # token go to the moon!',
 		src: '/assets/videos/coins.mp4',
 		subNumber: '02',
 		link: 'https://wiki.hashup.it/get-started/token',
@@ -39,20 +42,20 @@ export const WhatYouGet = () => {
 
 	const nextCard = (forceForward = false) => {
 		if (forceForward) {
-			setCard((previousCard) => (previousCard < 2 ? previousCard + 1 : 0));
+			setCard(previousCard => (previousCard < 2 ? previousCard + 1 : 0));
 		} else {
 			if (card < 2) {
-				setCard((previousCard) => previousCard + 1);
+				setCard(previousCard => previousCard + 1);
 			}
 		}
 	};
 
 	const previousCard = (forceForward = false) => {
 		if (forceForward) {
-			setCard((previousCard) => (previousCard > 0 ? previousCard - 1 : 2));
+			setCard(previousCard => (previousCard > 0 ? previousCard - 1 : 2));
 		} else {
 			if (card > 0) {
-				setCard((previousCard) => previousCard - 1);
+				setCard(previousCard => previousCard - 1);
 			}
 		}
 	};
@@ -73,8 +76,17 @@ export const WhatYouGet = () => {
 			position="relative"
 			w="100vw"
 		>
-			<SectionInfoButton label="WHAT DO YOU GET?" zIndex="1000" />
-			<Flex w="100vw" h="100%" mt="20px" flexDirection="column" alignItems="center">
+			<SectionInfoButton
+				label="WHAT DO YOU GET?"
+				zIndex="1000"
+			/>
+			<Flex
+				w="100vw"
+				h="100%"
+				mt="20px"
+				flexDirection="column"
+				alignItems="center"
+			>
 				<Flex
 					flexDirection="column"
 					gridGap="7px"
@@ -84,7 +96,10 @@ export const WhatYouGet = () => {
 					mt="30px"
 					mb={['30px', '30px', '60px', '60px']}
 				>
-					<Text fontSize={['30px', '42px', '56px', '70px']} fontWeight="700">
+					<Text
+						fontSize={['30px', '42px', '56px', '70px']}
+						fontWeight="700"
+					>
 						What does HashUp give you<strong>?</strong>
 					</Text>
 					<Text
@@ -93,9 +108,11 @@ export const WhatYouGet = () => {
 						color={Colors.greyText}
 						maxW={['none', 'none', '65%', '66%']}
 						textAlign={['left', 'left', 'center', 'center']}
-						style={{color: 'white'}}
+						style={{ color: 'white' }}
 					>
-						We believe in equal opportunity for the sale of games and tokens! <b>Goodbye to exclusivity, welcome equality!</b> Everyone can sell all the games that are on the HashUp protocol!
+						We believe in equal opportunity for the sale of games and tokens!{' '}
+						<b>Goodbye to exclusivity, welcome equality!</b> Everyone can sell all the games that are on the
+						HashUp protocol!
 					</Text>
 				</Flex>
 				<Flex
@@ -117,8 +134,14 @@ export const WhatYouGet = () => {
 						/>
 					</Flex>
 					<Flex gridGap="16px">
-						<ElipseMobileIcon opacity={card === 0 ? '1' : '0.2'} onClick={() => setCard(0)} />
-						<ElipseMobileIcon opacity={card === 1 ? '1' : '0.2'} onClick={() => setCard(1)} />
+						<ElipseMobileIcon
+							opacity={card === 0 ? '1' : '0.2'}
+							onClick={() => setCard(0)}
+						/>
+						<ElipseMobileIcon
+							opacity={card === 1 ? '1' : '0.2'}
+							onClick={() => setCard(1)}
+						/>
 						<ElipseMobileIcon
 							opacity={card === CardsInfo.length - 1 ? '1' : '0.2'}
 							onClick={() => setCard(2)}
@@ -143,7 +166,10 @@ export const WhatYouGet = () => {
 						src={CardsInfo[card].src}
 						link={CardsInfo[card].link}
 					/>
-					<Flex gridGap="10px" right="10%">
+					<Flex
+						gridGap="10px"
+						right="10%"
+					>
 						<Flex
 							bgColor={Colors.brandMain}
 							p="20px 25px"
@@ -152,7 +178,10 @@ export const WhatYouGet = () => {
 							onClick={() => previousCard()}
 							opacity={card === 0 ? '0' : '1'}
 						>
-							<ChevronRightIcon h="20px" transform="rotate(180deg)" />
+							<ChevronRightIcon
+								h="20px"
+								transform="rotate(180deg)"
+							/>
 						</Flex>
 						<Flex
 							bgColor={Colors.brandMain}

@@ -18,8 +18,18 @@ export const Premiere = () => {
 			position="relative"
 			flexDirection="column"
 		>
-			<Box w="100vw" h="1px" position="absolute" top="0" bgColor="white" opacity="0.1" />
-			<SlideFade in={enterCount > 0} offsetY="100px">
+			<Box
+				w="100vw"
+				h="1px"
+				position="absolute"
+				top="0"
+				bgColor="white"
+				opacity="0.1"
+			/>
+			<SlideFade
+				in={enterCount > 0}
+				offsetY="100px"
+			>
 				<Flex
 					ref={ref}
 					position="absolute"
@@ -29,9 +39,22 @@ export const Premiere = () => {
 					h="600px"
 					bgGradient="radial(rgba(255,63,63,0.4) 0%, rgba(0,0,0,0.2) 60%)"
 				/>
-				<Flex flexDirection="column" justifyContent="space-between" alignItems="center" gridGap="70px">
-					<Flex flexDirection="column" zIndex="1" alignItems="center">
-						<Text fontSize={['60px', '80px', '90px', '120px']} fontWeight="700" lineHeight="100%">
+				<Flex
+					flexDirection="column"
+					justifyContent="space-between"
+					alignItems="center"
+					gridGap="70px"
+				>
+					<Flex
+						flexDirection="column"
+						zIndex="1"
+						alignItems="center"
+					>
+						<Text
+							fontSize={['60px', '80px', '90px', '120px']}
+							fontWeight="700"
+							lineHeight="100%"
+						>
 							Premiere
 						</Text>
 						<Text
@@ -47,7 +70,14 @@ export const Premiere = () => {
 					<Newsletter />
 				</Flex>
 			</SlideFade>
-			<Box w="100vw" h="1px" position="absolute" bottom="0" bgColor="white" opacity="0.1" />
+			<Box
+				w="100vw"
+				h="1px"
+				position="absolute"
+				bottom="0"
+				bgColor="white"
+				opacity="0.1"
+			/>
 		</Flex>
 	);
 };

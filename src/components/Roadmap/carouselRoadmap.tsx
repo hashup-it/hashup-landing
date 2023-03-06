@@ -3,7 +3,7 @@ import RoadmapCard, { IRoadmapCardIRoadmapCard } from './roadmapCard';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
-const handleDragStart = (e) => e.preventDefault();
+const handleDragStart = e => e.preventDefault();
 
 const responsive = {
 	0: {
@@ -18,7 +18,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 	{
 		quarter: 'Q1 - 2021 - Q3 2022',
 		data: [
-			{ data: 'Shaping the idea of a true decentralized game and app store. Started in 2017.', isDone: true},
+			{ data: 'Shaping the idea of a true decentralized game and app store. Started in 2017.', isDone: true },
 			{ data: 'Blockchain Explorer of games on HashUp Protocol', isDone: true },
 			{ data: 'Web2 Games Marketplace', isDone: true },
 			{ data: 'First PC Launcher 3.0 with MetaMask', isDone: true },
@@ -35,8 +35,8 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 			{ data: 'ERC20 Licenses', isDone: true },
 			{ data: 'The HashUp V2 Plugins', isDone: true },
 			{ data: 'Publishing first 10 games', isDone: true },
-			{ data: 'The HashUp OpenAPI V1', isDone: true  },
-			{ data: 'Connecting first marketplaces to protocol and PC Launchers', isDone: true  },
+			{ data: 'The HashUp OpenAPI V1', isDone: true },
+			{ data: 'Connecting first marketplaces to protocol and PC Launchers', isDone: true },
 		],
 	},
 	{
@@ -49,7 +49,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 			{ data: 'Injecting Ethereum from PC Launcher 3.0 to Games' },
 			{ data: 'Web3 Games StarterPacks' },
 			{ data: 'Run GameSwapping!' },
-			{ data: 'Listing $Hash'}
+			{ data: 'Listing $Hash' },
 		],
 	},
 	{
@@ -67,8 +67,11 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 export const CarouselRoadmap = () => {
 	return (
 		<AliceCarousel
-			items={itemsData.map((data) => (
-				<RoadmapCard quarter={data.quarter} data={data.data} />
+			items={itemsData.map(data => (
+				<RoadmapCard
+					quarter={data.quarter}
+					data={data.data}
+				/>
 			))}
 			mouseTracking
 			controlsStrategy="alternate"

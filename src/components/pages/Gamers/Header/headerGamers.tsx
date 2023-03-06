@@ -4,7 +4,13 @@ import ForGamers from './forGamers';
 
 export const HeaderGamers = () => {
 	return (
-		<Flex flexDirection="column" alignItems="center" justifyContent="space-between" h="85vh" mb="200px">
+		<Flex
+			flexDirection="column"
+			alignItems="center"
+			justifyContent="space-between"
+			h="85vh"
+			mb="200px"
+		>
 			<Image
 				src="/assets/forgamers_bg-szer.png"
 				w="100%"

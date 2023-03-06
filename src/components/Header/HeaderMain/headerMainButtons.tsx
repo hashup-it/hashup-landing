@@ -5,8 +5,16 @@ import ChevronRightIcon from '../../../Icons/chevronRightIcon';
 
 export const HeaderMainButtons = () => {
 	return (
-		<Flex gridGap="31px" mt="40px" alignItems="center" direction={['column', 'column', 'row', 'row']}>
-			<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct" _hover={{ opacity: '0.5' }}>
+		<Flex
+			gridGap="31px"
+			mt="40px"
+			alignItems="center"
+			direction={['column', 'column', 'row', 'row']}
+		>
+			<Link
+				href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct"
+				_hover={{ opacity: '0.5' }}
+			>
 				<Flex
 					bgColor={Colors.brandMain}
 					w="200px"
@@ -19,10 +27,18 @@ export const HeaderMainButtons = () => {
 					transition="ease 0.2s"
 				>
 					<Flex flexDirection="column">
-						<Text fontSize="15px" fontWeight="500" color="black">
+						<Text
+							fontSize="15px"
+							fontWeight="500"
+							color="black"
+						>
 							Download
 						</Text>
-						<Text fontSize="18px" fontWeight="600" color="white">
+						<Text
+							fontSize="18px"
+							fontWeight="600"
+							color="white"
+						>
 							PC Launcher
 						</Text>
 					</Flex>
@@ -30,7 +46,10 @@ export const HeaderMainButtons = () => {
 				</Flex>
 			</Link>
 
-			<Link href="https://wiki.hashup.it/" _hover={{ opacity: '0.5' }}>
+			<Link
+				href="https://wiki.hashup.it/"
+				_hover={{ opacity: '0.5' }}
+			>
 				<Flex
 					bgColor={Colors.brandMain}
 					w="200px"
@@ -43,10 +62,18 @@ export const HeaderMainButtons = () => {
 					transition="ease 0.2s"
 				>
 					<Flex flexDirection="column">
-						<Text fontSize="15px" fontWeight="500" color="black">
+						<Text
+							fontSize="15px"
+							fontWeight="500"
+							color="black"
+						>
 							Connect
 						</Text>
-						<Text fontSize="18px" fontWeight="600" color="white">
+						<Text
+							fontSize="18px"
+							fontWeight="600"
+							color="white"
+						>
 							and Sell!
 						</Text>
 					</Flex>
@@ -54,8 +81,11 @@ export const HeaderMainButtons = () => {
 				</Flex>
 			</Link>
 
-
-			<Link href="https://gamexplorer.io/" _hover={{ opacity: '0.5' }} target="_blank">
+			<Link
+				href="https://gamexplorer.io/"
+				_hover={{ opacity: '0.5' }}
+				target="_blank"
+			>
 				<Flex
 					bgColor="#00000080"
 					w="200px"
@@ -69,10 +99,18 @@ export const HeaderMainButtons = () => {
 					transition="ease 0.2s"
 				>
 					<Flex flexDirection="column">
-						<Text fontSize="15px" fontWeight="500" color="white">
+						<Text
+							fontSize="15px"
+							fontWeight="500"
+							color="white"
+						>
 							Go to
 						</Text>
-						<Text fontSize="18px" fontWeight="600" color={Colors.brandMain}>
+						<Text
+							fontSize="18px"
+							fontWeight="600"
+							color={Colors.brandMain}
+						>
 							GameXplorer
 						</Text>
 					</Flex>

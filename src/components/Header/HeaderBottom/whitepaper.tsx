@@ -17,7 +17,13 @@ export const Whitepaper = () => {
 		>
 			Whitepaper
 			<ArrowRightIcon />
-			<Box bgColor={Colors.brandMain} p="1px 15px" position="absolute" bottom="0" left="10px"></Box>
+			<Box
+				bgColor={Colors.brandMain}
+				p="1px 15px"
+				position="absolute"
+				bottom="0"
+				left="10px"
+			></Box>
 		</Flex>
 	);
 };

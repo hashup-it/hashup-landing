@@ -3,7 +3,13 @@ import React from 'react';
 
 export const MobileHashUpLogo = ({ ...props }) => {
 	return (
-		<Icon width="41px" height="41px" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<Icon
+			width="41px"
+			height="41px"
+			viewBox="0 0 41 41"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
 			<g clipPath="url(#clip0_2608_3929)">
 				<path
 					d="M9.90045 34.4119L3.57282 32.7164L15.8851 2.72476L22.2118 4.41999L9.90045 34.4119Z"
@@ -29,7 +35,10 @@ export const MobileHashUpLogo = ({ ...props }) => {
 					d="M33.4278 20.9876L36.0184 14.9008L37.3652 15.2617L37.1023 21.9722L33.4278 20.9876Z"
 					fill="#FF3F3F"
 				/>
-				<path d="M10.7039 27.969L13.8243 22.0231L23.7126 24.6727L21.165 30.772L10.7039 27.969Z" fill="white" />
+				<path
+					d="M10.7039 27.969L13.8243 22.0231L23.7126 24.6727L21.165 30.772L10.7039 27.969Z"
+					fill="white"
+				/>
 				<path
 					d="M2.99939 25.9045L3.35938 19.219L6.67931 20.1086L4.13174 26.2079L2.99939 25.9045Z"
 					fill="#FF3F3F"
@@ -53,7 +62,11 @@ export const MobileHashUpLogo = ({ ...props }) => {
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="#FF0000" />
-					<stop offset="1" stopColor="#FF0000" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="#FF0000"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<linearGradient
 					id="paint1_linear_2608_3929"
@@ -64,7 +77,11 @@ export const MobileHashUpLogo = ({ ...props }) => {
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="#FF0000" />
-					<stop offset="1" stopColor="#FF0000" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="#FF0000"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<clipPath id="clip0_2608_3929">
 					<rect

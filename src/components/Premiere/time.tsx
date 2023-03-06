@@ -26,12 +26,28 @@ export const Time = () => {
 	}, 1000);
 
 	return (
-		<Flex zIndex="1" gridGap={['5px', '10px', '20px', '40px']} letterSpacing="0.6em">
-			<Flex flexDirection="column" alignItems="center">
-				<Text fontSize={['32px', '46px', '60px', '80px']} lineHeight="100%" fontWeight="200" textAlign="center">
+		<Flex
+			zIndex="1"
+			gridGap={['5px', '10px', '20px', '40px']}
+			letterSpacing="0.6em"
+		>
+			<Flex
+				flexDirection="column"
+				alignItems="center"
+			>
+				<Text
+					fontSize={['32px', '46px', '60px', '80px']}
+					lineHeight="100%"
+					fontWeight="200"
+					textAlign="center"
+				>
 					{days.length === 1 ? '0' + days : days}
 				</Text>
-				<Text color="white" fontSize={['7px', '14px', '14px', '14px']} fontWeight="600">
+				<Text
+					color="white"
+					fontSize={['7px', '14px', '14px', '14px']}
+					fontWeight="600"
+				>
 					DAYS
 				</Text>
 			</Flex>
@@ -44,11 +60,23 @@ export const Time = () => {
 			>
 				:
 			</Text>
-			<Flex flexDirection="column" alignItems="center">
-				<Text fontSize={['32px', '46px', '60px', '80px']} lineHeight="100%" fontWeight="200" textAlign="center">
+			<Flex
+				flexDirection="column"
+				alignItems="center"
+			>
+				<Text
+					fontSize={['32px', '46px', '60px', '80px']}
+					lineHeight="100%"
+					fontWeight="200"
+					textAlign="center"
+				>
 					{hours.length === 1 ? '0' + hours : hours}
 				</Text>
-				<Text color="white" fontSize={['7px', '14px', '14px', '14px']} fontWeight="600">
+				<Text
+					color="white"
+					fontSize={['7px', '14px', '14px', '14px']}
+					fontWeight="600"
+				>
 					HOURS
 				</Text>
 			</Flex>
@@ -61,11 +89,23 @@ export const Time = () => {
 			>
 				:
 			</Text>
-			<Flex flexDirection="column" alignItems="center">
-				<Text fontSize={['32px', '46px', '60px', '80px']} lineHeight="100%" fontWeight="200" textAlign="center">
+			<Flex
+				flexDirection="column"
+				alignItems="center"
+			>
+				<Text
+					fontSize={['32px', '46px', '60px', '80px']}
+					lineHeight="100%"
+					fontWeight="200"
+					textAlign="center"
+				>
 					{minutes.length === 1 ? '0' + minutes : minutes}
 				</Text>
-				<Text color="white" fontSize={['7px', '14px', '14px', '14px']} fontWeight="600">
+				<Text
+					color="white"
+					fontSize={['7px', '14px', '14px', '14px']}
+					fontWeight="600"
+				>
 					MIN
 				</Text>
 			</Flex>
@@ -78,11 +118,23 @@ export const Time = () => {
 			>
 				:
 			</Text>
-			<Flex flexDirection="column" alignItems="center">
-				<Text fontSize={['32px', '46px', '60px', '80px']} lineHeight="100%" fontWeight="200" textAlign="center">
+			<Flex
+				flexDirection="column"
+				alignItems="center"
+			>
+				<Text
+					fontSize={['32px', '46px', '60px', '80px']}
+					lineHeight="100%"
+					fontWeight="200"
+					textAlign="center"
+				>
 					{seconds.length === 1 ? '0' + seconds : seconds}
 				</Text>
-				<Text color="white" fontSize={['7px', '14px', '14px', '14px']} fontWeight="600">
+				<Text
+					color="white"
+					fontSize={['7px', '14px', '14px', '14px']}
+					fontWeight="600"
+				>
 					SEC
 				</Text>
 			</Flex>

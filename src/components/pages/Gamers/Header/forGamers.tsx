@@ -16,11 +16,21 @@ export const ForGamers = () => {
 			position="absolute"
 			h="100vh"
 		>
-			<Flex justifyContent="space-between" alignItems="center" gridGap="48px">
-				<Flex gridGap="10px" fontWeight="600">
+			<Flex
+				justifyContent="space-between"
+				alignItems="center"
+				gridGap="48px"
+			>
+				<Flex
+					gridGap="10px"
+					fontWeight="600"
+				>
 					<RedTriangleIcon mt="-5px" />
 					For Marketplaces
-					<RedTriangleIcon transform="rotate(3deg)" mt="15px" />
+					<RedTriangleIcon
+						transform="rotate(3deg)"
+						mt="15px"
+					/>
 				</Flex>
 			</Flex>
 			<Flex
@@ -32,15 +42,24 @@ export const ForGamers = () => {
 				alignItems="center"
 				lineHeight="100%"
 			>
-				<Flex alignItems="center" maxW="70%" textAlign="center">
+				<Flex
+					alignItems="center"
+					maxW="70%"
+					textAlign="center"
+				>
 					<Text>
 						{' '}
 						Connect to The HashUp Protocol and earn up to 90%<strong>!</strong>
 					</Text>
 				</Flex>
 			</Flex>
-			<Text fontSize={['18px', '28px']} fontWeight="300" pt="32px" textAlign="center">
-			A sustainable business model for you in these challenging times!
+			<Text
+				fontSize={['18px', '28px']}
+				fontWeight="300"
+				pt="32px"
+				textAlign="center"
+			>
+				A sustainable business model for you in these challenging times!
 			</Text>
 			<Flex
 				gridGap="12px"
@@ -48,7 +67,10 @@ export const ForGamers = () => {
 				justifyContent="center"
 				direction={['column', 'column', 'row', 'row']}
 			>
-				<Link href="https://gamexplorer.io/" _hover={{ active: 'none' }}>
+				<Link
+					href="https://gamexplorer.io/"
+					_hover={{ active: 'none' }}
+				>
 					<Flex
 						_hover={{ opacity: '0.8' }}
 						borderRadius="5"
@@ -76,7 +98,10 @@ export const ForGamers = () => {
 						<Text zIndex="4">Explorer Games to Sell!</Text>
 					</Flex>
 				</Link>
-				<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct" _hover={{ active: 'none' }}>
+				<Link
+					href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct"
+					_hover={{ active: 'none' }}
+				>
 					<Flex
 						borderRadius="5"
 						w="198px"
@@ -96,7 +121,12 @@ export const ForGamers = () => {
 				</Link>
 			</Flex>
 
-			<Box m="60px 0" w="1px" h="200px" bgColor={Colors.brandMain} />
+			<Box
+				m="60px 0"
+				w="1px"
+				h="200px"
+				bgColor={Colors.brandMain}
+			/>
 		</Flex>
 	);
 };

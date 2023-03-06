@@ -46,7 +46,12 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 				},
 			}}
 		>
-			<Flex w="100%" h="100%" gridGap="3px" direction="column">
+			<Flex
+				w="100%"
+				h="100%"
+				gridGap="3px"
+				direction="column"
+			>
 				<Flex
 					ref={element}
 					position="absolute"
@@ -57,22 +62,44 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 					h="265px"
 					zIndex="0"
 				/>
-				<Text fontSize="16px" color="white" zIndex="100">
+				<Text
+					fontSize="16px"
+					color="white"
+					zIndex="100"
+				>
 					{topText}
 				</Text>
-				<Text fontSize={['35px', '38px', '40px', '42x']} color="white" fontWeight="700" zIndex="2">
+				<Text
+					fontSize={['35px', '38px', '40px', '42x']}
+					color="white"
+					fontWeight="700"
+					zIndex="2"
+				>
 					{name}
 				</Text>
 			</Flex>
 			<Flex paddingTop="15px">
-				<Box bgColor={Colors.brandMain} w="30px" h="6px" />
+				<Box
+					bgColor={Colors.brandMain}
+					w="30px"
+					h="6px"
+				/>
 			</Flex>
 			<Flex paddingTop="22px">
-				<Text fontSize="16px" fontWeight="300" lineHeight="180%" color={Colors.greyText}>
+				<Text
+					fontSize="16px"
+					fontWeight="300"
+					lineHeight="180%"
+					color={Colors.greyText}
+				>
 					{description}
 				</Text>
 			</Flex>
-			<Flex gridGap="6px" paddingTop="30px" _hover={{ opacity: '0.8' }}>
+			<Flex
+				gridGap="6px"
+				paddingTop="30px"
+				_hover={{ opacity: '0.8' }}
+			>
 				<Link href={link}>
 					<Flex
 						bgColor={Colors.brandMain}
@@ -88,7 +115,12 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 					</Flex>
 				</Link>
 				<Link href={link}>
-					<Flex bgColor={'#9A2727'} alignItems="center" p="15px" cursor="pointer">
+					<Flex
+						bgColor={'#9A2727'}
+						alignItems="center"
+						p="15px"
+						cursor="pointer"
+					>
 						<ChevronRightIcon />
 					</Flex>
 				</Link>

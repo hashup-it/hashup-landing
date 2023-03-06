@@ -13,9 +13,18 @@ export const BlockchainAllianceLogo = () => {
 			mr="100px"
 			ml="-100px"
 		>
-			<rect width="259.556" height="64" fill="url(#pattern0)" />
+			<rect
+				width="259.556"
+				height="64"
+				fill="url(#pattern0)"
+			/>
 			<defs>
-				<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+				<pattern
+					id="pattern0"
+					patternContentUnits="objectBoundingBox"
+					width="1"
+					height="1"
+				>
 					<use
 						xlinkHref="#image0_1755_4381"
 						transform="translate(0 -0.0266273) scale(0.000862813 0.00349918)"

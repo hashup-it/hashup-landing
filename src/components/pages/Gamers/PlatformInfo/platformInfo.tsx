@@ -13,7 +13,11 @@ export const PlatformInfo = () => {
 	const inputRef = useRef(null!);
 
 	return (
-		<Flex direction="column" justifyContent="flex-start" alignItems={{ base: 'center', lg: 'flex-start' }}>
+		<Flex
+			direction="column"
+			justifyContent="flex-start"
+			alignItems={{ base: 'center', lg: 'flex-start' }}
+		>
 			<Flex
 				direction="column"
 				p={['20px', '20px', '0px 0px 0px 150px', '0px 0px 0px 150px']}
@@ -39,8 +43,14 @@ export const PlatformInfo = () => {
 					</Text> */}
 				</Flex>
 			</Flex>
-			<Flex direction="column" position="relative">
-				<Flex pt="-30px" ref={inputRef}>
+			<Flex
+				direction="column"
+				position="relative"
+			>
+				<Flex
+					pt="-30px"
+					ref={inputRef}
+				>
 					<HashPadSroll />
 				</Flex>
 				<Flex
@@ -72,14 +82,23 @@ export const PlatformInfo = () => {
 							textAlign={{ base: 'center', lg: 'left' }}
 						>
 							<Text as="span">
-							More and more games are appearing on the HashUp protocole. Search the best ones and add them to your store. The HashUp protocol is a great store for games that ANYONE can sell! The developers decide how much money you make as a store!
+								More and more games are appearing on the HashUp protocole. Search the best ones and add
+								them to your store. The HashUp protocol is a great store for games that ANYONE can sell!
+								The developers decide how much money you make as a store!
 							</Text>
-							<Text color="#A1A1A6" as="span">
+							<Text
+								color="#A1A1A6"
+								as="span"
+							>
 								{' '}
-								
 							</Text>
 						</Box>
-						<Link href="https://gamexplorer.io/" target="_blank" zIndex="2" _hover={{ active: 'none' }}>
+						<Link
+							href="https://gamexplorer.io/"
+							target="_blank"
+							zIndex="2"
+							_hover={{ active: 'none' }}
+						>
 							<Flex
 								gridGap="3px"
 								justifyContent="flex-start"
@@ -100,7 +119,11 @@ export const PlatformInfo = () => {
 								>
 									Go to GameXplorer
 								</Flex>
-								<Flex bgColor={'#9A2727'} alignItems="center" p="15px">
+								<Flex
+									bgColor={'#9A2727'}
+									alignItems="center"
+									p="15px"
+								>
 									<ChevronRightIcon />
 								</Flex>
 							</Flex>
@@ -113,20 +136,34 @@ export const PlatformInfo = () => {
 						justifyContent={['center', 'center', 'flex-start', 'flex-start']}
 						direction={['column', 'column', 'row', 'row']}
 					>
-						<Text fontSize={['22px', '32px', '42px', '50px']} fontWeight="600">
+						<Text
+							fontSize={['22px', '32px', '42px', '50px']}
+							fontWeight="600"
+						>
 							How does our platform work<strong>?</strong>
 						</Text>
-						<PlayVideoIcon height="66px" cursor="pointer" _hover={{ opacity: '0.8' }} />
+						<PlayVideoIcon
+							height="66px"
+							cursor="pointer"
+							_hover={{ opacity: '0.8' }}
+						/>
 					</Flex>
 				</Flex>
 			</Flex>
-			<Flex direction="column" justifyContent="flex-start">
+			<Flex
+				direction="column"
+				justifyContent="flex-start"
+			>
 				<Flex
 					direction="column"
 					p={['450px 0px 0px 50px', '300px 0px 0px 210px', '300px 0px 0px 210px', '300px 0px 0px 210px']}
 					zIndex="1"
 				>
-					<Flex pt="100px" maxW="25%" right={{ sm: '80%' }}>
+					<Flex
+						pt="100px"
+						maxW="25%"
+						right={{ sm: '80%' }}
+					>
 						<SectionInfoButton label="LICENSES 3.0" />
 					</Flex>
 					<Flex
@@ -138,9 +175,7 @@ export const PlatformInfo = () => {
 						direction="column"
 					>
 						<Text>Add games from HashUp</Text>
-						<Text>
-							to your marketplace! 
-						</Text>
+						<Text>to your marketplace!</Text>
 					</Flex>
 					<Box
 						pt="50px"
@@ -150,10 +185,13 @@ export const PlatformInfo = () => {
 					>
 						<Text as="span">
 							{' '}
-							HashUp allows publishing web2 and web3 games using blockchain technology. 
-							HashUp's infrastructure reduces the cost of creating a real gaming marketplace to zero!
+							HashUp allows publishing web2 and web3 games using blockchain technology. HashUp's
+							infrastructure reduces the cost of creating a real gaming marketplace to zero!
 						</Text>
-						<Text pt="50px" color="white">
+						<Text
+							pt="50px"
+							color="white"
+						>
 							{' '}
 							Sell with HashUp today!
 						</Text>

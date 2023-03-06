@@ -12,7 +12,12 @@ export const ArrowRightIcon = ({ color, h, mt, ...props }: { color?: string; h?:
 			xmlns="http://www.w3.org/2000/svg"
 			{...props}
 		>
-			<path d="M2.91675 7H11.0834" stroke={color ? color : '#FF3F3F'} strokeWidth="1.4" strokeLinejoin="round" />
+			<path
+				d="M2.91675 7H11.0834"
+				stroke={color ? color : '#FF3F3F'}
+				strokeWidth="1.4"
+				strokeLinejoin="round"
+			/>
 			<path
 				d="M7 2.91675L11.0833 7.00008L7 11.0834"
 				stroke={color ? color : '#FF3F3F'}

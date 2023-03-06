@@ -4,7 +4,13 @@ import { PolygonLongLogo } from '../../Icons/polygonLongLogo';
 
 export const PolygonLabel = () => {
 	return (
-		<Flex position="fixed" zIndex="banner" top="10%" left="0" transform="rotate(180deg) translateY(-50%)">
+		<Flex
+			position="fixed"
+			zIndex="banner"
+			top="10%"
+			left="0"
+			transform="rotate(180deg) translateY(-50%)"
+		>
 			{/** Filler */}
 			<Flex
 				position="fixed"
@@ -64,7 +70,10 @@ export const PolygonLabel = () => {
 				</Box>
 			</Flex>
 			{/** Content */}
-			<Flex direction="column" zIndex="banner">
+			<Flex
+				direction="column"
+				zIndex="banner"
+			>
 				<Box padding="12px">
 					<PolygonLongLogo />
 				</Box>

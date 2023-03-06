@@ -38,10 +38,16 @@ export const PlatformTile: FC<IPlatformTile> = ({ first, second, active, transfo
 			backdropFilter="blur(18px)"
 			_hover={active ? { bgColor: `${Colors.brandMain}`, border: 'none' } : {}}
 		>
-			<Text fontSize="15px" fontWeight="300">
+			<Text
+				fontSize="15px"
+				fontWeight="300"
+			>
 				{first}
 			</Text>
-			<Text fontSize={{ base: '16px', lg: '20px' }} fontWeight="600">
+			<Text
+				fontSize={{ base: '16px', lg: '20px' }}
+				fontWeight="600"
+			>
 				{second}
 			</Text>
 			{!active && (

@@ -11,8 +11,7 @@ export const ChoosePath = () => {
 			topText: 'New economy for',
 			path: '/assets/animations/pad_v2.json',
 			name: 'GameDevs',
-			description:
-				`Open up to a whole new market and sell games using digital licenses on blockchain. Give everyone the opportunity to sell your game! Decide about marketplace fee!`,
+			description: `Open up to a whole new market and sell games using digital licenses on blockchain. Give everyone the opportunity to sell your game! Decide about marketplace fee!`,
 		},
 		{
 			link: '/gamers',
@@ -41,8 +40,21 @@ export const ChoosePath = () => {
 	// );
 
 	return (
-		<Flex direction="column" alignItems="center" position="relative" pt="70px" pb="100px">
-			<Box w="100vw" h="1px" position="absolute" top="0" bgColor="white" opacity="0.1" />
+		<Flex
+			direction="column"
+			alignItems="center"
+			position="relative"
+			pt="70px"
+			pb="100px"
+		>
+			<Box
+				w="100vw"
+				h="1px"
+				position="absolute"
+				top="0"
+				bgColor="white"
+				opacity="0.1"
+			/>
 			<SectionInfoButton label="WHO ARE YOU?" />
 			<Flex
 				p="20px"
@@ -62,7 +74,10 @@ export const ChoosePath = () => {
 				direction="column"
 				alignItems="center"
 			>
-				<Text maxWidth={['75vw', '75vw', '60vw', '60vw']} textAlign={['left', 'left', 'center', 'center']}>
+				<Text
+					maxWidth={['75vw', '75vw', '60vw', '60vw']}
+					textAlign={['left', 'left', 'center', 'center']}
+				>
 					Be part of the revolution in the game industry and join our growing community of game creators,
 					innovators, and gamers!
 				</Text>
@@ -74,8 +89,11 @@ export const ChoosePath = () => {
 				maxW={['100vw', '90vw', '85vw', '85vw']}
 				direction={['column', 'column', 'column', 'row']}
 			>
-				{data.map((element) => (
-					<PathComponent key={element.link} {...element} />
+				{data.map(element => (
+					<PathComponent
+						key={element.link}
+						{...element}
+					/>
 				))}
 			</Flex>
 			<Flex
@@ -91,7 +109,14 @@ export const ChoosePath = () => {
 				right="32.5%"
 				transform="translate(15%, 15%)"
 			></Flex>
-			<Box h="1px" w="100vw" bgColor="white" opacity="0.1" position="absolute" bottom="0" />
+			<Box
+				h="1px"
+				w="100vw"
+				bgColor="white"
+				opacity="0.1"
+				position="absolute"
+				bottom="0"
+			/>
 		</Flex>
 	);
 };

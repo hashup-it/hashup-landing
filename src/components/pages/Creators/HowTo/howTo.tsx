@@ -11,7 +11,10 @@ export const HowTo = () => {
 
 	return (
 		<>
-			<SlideFade in={enterCount > 0} offsetY="100px">
+			<SlideFade
+				in={enterCount > 0}
+				offsetY="100px"
+			>
 				<Flex
 					mt={['90px', '150px']}
 					direction="column"
@@ -25,7 +28,11 @@ export const HowTo = () => {
 					ref={ref}
 				>
 					<SectionInfoButton label="IT'S SIMPLE" />
-					<Flex flexDirection="column" alignItems="center" gridGap="25px">
+					<Flex
+						flexDirection="column"
+						alignItems="center"
+						gridGap="25px"
+					>
 						<Text
 							pt="30px"
 							w="70%"
@@ -36,7 +43,11 @@ export const HowTo = () => {
 							Our platform is really easy to use<strong>.</strong>
 						</Text>
 					</Flex>
-					<Link href="https://gamecontract.io/" target="_blank" _hover={{ opacity: '0.8' }}>
+					<Link
+						href="https://gamecontract.io/"
+						target="_blank"
+						_hover={{ opacity: '0.8' }}
+					>
 						<Flex
 							bgColor="black"
 							w="200px"
@@ -49,18 +60,32 @@ export const HowTo = () => {
 							cursor="pointer"
 							mb={['35px', '70px']}
 						>
-							<Flex flexDirection="column" _hover={{ opacity: '0.8' }}>
-								<Text fontSize="12px" fontWeight="500" color="white">
+							<Flex
+								flexDirection="column"
+								_hover={{ opacity: '0.8' }}
+							>
+								<Text
+									fontSize="12px"
+									fontWeight="500"
+									color="white"
+								>
 									See how to
 								</Text>
-								<Text fontSize="15px" fontWeight="600" color={Colors.brandMain}>
+								<Text
+									fontSize="15px"
+									fontWeight="600"
+									color={Colors.brandMain}
+								>
 									Publish game
 								</Text>
 							</Flex>
 							<ChevronRightIcon />
 						</Flex>
 					</Link>
-					<Image src="/assets/cartridgeCreation1.png" display={['none', 'flex', 'flex', 'flex']} />
+					<Image
+						src="/assets/cartridgeCreation1.png"
+						display={['none', 'flex', 'flex', 'flex']}
+					/>
 				</Flex>
 			</SlideFade>
 		</>

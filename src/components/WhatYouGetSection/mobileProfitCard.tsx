@@ -23,28 +23,77 @@ export const MobileProfitCard = ({
 	link,
 }: IMobileProfitCard) => {
 	return (
-		<Flex direction="column" p="25px" {...handlers} h="40vh">
-			<Flex alignItems="center" gridGap="120px" justifyContent="flex-start" w="100%">
-				<Flex gridGap="21px" alignItems="center" w="100%">
-					<Text fontSize="48px" fontWeight="200" color="white" w="65px">
+		<Flex
+			direction="column"
+			p="25px"
+			{...handlers}
+			h="40vh"
+		>
+			<Flex
+				alignItems="center"
+				gridGap="120px"
+				justifyContent="flex-start"
+				w="100%"
+			>
+				<Flex
+					gridGap="21px"
+					alignItems="center"
+					w="100%"
+				>
+					<Text
+						fontSize="48px"
+						fontWeight="200"
+						color="white"
+						w="65px"
+					>
 						{number}
 					</Text>
-					<Box w={width} h="2px" bgColor={Colors.brandMain} />
+					<Box
+						w={width}
+						h="2px"
+						bgColor={Colors.brandMain}
+					/>
 				</Flex>
 				<Flex>
-					<Text fontSize="48px" fontWeight="200" opacity="0.3" minW="110%">
+					<Text
+						fontSize="48px"
+						fontWeight="200"
+						opacity="0.3"
+						minW="110%"
+					>
 						{subNumber}
 					</Text>
 				</Flex>
 			</Flex>
-			<Flex direction="column" h="55%" w="100%">
-				<Text pt="20px" fontSize="28px" fontWeight="700" h="80%">
+			<Flex
+				direction="column"
+				h="55%"
+				w="100%"
+			>
+				<Text
+					pt="20px"
+					fontSize="28px"
+					fontWeight="700"
+					h="80%"
+				>
 					{label}
 				</Text>
-				<Text fontSize="16px" maxW="90%" color={Colors.greyText}>
+				<Text
+					fontSize="16px"
+					maxW="90%"
+					color={Colors.greyText}
+				>
 					{description}
 				</Text>
-				<Flex alignItems="center" pt="30px" gridGap="15px" fontWeight="700" fontSize="14px" w="350px" h="30px">
+				<Flex
+					alignItems="center"
+					pt="30px"
+					gridGap="15px"
+					fontWeight="700"
+					fontSize="14px"
+					w="350px"
+					h="30px"
+				>
 					<Link href={link}>
 						<Text>Learn more</Text>
 					</Link>

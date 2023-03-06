@@ -21,7 +21,13 @@ export const MobileRightIcon = ({ onClick, cursor, opacity, width, height }: IMo
 			cursor={cursor}
 			opacity={opacity}
 		>
-			<path d="M27 18L45 36L27 54" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+			<path
+				d="M27 18L45 36L27 54"
+				stroke="white"
+				strokeWidth="3"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+			/>
 		</Icon>
 	);
 };

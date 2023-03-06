@@ -6,7 +6,12 @@ import PolygonLogo from '../../Icons/polygonLogo';
 export const PartnersInfo = [
 	{
 		name: 'Blockchain Alliance',
-		logo: <Image src="assets/blockchainAllianceLogo.png" mr="100px" />,
+		logo: (
+			<Image
+				src="assets/blockchainAllianceLogo.png"
+				mr="100px"
+			/>
+		),
 	},
 	{
 		name: 'Patchkit',
@@ -14,18 +19,39 @@ export const PartnersInfo = [
 	},
 	{
 		name: 'Gravity',
-		logo: <Image src="assets/gravityTeamLogo.png" mr="100px" />,
+		logo: (
+			<Image
+				src="assets/gravityTeamLogo.png"
+				mr="100px"
+			/>
+		),
 	},
 	{
 		name: 'Synapse',
-		logo: <Image src="assets/synapseLogo.png" mr="100px" />,
+		logo: (
+			<Image
+				src="assets/synapseLogo.png"
+				mr="100px"
+			/>
+		),
 	},
 	{
 		name: 'AdShares',
-		logo: <Image src="assets/adsharesLogo.png" mr="100px" />,
+		logo: (
+			<Image
+				src="assets/adsharesLogo.png"
+				mr="100px"
+			/>
+		),
 	},
 	{
 		name: 'APX',
-		logo: <Image src="assets/apxLogo.png" h="56px" mr="100px" />,
+		logo: (
+			<Image
+				src="assets/apxLogo.png"
+				h="56px"
+				mr="100px"
+			/>
+		),
 	},
 ];

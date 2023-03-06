@@ -6,7 +6,7 @@ const assetCount = 75;
 const getImageUri = () => {
 	const assetCount = 75;
 	const indices = Array.from(Array(assetCount).keys());
-	return indices.map((index) => `/assets/images/hash_sequence/hash${index.toString().padStart(2, '0')}.jpg`);
+	return indices.map(index => `/assets/images/hash_sequence/hash${index.toString().padStart(2, '0')}.jpg`);
 };
 
 const handleOnScroll = (

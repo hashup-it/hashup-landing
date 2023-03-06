@@ -7,7 +7,10 @@ export interface IComponentAnimatedSecond {
 
 export const ElementCompOne = ({ activeComp }) => {
 	return (
-		<Flex lineHeight="90%" mt="40px">
+		<Flex
+			lineHeight="90%"
+			mt="40px"
+		>
 			{activeComp ? (
 				<Text fontSize={['96px', '96px', '300px', '300px']}>
 					<strong>No.</strong>

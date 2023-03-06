@@ -17,7 +17,7 @@ export const Advantages = () => {
 	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
 	const inputRef = useRef(null);
-	const scrollHandler = (_) => {
+	const scrollHandler = _ => {
 		if (inputRef.current.getBoundingClientRect().top > 0) setActiveCard(0);
 		if (
 			inputRef.current.getBoundingClientRect().top < 0 &&
@@ -49,7 +49,10 @@ export const Advantages = () => {
 		>
 			<SectionInfoButton label="Mission statement" />
 			{/* <ScrollImages animationHookReference={ref} /> */}
-			<SlideFade in={enterCount > 0} offsetY="100px">
+			<SlideFade
+				in={enterCount > 0}
+				offsetY="100px"
+			>
 				<Flex
 					maxW={['100vw', '80vw', '60vw', '60vw']}
 					textAlign={['left', 'left', 'center', 'center']}
@@ -58,24 +61,55 @@ export const Advantages = () => {
 					mt="40px"
 					ref={ref}
 				>
-					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%" textAlign={"center"}>
+					<Text
+						fontSize={['28px', '46px', '64px', '70px']}
+						fontWeight="700"
+						lineHeight="130%"
+						textAlign={'center'}
+					>
 						<strong>One</strong> protocol<strong>.</strong>
 					</Text>
-					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%" textAlign={"center"}>
+					<Text
+						fontSize={['28px', '46px', '64px', '70px']}
+						fontWeight="700"
+						lineHeight="130%"
+						textAlign={'center'}
+					>
 						<strong>Hundreds</strong> stores<strong>.</strong>
 					</Text>
-					<Text fontSize={['28px', '46px', '64px', '70px']} fontWeight="700" lineHeight="130%" textAlign={"center"}>
+					<Text
+						fontSize={['28px', '46px', '64px', '70px']}
+						fontWeight="700"
+						lineHeight="130%"
+						textAlign={'center'}
+					>
 						<strong>One</strong> Wallet<strong>.</strong>
 					</Text>
-					<Text fontSize="20px" fontWeight="300" color={Colors.greyText}>
-						The HashUp protocol is a decentralised pool of tokens and licences that anyone can sell. 
+					<Text
+						fontSize="20px"
+						fontWeight="300"
+						color={Colors.greyText}
+					>
+						The HashUp protocol is a decentralised pool of tokens and licences that anyone can sell.
 					</Text>
-					<Text fontSize="20px" fontWeight="300">
-					<i>We want to create the best crypto based tool that allows game studios to publish on multiple marketplaces at the time and users to create web3 platforms without having to know how to code.
-					We love to watch our ever growing community of gamedev studios, game publishers, game influencers and game stores owners.</i>
+					<Text
+						fontSize="20px"
+						fontWeight="300"
+					>
+						<i>
+							We want to create the best crypto based tool that allows game studios to publish on multiple
+							marketplaces at the time and users to create web3 platforms without having to know how to
+							code. We love to watch our ever growing community of gamedev studios, game publishers, game
+							influencers and game stores owners.
+						</i>
 					</Text>
 				</Flex>
-				<Flex display={['flex', 'flex', 'none', 'none']} alignItems="center" justifyContent="center" pt="30px">
+				<Flex
+					display={['flex', 'flex', 'none', 'none']}
+					alignItems="center"
+					justifyContent="center"
+					pt="30px"
+				>
 					<MobileCard />
 				</Flex>
 				{/* <Flex

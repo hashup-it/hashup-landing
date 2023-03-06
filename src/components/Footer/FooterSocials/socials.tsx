@@ -43,8 +43,11 @@ const socials = [
 export const FooterSocials = () => {
 	return (
 		<Flex gridGap={['20px', "'15px", '10px', '10px']}>
-			{socials.map((element) => (
-				<SocialIcon key={element.linkUrl} {...element} />
+			{socials.map(element => (
+				<SocialIcon
+					key={element.linkUrl}
+					{...element}
+				/>
 			))}
 		</Flex>
 	);

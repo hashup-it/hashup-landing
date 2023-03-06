@@ -9,8 +9,15 @@ export interface IMobileNavbarItem {
 
 export const MobileNavbarItem = ({ isActive, label, link }: IMobileNavbarItem) => {
 	return (
-		<Link href={`/${link}`} _hover={{ opacity: '0.5' }}>
-			<Text fontWeight="400" fontSize="16px" color={isActive ? 'white' : '#848483'}>
+		<Link
+			href={`/${link}`}
+			_hover={{ opacity: '0.5' }}
+		>
+			<Text
+				fontWeight="400"
+				fontSize="16px"
+				color={isActive ? 'white' : '#848483'}
+			>
 				{label}
 			</Text>
 		</Link>

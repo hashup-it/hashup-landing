@@ -16,7 +16,12 @@ export const PlayVideo = () => {
 					color="white"
 					cursor="pointer"
 				>
-					<PlayVideoIcon cursor="pointer" _hover={{ opacity: '0.8' }} height="31px" /> Play Video
+					<PlayVideoIcon
+						cursor="pointer"
+						_hover={{ opacity: '0.8' }}
+						height="31px"
+					/>{' '}
+					Play Video
 					<Text color={Colors.brandMain}></Text>
 				</Flex>
 			</a>

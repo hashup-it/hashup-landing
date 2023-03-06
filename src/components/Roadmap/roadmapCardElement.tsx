@@ -16,13 +16,22 @@ enum Type {
 export const RoadmapCardElement = ({ isDone = false, data }: IRoadmapCardElement) => {
 	const typeOptions: { [param: number]: () => React.ReactNode } = {
 		[Type.DONE]: () => (
-			<Flex gridGap="16px" fontSize="13px" fontWeight="600">
+			<Flex
+				gridGap="16px"
+				fontSize="13px"
+				fontWeight="600"
+			>
 				<RoadmapTaskDone />
 				<Text>{data}</Text>
 			</Flex>
 		),
 		[Type.UNDONE]: () => (
-			<Flex gridGap="16px" fontSize="13px" fontWeight="300" color="#D5D5D5">
+			<Flex
+				gridGap="16px"
+				fontSize="13px"
+				fontWeight="300"
+				color="#D5D5D5"
+			>
 				<RoadmapInProgress />
 				<Text>{data}</Text>
 			</Flex>

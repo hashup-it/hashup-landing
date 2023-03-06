@@ -21,11 +21,24 @@ export const ForCreators = () => {
 			position="absolute"
 			h="100vh"
 		>
-			<Flex justifyContent="space-between" alignItems="center" gridGap="48px">
-				<Flex gridGap="10px" fontWeight="600">
-					<RedTriangleIcon w="" mt="-5px" />
+			<Flex
+				justifyContent="space-between"
+				alignItems="center"
+				gridGap="48px"
+			>
+				<Flex
+					gridGap="10px"
+					fontWeight="600"
+				>
+					<RedTriangleIcon
+						w=""
+						mt="-5px"
+					/>
 					For GameDevs 3.0
-					<RedTriangleIcon transform="rotate(3deg)" mt="15px" />
+					<RedTriangleIcon
+						transform="rotate(3deg)"
+						mt="15px"
+					/>
 				</Flex>
 			</Flex>
 			<Flex
@@ -37,10 +50,12 @@ export const ForCreators = () => {
 				alignItems="center"
 				lineHeight="100%"
 			>
-				<Flex alignItems="center" maxW="90%" textAlign="center">
-					<Text>
-					One place to publish in multiple stores.
-					</Text>
+				<Flex
+					alignItems="center"
+					maxW="90%"
+					textAlign="center"
+				>
+					<Text>One place to publish in multiple stores.</Text>
 				</Flex>
 			</Flex>
 			<Flex display={['flex', 'flex', 'none', 'none']}>
@@ -54,14 +69,18 @@ export const ForCreators = () => {
 				pb="30px"
 				display={['none', 'none', 'flex', 'flex']}
 			>
-				<Flex justifyContent="flex-start" lineHeight="120%" direction="column" textAlign="center" w="33vw">
+				<Flex
+					justifyContent="flex-start"
+					lineHeight="120%"
+					direction="column"
+					textAlign="center"
+					w="33vw"
+				>
 					<Text as="div">
-						Create a license  
+						Create a license
+						<Text as="div">for your indie game or a</Text>
 						<Text as="div">
-						for your indie game or a 
-						</Text>
-						<Text as="div">
-						<strong>starterpack 3.0</strong>
+							<strong>starterpack 3.0</strong>
 						</Text>
 						<Text as="div"> </Text>
 					</Text>
@@ -75,13 +94,15 @@ export const ForCreators = () => {
 					w="33vw"
 				>
 					<Text as="div">
-					Set <b>price</b> and commission for stores. 
-						<Text as="span">
-						
+						Set <b>price</b> and commission for stores.
+						<Text as="span"></Text>
+						<Text
+							as="div"
+							color={Colors.brandMain}
+						></Text>
+						<Text as="div">
+							<strong>Now you decide how much they earn!</strong>
 						</Text>
-						<Text as="div" color={Colors.brandMain}>
-						</Text>
-						<Text as="div"><strong>Now you decide how much they earn!</strong></Text>
 					</Text>
 				</Flex>
 				<Flex
@@ -93,20 +114,21 @@ export const ForCreators = () => {
 					w="33vw"
 				>
 					<Text as="div">
-						Did you know that 
+						Did you know that
 						<Text as="div">
-						now anyone can sell your 
-							<Text as="span">
-							
-							</Text>
+							now anyone can sell your
+							<Text as="span"></Text>
 						</Text>
 						<Text as="span">
-						<b>games on your terms!</b>
+							<b>games on your terms!</b>
 						</Text>
 					</Text>
 				</Flex>
 			</Flex>
-			<Link href="https://gamecontract.io/" _hover={{ active: 'none' }}>
+			<Link
+				href="https://gamecontract.io/"
+				_hover={{ active: 'none' }}
+			>
 				<Flex
 					_hover={{ opacity: '0.8' }}
 					borderRadius="5"
@@ -131,7 +153,10 @@ export const ForCreators = () => {
 					<Text zIndex="4">Publish your game</Text>
 				</Flex>
 			</Link>
-			<SlideFade in={enterCount > 0} offsetY="100px">
+			<SlideFade
+				in={enterCount > 0}
+				offsetY="100px"
+			>
 				<Box
 					mt={['20px', '80px']}
 					mb={['20px', '80px']}

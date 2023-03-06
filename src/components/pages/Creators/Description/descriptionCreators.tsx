@@ -10,8 +10,17 @@ export const DescriptionCreators = () => {
 
 	return (
 		<>
-			<SlideFade in={enterCount > 0} offsetY="100px">
-				<Flex alignItems="center" justifyContent="center" direction="column" position="relative" ref={ref}>
+			<SlideFade
+				in={enterCount > 0}
+				offsetY="100px"
+			>
+				<Flex
+					alignItems="center"
+					justifyContent="center"
+					direction="column"
+					position="relative"
+					ref={ref}
+				>
 					<Flex position="absolute">
 						<HashupUnionLogo />
 					</Flex>
@@ -32,9 +41,13 @@ export const DescriptionCreators = () => {
 							/>
 						</Flex>
 						<Text>
-						Why publish games separately on 100 stores when you can on HashUp<strong>?</strong>
+							Why publish games separately on 100 stores when you can on HashUp<strong>?</strong>
 						</Text>
-						<Flex position="relative" left="-10%" marginTop={['40px', '130px']}>
+						<Flex
+							position="relative"
+							left="-10%"
+							marginTop={['40px', '130px']}
+						>
 							<RedTriangleIcon
 								mt={{ base: '25px' }}
 								transform="rotate(-15deg)"

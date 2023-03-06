@@ -3,7 +3,13 @@ import React from 'react';
 
 export const InstagramSocialIcon = () => {
 	return (
-		<Icon width="15px" height="15px" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<Icon
+			width="15px"
+			height="15px"
+			viewBox="0 0 11 11"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
 			<path
 				d="M7.77625 0.568359H3.06214C1.76037 0.568359 0.705078 1.62365 0.705078 2.92542V7.63954C0.705078 8.9413 1.76037 9.99659 3.06214 9.99659H7.77625C9.07802 9.99659 10.1333 8.9413 10.1333 7.63954V2.92542C10.1333 1.62365 9.07802 0.568359 7.77625 0.568359Z"
 				stroke="white"

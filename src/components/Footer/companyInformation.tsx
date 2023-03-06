@@ -12,21 +12,46 @@ const companyData = {
 
 export const CompanyInformation = () => {
 	return (
-		<Flex direction="column" fontSize="12px" w="100%" textAlign={['center', 'center', 'left', 'left']}>
-			<Text color="#6D6D6D" fontWeight="600">
+		<Flex
+			direction="column"
+			fontSize="12px"
+			w="100%"
+			textAlign={['center', 'center', 'left', 'left']}
+		>
+			<Text
+				color="#6D6D6D"
+				fontWeight="600"
+			>
 				HEADQUARTERS
 			</Text>
-			<Flex mt="10px" mb="23px" direction="column" fontWeight="600" fontSize="14px" color="white">
+			<Flex
+				mt="10px"
+				mb="23px"
+				direction="column"
+				fontWeight="600"
+				fontSize="14px"
+				color="white"
+			>
 				<Text>{companyData.name}</Text>
 				<Text>{companyData.address}</Text>
 				<Text>{companyData.addressDetails}</Text>
 			</Flex>
-			<Flex mb="23px" fontSize="12px" fontWeight="400" direction="column">
+			<Flex
+				mb="23px"
+				fontSize="12px"
+				fontWeight="400"
+				direction="column"
+			>
 				<Link href="mailto:hello@hashup.it">
 					<Text>{companyData.email}</Text>
 				</Link>
 			</Flex>
-			<Flex direction="column" fontWeight="400" fontSize="14px" color="#6d6d6d">
+			<Flex
+				direction="column"
+				fontWeight="400"
+				fontSize="14px"
+				color="#6d6d6d"
+			>
 				<Text>NIP: {companyData.NIP}</Text>
 				<Text>KRS: {companyData.KRS}</Text>
 			</Flex>

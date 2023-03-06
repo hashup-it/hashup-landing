@@ -7,15 +7,33 @@ import GameContractLogo from '../../Icons/gameContractLogo';
 
 export const GameContractCard = () => {
 	return (
-		<Flex w="100vw" h="80vh" p="50px 140px" display={['none', 'none', 'flex', 'flex']}>
-			<Flex flexDirection="column" gridGap="50px" maxW="50%">
+		<Flex
+			w="100vw"
+			h="80vh"
+			p="50px 140px"
+			display={['none', 'none', 'flex', 'flex']}
+		>
+			<Flex
+				flexDirection="column"
+				gridGap="50px"
+				maxW="50%"
+			>
 				<GameContractLogo />
-				<Text fontSize={['16px', '24px', '32px', '44px']} fontWeight="700" w="95%">
+				<Text
+					fontSize={['16px', '24px', '32px', '44px']}
+					fontWeight="700"
+					w="95%"
+				>
 					A digital cartridge factory that anyone can sell!
 				</Text>
-				<Text fontSize="20px" fontWeight="300" color={Colors.greyText} w="95%">
-				Create digital cartridges for your indie game or create a starterpack for your web3 game, set the price and sales rules. 
-				With the HashUp protocol, anyone can sell games that are on the protocol. 
+				<Text
+					fontSize="20px"
+					fontWeight="300"
+					color={Colors.greyText}
+					w="95%"
+				>
+					Create digital cartridges for your indie game or create a starterpack for your web3 game, set the
+					price and sales rules. With the HashUp protocol, anyone can sell games that are on the protocol.
 				</Text>
 				<Link href="https://gamecontract.io/">
 					<a target="_blank">
@@ -44,7 +62,12 @@ export const GameContractCard = () => {
 				</Link>
 			</Flex>
 
-			<Image src="/assets/gameContractCard.png" position="absolute" right="0" w="50%" />
+			<Image
+				src="/assets/gameContractCard.png"
+				position="absolute"
+				right="0"
+				w="50%"
+			/>
 		</Flex>
 	);
 };

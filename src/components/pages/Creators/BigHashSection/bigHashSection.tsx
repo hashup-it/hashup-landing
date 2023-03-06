@@ -11,7 +11,10 @@ export const BigHashSection = () => {
 	const { enterCount } = useInViewport(ref, {}, { disconnectOnLeave: false }, {});
 
 	return (
-		<SlideFade in={enterCount > 0} offsetY="100px">
+		<SlideFade
+			in={enterCount > 0}
+			offsetY="100px"
+		>
 			<Flex
 				justifyContent="center"
 				direction="column"
@@ -35,8 +38,13 @@ export const BigHashSection = () => {
 				<Flex zIndex="100">
 					<SectionInfoButton label="Decentralized Marketing" />
 				</Flex>
-				<Text fontSize={['24px', '32px', '46px', '60px']} fontWeight="600" zIndex="100" maxW="70%">
-				Define store commissions!
+				<Text
+					fontSize={['24px', '32px', '46px', '60px']}
+					fontWeight="600"
+					zIndex="100"
+					maxW="70%"
+				>
+					Define store commissions!
 				</Text>
 				<Text
 					fontSize={['16px', '18px', '23px', '23px']}
@@ -45,8 +53,11 @@ export const BigHashSection = () => {
 					w={['80%', '80%', '50%', '50%']}
 					zIndex="100"
 				>
-					It will determine how much money the stores that sell your games make. 
-					<Text color={Colors.greyText} as="span">
+					It will determine how much money the stores that sell your games make.
+					<Text
+						color={Colors.greyText}
+						as="span"
+					>
 						{' '}
 						Remember, the more you give, the more marketing you get!
 					</Text>

@@ -20,7 +20,11 @@ export const HashupLogoBg = ({ ...props }) => {
 					fill-opacity="0.06"
 				/>
 			</g>
-			<path d="M646.999 650.324L972.526 731.338" stroke="url(#paint1_linear_1755_4347)" strokeWidth="3.54807" />
+			<path
+				d="M646.999 650.324L972.526 731.338"
+				stroke="url(#paint1_linear_1755_4347)"
+				strokeWidth="3.54807"
+			/>
 			<path
 				d="M972.056 1363.13C955.436 1403.52 919.47 1432.73 876.527 1440.72L687.594 1475.86C679.704 1477.33 673.316 1469.49 676.351 1462.06L1160.12 277.996L1392.86 340.36L972.056 1363.13Z"
 				stroke="url(#paint2_linear_1755_4347)"
@@ -36,8 +40,16 @@ export const HashupLogoBg = ({ ...props }) => {
 				stroke="url(#paint4_linear_1755_4347)"
 				strokeWidth="4.65621"
 			/>
-			<path d="M172.111 1254.02L444.322 591.57" stroke="url(#paint5_linear_1755_4347)" strokeWidth="4.65621" />
-			<path d="M1391.21 337.203L1120.89 1002.17" stroke="url(#paint6_linear_1755_4347)" strokeWidth="4.65621" />
+			<path
+				d="M172.111 1254.02L444.322 591.57"
+				stroke="url(#paint5_linear_1755_4347)"
+				strokeWidth="4.65621"
+			/>
+			<path
+				d="M1391.21 337.203L1120.89 1002.17"
+				stroke="url(#paint6_linear_1755_4347)"
+				strokeWidth="4.65621"
+			/>
 			<defs>
 				<filter
 					id="filter0_b_1755_4347"
@@ -48,10 +60,25 @@ export const HashupLogoBg = ({ ...props }) => {
 					filterUnits="userSpaceOnUse"
 					colorInterpolationFilters="sRGB"
 				>
-					<feFlood floodOpacity="0" result="BackgroundImageFix" />
-					<feGaussianBlur in="BackgroundImage" stdDeviation="102.397" />
-					<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1755_4347" />
-					<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1755_4347" result="shape" />
+					<feFlood
+						floodOpacity="0"
+						result="BackgroundImageFix"
+					/>
+					<feGaussianBlur
+						in="BackgroundImage"
+						stdDeviation="102.397"
+					/>
+					<feComposite
+						in2="SourceAlpha"
+						operator="in"
+						result="effect1_backgroundBlur_1755_4347"
+					/>
+					<feBlend
+						mode="normal"
+						in="SourceGraphic"
+						in2="effect1_backgroundBlur_1755_4347"
+						result="shape"
+					/>
 				</filter>
 				<linearGradient
 					id="paint0_linear_1755_4347"
@@ -62,7 +89,11 @@ export const HashupLogoBg = ({ ...props }) => {
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="white" />
-					<stop offset="1" stopColor="white" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<linearGradient
 					id="paint1_linear_1755_4347"
@@ -73,7 +104,11 @@ export const HashupLogoBg = ({ ...props }) => {
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="white" />
-					<stop offset="1" stopColor="white" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<linearGradient
 					id="paint2_linear_1755_4347"
@@ -83,8 +118,15 @@ export const HashupLogoBg = ({ ...props }) => {
 					y2="1249.36"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stopColor="white" stopOpacity="0.45" />
-					<stop offset="0.69322" stopColor="white" stopOpacity="0" />
+					<stop
+						stopColor="white"
+						stopOpacity="0.45"
+					/>
+					<stop
+						offset="0.69322"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<linearGradient
 					id="paint3_linear_1755_4347"
@@ -95,7 +137,11 @@ export const HashupLogoBg = ({ ...props }) => {
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="white" />
-					<stop offset="1" stopColor="white" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<linearGradient
 					id="paint4_linear_1755_4347"
@@ -106,7 +152,11 @@ export const HashupLogoBg = ({ ...props }) => {
 					gradientUnits="userSpaceOnUse"
 				>
 					<stop stopColor="#FF3F3F" />
-					<stop offset="1" stopColor="#FF3F3F" stopOpacity="0" />
+					<stop
+						offset="1"
+						stopColor="#FF3F3F"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<linearGradient
 					id="paint5_linear_1755_4347"
@@ -116,8 +166,15 @@ export const HashupLogoBg = ({ ...props }) => {
 					y2="696.856"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stopColor="white" stopOpacity="0.1" />
-					<stop offset="1" stopColor="white" stopOpacity="0" />
+					<stop
+						stopColor="white"
+						stopOpacity="0.1"
+					/>
+					<stop
+						offset="1"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 				<linearGradient
 					id="paint6_linear_1755_4347"
@@ -127,8 +184,15 @@ export const HashupLogoBg = ({ ...props }) => {
 					y2="442.886"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop stopColor="white" stopOpacity="0.1" />
-					<stop offset="1" stopColor="white" stopOpacity="0" />
+					<stop
+						stopColor="white"
+						stopOpacity="0.1"
+					/>
+					<stop
+						offset="1"
+						stopColor="white"
+						stopOpacity="0"
+					/>
 				</linearGradient>
 			</defs>
 		</Icon>

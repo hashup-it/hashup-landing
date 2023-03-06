@@ -23,11 +23,22 @@ export const Recommendations = () => {
 
 	return (
 		<>
-			<Flex display={['flex', 'flex', 'none', 'none']} direction="column" alignItems="center">
-				<Text fontSize="32px" color="white" fontWeight="700">
+			<Flex
+				display={['flex', 'flex', 'none', 'none']}
+				direction="column"
+				alignItems="center"
+			>
+				<Text
+					fontSize="32px"
+					color="white"
+					fontWeight="700"
+				>
 					See what people say<strong>.</strong>
 				</Text>
-				<Flex alignItems="center" pt="5px">
+				<Flex
+					alignItems="center"
+					pt="5px"
+				>
 					<MobileLeftIcon
 						width="42px"
 						height="42px"
@@ -35,7 +46,11 @@ export const Recommendations = () => {
 						onClick={previousOpinion}
 						opacity={opinion === 0 ? '0.5' : '1'}
 					/>
-					<Flex maxW="90%" pt="30px" transform="translateX(-5%)">
+					<Flex
+						maxW="90%"
+						pt="30px"
+						transform="translateX(-5%)"
+					>
 						<Image src={Opinions[opinion].photo} />
 					</Flex>
 					<MobileRightIcon
@@ -64,11 +79,22 @@ export const Recommendations = () => {
 				display={['none', 'none', 'flex', 'flex']}
 				my="92px"
 			>
-				<Flex width="50%" justifyContent="start">
+				<Flex
+					width="50%"
+					justifyContent="start"
+				>
 					<Image src={Opinions[opinion].photo} />
 				</Flex>
-				<Flex direction="column" width="50%" justifyContent="start">
-					<Text fontSize="50px" color="white" fontWeight="700">
+				<Flex
+					direction="column"
+					width="50%"
+					justifyContent="start"
+				>
+					<Text
+						fontSize="50px"
+						color="white"
+						fontWeight="700"
+					>
 						See what people say<strong>.</strong>
 					</Text>
 					<OpinionCard
@@ -77,7 +103,10 @@ export const Recommendations = () => {
 						opinion={Opinions[opinion].opinion}
 						logo={Opinions[opinion].logo}
 					/>
-					<Flex pt="70px" gridGap="25px">
+					<Flex
+						pt="70px"
+						gridGap="25px"
+					>
 						<ChevronRightIcon
 							cursor="pointer"
 							transform="rotate(180deg)"

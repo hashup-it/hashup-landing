@@ -20,7 +20,10 @@ export const Licences = () => {
 
 	return (
 		<Box userSelect="none">
-			<SlideFade in={enterCount > 0} offsetY="100px">
+			<SlideFade
+				in={enterCount > 0}
+				offsetY="100px"
+			>
 				<Flex
 					justifyContent={{ base: 'center', xl: 'space-between' }}
 					mt={['100px', '200px']}
@@ -35,9 +38,16 @@ export const Licences = () => {
 						gridGap={{ base: '1.5rem', xl: '60px' }}
 						pb={['20px', '30px', '100px', '100px']}
 					>
-						<SectionInfoButton label="LICENCES 3.0" zIndex="1" />
+						<SectionInfoButton
+							label="LICENCES 3.0"
+							zIndex="1"
+						/>
 						<Flex gridGap="25px">
-							<Flex position="relative" onClick={() => setActiveCartridge(0)} cursor="pointer">
+							<Flex
+								position="relative"
+								onClick={() => setActiveCartridge(0)}
+								cursor="pointer"
+							>
 								Gold
 								{activeCartridge === 0 && (
 									<Flex
@@ -50,7 +60,11 @@ export const Licences = () => {
 									/>
 								)}
 							</Flex>
-							<Flex position="relative" onClick={() => setActiveCartridge(1)} cursor="pointer">
+							<Flex
+								position="relative"
+								onClick={() => setActiveCartridge(1)}
+								cursor="pointer"
+							>
 								Gray
 								{activeCartridge === 1 && (
 									<Flex
@@ -63,7 +77,11 @@ export const Licences = () => {
 									/>
 								)}
 							</Flex>
-							<Flex position="relative" onClick={() => setActiveCartridge(2)} cursor="pointer">
+							<Flex
+								position="relative"
+								onClick={() => setActiveCartridge(2)}
+								cursor="pointer"
+							>
 								Custom
 								{activeCartridge === 2 && (
 									<Flex
@@ -86,8 +104,15 @@ export const Licences = () => {
 							colorDesc={Cartridges[activeCartridge].colorDesc}
 						/>
 					</Flex>
-					<Flex position="absolute" right={{ base: '0%', xl: '-4%' }} top={{ base: '110%', xl: '10%' }}>
-						<Image src={`assets/${Cartridges[activeCartridge].image}`} zIndex="1" />
+					<Flex
+						position="absolute"
+						right={{ base: '0%', xl: '-4%' }}
+						top={{ base: '110%', xl: '10%' }}
+					>
+						<Image
+							src={`assets/${Cartridges[activeCartridge].image}`}
+							zIndex="1"
+						/>
 						<Flex
 							position="absolute"
 							top="-10%"

@@ -9,7 +9,10 @@ export const HeaderLinks = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
 	return (
-		<Flex gridGap="24px" alignItems="center">
+		<Flex
+			gridGap="24px"
+			alignItems="center"
+		>
 			<Menu isOpen={isOpen}>
 				<MenuButton
 					as={Button}
@@ -31,7 +34,14 @@ export const HeaderLinks = () => {
 				>
 					<Whitepaper />
 				</MenuButton>
-				<MenuList bgColor="#0A0A0A" justifyContent="center" fontWeight="700" p="0" m="0" border="none">
+				<MenuList
+					bgColor="#0A0A0A"
+					justifyContent="center"
+					fontWeight="700"
+					p="0"
+					m="0"
+					border="none"
+				>
 					<Link href="https://cdn.hashup.it/hashup-whitepaper-eng.pdf">
 						<a target="_blank">
 							<MenuItem _hover={{ bgColor: '#181717' }}>EN</MenuItem>
@@ -45,7 +55,13 @@ export const HeaderLinks = () => {
 				</MenuList>
 			</Menu>
 			<Link href="https://hashup.gitbook.io/hashup-whitepaper/">
-				<Flex fontSize="14px" fontWeight="600" color="white" cursor="pointer" _hover={{ opacity: '0.5' }}>
+				<Flex
+					fontSize="14px"
+					fontWeight="600"
+					color="white"
+					cursor="pointer"
+					_hover={{ opacity: '0.5' }}
+				>
 					Docs<strong>.</strong>
 				</Flex>
 			</Link>

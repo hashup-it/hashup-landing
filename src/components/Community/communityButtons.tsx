@@ -14,7 +14,10 @@ export interface ICommunityButtons {
 
 export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, icon, link }) => {
 	return (
-		<Link href={link} target="_blank">
+		<Link
+			href={link}
+			target="_blank"
+		>
 			<Flex
 				w={['85%', '75%', '20%', '20%']}
 				h="142px"
@@ -36,7 +39,10 @@ export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, ico
 					borderBottomRightRadius: '34px',
 				}}
 			>
-				<Flex direction="column" cursor="pointer">
+				<Flex
+					direction="column"
+					cursor="pointer"
+				>
 					<Flex
 						alignItems="center"
 						gridGap="16px"
@@ -45,14 +51,22 @@ export const CommunityButtons: FC<ICommunityButtons> = ({ name, description, ico
 						fontWeight="400"
 						lineHeight="160%"
 					>
-						<Flex gridGap="12px" alignItems="center">
+						<Flex
+							gridGap="12px"
+							alignItems="center"
+						>
 							{icon}
 							<Text color="white">{name}</Text>
 						</Flex>
 						<RightArrowIcon />
 					</Flex>
 				</Flex>
-				<Text color={Colors.subGrey} fontSize="12px" fontWeight="400" lineHeight="140%">
+				<Text
+					color={Colors.subGrey}
+					fontSize="12px"
+					fontWeight="400"
+					lineHeight="140%"
+				>
 					{description}
 				</Text>
 			</Flex>

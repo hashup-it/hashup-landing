@@ -18,15 +18,36 @@ export const RoadmapCard = ({ data, quarter }: IRoadmapCardIRoadmapCard) => {
 			maxW={['70vw', '70vw', '30vw', '25vw']}
 			userSelect="none"
 		>
-			<Box h="2px" w="25px" bgColor={Colors.brandMain} />
-			<Flex fontSize="24px" fontWeight="400" color="white" pt="15px">
-				<Flex fontSize="24px" fontWeight="400" color="white" pt="15px">
+			<Box
+				h="2px"
+				w="25px"
+				bgColor={Colors.brandMain}
+			/>
+			<Flex
+				fontSize="24px"
+				fontWeight="400"
+				color="white"
+				pt="15px"
+			>
+				<Flex
+					fontSize="24px"
+					fontWeight="400"
+					color="white"
+					pt="15px"
+				>
 					<Text>{quarter}</Text>
 				</Flex>
 			</Flex>
-			<Flex mt="30px" direction="column" gridGap="9px">
-				{data.map((element) => (
-					<RoadmapCardElement key={element.data} {...element} />
+			<Flex
+				mt="30px"
+				direction="column"
+				gridGap="9px"
+			>
+				{data.map(element => (
+					<RoadmapCardElement
+						key={element.data}
+						{...element}
+					/>
 				))}
 			</Flex>
 		</Flex>

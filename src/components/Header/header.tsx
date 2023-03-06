@@ -5,7 +5,12 @@ import HeaderMain from './HeaderMain/headerMain';
 
 export const Header = () => {
 	return (
-		<Flex flexDirection="column" alignItems="center" w="100%" h="100%">
+		<Flex
+			flexDirection="column"
+			alignItems="center"
+			w="100%"
+			h="100%"
+		>
 			<Box
 				bg="linear-gradient(180deg, rgba(0,0,0,0.1) 15%, rgba(0,0,0,1) 90%)"
 				position="absolute"
