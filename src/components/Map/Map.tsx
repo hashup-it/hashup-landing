@@ -15,7 +15,10 @@ const Map: NextPage = () => {
 	const map1 = useRef<mapboxgl.Map | any>(null);
 	const pulseDotSize = 150;
 	// TODO: fetch AOT
-	const center = getMiddle([[21.017532, 52.237049], [103.819836, 1.352083]]);
+	const center = getMiddle([
+		[21.017532, 52.237049],
+		[103.819836, 1.352083],
+	]);
 
 	//information about the store
 	const [storeInfo, setStoreInfo] = useState<any>();
@@ -28,6 +31,68 @@ const Map: NextPage = () => {
 			const storeData = res.data;
 			storeData.forEach((store: any) => {
 				store.properties = { ...store.properties, owner_id: store.owner_id };
+			});
+			storeData.push({
+				properties: {
+					name: 'HashSwift',
+					logo: 'https://svgshare.com/i/qtR.svg',
+					description: '',
+					city: 'Sosnowiec',
+					country: 'Poland',
+					link: 'https://dynamic-semifreddo-f4a2a3.netlify.app/',
+					owner_id: '0x714ef5c429ce9bdd0cac3631d30474bd04e954dc',
+				},
+				geometry: {
+					coordinates: ['19.104078', '50.286263'],
+					type: 'Point',
+				},
+				cms: {},
+				_id: '1',
+				__v: 0,
+				chain_id: 137,
+				type: 'Feature',
+			});
+			storeData.push({
+				properties: {
+					name: '#Store',
+					logo: 'https://svgshare.com/i/qtR.svg',
+					description: '',
+					city: 'Łódź',
+					country: 'Poland',
+					link: 'https://epic-games-clone-lac.vercel.app/',
+					owner_id: '0x714ef5c429ce9bdd0cac3631d30474bd04e954dc',
+				},
+				geometry: {
+					coordinates: ['19.457216', '51.759445'],
+					type: 'Point',
+				},
+				cms: {},
+				_id: '1',
+				__v: 0,
+				chain_id: 137,
+				owner_id: '0x714ef5c429ce9bdd0cac3631d30474bd04e954dc',
+				type: 'Feature',
+			});
+			storeData.push({
+				properties: {
+					name: '#Steam',
+					logo: 'https://svgshare.com/i/qtR.svg',
+					description: '',
+					city: 'Radom',
+					country: 'Poland',
+					link: 'https://steam-hashup.vercel.app/',
+					owner_id: '0x714ef5c429ce9bdd0cac3631d30474bd04e954dc',
+				},
+				geometry: {
+					coordinates: ['21.1471333', '51.4027236'],
+					type: 'Point',
+				},
+				cms: {},
+				_id: '1',
+				__v: 0,
+				chain_id: 137,
+				owner_id: '0x714ef5c429ce9bdd0cac3631d30474bd04e954dc',
+				type: 'Feature',
 			});
 
 			if (typeof map1.current === 'string' || map1.current instanceof HTMLElement) {
@@ -47,7 +112,7 @@ const Map: NextPage = () => {
 						maxZoom: 8,
 						attributionControl: false,
 						logoPosition: 'top-left',
-						testMode: true
+						testMode: true,
 					});
 
 					//disable map rotation using right click + drag
@@ -72,24 +137,24 @@ const Map: NextPage = () => {
 
 	return (
 		<Flex
-			p='6rem 0 0 0'
-			flexDirection='column'
-			textAlign='center'
-			gap='20px'
+			p="6rem 0 0 0"
+			flexDirection="column"
+			textAlign="center"
+			gap="20px"
 		>
 			<Text
 				fontSize={['32px', '46px', '64px', '70px']}
-				fontWeight='700'
+				fontWeight="700"
 			>
 				See all of the stores<strong>!</strong>
 			</Text>
 
 			<Flex
-				h='80vh'
-				w='100vw'
-				textAlign='center'
-				position='relative'
-				justifyContent='end'
+				h="80vh"
+				w="100vw"
+				textAlign="center"
+				position="relative"
+				justifyContent="end"
 			>
 				<StoreInfo
 					storeName={storeInfo?.name}
@@ -103,14 +168,14 @@ const Map: NextPage = () => {
 				/>
 
 				<Flex
-					h='80vh'
+					h="80vh"
 					w={{ base: '100vw', xl: leftSectionVisible ? '70vw' : '100vw' }}
-					transition='0.2s'
+					transition="0.2s"
 				>
 					<Flex
-						w='100%'
-						h='100%'
-						color='black'
+						w="100%"
+						h="100%"
+						color="black"
 						ref={map1}
 					/>
 				</Flex>
