@@ -94,6 +94,27 @@ const Map: NextPage = () => {
 				owner_id: '0x714ef5c429ce9bdd0cac3631d30474bd04e954dc',
 				type: 'Feature',
 			});
+			storeData.push({
+				properties: {
+					name: 'HashUp Chat Store',
+					logo: 'https://svgshare.com/i/qtR.svg',
+					description: '',
+					city: 'San Francisco',
+					country: 'USA',
+					link: 'https://hashup-chat-store-beta.vercel.app/',
+					owner_id: '0x714ef5c429ce9bdd0cac3631d30474bd04e954dc',
+				},
+				geometry: {
+					coordinates: ['-122.431297', '37.773972'],
+					type: 'Point',
+				},
+				cms: {},
+				_id: '1',
+				__v: 0,
+				chain_id: 137,
+				owner_id: '0x714ef5c429ce9bdd0cac3631d30474bd04e954dc',
+				type: 'Feature',
+			});
 
 			if (typeof map1.current === 'string' || map1.current instanceof HTMLElement) {
 				mapboxgl.accessToken =
