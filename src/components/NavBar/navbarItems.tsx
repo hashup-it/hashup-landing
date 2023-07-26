@@ -26,6 +26,12 @@ export const NavBarItems = () => {
 				label="GameDevs"
 				isActive={router.asPath === '/creators'}
 			/>
+			<Text display={['none', 'none', 'flex', 'flex']}>.</Text>
+			<NavbarItem
+				external
+				link="https://wiki.hashup.it"
+				label="Documentation"
+			/>
 		</Flex>
 	);
 };

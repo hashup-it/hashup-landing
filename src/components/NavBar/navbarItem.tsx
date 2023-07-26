@@ -3,9 +3,22 @@ import Link from 'next/link';
 import React from 'react';
 import { Colors } from '../../colors';
 
-export const NavbarItem = ({ isActive, label, link }: { isActive?: boolean; label?: string; link: string }) => {
+export const NavbarItem = ({
+	isActive,
+	label,
+	link,
+	external,
+}: {
+	isActive?: boolean;
+	label?: string;
+	link: string;
+	external?: boolean;
+}) => {
 	return (
-		<Link href={`/${link}`}>
+		<Link
+			href={external ? link : `/${link}`}
+			target={external ? '_blank' : ''}
+		>
 			<Flex
 				position="relative"
 				wrap="nowrap"
