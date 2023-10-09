@@ -54,7 +54,6 @@ const Nbx = () => {
 					const provider = new ethers.providers.Web3Provider((window as any as any).ethereum);
 					const contract = new ethers.Contract(tokenContractAddress, abi, provider);
 					//const decimals = await contract.decimals();
-					console.log(account);
 					const tokenBalance = await contract.balanceOf(account);
 					if (+ethers.utils.formatUnits(tokenBalance, 2) >= 1) {
 						if (formDisabled) setFormDisabled(false);
@@ -87,8 +86,6 @@ const Nbx = () => {
 
 				const provider = new ethers.providers.Web3Provider((window as any as any).ethereum);
 				const signer = provider.getSigner();
-				console.log('signer', signer);
-				console.log({ address: address, email: formState.email });
 				const openerContract = new ethers.Contract(
 					'0x71db4E029C6EEf39bc98ca0A92719B600830Db25',
 					openerAbi,

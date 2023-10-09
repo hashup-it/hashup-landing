@@ -26,7 +26,6 @@ export const eventFormInitialState: IEventFormReducerState = {
 
 export const eventFormReducer = (state: IEventFormReducerState, action: IEventFormReducerAction) => {
 	if (action.type === ActionTypes.FIRSTNAME_CHANGE) {
-		console.log(action.payload);
 		return { ...state, firstName: action.payload };
 	}
 	if (action.type === ActionTypes.EMAIL_CHANGE) {
