@@ -43,5 +43,6 @@ export const ScrollImages = ({ animationHookReference }: IHashupLogoBackground) 
 			window.removeEventListener('scroll', () => handleOnScroll(animationHookReference, setCurrentAssetIndex));
 	}, []);
 
-	return <Flex>{<Image src={imageUriArray[currentAssetIndex]} />}</Flex>;
+	//@ts-ignore
+	return <Image src={imageUriArray[currentAssetIndex]} />;
 };

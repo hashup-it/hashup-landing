@@ -180,6 +180,7 @@ export const NavBar = () => {
 									</Flex>
 									{pathname === '/nbx' && (
 										<Button
+											color="white"
 											onClick={() => {
 												onClose();
 												open();

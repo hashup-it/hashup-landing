@@ -3,6 +3,7 @@ import React from 'react';
 
 export const AboutHashUp = () => {
 	return (
+		//@ts-ignore
 		<Flex
 			direction="column"
 			fontSize="12px"
