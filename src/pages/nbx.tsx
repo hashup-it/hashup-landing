@@ -2,6 +2,7 @@ import { Button, Flex, Image, Input, Link, Text } from '@chakra-ui/react';
 import Airtable from 'airtable';
 import { ethers } from 'ethers';
 import React, { useEffect, useReducer, useState } from 'react';
+import { useAccount } from 'wagmi';
 import { Colors } from '../colors';
 import { abi } from '../utils/abi';
 import { openerAbi } from '../utils/openerAbi';
@@ -18,48 +19,50 @@ const Nbx = () => {
 	];
 	const [ticketState, setTicketState] = useState<boolean[]>([...new Array(tickets.length).fill(false)]);
 	const [errorMessage, setErrorMessage] = useState(null);
-	const [account, setAccount] = useState(null);
+	//const [account, setAccount] = useState(null);
 	const [success, setSuccess] = useState<boolean>(false);
 	const [loading, setLoading] = useState(false);
+	const { address } = useAccount();
 
 	useEffect(() => {
 		if ((window as any).ethereum) {
-			connectHandler();
-			(window as any).ethereum.on('accountsChanged', accountsChanged);
+			//connectHandler();
+			//(window as any).ethereum.on('accountsChanged', accountsChanged);
 		}
 	}, []);
 
-	const connectHandler = async () => {
-		if ((window as any).ethereum) {
-			try {
-				const res = await (window as any).ethereum.request({
-					method: 'eth_requestAccounts',
-				});
-				await accountsChanged(res[0]);
-			} catch (err) {
-				console.error(err);
-				setErrorMessage('There was a problem connecting to MetaMask');
-			}
-		} else {
-			setErrorMessage('Install MetaMask');
-		}
-	};
+	// const connectHandler = async () => {
+	// 	if ((window as any).ethereum) {
+	// 		try {
+	// 			const res = await (window as any).ethereum.request({
+	// 				method: 'eth_requestAccounts',
+	// 			});
+	// 			await accountsChanged(res[0]);
+	// 		} catch (err) {
+	// 			console.error(err);
+	// 			setErrorMessage('There was a problem connecting to MetaMask');
+	// 		}
+	// 	} else {
+	// 		setErrorMessage('Install MetaMask');
+	// 	}
+	// };
 
-	const accountsChanged = async newAccount => {
-		setAccount(newAccount);
+	const accountsChanged = async () => {
+		//setAccount(newAccount);
 		try {
-			if (account !== null)
+			if (address !== undefined)
 				tickets?.forEach(async (ticket, index) => {
 					const tokenContractAddress = ticket.address;
 					const provider = new ethers.providers.Web3Provider((window as any as any).ethereum);
 					const contract = new ethers.Contract(tokenContractAddress, abi, provider);
 					//const decimals = await contract.decimals();
-					const tokenBalance = await contract.balanceOf(account);
+					const tokenBalance = await contract.balanceOf(address);
 					if (+ethers.utils.formatUnits(tokenBalance, 2) >= 1) {
 						if (formDisabled) setFormDisabled(false);
 						setTicketState(prev => [...prev.slice(0, index), true, ...prev.slice(index + 1)]);
 					}
 				});
+			else setTicketState([...new Array(tickets.length).fill(false)]);
 		} catch (err) {
 			console.error(err);
 			setErrorMessage('There was a problem connecting to MetaMask');
@@ -79,7 +82,7 @@ const Nbx = () => {
 				setSuccess(false);
 				setErrorMessage('');
 
-				if (account == null) {
+				if (address == null) {
 					setErrorMessage('You login to open package.');
 					return;
 				}
@@ -188,10 +191,9 @@ const Nbx = () => {
 	};
 
 	useEffect(() => {
-		if (account !== null) {
-			accountsChanged(account);
-		}
-	}, [account]);
+		console.log(address);
+		accountsChanged();
+	}, [address]);
 
 	return (
 		<>
@@ -208,25 +210,27 @@ const Nbx = () => {
 						h="150px"
 					/>
 					{formDisabled && (
-						<Flex
+						<Link
 							as="span"
 							fontSize="15px"
 							fontWeight="500"
 						>
-							Buy ticket first. You can do that on&nbsp;
+							Buy ticket first. You can do that on{' '}
 							<Link
 								href="https://www.gamexplorer.io"
 								target="_blank"
 								_hover={{ textDecoration: 'none' }}
+								as="span"
 							>
 								<Text
 									color="red"
 									cursor="pointer"
+									as="span"
 								>
 									gamexplorer.io
 								</Text>
 							</Link>
-						</Flex>
+						</Link>
 					)}
 					<Flex
 						flexDir="column"

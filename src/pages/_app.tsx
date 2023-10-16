@@ -10,6 +10,7 @@ import Footer from '../components/Footer/footer';
 import { PolygonLabel } from '../components/PolygonLabel/polygonLabel';
 import '../components/Map/Map.css';
 import { MoralisProvider } from 'react-moralis';
+import { WalletConnectProvider } from '../providers/walletConnectProvider';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
@@ -21,13 +22,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 				serverUrl="https://m8n2yl4ato6n.grandmoralis.com:2053/server"
 				appId="eC4wceXEnSV2YnbaVOaE5XPrvwBXgEvDQXLG0i3M"
 			>
-				<Fonts />
-				<GlobalContainer>
-					<PolygonLabel />
-					<NavBar />
-					<Component {...pageProps} />
-					<Footer />
-				</GlobalContainer>
+				<WalletConnectProvider>
+					<Fonts />
+					<GlobalContainer>
+						<PolygonLabel />
+						<NavBar />
+						<Component {...pageProps} />
+						<Footer />
+					</GlobalContainer>
+				</WalletConnectProvider>
 			</MoralisProvider>
 		</ChakraProvider>
 	);

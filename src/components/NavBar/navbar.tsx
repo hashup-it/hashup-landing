@@ -1,5 +1,18 @@
-import { Flex, Link, Modal, ModalContent, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react';
+import {
+	Button,
+	Flex,
+	Link,
+	Modal,
+	ModalContent,
+	ModalHeader,
+	ModalOverlay,
+	Text,
+	useDisclosure,
+} from '@chakra-ui/react';
+import { useWeb3Modal } from '@web3modal/react';
+import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react';
+import { useAccount } from 'wagmi';
 import CloseMenuIcon from '../../Icons/closeMenuIcon';
 import HamburgerMenu from '../../Icons/hamburgerMenu';
 import HashupLogo from '../../Icons/hashupLogo';
@@ -10,6 +23,9 @@ import NavBarItems from './navbarItems';
 
 export const NavBar = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
+	const { open } = useWeb3Modal();
+	const { address: userAddress } = useAccount();
+	const { pathname } = useRouter();
 
 	const [isScroll, setIsScroll] = useState<boolean>(false);
 
@@ -33,7 +49,7 @@ export const NavBar = () => {
 				w={['100vw', '100vw', '100%', '100%']}
 				alignItems="center"
 				justifyContent="space-between"
-				zIndex="1000"
+				zIndex="10"
 				ref={ref}
 				py="24px"
 			>
@@ -82,11 +98,26 @@ export const NavBar = () => {
 				</Flex>
 
 				<Flex
-					alignItems="center"
-					gridGap="36px"
+					align="center"
+					gap="16px"
 					display={['none', 'none', 'flex', 'flex']}
 				>
-					<LaunchAppButton />
+					{pathname === '/nbx' && (
+						<Button
+							onClick={open}
+							bg="#ff3f3f"
+							_hover={{ opacity: '0.7' }}
+						>
+							{userAddress ? userAddress?.slice(0, 5) + '...' + userAddress?.slice(-5) : 'Connect'}
+						</Button>
+					)}
+					<Flex
+						alignItems="center"
+						gridGap="16px"
+						display={['none', 'none', 'none', 'flex']}
+					>
+						<LaunchAppButton />
+					</Flex>
 				</Flex>
 			</Flex>
 
@@ -137,11 +168,30 @@ export const NavBar = () => {
 									<MobileNavbarItems />
 								</Flex>
 								<Flex
-									pt="100%"
-									alignItems="center"
-									justifyContent="center"
+									flexDir="column"
+									gap="8px"
 								>
-									<LaunchAppButton />
+									<Flex
+										pt="100%"
+										alignItems="center"
+										justifyContent="center"
+									>
+										<LaunchAppButton />
+									</Flex>
+									{pathname === '/nbx' && (
+										<Button
+											onClick={() => {
+												onClose();
+												open();
+											}}
+											bg="#ff3f3f"
+											_hover={{ opacity: '0.7' }}
+										>
+											{userAddress
+												? userAddress?.slice(0, 5) + '...' + userAddress?.slice(-5)
+												: 'Connect'}
+										</Button>
+									)}
 								</Flex>
 							</Flex>
 						</Flex>
