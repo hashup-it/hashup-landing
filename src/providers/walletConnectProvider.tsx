@@ -29,7 +29,7 @@ export const WalletConnectProvider = ({ children }: { children: ReactNode }) => 
 				enableAccountView={true}
 				defaultChain={polygon}
 				enableNetworkView
-				themeVariables={{ '--w3m-background-color': '#ff3f3f' }}
+				themeVariables={{ '--w3m-background-color': '#ff3f3f', '--w3m-accent-fill-color': '#fff' }}
 			/>
 			<WagmiConfig config={wagmiConfig}>{children}</WagmiConfig>
 		</Flex>

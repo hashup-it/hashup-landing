@@ -319,6 +319,7 @@ const Nbx = () => {
 								return (
 									<Button
 										key={index}
+										color="white"
 										isLoading={loading}
 										disabled={formDisabled}
 										bg={Colors.brandMain}

@@ -170,6 +170,7 @@ export const NavBar = () => {
 								<Flex
 									flexDir="column"
 									gap="8px"
+									color="white"
 								>
 									<Flex
 										pt="100%"
@@ -180,7 +181,7 @@ export const NavBar = () => {
 									</Flex>
 									{pathname === '/nbx' && (
 										<Button
-											color="white"
+											color="white !important"
 											onClick={() => {
 												onClose();
 												open();
@@ -188,9 +189,11 @@ export const NavBar = () => {
 											bg="#ff3f3f"
 											_hover={{ opacity: '0.7' }}
 										>
-											{userAddress
-												? userAddress?.slice(0, 5) + '...' + userAddress?.slice(-5)
-												: 'Connect'}
+											<Text color="white !important">
+												{userAddress
+													? userAddress?.slice(0, 5) + '...' + userAddress?.slice(-5)
+													: 'Connect'}
+											</Text>
 										</Button>
 									)}
 								</Flex>
