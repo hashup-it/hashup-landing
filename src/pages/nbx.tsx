@@ -214,6 +214,7 @@ const Nbx = () => {
 							as="span"
 							fontSize="15px"
 							fontWeight="500"
+							href="https://www.gamexplorer.io"
 						>
 							Buy ticket first. You can do that on{' '}
 							<Link
