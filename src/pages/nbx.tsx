@@ -12,8 +12,8 @@ const Nbx = () => {
 	const [formState, dispatchForm] = useReducer(eventFormReducer, eventFormInitialState);
 	const [formDisabled, setFormDisabled] = useState(true);
 	const tickets = [
-		{ name: 'General', address: '0x778B707F5f7910565aa2Ca7c4dCe5D5684F38052' },
-		{ name: 'Startup', address: '0x6CbF4648D1f326585f7aA768913991EFC0f2b952' },
+		{ name: 'General', address: '0x799033f050cb81bc2efe72a01185902c1344b132' },
+		{ name: 'Startup', address: '0x83c9f9cf0d30d4862bc9cf3940e92852b07e3b97' },
 		{ name: 'Investor', address: '0x9b670efbe409834fa631588b0c75df403ec4333e' },
 		{ name: 'VIP', address: '0x29790a7858015072f94c03e5761b98d7fe4de9a3' },
 	];
