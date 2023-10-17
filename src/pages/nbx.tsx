@@ -348,7 +348,7 @@ const Nbx = () => {
 					>
 						Success!
 					</Text>
-					<Text fontSize="16px">You will receive your ticket on provided email soon.</Text>
+					<Text fontSize="16px">You will receive your ticket on provided email in 48 hours.</Text>
 				</Flex>
 			)}
 		</>
