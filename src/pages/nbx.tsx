@@ -14,7 +14,7 @@ const Nbx = () => {
 	const tickets = [
 		{ name: 'General', address: '0x799033f050cb81bc2efe72a01185902c1344b132' },
 		{ name: 'Startup', address: '0x83c9f9cf0d30d4862bc9cf3940e92852b07e3b97' },
-		{ name: 'Investor', address: '0x9b670efbe409834fa631588b0c75df403ec4333e' },
+		{ name: 'Investor', address: '0xbd812f881f32feadc7183f9214239c5aef2a0299' },
 		{ name: 'VIP', address: '0x29790a7858015072f94c03e5761b98d7fe4de9a3' },
 	];
 	const [ticketState, setTicketState] = useState<boolean[]>([...new Array(tickets.length).fill(false)]);
