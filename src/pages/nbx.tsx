@@ -332,6 +332,19 @@ const Nbx = () => {
 								);
 						})}
 					</Flex>
+					<Flex
+						fontSize="12px"
+						fontWeight="600"
+					>
+						Support:&nbsp;
+						<Link
+							target="_blank"
+							href="https://t.me/HashUpChatPL"
+							color="#ff3f3f"
+						>
+							https://t.me/HashUpChatPL
+						</Link>
+					</Flex>
 				</Flex>
 			)}
 			{success && (
