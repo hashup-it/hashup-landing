@@ -191,7 +191,6 @@ const Nbx = () => {
 	};
 
 	useEffect(() => {
-		console.log(address);
 		accountsChanged();
 	}, [address]);
 

@@ -102,7 +102,7 @@ export const NavBar = () => {
 					gap="16px"
 					display={['none', 'none', 'flex', 'flex']}
 				>
-					{pathname === '/nbx' && (
+					{(pathname === '/nbx' || pathname === '/keys/[address]') && (
 						<Button
 							onClick={open}
 							bg="#ff3f3f"
@@ -179,7 +179,7 @@ export const NavBar = () => {
 									>
 										<LaunchAppButton />
 									</Flex>
-									{pathname === '/nbx' && (
+									{(pathname === '/nbx' || pathname === '/keys/[address]') && (
 										<Button
 											color="white !important"
 											onClick={() => {

@@ -116,6 +116,28 @@ const Map: NextPage = () => {
 				type: 'Feature',
 			});
 
+			storeData.push({
+				properties: {
+					name: 'Krypto Naród',
+					logo: 'https://web3.kryptonarod.pl/_next/image?url=https%3A%2F%2Fmultistore-strapi.harley-heaven-poland.pl%2Fuploads%2Fkrypto_narod_icon_white_8ef91bfc2d.png&w=128&q=75',
+					description: '',
+					city: 'Białystok',
+					country: 'Poland',
+					link: 'https://web3.kryptonarod.pl/',
+					owner_id: '0xfB4e213BDAbCB56380bC720721B82ABcfAf3952f',
+				},
+				geometry: {
+					coordinates: ['23.1688403', '53.1324886'],
+					type: 'Point',
+				},
+				cms: {},
+				_id: '1',
+				__v: 0,
+				chain_id: 137,
+				owner_id: '0xfB4e213BDAbCB56380bC720721B82ABcfAf3952f',
+				type: 'Feature',
+			});
+
 			if (typeof map1.current === 'string' || map1.current instanceof HTMLElement) {
 				mapboxgl.accessToken =
 					'pk.eyJ1IjoicHJvc3NhIiwiYSI6ImNsZGNid2Y1MzA5NzQzbnE1b2w0NWt3cnAifQ.ZR0ZY3eBKsD7MU100juXbQ';
