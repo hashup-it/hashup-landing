@@ -106,7 +106,7 @@ export default () => {
 				align="center"
 				gap="24px"
 			>
-				<Text fontSize="16px">You doesn't have this key.</Text>
+				<Text fontSize="16px">You don't have this key.</Text>
 				<Flex
 					fontSize="16px"
 					fontWeight="600"
