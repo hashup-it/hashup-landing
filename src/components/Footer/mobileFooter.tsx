@@ -15,7 +15,7 @@ export const MobileFooter = () => {
 			alignItems="center"
 			justifyContent="center"
 			pt="50px"
-			zIndex="1000"
+			zIndex="2"
 		>
 			<HashupLogo />
 			<Flex pt="50px">

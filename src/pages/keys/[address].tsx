@@ -2,7 +2,7 @@ import { Button, Flex, Input, Spinner, Text, Link } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import React, { useEffect, useMemo, useState } from 'react';
 import { Colors } from '../../colors';
-import { useAccount } from 'wagmi';
+import { useAccount, useContractWrite, useNetwork, usePrepareContractWrite, useWaitForTransaction } from 'wagmi';
 import { ethers } from 'ethers';
 import { abi } from '../../utils/abi';
 import { openerAbi } from '../../utils/openerAbi';
@@ -27,11 +27,9 @@ export default () => {
 	const accountsChanged = async () => {
 		try {
 			const tokenContractAddress = router.query?.address as string;
-			console.log(tokenContractAddress, address);
 			const provider = new ethers.providers.Web3Provider((window as any as any).ethereum);
 			const contract = new ethers.Contract(tokenContractAddress, abi, provider);
 			const tokenBalance = await contract.balanceOf(address);
-			console.log(tokenBalance);
 			if (+ethers.utils.formatUnits(tokenBalance, 2) >= 1) {
 				if (stage === OpenKeyStages.LOADING) setStage(OpenKeyStages.LOADED);
 			} else setStage(OpenKeyStages.DOESNT_HAVE_KEY);
@@ -230,7 +228,7 @@ export default () => {
 			const openerContract = new ethers.Contract('0x71db4E029C6EEf39bc98ca0A92719B600830Db25', openerAbi, signer);
 
 			openerContract
-				.openPackage(address, email)
+				.openPackage(router?.query?.address, email)
 				.then(() => setStage(OpenKeyStages.SUCCESS))
 				.catch((e: any) => {
 					console.log(e);
