@@ -1,9 +1,12 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
-import Lottie from 'lottie-web';
 import Link from 'next/link';
 import React, { useEffect, useRef } from 'react';
 import { Colors } from '../../colors';
 import ChevronRightIcon from '../../Icons/chevronRightIcon';
+
+import dynamic from 'next/dynamic';
+
+const lottieWeb = dynamic(() => import('lottie-web') as any, { ssr: false }) as any;
 
 export interface IPathComponents {
 	link: string;
@@ -17,7 +20,13 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 	const element = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		Lottie.loadAnimation({
+		if (!element.current) {
+			return;
+		}
+
+		let animation: any = null;
+
+		animation = lottieWeb?.loadAnimation?.({
 			path: path,
 			renderer: 'svg',
 			autoplay: true,
@@ -25,7 +34,8 @@ export const PathComponent = ({ link, topText, name, description, path }) => {
 			loop: true,
 			rendererSettings: { progressiveLoad: false },
 		});
-		Lottie.setQuality(20);
+		lottieWeb?.setQuality?.(20);
+		return () => (animation as any)?.destroy?.();
 	}, [element.current]);
 
 	return (

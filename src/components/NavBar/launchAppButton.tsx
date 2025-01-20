@@ -32,11 +32,13 @@ export const LaunchAppButton = () => {
 					justifyContent="center"
 					transition="ease 0.2s"
 					cursor="pointer"
-					bg="none"
 					_hover={{ bgColor: `${Colors.brandMain}` }}
 					_focus={{ border: `1.6px solid ${Colors.brandMain}` }}
 					isActive={isOpen}
 					as={Button}
+					sx={{
+						background: 'rbga(20, 0, 0, 0)',
+					}}
 					rightIcon={<ChevronDownIcon />}
 					onMouseEnter={onOpen}
 					onMouseLeave={onClose}
@@ -52,20 +54,37 @@ export const LaunchAppButton = () => {
 					p="0"
 					m="0"
 					border="none"
+					zIndex="1000"
+					sx={{
+						background: 'transparent !important',
+						transform: 'translateY(-10px) !important',
+						paddingTop: '10px !important',
+						borderRadius: '5px !important',
+						'& > *:first-child': {
+							borderRadius: '5px 5px 0 0 !important', // Top rounded corners for the first item
+						},
+						'& > *:last-child': {
+							borderRadius: '0 0 5px 5px !important', // Bottom rounded corners for the last item
+						},
+						'& > *': {
+							fontWeight: '500 !important',
+							padding: '10px 20px',
+						}
+					}}
 					onMouseEnter={onOpen}
 					onMouseLeave={onClose}
 				>
-					<MenuItem _hover={{ bgColor: '#181717' }}>
+					<MenuItem _hover={{ bgColor: Colors.brandMain }} bgColor={Colors.darkGrey}>
 						<Link href="https://gamexplorer.io/">
 							<a target="_blank">GameXplorer</a>
 						</Link>
 					</MenuItem>
-					<MenuItem _hover={{ bgColor: '#181717' }}>
+					<MenuItem _hover={{ bgColor: Colors.brandMain }} bgColor={Colors.darkGrey}>
 						<Link href="https://gamecontract.io/">
 							<a target="_blank">GameContract</a>
 						</Link>
 					</MenuItem>
-					<MenuItem _hover={{ bgColor: '#181717' }}>
+					<MenuItem _hover={{ bgColor: Colors.brandMain }} bgColor={Colors.darkGrey}>
 						<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct">
 							<a target="_blank">PCLauncher</a>
 						</Link>

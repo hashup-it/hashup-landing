@@ -78,7 +78,7 @@ export const WhatYouGet = () => {
 		>
 			<SectionInfoButton
 				label="WHAT DO YOU GET?"
-				zIndex="1000"
+				zIndex="10"
 			/>
 			<Flex
 				w="100vw"

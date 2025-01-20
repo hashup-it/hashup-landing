@@ -49,7 +49,7 @@ export const NavBar = () => {
 				w={['100vw', '100vw', '100%', '100%']}
 				alignItems="center"
 				justifyContent="space-between"
-				zIndex="10"
+				zIndex="11"
 				ref={ref}
 				py="24px"
 			>
