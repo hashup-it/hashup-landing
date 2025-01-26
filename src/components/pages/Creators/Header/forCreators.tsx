@@ -126,7 +126,7 @@ export const ForCreators = () => {
 				</Flex>
 			</Flex>
 			<Link
-				href="https://gamecontract.io/"
+				href="https://contract.hashup.it/"
 				_hover={{ active: 'none' }}
 			>
 				<Flex

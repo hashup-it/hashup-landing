@@ -47,7 +47,7 @@ export const HeaderMainButtons = () => {
 			</Link>
 
 			<Link
-				href="https://gamecontract.io/"
+				href="https://contract.hashup.it/"
 				_hover={{ opacity: '0.5' }}
 			>
 				<Flex
@@ -82,7 +82,7 @@ export const HeaderMainButtons = () => {
 			</Link>
 
 			<Link
-				href="https://gamexplorer.io/"
+				href="https://explorer.hashup.it/"
 				_hover={{ opacity: '0.5' }}
 				target="_blank"
 			>

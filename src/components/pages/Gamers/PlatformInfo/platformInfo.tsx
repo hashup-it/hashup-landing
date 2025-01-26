@@ -94,7 +94,7 @@ export const PlatformInfo = () => {
 							</Text>
 						</Box>
 						<Link
-							href="https://gamexplorer.io/"
+							href="https://explorer.hashup.it/"
 							target="_blank"
 							zIndex="2"
 							_hover={{ active: 'none' }}

@@ -44,7 +44,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 		data: [
 			{ data: 'The HashUp API V2' },
 			{ data: 'The HashUp Protocol on Polygon, Binance Smart Chain, Ethereum, Mantle, Aleph Zero and Casper' },
-			{ data: 'GameCap.io - computer games’ ranking' },
+			{ data: 'GameCap.HashUp.it - computer games’ ranking' },
 			{ data: 'The possibility of creating your own stores based on GameXplorer for YouTubers!' },
 			{ data: 'Injecting Ethereum from PC Launcher 3.0 to Games' },
 			{ data: 'Web3 Games StarterPacks' },

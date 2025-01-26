@@ -35,7 +35,7 @@ export const GameContractCard = () => {
 					Create digital cartridges for your indie game or create a starterpack for your web3 game, set the
 					price and sales rules. With the HashUp protocol, anyone can sell games that are on the protocol.
 				</Text>
-				<Link href="https://gamecontract.io/">
+				<Link href="https://contract.hashup.it/">
 					<a target="_blank">
 						<Flex gridGap="3px">
 							<Flex

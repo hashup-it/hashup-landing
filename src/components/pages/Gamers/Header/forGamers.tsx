@@ -68,7 +68,7 @@ export const ForGamers = () => {
 				direction={['column', 'column', 'row', 'row']}
 			>
 				<Link
-					href="https://gamexplorer.io/"
+					href="https://explorer.hashup.it/"
 					_hover={{ active: 'none' }}
 				>
 					<Flex

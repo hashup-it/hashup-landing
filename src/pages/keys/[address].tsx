@@ -112,7 +112,7 @@ export default () => {
 					In order to buy it visit&nbsp;
 					<Link
 						target="_blank"
-						href={`https://www.gamexplorer.io/game/${router?.query?.address}`}
+						href={`https://www.explorer.hashup.it/game/${router?.query?.address}`}
 						color="#ff3f3f"
 					>
 						GameXplorer
@@ -141,7 +141,7 @@ export default () => {
 					For more keys please visit&nbsp;
 					<Link
 						target="_blank"
-						href="https://www.gamexplorer.io"
+						href="https://www.explorer.hashup.it"
 						color="#ff3f3f"
 					>
 						GameXplorer

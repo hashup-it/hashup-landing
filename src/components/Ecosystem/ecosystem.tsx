@@ -60,7 +60,7 @@ export const Ecosystem = () => {
 						textAlign="center"
 					>
 						In creating our ecosystem, we modeled it after the physical game distribution of the 1990s.
-						Create a cartridge in the GameContract.io factory, send it to the warehouse (the HashUp
+						Create a cartridge in the GameContract.HashUp.it factory, send it to the warehouse (the HashUp
 						protocol), and any store can download games from the warehouse and sell them (by connecting to
 						protocol)!
 					</Text>

@@ -75,18 +75,18 @@ export const LaunchAppButton = () => {
 					onMouseLeave={onClose}
 				>
 					<MenuItem _hover={{ bgColor: Colors.brandMain }} bgColor={Colors.darkGrey}>
-						<Link href="https://gamexplorer.io/">
+						<Link href="https://explorer.hashup.it/">
 							<a target="_blank">GameXplorer</a>
 						</Link>
 					</MenuItem>
 					<MenuItem _hover={{ bgColor: Colors.brandMain }} bgColor={Colors.darkGrey}>
-						<Link href="https://gamecontract.io/">
+						<Link href="https://contract.hashup.it/">
 							<a target="_blank">GameContract</a>
 						</Link>
 					</MenuItem>
 					<MenuItem _hover={{ bgColor: Colors.brandMain }} bgColor={Colors.darkGrey}>
 						<Link href="https://dl.patchkit.net/d/3sxi7923gq5eccqh7tlzo/direct">
-							<a target="_blank">PCLauncher</a>
+							<a target="_blank">PC Launcher</a>
 						</Link>
 					</MenuItem>
 				</MenuList>

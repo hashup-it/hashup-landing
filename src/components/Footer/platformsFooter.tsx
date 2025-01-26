@@ -23,13 +23,13 @@ export const PlatformsFooter = () => {
 				color="white"
 			>
 				<Link
-					href="https://gamexplorer.io/"
+					href="https://explorer.hashup.it/"
 					_hover={{ opacity: '0.6' }}
 				>
 					<Text>GameXplorer</Text>
 				</Link>
 				<Link
-					href="https://gamecontract.io/"
+					href="https://contract.hashup.it/"
 					_hover={{ opacity: '0.6' }}
 				>
 					<Text>GameContract</Text>

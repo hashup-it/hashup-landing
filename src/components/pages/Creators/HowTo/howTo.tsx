@@ -44,7 +44,7 @@ export const HowTo = () => {
 						</Text>
 					</Flex>
 					<Link
-						href="https://gamecontract.io/"
+						href="https://contract.hashup.it/"
 						target="_blank"
 						_hover={{ opacity: '0.8' }}
 					>

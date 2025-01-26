@@ -34,7 +34,7 @@ export const GameXplorerCard = () => {
 					store. The HashUp protocol is a great store for games that ANYONE can sell! The developers decide
 					how much money you make as a store!
 				</Text>
-				<Link href="https://gamexplorer.io/">
+				<Link href="https://explorer.hashup.it/">
 					<a target="_blank">
 						<Flex gridGap="3px">
 							<Flex

@@ -213,11 +213,11 @@ const Nbx = () => {
 							as="span"
 							fontSize="15px"
 							fontWeight="500"
-							href="https://www.gamexplorer.io"
+							href="https://www.explorer.hashup.it"
 						>
 							Buy ticket first. You can do that on{' '}
 							<Link
-								href="https://www.gamexplorer.io"
+								href="https://www.explorer.hashup.it"
 								target="_blank"
 								_hover={{ textDecoration: 'none' }}
 								as="span"
@@ -227,7 +227,7 @@ const Nbx = () => {
 									cursor="pointer"
 									as="span"
 								>
-									gamexplorer.io
+									explorer.hashup.it
 								</Text>
 							</Link>
 						</Link>
