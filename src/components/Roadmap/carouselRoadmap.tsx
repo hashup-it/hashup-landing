@@ -29,7 +29,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 		],
 	},
 	{
-		quarter: 'Q4 2022',
+		quarter: 'Q4 2022 - Q3 2026',
 		data: [
 			{ data: 'The HashUp Core V2 on Polygon', isDone: true },
 			{ data: 'ERC20 Licenses', isDone: true },
@@ -40,7 +40,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 		],
 	},
 	{
-		quarter: '2023',
+		quarter: 'Q4 2026 - Q3 2027',
 		data: [
 			{ data: 'The HashUp API V2' },
 			{ data: 'The HashUp Protocol on Polygon, Binance Smart Chain, Ethereum, Mantle, Aleph Zero and Casper' },
@@ -53,7 +53,7 @@ const itemsData: IRoadmapCardIRoadmapCard[] = [
 		],
 	},
 	{
-		quarter: '2024++',
+		quarter: 'Q4 2027++',
 		data: [
 			{ data: 'Decentralized superconsole' },
 			{ data: 'GameWallet - Crypto Wallet with communicator for gamers and degens' },
