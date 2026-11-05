@@ -1,0 +1,16 @@
+packages:
+  - "."
+
+allowBuilds:
+  '@toruslabs/eccrypto': true
+  bufferutil: true
+  core-js: false
+  core-js-pure: false
+  es5-ext: false
+  go-ipfs: true
+  keccak: true
+  protobufjs: true
+  secp256k1: true
+  utf-8-validate: true
+overrides:
+  ethereumjs-abi: 0.6.8

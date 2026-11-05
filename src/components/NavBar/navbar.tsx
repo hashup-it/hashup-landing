@@ -1,4 +1,5 @@
 import {
+	Box,
 	Button,
 	Flex,
 	Link,
@@ -45,12 +46,23 @@ export const NavBar = () => {
 
 	return (
 		<>
+			<Box
+				ref={ref}
+				w="100%"
+				h={['0', '0', '88px', '88px']}
+			/>
 			<Flex
-				w={['100vw', '100vw', '100%', '100%']}
+				w={['100vw', '100vw', '100vw', '100vw']}
 				alignItems="center"
 				justifyContent="space-between"
-				zIndex="11"
-				ref={ref}
+				position={['relative', 'relative', 'fixed', 'fixed']}
+				top="0"
+				left="0"
+				px={['0', '0', '20px', '90px']}
+				bgColor={['transparent', 'transparent', isScroll ? 'black' : 'transparent', isScroll ? 'black' : 'transparent']}
+				transition="background .33s"
+				zIndex="10001"
+				visibility={isOpen ? 'hidden' : 'visible'}
 				py="24px"
 			>
 				<Flex

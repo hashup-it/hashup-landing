@@ -175,6 +175,8 @@ const Map: NextPage = () => {
 					onLoad(map1?.current, pulsingDot, setStoreInfo, setLeftSectionVisible, center, storeData);
 				}
 			}
+		}).catch((error: unknown) => {
+			console.error('failed to fetch stores', error);
 		});
 	}, [map1?.current, leftSectionVisible]);
 

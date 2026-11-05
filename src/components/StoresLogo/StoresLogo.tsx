@@ -15,6 +15,8 @@ export const StoresLogo = () => {
 				: res.data.slice(0, 9).map((feature: any) => {
 						setLogos((prev: string[]) => [...prev, feature.properties.logo]);
 				  });
+		}).catch((error: unknown) => {
+			console.error('failed to fetch stores', error);
 		});
 	}, []);
 

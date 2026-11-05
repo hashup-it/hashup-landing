@@ -1,12 +1,12 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Flex, Grid, Image, keyframes, Link, Spinner, Text } from '@chakra-ui/react';
+import { Box, Flex, Grid, Image, Link, Spinner, Text } from '@chakra-ui/react';
+import { keyframes } from '@emotion/react';
 import { motion } from 'framer-motion';
 import React, { FC, useEffect, useState } from 'react';
 import { Colors } from '../../../colors';
 // import GlobeIcon from '../../../Icons/globeIcon';
 // import { Stat } from './Stat';
 import { Transaction } from './Transaction';
-import { useMoralisQuery } from 'react-moralis';
 import { compareAddresses, isAddressInAddresses } from '../../../utils/parser';
 import { STORE } from '../../../utils/constants/address';
 
@@ -20,6 +20,8 @@ interface StoreInfoProps {
 	display: boolean;
 	marketplace: string;
 }
+
+const query = { data: [] as any[], isFetching: false, isLoading: false };
 
 export const StoreInfo: FC<StoreInfoProps> = ({
 	storeName,
@@ -35,17 +37,11 @@ export const StoreInfo: FC<StoreInfoProps> = ({
 	const [show, setShow] = useState<boolean>(false);
 	const [transactions, setTransactions] = useState([]);
 
-	const query = useMoralisQuery(
-		'Bought',
-		// query => query.equalTo('marketplace', marketplace).descending('block_timestamp'), [marketplace], {autoFetch: false});
-		query => query.descending('block_timestamp'),
-		[marketplace],
-		{ autoFetch: false }
-	);
-
-	useEffect(() => {
-		void query.fetch();
-	}, [storeName]);
+	// data used to come from the Moralis v1 server at https://m8n2yl4ato6n.grandmoralis.com:2053/server (shut down)
+	// it ran useMoralisQuery on the "Bought" class sorted by block_timestamp descending and refetched when storeName changed
+	// "Bought" was most likely synced from on-chain purchase events of HashUp store contracts
+	// the effect below maps those rows to the recent transactions list for GameXplorer and GamerHub stores
+	// to bring it back replace this stub with a fetch from an indexer or the new Moralis API returning the same fields
 
 	useEffect(() => {
 		let payload: Array<{

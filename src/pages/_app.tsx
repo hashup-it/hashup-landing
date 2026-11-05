@@ -9,7 +9,6 @@ import { ChakraProvider } from '@chakra-ui/react';
 import Footer from '../components/Footer/footer';
 import { PolygonLabel } from '../components/PolygonLabel/polygonLabel';
 import '../components/Map/Map.css';
-import { MoralisProvider } from 'react-moralis';
 import { WalletConnectProvider } from '../providers/walletConnectProvider';
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -18,20 +17,17 @@ function MyApp({ Component, pageProps }: AppProps) {
 			resetCSS
 			theme={theme}
 		>
-			<MoralisProvider
-				serverUrl="https://m8n2yl4ato6n.grandmoralis.com:2053/server"
-				appId="eC4wceXEnSV2YnbaVOaE5XPrvwBXgEvDQXLG0i3M"
-			>
-				<WalletConnectProvider>
-					<Fonts />
-					<GlobalContainer>
-						<PolygonLabel />
-						<NavBar />
-						<Component {...pageProps} />
-						<Footer />
-					</GlobalContainer>
-				</WalletConnectProvider>
-			</MoralisProvider>
+			{/* MoralisProvider with serverUrl https://m8n2yl4ato6n.grandmoralis.com:2053/server was removed here because the server is dead */}
+			{/* it only fed the store transactions list in components/Map/StoreInfo/StoreInfo.tsx */}
+			<WalletConnectProvider>
+				<Fonts />
+				<GlobalContainer>
+					<PolygonLabel />
+					<NavBar />
+					<Component {...pageProps} />
+					<Footer />
+				</GlobalContainer>
+			</WalletConnectProvider>
 		</ChakraProvider>
 	);
 }
